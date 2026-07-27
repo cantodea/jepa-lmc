@@ -2,9 +2,22 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from jepa_lmc.checking.simple_checker import (
-    check_basic_properties,
-    find_path_to_label,
+from jepa_lmc.checking.ctl import (
+    AF,
+    AG,
+    EF,
+    EG,
+    EU,
+    Atom,
+    CTLModelChecker,
+    Not,
+)
+from jepa_lmc.checking.gridworld_adapter import (
+    gridworld_to_transition_system,
+)
+from jepa_lmc.checking.witness import (
+    find_ag_counterexample,
+    find_eu_witness,
 )
 from jepa_lmc.envs.factory import make_gridworld_from_config
 from jepa_lmc.utils.config import load_yaml
@@ -18,31 +31,72 @@ def main() -> None:
     print("=== GridWorld loaded ===")
     env.print_map()
 
+    transition_system = gridworld_to_transition_system(env)
+    checker = CTLModelChecker(transition_system)
+    danger = Atom("danger")
+    goal = Atom("goal")
+    safe = Atom("safe")
+    not_danger = Not(danger)
+
     print("\n=== Ground-truth model checking ===")
-    results = check_basic_properties(env, env.start)
+    formulas = {
+        "EF danger": EF(danger),
+        "EF goal": EF(goal),
+        "E[!danger U goal]": EU(not_danger, goal),
+        "AG !danger": AG(not_danger),
+        "AF goal": AF(goal),
+        "EG safe": EG(safe),
+    }
+    results = {
+        name: checker.holds(env.start, formula)
+        for name, formula in formulas.items()
+    }
     for property_name, holds in results.items():
         print(f"{property_name}: {holds}")
 
-    print("\n=== Safe path to goal ===")
-    safe_path = find_path_to_label(
-        env,
-        initial_state=env.start,
-        target_label="goal",
-        avoid_label="danger",
+    print("\n=== Safe action witness to goal ===")
+    safe_witness = find_eu_witness(
+        checker,
+        env.start,
+        condition=not_danger,
+        target=goal,
     )
 
-    if safe_path is None:
+    if safe_witness is None:
         print("No safe path to goal found.")
     else:
-        print(" -> ".join(str(state) for state in safe_path))
+        for step in safe_witness.steps:
+            action_name = env.ACTION_NAMES[step.action]
+            print(
+                f"{step.state} --{action_name}--> {step.next_state}"
+            )
+
+    print("\n=== AG !danger counterexample ===")
+    counterexample = find_ag_counterexample(
+        checker,
+        env.start,
+        invariant=not_danger,
+    )
+    if counterexample is None:
+        print("No counterexample found.")
+    else:
+        for step in counterexample.steps:
+            action_name = env.ACTION_NAMES[step.action]
+            print(
+                f"{step.state} --{action_name}--> {step.next_state}"
+            )
 
     expected = {
         "EF danger": True,
         "EF goal": True,
         "E[!danger U goal]": True,
         "AG !danger": False,
+        "AF goal": False,
+        "EG safe": True,
     }
     assert results == expected
+    assert safe_witness is not None
+    assert counterexample is not None
 
     print("\nReal-model checking passed.")
 

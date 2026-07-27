@@ -1,14 +1,13 @@
 from __future__ import annotations
 
-from collections import deque
 from typing import Dict, List
 
+from jepa_lmc.checking.ctl import AG, EF, EU, Atom, CTLModelChecker, Not
+from jepa_lmc.checking.gridworld_adapter import (
+    gridworld_to_transition_system,
+)
+from jepa_lmc.checking.witness import find_ef_witness, find_eu_witness
 from jepa_lmc.envs.gridworld import GridWorld, State
-
-
-def _successors(env: GridWorld, state: State) -> List[State]:
-    """Return deterministic successor states for all available actions."""
-    return [env.transition(state, action) for action in env.ACTIONS]
 
 
 def _validate_initial_state(env: GridWorld, initial_state: State) -> None:
@@ -30,47 +29,20 @@ def find_path_to_label(
     the initial state and the target state. None means no such path exists.
     """
     _validate_initial_state(env, initial_state)
+    checker = CTLModelChecker(gridworld_to_transition_system(env))
+    target = Atom(target_label)
 
-    if env.label(initial_state) == target_label:
-        return [initial_state]
+    if avoid_label is None:
+        witness = find_ef_witness(checker, initial_state, target)
+    else:
+        witness = find_eu_witness(
+            checker,
+            initial_state,
+            condition=Not(Atom(avoid_label)),
+            target=target,
+        )
 
-    if avoid_label is not None and env.label(initial_state) == avoid_label:
-        return None
-
-    queue: deque[State] = deque([initial_state])
-    parents: Dict[State, State | None] = {initial_state: None}
-
-    while queue:
-        state = queue.popleft()
-
-        for next_state in _successors(env, state):
-            if next_state in parents:
-                continue
-
-            next_label = env.label(next_state)
-            if avoid_label is not None and next_label == avoid_label:
-                continue
-
-            parents[next_state] = state
-
-            if next_label == target_label:
-                return _reconstruct_path(parents, next_state)
-
-            queue.append(next_state)
-
-    return None
-
-
-def _reconstruct_path(parents: Dict[State, State | None], target: State) -> List[State]:
-    path: List[State] = []
-    current: State | None = target
-
-    while current is not None:
-        path.append(current)
-        current = parents[current]
-
-    path.reverse()
-    return path
+    return None if witness is None else list(witness.states)
 
 
 def is_label_reachable(
@@ -94,18 +66,17 @@ def check_basic_properties(env: GridWorld, initial_state: State) -> Dict[str, bo
     - AG !danger: all reachable paths avoid danger; equivalently, danger is not
       reachable in this finite transition system.
     """
-    ef_danger = is_label_reachable(env, initial_state, "danger")
-    ef_goal = is_label_reachable(env, initial_state, "goal")
-    safe_until_goal = is_label_reachable(
-        env,
-        initial_state,
-        target_label="goal",
-        avoid_label="danger",
-    )
+    _validate_initial_state(env, initial_state)
+    checker = CTLModelChecker(gridworld_to_transition_system(env))
+    danger = Atom("danger")
+    goal = Atom("goal")
+    not_danger = Not(danger)
 
     return {
-        "EF danger": ef_danger,
-        "EF goal": ef_goal,
-        "E[!danger U goal]": safe_until_goal,
-        "AG !danger": not ef_danger,
+        "EF danger": checker.holds(initial_state, EF(danger)),
+        "EF goal": checker.holds(initial_state, EF(goal)),
+        "E[!danger U goal]": checker.holds(
+            initial_state, EU(not_danger, goal)
+        ),
+        "AG !danger": checker.holds(initial_state, AG(not_danger)),
     }
