@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src",
+    "experiments"
+  ],
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": [
+        "src"
+      ]
+    }
+  ]
+}

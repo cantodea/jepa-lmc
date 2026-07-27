@@ -1,0 +1,1 @@
+"""Simple model-checking utilities for JEPA-LMC experiments."""
