@@ -23,6 +23,7 @@ class PropertyOutcome:
     ground_truth: bool
     learned: bool
     safety_claim: bool = False
+    primary_score: bool = True
 
     @property
     def matches(self) -> bool:
@@ -31,6 +32,38 @@ class PropertyOutcome:
     @property
     def false_safe(self) -> bool:
         return self.safety_claim and not self.ground_truth and self.learned
+
+
+@dataclass(frozen=True)
+class BinaryConfusion:
+    """Confusion counts for one CTL formula across benchmark cases."""
+
+    true_positive: int
+    true_negative: int
+    false_positive: int
+    false_negative: int
+
+    @property
+    def positive_recall(self) -> float | None:
+        denominator = self.true_positive + self.false_negative
+        if denominator == 0:
+            return None
+        return self.true_positive / denominator
+
+    @property
+    def negative_recall(self) -> float | None:
+        denominator = self.true_negative + self.false_positive
+        if denominator == 0:
+            return None
+        return self.true_negative / denominator
+
+    @property
+    def balanced_accuracy(self) -> float | None:
+        positive_recall = self.positive_recall
+        negative_recall = self.negative_recall
+        if positive_recall is None or negative_recall is None:
+            return None
+        return (positive_recall + negative_recall) / 2
 
 
 @dataclass(frozen=True)
@@ -101,6 +134,50 @@ class VerificationReport:
         }
 
     @property
+    def confusion_by_property(self) -> dict[str, BinaryConfusion]:
+        property_names = {outcome.name for outcome in self.outcomes}
+        return {
+            name: BinaryConfusion(
+                true_positive=sum(
+                    outcome.ground_truth and outcome.learned
+                    for outcome in self.outcomes
+                    if outcome.name == name
+                ),
+                true_negative=sum(
+                    not outcome.ground_truth and not outcome.learned
+                    for outcome in self.outcomes
+                    if outcome.name == name
+                ),
+                false_positive=sum(
+                    not outcome.ground_truth and outcome.learned
+                    for outcome in self.outcomes
+                    if outcome.name == name
+                ),
+                false_negative=sum(
+                    outcome.ground_truth and not outcome.learned
+                    for outcome in self.outcomes
+                    if outcome.name == name
+                ),
+            )
+            for name in sorted(property_names)
+        }
+
+    @property
+    def primary_balanced_score(self) -> float | None:
+        """Macro balanced accuracy over non-duplicate primary properties."""
+        primary_names = {
+            outcome.name for outcome in self.outcomes if outcome.primary_score
+        }
+        if not primary_names:
+            return None
+
+        confusion = self.confusion_by_property
+        scores = [confusion[name].balanced_accuracy for name in primary_names]
+        if any(score is None for score in scores):
+            return None
+        return sum(score for score in scores if score is not None) / len(scores)
+
+    @property
     def ground_truth_positive_rate_by_property(self) -> dict[str, float]:
         """Expose formula imbalance instead of hiding it in overall accuracy."""
         property_names = {outcome.name for outcome in self.outcomes}
@@ -163,6 +240,7 @@ def evaluate_ctl_suite_for_state_pairs(
                 learned_state, property_spec.formula
             ),
             safety_claim=property_spec.safety_claim,
+            primary_score=property_spec.primary_score,
         )
         for ground_truth_state, learned_state in pairs
         for property_spec in suite
