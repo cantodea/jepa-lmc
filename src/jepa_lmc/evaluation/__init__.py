@@ -5,6 +5,7 @@ from jepa_lmc.evaluation.verification_metrics import (
     VerificationReport,
     aggregate_reports,
     evaluate_ctl_suite,
+    evaluate_ctl_suite_for_state_pairs,
 )
 
 __all__ = [
@@ -12,4 +13,5 @@ __all__ = [
     "VerificationReport",
     "aggregate_reports",
     "evaluate_ctl_suite",
+    "evaluate_ctl_suite_for_state_pairs",
 ]
