@@ -1,6 +1,7 @@
 """Metrics for comparing learned and ground-truth verification models."""
 
 from jepa_lmc.evaluation.verification_metrics import (
+    BinaryConfusion,
     PropertyOutcome,
     VerificationReport,
     aggregate_reports,
@@ -9,6 +10,7 @@ from jepa_lmc.evaluation.verification_metrics import (
 )
 
 __all__ = [
+    "BinaryConfusion",
     "PropertyOutcome",
     "VerificationReport",
     "aggregate_reports",
