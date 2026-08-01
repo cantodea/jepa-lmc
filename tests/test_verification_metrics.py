@@ -7,6 +7,7 @@ from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
 from jepa_lmc.evaluation.verification_metrics import (
     aggregate_reports,
     evaluate_ctl_suite,
+    evaluate_ctl_suite_for_state_pairs,
 )
 
 
@@ -88,6 +89,27 @@ class VerificationMetricsTests(unittest.TestCase):
         self.assertEqual(aggregate.agreement, 10 / 12)
         self.assertEqual(aggregate.false_safe_count, 1)
         self.assertEqual(aggregate.unsafe_miss_rate, 0.5)
+
+    def test_many_states_share_one_pair_of_model_checkers(self) -> None:
+        report = evaluate_ctl_suite_for_state_pairs(
+            self.ground_truth,
+            self.ground_truth,
+            (("s0", "s0"), ("danger", "danger")),
+        )
+
+        self.assertEqual(report.total, 12)
+        self.assertEqual(report.agreement, 1.0)
+        self.assertEqual(
+            set(report.agreement_by_property.values()), {1.0}
+        )
+
+    def test_empty_state_pairs_are_rejected(self) -> None:
+        with self.assertRaisesRegex(ValueError, "state pair"):
+            evaluate_ctl_suite_for_state_pairs(
+                self.ground_truth,
+                self.ground_truth,
+                (),
+            )
 
     def test_empty_property_suite_is_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "must not be empty"):
