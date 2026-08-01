@@ -87,6 +87,33 @@ class VerificationReport:
             for category in sorted(categories)
         }
 
+    @property
+    def agreement_by_property(self) -> dict[str, float]:
+        property_names = {outcome.name for outcome in self.outcomes}
+        return {
+            name: sum(
+                outcome.matches
+                for outcome in self.outcomes
+                if outcome.name == name
+            )
+            / sum(outcome.name == name for outcome in self.outcomes)
+            for name in sorted(property_names)
+        }
+
+    @property
+    def ground_truth_positive_rate_by_property(self) -> dict[str, float]:
+        """Expose formula imbalance instead of hiding it in overall accuracy."""
+        property_names = {outcome.name for outcome in self.outcomes}
+        return {
+            name: sum(
+                outcome.ground_truth
+                for outcome in self.outcomes
+                if outcome.name == name
+            )
+            / sum(outcome.name == name for outcome in self.outcomes)
+            for name in sorted(property_names)
+        }
+
 
 def evaluate_ctl_suite(
     ground_truth_system: ExplicitTransitionSystem[GroundStateT, GroundActionT],
@@ -96,9 +123,28 @@ def evaluate_ctl_suite(
     properties: Iterable[CTLProperty] | None = None,
 ) -> VerificationReport:
     """Compare CTL results on exact and learned transition systems."""
+    return evaluate_ctl_suite_for_state_pairs(
+        ground_truth_system,
+        learned_system,
+        ((ground_truth_initial_state, learned_initial_state),),
+        properties,
+    )
+
+
+def evaluate_ctl_suite_for_state_pairs(
+    ground_truth_system: ExplicitTransitionSystem[GroundStateT, GroundActionT],
+    learned_system: ExplicitTransitionSystem[LearnedStateT, LearnedActionT],
+    state_pairs: Iterable[tuple[GroundStateT, LearnedStateT]],
+    properties: Iterable[CTLProperty] | None = None,
+) -> VerificationReport:
+    """Compare a property suite over many corresponding states efficiently."""
     suite = tuple(default_ctl_suite() if properties is None else properties)
     if not suite:
         raise ValueError("The CTL property suite must not be empty.")
+
+    pairs = tuple(state_pairs)
+    if not pairs:
+        raise ValueError("At least one corresponding state pair is required.")
 
     names = [property_spec.name for property_spec in suite]
     if len(names) != len(set(names)):
@@ -111,13 +157,14 @@ def evaluate_ctl_suite(
             name=property_spec.name,
             category=property_spec.category,
             ground_truth=ground_truth_checker.holds(
-                ground_truth_initial_state, property_spec.formula
+                ground_truth_state, property_spec.formula
             ),
             learned=learned_checker.holds(
-                learned_initial_state, property_spec.formula
+                learned_state, property_spec.formula
             ),
             safety_claim=property_spec.safety_claim,
         )
+        for ground_truth_state, learned_state in pairs
         for property_spec in suite
     )
     return VerificationReport(outcomes)
