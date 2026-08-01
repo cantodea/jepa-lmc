@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import unittest
 
+from jepa_lmc.benchmarks.ctl_suite import default_ctl_suite
 from jepa_lmc.benchmarks.perturbations import block_entries_to_proposition
 from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
 from jepa_lmc.evaluation.verification_metrics import (
@@ -94,14 +95,43 @@ class VerificationMetricsTests(unittest.TestCase):
         report = evaluate_ctl_suite_for_state_pairs(
             self.ground_truth,
             self.ground_truth,
-            (("s0", "s0"), ("danger", "danger")),
+            tuple((state, state) for state in self.ground_truth.states),
         )
 
-        self.assertEqual(report.total, 12)
+        self.assertEqual(report.total, 24)
         self.assertEqual(report.agreement, 1.0)
+        self.assertEqual(report.primary_balanced_score, 1.0)
         self.assertEqual(
             set(report.agreement_by_property.values()), {1.0}
         )
+
+    def test_primary_score_excludes_duplicate_and_diagnostic_formulae(self) -> None:
+        primary_names = {
+            property_spec.name
+            for property_spec in default_ctl_suite()
+            if property_spec.primary_score
+        }
+        self.assertEqual(
+            primary_names,
+            {"EF goal", "E[!danger U goal]", "AG !danger"},
+        )
+
+    def test_confusion_metrics_penalize_false_safe_results(self) -> None:
+        learned = block_entries_to_proposition(self.ground_truth, "danger")
+        report = evaluate_ctl_suite_for_state_pairs(
+            self.ground_truth,
+            learned,
+            tuple((state, state) for state in self.ground_truth.states),
+        )
+        safety = report.confusion_by_property["AG !danger"]
+
+        self.assertGreater(safety.false_positive, 0)
+        self.assertIsNotNone(safety.balanced_accuracy)
+        assert safety.balanced_accuracy is not None
+        self.assertLess(safety.balanced_accuracy, 1.0)
+        self.assertIsNotNone(report.primary_balanced_score)
+        assert report.primary_balanced_score is not None
+        self.assertLess(report.primary_balanced_score, 1.0)
 
     def test_empty_state_pairs_are_rejected(self) -> None:
         with self.assertRaisesRegex(ValueError, "state pair"):
