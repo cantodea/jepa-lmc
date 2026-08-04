@@ -1,12 +1,15 @@
 from __future__ import annotations
 
+from collections.abc import Hashable, Iterable
 from dataclasses import dataclass
-from typing import Hashable, Iterable, TypeVar
+from pathlib import Path
+from typing import TypeVar
 
 from jepa_lmc.benchmarks.ctl_suite import CTLProperty, default_ctl_suite
+from jepa_lmc.benchmarks.ltl_suite import LTLProperty, default_ltl_suite
 from jepa_lmc.checking.ctl import CTLModelChecker
 from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-
+from jepa_lmc.validation.nusmv import LTLQuery, evaluate_ltl_queries_with_nusmv
 
 GroundStateT = TypeVar("GroundStateT", bound=Hashable)
 GroundActionT = TypeVar("GroundActionT", bound=Hashable)
@@ -16,7 +19,7 @@ LearnedActionT = TypeVar("LearnedActionT", bound=Hashable)
 
 @dataclass(frozen=True)
 class PropertyOutcome:
-    """Ground-truth and learned truth values for one CTL property."""
+    """Ground-truth and learned truth values for one formal property."""
 
     name: str
     category: str
@@ -36,7 +39,7 @@ class PropertyOutcome:
 
 @dataclass(frozen=True)
 class BinaryConfusion:
-    """Confusion counts for one CTL formula across benchmark cases."""
+    """Confusion counts for one formula across benchmark cases."""
 
     true_positive: int
     true_negative: int
@@ -114,9 +117,7 @@ class VerificationReport:
                 for outcome in self.outcomes
                 if outcome.category == category
             )
-            / sum(
-                outcome.category == category for outcome in self.outcomes
-            )
+            / sum(outcome.category == category for outcome in self.outcomes)
             for category in sorted(categories)
         }
 
@@ -125,9 +126,7 @@ class VerificationReport:
         property_names = {outcome.name for outcome in self.outcomes}
         return {
             name: sum(
-                outcome.matches
-                for outcome in self.outcomes
-                if outcome.name == name
+                outcome.matches for outcome in self.outcomes if outcome.name == name
             )
             / sum(outcome.name == name for outcome in self.outcomes)
             for name in sorted(property_names)
@@ -236,9 +235,7 @@ def evaluate_ctl_suite_for_state_pairs(
             ground_truth=ground_truth_checker.holds(
                 ground_truth_state, property_spec.formula
             ),
-            learned=learned_checker.holds(
-                learned_state, property_spec.formula
-            ),
+            learned=learned_checker.holds(learned_state, property_spec.formula),
             safety_claim=property_spec.safety_claim,
             primary_score=property_spec.primary_score,
         )
@@ -248,11 +245,79 @@ def evaluate_ctl_suite_for_state_pairs(
     return VerificationReport(outcomes)
 
 
+def evaluate_ltl_suite_for_state_pairs(
+    ground_truth_system: ExplicitTransitionSystem[GroundStateT, GroundActionT],
+    learned_system: ExplicitTransitionSystem[LearnedStateT, LearnedActionT],
+    state_pairs: Iterable[tuple[GroundStateT, LearnedStateT]],
+    properties: Iterable[LTLProperty] | None = None,
+    executable: str | Path | None = None,
+) -> VerificationReport:
+    """Compare universal-path LTL results using the same external backend."""
+    suite = tuple(default_ltl_suite() if properties is None else properties)
+    if not suite:
+        raise ValueError("The LTL property suite must not be empty.")
+
+    pairs = tuple(state_pairs)
+    if not pairs:
+        raise ValueError("At least one corresponding state pair is required.")
+
+    names = [property_spec.name for property_spec in suite]
+    if len(names) != len(set(names)):
+        raise ValueError("LTL property names must be unique.")
+
+    ordered_properties = tuple(
+        property_spec for _pair in pairs for property_spec in suite
+    )
+    ground_truth_queries = tuple(
+        LTLQuery(
+            state=ground_truth_state,
+            formula=property_spec.formula,
+            name=property_spec.name,
+        )
+        for ground_truth_state, _learned_state in pairs
+        for property_spec in suite
+    )
+    learned_queries = tuple(
+        LTLQuery(
+            state=learned_state,
+            formula=property_spec.formula,
+            name=property_spec.name,
+        )
+        for _ground_truth_state, learned_state in pairs
+        for property_spec in suite
+    )
+    ground_truth_report = evaluate_ltl_queries_with_nusmv(
+        ground_truth_system,
+        ground_truth_queries,
+        executable,
+    )
+    learned_report = evaluate_ltl_queries_with_nusmv(
+        learned_system,
+        learned_queries,
+        executable,
+    )
+
+    outcomes = tuple(
+        PropertyOutcome(
+            name=property_spec.name,
+            category=property_spec.category,
+            ground_truth=ground_truth,
+            learned=learned,
+            safety_claim=property_spec.safety_claim,
+            primary_score=property_spec.primary_score,
+        )
+        for property_spec, ground_truth, learned in zip(
+            ordered_properties,
+            ground_truth_report.verdicts,
+            learned_report.verdicts,
+        )
+    )
+    return VerificationReport(outcomes)
+
+
 def aggregate_reports(
     reports: Iterable[VerificationReport],
 ) -> VerificationReport:
     """Combine per-map reports without averaging maps of different sizes."""
-    outcomes = tuple(
-        outcome for report in reports for outcome in report.outcomes
-    )
+    outcomes = tuple(outcome for report in reports for outcome in report.outcomes)
     return VerificationReport(outcomes)

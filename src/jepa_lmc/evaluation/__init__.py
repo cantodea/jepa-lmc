@@ -18,6 +18,7 @@ from jepa_lmc.evaluation.verification_metrics import (
     aggregate_reports,
     evaluate_ctl_suite,
     evaluate_ctl_suite_for_state_pairs,
+    evaluate_ltl_suite_for_state_pairs,
 )
 
 __all__ = [
@@ -34,6 +35,7 @@ __all__ = [
     "evaluate_ctl_suite",
     "evaluate_ctl_suite_for_state_pairs",
     "evaluate_gridworld_transitions",
+    "evaluate_ltl_suite_for_state_pairs",
     "evaluate_open_loop_rollouts",
     "transition_system_from_retrievals",
 ]

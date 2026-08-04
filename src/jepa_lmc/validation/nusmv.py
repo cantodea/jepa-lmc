@@ -5,10 +5,12 @@ import re
 import shutil
 import subprocess
 import tempfile
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Generic, Mapping, Sequence
+from typing import Generic
 
+from jepa_lmc.checking import ltl
 from jepa_lmc.checking.ctl import (
     AF,
     AG,
@@ -30,7 +32,6 @@ from jepa_lmc.checking.transition_system import (
     StateT,
 )
 
-
 _IDENTIFIER = re.compile(r"^[A-Za-z_][A-Za-z0-9_$#-]*$")
 _VERDICT = re.compile(
     r"^-- specification\s+.*?\s+is\s+(true|false)\s*$",
@@ -48,11 +49,30 @@ class CTLQuery(Generic[StateT]):
 
 
 @dataclass(frozen=True)
+class LTLQuery(Generic[StateT]):
+    """One universal-path LTL formula to evaluate at one specific state."""
+
+    state: StateT
+    formula: ltl.Formula
+    name: str = ""
+
+
+@dataclass(frozen=True)
 class NuSMVRun:
     """Raw result returned by an independent NuSMV-compatible executable."""
 
     executable: str
     verdicts: tuple[bool, ...]
+    output: str
+
+
+@dataclass(frozen=True)
+class NuSMVLTLReport(Generic[StateT]):
+    """State-specific LTL verdicts returned by nuXmv/NuSMV."""
+
+    queries: tuple[LTLQuery[StateT], ...]
+    verdicts: tuple[bool, ...]
+    executable: str
     output: str
 
 
@@ -101,9 +121,7 @@ def formula_to_nusmv(
                 ) from error
 
         if not _IDENTIFIER.fullmatch(name):
-            raise ValueError(
-                f"Proposition {name!r} is not a valid NuSMV identifier."
-            )
+            raise ValueError(f"Proposition {name!r} is not a valid NuSMV identifier.")
         return name
 
     if isinstance(formula, Atom):
@@ -146,6 +164,59 @@ def formula_to_nusmv(
     raise TypeError(f"Unsupported CTL formula: {formula!r}")
 
 
+def ltl_formula_to_nusmv(
+    formula: ltl.Formula,
+    proposition_identifiers: Mapping[str, str] | None = None,
+) -> str:
+    """Translate the supported LTL fragment to NuSMV syntax."""
+
+    def atom_identifier(name: str) -> str:
+        if proposition_identifiers is not None:
+            try:
+                return proposition_identifiers[name]
+            except KeyError as error:
+                raise ValueError(
+                    f"No NuSMV identifier was provided for proposition {name!r}."
+                ) from error
+
+        if not _IDENTIFIER.fullmatch(name):
+            raise ValueError(f"Proposition {name!r} is not a valid NuSMV identifier.")
+        return name
+
+    if isinstance(formula, ltl.Atom):
+        return atom_identifier(formula.name)
+    if isinstance(formula, ltl.Not):
+        return f"!({ltl_formula_to_nusmv(formula.formula, proposition_identifiers)})"
+    if isinstance(formula, ltl.And):
+        left = ltl_formula_to_nusmv(formula.left, proposition_identifiers)
+        right = ltl_formula_to_nusmv(formula.right, proposition_identifiers)
+        return f"({left} & {right})"
+    if isinstance(formula, ltl.Or):
+        left = ltl_formula_to_nusmv(formula.left, proposition_identifiers)
+        right = ltl_formula_to_nusmv(formula.right, proposition_identifiers)
+        return f"({left} | {right})"
+    if isinstance(formula, ltl.Next):
+        child = ltl_formula_to_nusmv(formula.formula, proposition_identifiers)
+        return f"X ({child})"
+    if isinstance(formula, ltl.Eventually):
+        child = ltl_formula_to_nusmv(formula.formula, proposition_identifiers)
+        return f"F ({child})"
+    if isinstance(formula, ltl.Globally):
+        child = ltl_formula_to_nusmv(formula.formula, proposition_identifiers)
+        return f"G ({child})"
+    if isinstance(formula, ltl.Until):
+        condition = ltl_formula_to_nusmv(
+            formula.condition,
+            proposition_identifiers,
+        )
+        target = ltl_formula_to_nusmv(
+            formula.target,
+            proposition_identifiers,
+        )
+        return f"(({condition}) U ({target}))"
+    raise TypeError(f"Unsupported LTL formula: {formula!r}")
+
+
 def export_nusmv_queries(
     transition_system: ExplicitTransitionSystem[StateT, ActionT],
     queries: Sequence[CTLQuery[StateT]],
@@ -163,6 +234,59 @@ def export_nusmv_queries(
     for query in query_tuple:
         transition_system.validate_state(query.state)
 
+    propositions = {
+        atom for query in query_tuple for atom in _formula_atoms(query.formula)
+    }
+    lines, state_identifiers, proposition_identifiers = _nusmv_model_preamble(
+        transition_system,
+        propositions,
+    )
+
+    for query in query_tuple:
+        formula_text = formula_to_nusmv(
+            query.formula,
+            proposition_identifiers,
+        )
+        state_identifier = state_identifiers[query.state]
+        lines.append(f"SPEC ((state = {state_identifier}) -> ({formula_text}))")
+
+    return "\n".join(lines) + "\n"
+
+
+def export_nusmv_ltl_queries(
+    transition_system: ExplicitTransitionSystem[StateT, ActionT],
+    queries: Sequence[LTLQuery[StateT]],
+) -> str:
+    """Export universal-path, state-specific LTL queries for nuXmv."""
+    query_tuple = tuple(queries)
+    if not query_tuple:
+        raise ValueError("At least one LTL query is required.")
+    for query in query_tuple:
+        transition_system.validate_state(query.state)
+
+    propositions = {atom for query in query_tuple for atom in ltl.atoms(query.formula)}
+    lines, state_identifiers, proposition_identifiers = _nusmv_model_preamble(
+        transition_system,
+        propositions,
+    )
+
+    for query in query_tuple:
+        formula_text = ltl_formula_to_nusmv(
+            query.formula,
+            proposition_identifiers,
+        )
+        state_identifier = state_identifiers[query.state]
+        lines.append(f"LTLSPEC ((state = {state_identifier}) -> ({formula_text}))")
+
+    return "\n".join(lines) + "\n"
+
+
+def _nusmv_model_preamble(
+    transition_system: ExplicitTransitionSystem[StateT, ActionT],
+    propositions: set[str] | frozenset[str],
+) -> tuple[list[str], dict[StateT, str], dict[str, str]]:
+    """Encode one transition system independently of the property logic."""
+
     states = tuple(
         sorted(
             transition_system.states,
@@ -173,19 +297,11 @@ def export_nusmv_queries(
             ),
         )
     )
-    state_identifiers = {
-        state: f"s{index}" for index, state in enumerate(states)
-    }
-    propositions = sorted(
-        {
-            atom
-            for query in query_tuple
-            for atom in _formula_atoms(query.formula)
-        }
-    )
+    state_identifiers = {state: f"s{index}" for index, state in enumerate(states)}
+    sorted_propositions = sorted(propositions)
     proposition_identifiers = {
         proposition: f"ap{index}"
-        for index, proposition in enumerate(propositions)
+        for index, proposition in enumerate(sorted_propositions)
     }
 
     state_domain = ", ".join(state_identifiers[state] for state in states)
@@ -205,13 +321,10 @@ def export_nusmv_queries(
         successor_set = ", ".join(
             state_identifiers[successor] for successor in successors
         )
-        lines.append(
-            f"    state = {state_identifiers[state]} : "
-            f"{{{successor_set}}};"
-        )
+        lines.append(f"    state = {state_identifiers[state]} : {{{successor_set}}};")
     lines.extend(("  esac;", "DEFINE"))
 
-    for proposition in propositions:
+    for proposition in sorted_propositions:
         labelled_states = [
             state_identifiers[state]
             for state in states
@@ -222,21 +335,8 @@ def export_nusmv_queries(
             if labelled_states
             else "FALSE"
         )
-        lines.append(
-            f"  {proposition_identifiers[proposition]} := {expression};"
-        )
-
-    for query in query_tuple:
-        formula_text = formula_to_nusmv(
-            query.formula,
-            proposition_identifiers,
-        )
-        state_identifier = state_identifiers[query.state]
-        lines.append(
-            f"SPEC ((state = {state_identifier}) -> ({formula_text}))"
-        )
-
-    return "\n".join(lines) + "\n"
+        lines.append(f"  {proposition_identifiers[proposition]} := {expression};")
+    return lines, state_identifiers, proposition_identifiers
 
 
 def find_nusmv_executable(explicit: str | Path | None = None) -> str | None:
@@ -265,13 +365,12 @@ def find_nusmv_executable(explicit: str | Path | None = None) -> str | None:
 
 
 def parse_nusmv_verdicts(output: str) -> tuple[bool, ...]:
-    """Parse NuSMV's ordered ``SPEC ... is true/false`` verdicts."""
+    """Parse ordered ``SPEC``/``LTLSPEC`` true-or-false verdicts."""
     verdicts = tuple(
-        match.group(1).lower() == "true"
-        for match in _VERDICT.finditer(output)
+        match.group(1).lower() == "true" for match in _VERDICT.finditer(output)
     )
     if not verdicts:
-        raise ValueError("NuSMV output did not contain any CTL verdicts.")
+        raise ValueError("NuSMV output did not contain any specification verdicts.")
     return verdicts
 
 
@@ -321,8 +420,7 @@ def compare_queries_with_nusmv(
     model_text = export_nusmv_queries(transition_system, query_tuple)
     internal_checker = CTLModelChecker(transition_system)
     internal_verdicts = tuple(
-        internal_checker.holds(query.state, query.formula)
-        for query in query_tuple
+        internal_checker.holds(query.state, query.formula) for query in query_tuple
     )
     external_run = run_nusmv_model(model_text, executable)
     if len(external_run.verdicts) != len(query_tuple):
@@ -336,6 +434,28 @@ def compare_queries_with_nusmv(
         external_verdicts=external_run.verdicts,
         executable=external_run.executable,
         external_output=external_run.output,
+    )
+
+
+def evaluate_ltl_queries_with_nusmv(
+    transition_system: ExplicitTransitionSystem[StateT, ActionT],
+    queries: Sequence[LTLQuery[StateT]],
+    executable: str | Path | None = None,
+) -> NuSMVLTLReport[StateT]:
+    """Evaluate LTL queries with an independent nuXmv/NuSMV backend."""
+    query_tuple = tuple(queries)
+    model_text = export_nusmv_ltl_queries(transition_system, query_tuple)
+    external_run = run_nusmv_model(model_text, executable)
+    if len(external_run.verdicts) != len(query_tuple):
+        raise RuntimeError(
+            "NuSMV returned an unexpected number of LTL verdicts: "
+            f"expected {len(query_tuple)}, got {len(external_run.verdicts)}."
+        )
+    return NuSMVLTLReport(
+        queries=query_tuple,
+        verdicts=external_run.verdicts,
+        executable=external_run.executable,
+        output=external_run.output,
     )
 
 
