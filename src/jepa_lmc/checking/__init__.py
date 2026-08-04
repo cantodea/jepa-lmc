@@ -1,4 +1,4 @@
-"""Explicit-state CTL model-checking utilities for JEPA-LMC."""
+"""Logic and explicit-state model-checking utilities for JEPA-LMC."""
 
 from jepa_lmc.checking.ctl import (
     AF,
