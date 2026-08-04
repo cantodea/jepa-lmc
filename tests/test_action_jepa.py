@@ -105,6 +105,32 @@ class ActionJEPATests(unittest.TestCase):
         self.assertEqual(tuple(predictions.shape), (4, 12))
         self.assertGreater(torch.pdist(predictions).max().item(), 0.0)
 
+    def test_encoder_preserves_agent_position_before_training(self) -> None:
+        env = GridWorld(
+            width=6,
+            height=6,
+            start=(0, 0),
+            goal=(5, 5),
+            walls=set(),
+            dangers=set(),
+        )
+        observations = torch.stack(
+            (
+                gridworld_observation(env, (0, 0)),
+                gridworld_observation(env, (5, 5)),
+            )
+        )
+        embeddings = self.model.context_encoder(observations)
+
+        self.assertFalse(torch.allclose(embeddings[0], embeddings[1]))
+        self.assertEqual(
+            embeddings[0, -8:].tolist(),
+            [0.0, 0.0, 0.0, 4.0, 0.0, 4.0, 0.0, 0.0],
+        )
+        self.assertAlmostEqual(embeddings[1, -8].item(), 4.0)
+        self.assertAlmostEqual(embeddings[1, -7].item(), 4.0)
+        self.assertAlmostEqual(embeddings[1, -5].item(), -4.0, places=5)
+
     def test_target_encoder_updates_only_through_ema(self) -> None:
         context_parameter = next(self.model.context_encoder.parameters())
         target_parameter = next(self.model.target_encoder.parameters())

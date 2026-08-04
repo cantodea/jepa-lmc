@@ -9,7 +9,7 @@ from torch.nn import functional as F
 
 
 class GridStateEncoder(nn.Module):
-    """Encode a complete multi-channel GridWorld observation."""
+    """Encode map content while retaining an explicit agent-position subspace."""
 
     def __init__(
         self,
@@ -19,17 +19,31 @@ class GridStateEncoder(nn.Module):
         input_channels: int = 4,
         latent_dim: int = 32,
         hidden_channels: int = 32,
+        position_dim: int | None = None,
+        position_scale: float = 4.0,
     ) -> None:
         super().__init__()
         if height <= 0 or width <= 0:
             raise ValueError("Grid dimensions must be positive.")
-        if input_channels <= 0 or latent_dim <= 0 or hidden_channels <= 0:
+        if input_channels < 4 or latent_dim <= 1 or hidden_channels <= 0:
             raise ValueError("Encoder dimensions must be positive.")
+        resolved_position_dim = (
+            min(8, latent_dim - 1) if position_dim is None else position_dim
+        )
+        if not 1 <= resolved_position_dim < latent_dim or resolved_position_dim > 8:
+            raise ValueError(
+                "Position dimension must be in [1, min(8, latent_dim - 1)]."
+            )
+        if position_scale <= 0.0:
+            raise ValueError("Position scale must be positive.")
 
         self.height = height
         self.width = width
         self.input_channels = input_channels
         self.latent_dim = latent_dim
+        self.position_dim = resolved_position_dim
+        self.position_scale = position_scale
+        learned_dim = latent_dim - resolved_position_dim
         self.features = nn.Sequential(
             nn.Conv2d(input_channels, hidden_channels, kernel_size=3, padding=1),
             nn.GELU(),
@@ -39,8 +53,14 @@ class GridStateEncoder(nn.Module):
             nn.Linear(hidden_channels * height * width, hidden_channels * 2),
             nn.LayerNorm(hidden_channels * 2),
             nn.GELU(),
-            nn.Linear(hidden_channels * 2, latent_dim),
+            nn.Linear(hidden_channels * 2, learned_dim),
         )
+        row_coordinates = torch.linspace(0.0, 1.0, steps=height).view(1, height, 1)
+        column_coordinates = torch.linspace(0.0, 1.0, steps=width).view(1, 1, width)
+        self.row_coordinates: Tensor
+        self.column_coordinates: Tensor
+        self.register_buffer("row_coordinates", row_coordinates)
+        self.register_buffer("column_coordinates", column_coordinates)
 
     def forward(self, observation: Tensor) -> Tensor:
         expected_shape = (
@@ -54,7 +74,27 @@ class GridStateEncoder(nn.Module):
                 f"[batch, {expected_shape[0]}, {expected_shape[1]}, "
                 f"{expected_shape[2]}], got {tuple(observation.shape)}."
             )
-        return self.features(observation)
+        learned_features = self.features(observation)
+        agent = observation[:, 3]
+        row = (agent * self.row_coordinates).sum(dim=(1, 2))
+        column = (agent * self.column_coordinates).sum(dim=(1, 2))
+        position_features = (
+            self.position_scale
+            * torch.stack(
+                (
+                    row,
+                    column,
+                    torch.sin(torch.pi * row),
+                    torch.cos(torch.pi * row),
+                    torch.sin(torch.pi * column),
+                    torch.cos(torch.pi * column),
+                    torch.sin(2.0 * torch.pi * row),
+                    torch.sin(2.0 * torch.pi * column),
+                ),
+                dim=1,
+            )[:, : self.position_dim]
+        )
+        return torch.cat((learned_features, position_features), dim=1)
 
 
 class ActionConditionedPredictor(nn.Module):
@@ -96,7 +136,8 @@ class ActionConditionedPredictor(nn.Module):
             raise ValueError("Action index is outside the configured action space.")
 
         action_features = self.action_embedding(action)
-        return self.network(torch.cat((context, action_features), dim=-1))
+        delta = self.network(torch.cat((context, action_features), dim=-1))
+        return context + delta
 
 
 @dataclass(frozen=True)
@@ -125,6 +166,8 @@ class ActionJEPA(nn.Module):
         input_channels: int = 4,
         latent_dim: int = 32,
         hidden_channels: int = 32,
+        position_dim: int | None = None,
+        position_scale: float = 4.0,
         action_dim: int = 8,
         predictor_hidden_dim: int = 64,
         num_actions: int = 4,
@@ -136,6 +179,8 @@ class ActionJEPA(nn.Module):
             input_channels=input_channels,
             latent_dim=latent_dim,
             hidden_channels=hidden_channels,
+            position_dim=position_dim,
+            position_scale=position_scale,
         )
         self.target_encoder = copy.deepcopy(self.context_encoder)
         self.target_encoder.requires_grad_(False)
