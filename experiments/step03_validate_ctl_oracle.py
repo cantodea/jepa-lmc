@@ -41,14 +41,10 @@ def make_random_system(
         successor_count = rng.randint(1, min(4, state_count))
         transitions[state] = [
             (f"a{index}", successor)
-            for index, successor in enumerate(
-                rng.sample(states, successor_count)
-            )
+            for index, successor in enumerate(rng.sample(states, successor_count))
         ]
         labels[state] = {
-            proposition
-            for proposition in PROPOSITIONS
-            if rng.random() < 0.4
+            proposition for proposition in PROPOSITIONS if rng.random() < 0.4
         }
 
     return ExplicitTransitionSystem(
@@ -64,19 +60,39 @@ def make_random_formula(rng: random.Random, depth: int) -> Formula:
         return Atom(rng.choice(PROPOSITIONS))
 
     operator = rng.choice(
-        (Not, And, Or, EX, AX, EF, AF, EG, AG, EU)
+        ("not", "and", "or", "ex", "ax", "ef", "af", "eg", "ag", "eu")
     )
-    if operator in (And, Or):
-        return operator(
+    if operator == "and":
+        return And(
             make_random_formula(rng, depth - 1),
             make_random_formula(rng, depth - 1),
         )
-    if operator is EU:
+    if operator == "or":
+        return Or(
+            make_random_formula(rng, depth - 1),
+            make_random_formula(rng, depth - 1),
+        )
+    if operator == "eu":
         return EU(
             make_random_formula(rng, depth - 1),
             make_random_formula(rng, depth - 1),
         )
-    return operator(make_random_formula(rng, depth - 1))
+    child = make_random_formula(rng, depth - 1)
+    if operator == "not":
+        return Not(child)
+    if operator == "ex":
+        return EX(child)
+    if operator == "ax":
+        return AX(child)
+    if operator == "ef":
+        return EF(child)
+    if operator == "af":
+        return AF(child)
+    if operator == "eg":
+        return EG(child)
+    if operator == "ag":
+        return AG(child)
+    raise AssertionError(f"Unknown formula operator: {operator}")
 
 
 def parse_args() -> argparse.Namespace:
