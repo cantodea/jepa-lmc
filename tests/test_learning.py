@@ -8,7 +8,8 @@ from torch.utils.data import DataLoader
 from jepa_lmc.benchmarks.random_gridworld import (
     generate_random_gridworld_spec,
 )
-from jepa_lmc.data.jepa_transitions import (
+from jepa_lmc.envs.gridworld import GridWorld
+from jepa_lmc.learning.data import (
     AGENT_CHANNEL,
     DANGER_CHANNEL,
     GOAL_CHANNEL,
@@ -17,14 +18,13 @@ from jepa_lmc.data.jepa_transitions import (
     GridWorldTransitionDataset,
     gridworld_observation,
 )
-from jepa_lmc.envs.gridworld import GridWorld
-from jepa_lmc.models.action_jepa import (
+from jepa_lmc.learning.model import (
     ActionJEPA,
     JEPAOutput,
     action_jepa_loss,
     variance_floor_loss,
 )
-from jepa_lmc.training.action_jepa import (
+from jepa_lmc.learning.training import (
     embedding_statistics,
     make_action_jepa_optimizer,
     train_action_jepa_epoch,

@@ -4,7 +4,7 @@ import argparse
 import random
 from pathlib import Path
 
-from jepa_lmc.checking.ctl import (
+from jepa_lmc.verification.ctl import (
     AF,
     AG,
     AX,
@@ -18,13 +18,12 @@ from jepa_lmc.checking.ctl import (
     Not,
     Or,
 )
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-from jepa_lmc.validation.nusmv import (
+from jepa_lmc.verification.nuxmv import (
     CTLQuery,
     compare_queries_with_nusmv,
     find_nusmv_executable,
 )
-
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 PROPOSITIONS = ("safe", "goal", "danger")
 
@@ -126,7 +125,7 @@ def main() -> int:
 
     rng = random.Random(args.seed)
     checked_queries = 0
-    print("=== Step 03C: independent CTL oracle validation ===")
+    print("=== Independent CTL oracle validation ===")
     print(f"External checker: {executable}")
     print(f"Seed: {args.seed}")
 

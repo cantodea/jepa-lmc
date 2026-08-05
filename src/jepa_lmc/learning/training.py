@@ -7,7 +7,7 @@ import torch
 from torch import Tensor
 from torch.optim import AdamW, Optimizer
 
-from jepa_lmc.models.action_jepa import ActionJEPA, action_jepa_loss
+from jepa_lmc.learning.model import ActionJEPA, action_jepa_loss
 
 
 @dataclass(frozen=True)

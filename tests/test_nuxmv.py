@@ -2,21 +2,20 @@ from __future__ import annotations
 
 import unittest
 
-from jepa_lmc.checking.ctl import AG, EF, EU, And, Atom, Not
-from jepa_lmc.checking.ltl import (
+from jepa_lmc.verification.ctl import AG, EF, EU, And, Atom, Not
+from jepa_lmc.verification.ltl import (
     Atom as LTLAtom,
 )
-from jepa_lmc.checking.ltl import (
+from jepa_lmc.verification.ltl import (
     Eventually,
     Globally,
     Next,
     Until,
 )
-from jepa_lmc.checking.ltl import (
+from jepa_lmc.verification.ltl import (
     Not as LTLNot,
 )
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-from jepa_lmc.validation.nusmv import (
+from jepa_lmc.verification.nuxmv import (
     CTLQuery,
     LTLQuery,
     compare_queries_with_nusmv,
@@ -28,6 +27,7 @@ from jepa_lmc.validation.nusmv import (
     ltl_formula_to_nusmv,
     parse_nusmv_verdicts,
 )
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 def make_reference_system() -> ExplicitTransitionSystem[str, str]:

@@ -6,13 +6,13 @@ from jepa_lmc.benchmarks.perturbations import (
 from jepa_lmc.benchmarks.random_gridworld import (
     make_pilot_benchmark_splits,
 )
-from jepa_lmc.checking.gridworld_adapter import (
-    gridworld_to_transition_system,
-)
-from jepa_lmc.evaluation.verification_metrics import (
+from jepa_lmc.evaluation.metrics import (
     VerificationReport,
     aggregate_reports,
     evaluate_ctl_suite_for_state_pairs,
+)
+from jepa_lmc.verification.gridworld import (
+    gridworld_to_transition_system,
 )
 
 
@@ -91,7 +91,7 @@ def main() -> None:
     perfect = aggregate_reports(perfect_reports)
     danger_blind = aggregate_reports(danger_blind_reports)
 
-    print("=== Step 03A: random-map CTL benchmark ===")
+    print("=== Random-map CTL benchmark ===")
     print(f"Train/validation/test maps: {len(splits.train)}/"
           f"{len(splits.validation)}/{len(splits.test)}")
     print(f"Test states: {state_count}")

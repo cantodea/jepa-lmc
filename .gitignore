@@ -1,6 +1,9 @@
 .venv/
 __pycache__/
 *.pyc
+*.egg-info/
+build/
+dist/
 .ipynb_checkpoints/
 
 outputs/models/
@@ -10,3 +13,4 @@ outputs/figures/
 .DS_Store
 .vscode/
 .idea/
+nuXmv-*/

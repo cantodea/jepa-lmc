@@ -3,7 +3,7 @@ from __future__ import annotations
 import random
 import unittest
 
-from jepa_lmc.checking.ctl import (
+from jepa_lmc.verification.ctl import (
     AF,
     AG,
     AX,
@@ -17,7 +17,7 @@ from jepa_lmc.checking.ctl import (
     Not,
     Or,
 )
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 def make_random_system(seed: int) -> ExplicitTransitionSystem[int, str]:

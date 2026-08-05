@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from jepa_lmc.checking.transition_system import (
+from jepa_lmc.verification.transition_system import (
     ActionT,
     ExplicitTransitionSystem,
     StateT,

@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import unittest
 
-from jepa_lmc.checking.ctl import (
+from jepa_lmc.envs.config import load_yaml, make_gridworld_from_config
+from jepa_lmc.verification.ctl import (
     AF,
     AG,
     EF,
@@ -12,16 +13,13 @@ from jepa_lmc.checking.ctl import (
     CTLModelChecker,
     Not,
 )
-from jepa_lmc.checking.gridworld_adapter import (
+from jepa_lmc.verification.gridworld import (
     gridworld_to_transition_system,
 )
-from jepa_lmc.checking.simple_checker import check_basic_properties
-from jepa_lmc.checking.witness import (
+from jepa_lmc.verification.witness import (
     find_ag_counterexample,
     find_eu_witness,
 )
-from jepa_lmc.envs.factory import make_gridworld_from_config
-from jepa_lmc.utils.config import load_yaml
 
 
 class GridWorldCheckingTests(unittest.TestCase):
@@ -53,17 +51,6 @@ class GridWorldCheckingTests(unittest.TestCase):
                     self.checker.holds(self.env.start, formula),
                     holds,
                 )
-
-    def test_legacy_wrapper_matches_original_results(self) -> None:
-        self.assertEqual(
-            check_basic_properties(self.env, self.env.start),
-            {
-                "EF danger": True,
-                "EF goal": True,
-                "E[!danger U goal]": True,
-                "AG !danger": False,
-            },
-        )
 
     def test_safe_witness_replays_in_real_environment(self) -> None:
         witness = find_eu_witness(

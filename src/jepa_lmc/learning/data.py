@@ -1,20 +1,25 @@
 from __future__ import annotations
 
 from collections.abc import Sequence
+from typing import Protocol
 
 import torch
 from torch import Tensor
 from torch.utils.data import Dataset
 
-from jepa_lmc.benchmarks.random_gridworld import GridWorldSpec
 from jepa_lmc.envs.gridworld import GridWorld, State
-
 
 WALL_CHANNEL = 0
 DANGER_CHANNEL = 1
 GOAL_CHANNEL = 2
 AGENT_CHANNEL = 3
 OBSERVATION_CHANNELS = 4
+
+
+class GridWorldSource(Protocol):
+    """Anything that can construct one GridWorld training environment."""
+
+    def make_env(self) -> GridWorld: ...
 
 
 def gridworld_observation(env: GridWorld, state: State) -> Tensor:
@@ -41,7 +46,7 @@ def gridworld_observation(env: GridWorld, state: State) -> Tensor:
 class GridWorldTransitionDataset(Dataset[dict[str, Tensor]]):
     """All action-labelled transitions from a collection of benchmark maps."""
 
-    def __init__(self, specs: Sequence[GridWorldSpec]) -> None:
+    def __init__(self, specs: Sequence[GridWorldSource]) -> None:
         if not specs:
             raise ValueError("At least one GridWorld specification is required.")
 

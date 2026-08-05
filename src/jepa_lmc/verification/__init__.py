@@ -1,6 +1,6 @@
 """Logic and explicit-state model-checking utilities for JEPA-LMC."""
 
-from jepa_lmc.checking.ctl import (
+from jepa_lmc.verification.ctl import (
     AF,
     AG,
     AX,
@@ -14,11 +14,12 @@ from jepa_lmc.checking.ctl import (
     Not,
     Or,
 )
-from jepa_lmc.checking.transition_system import (
+from jepa_lmc.verification.gridworld import gridworld_to_transition_system
+from jepa_lmc.verification.transition_system import (
     ExplicitTransitionSystem,
     TransitionEdge,
 )
-from jepa_lmc.checking.witness import (
+from jepa_lmc.verification.witness import (
     PathStep,
     PathWitness,
     find_ag_counterexample,
@@ -46,4 +47,5 @@ __all__ = [
     "find_ag_counterexample",
     "find_ef_witness",
     "find_eu_witness",
+    "gridworld_to_transition_system",
 ]

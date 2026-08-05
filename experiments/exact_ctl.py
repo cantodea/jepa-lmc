@@ -2,7 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from jepa_lmc.checking.ctl import (
+from jepa_lmc.envs.config import load_yaml, make_gridworld_from_config
+from jepa_lmc.verification.ctl import (
     AF,
     AG,
     EF,
@@ -12,15 +13,13 @@ from jepa_lmc.checking.ctl import (
     CTLModelChecker,
     Not,
 )
-from jepa_lmc.checking.gridworld_adapter import (
+from jepa_lmc.verification.gridworld import (
     gridworld_to_transition_system,
 )
-from jepa_lmc.checking.witness import (
+from jepa_lmc.verification.witness import (
     find_ag_counterexample,
     find_eu_witness,
 )
-from jepa_lmc.envs.factory import make_gridworld_from_config
-from jepa_lmc.utils.config import load_yaml
 
 
 def main() -> None:

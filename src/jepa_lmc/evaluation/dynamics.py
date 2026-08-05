@@ -7,11 +7,11 @@ from dataclasses import dataclass
 import torch
 from torch import Tensor
 
-from jepa_lmc.checking.gridworld_adapter import gridworld_to_transition_system
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-from jepa_lmc.data.jepa_transitions import gridworld_observation
 from jepa_lmc.envs.gridworld import GridWorld, State
-from jepa_lmc.models.action_jepa import ActionJEPA
+from jepa_lmc.learning.data import gridworld_observation
+from jepa_lmc.learning.model import ActionJEPA
+from jepa_lmc.verification.gridworld import gridworld_to_transition_system
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 @dataclass(frozen=True)

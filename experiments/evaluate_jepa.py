@@ -7,9 +7,7 @@ import torch
 from torch.utils.data import DataLoader
 
 from jepa_lmc.benchmarks.random_gridworld import make_pilot_benchmark_splits
-from jepa_lmc.checking.gridworld_adapter import gridworld_to_transition_system
-from jepa_lmc.data.jepa_transitions import GridWorldTransitionDataset
-from jepa_lmc.evaluation.jepa_dynamics import (
+from jepa_lmc.evaluation.dynamics import (
     RolloutReport,
     TransitionRetrievalReport,
     aggregate_rollout_reports,
@@ -18,16 +16,18 @@ from jepa_lmc.evaluation.jepa_dynamics import (
     evaluate_open_loop_rollouts,
     transition_system_from_retrievals,
 )
-from jepa_lmc.evaluation.verification_metrics import (
+from jepa_lmc.evaluation.metrics import (
     VerificationReport,
     aggregate_reports,
     evaluate_ctl_suite_for_state_pairs,
 )
-from jepa_lmc.models.action_jepa import ActionJEPA
-from jepa_lmc.training.action_jepa import (
+from jepa_lmc.learning.data import GridWorldTransitionDataset
+from jepa_lmc.learning.model import ActionJEPA
+from jepa_lmc.learning.training import (
     make_action_jepa_optimizer,
     train_action_jepa_epoch,
 )
+from jepa_lmc.verification.gridworld import gridworld_to_transition_system
 
 
 def parse_args() -> argparse.Namespace:
@@ -139,7 +139,7 @@ def main() -> None:
         learning_rate=args.learning_rate,
     )
 
-    print("=== Step 04B: JEPA transition and CTL evaluation ===")
+    print("=== JEPA transition and CTL evaluation ===")
     print(f"Training maps: {len(train_specs)}")
     print(f"Held-out test maps: {len(test_specs)}")
     print(f"Training transitions: {len(dataset)}")
@@ -233,7 +233,7 @@ def main() -> None:
         raise AssertionError("The learned predictor did not depend enough on action.")
     if jepa_ctl.agreement <= ablated_ctl.agreement + 0.3:
         raise AssertionError("Action conditioning did not improve CTL fidelity enough.")
-    print("\nStep 04B evaluation passed its pilot thresholds.")
+    print("\nJEPA evaluation passed its pilot thresholds.")
 
 
 if __name__ == "__main__":

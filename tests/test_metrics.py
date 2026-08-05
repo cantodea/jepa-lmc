@@ -4,12 +4,12 @@ import unittest
 
 from jepa_lmc.benchmarks.ctl_suite import default_ctl_suite
 from jepa_lmc.benchmarks.perturbations import block_entries_to_proposition
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-from jepa_lmc.evaluation.verification_metrics import (
+from jepa_lmc.evaluation.metrics import (
     aggregate_reports,
     evaluate_ctl_suite,
     evaluate_ctl_suite_for_state_pairs,
 )
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 def make_safety_system() -> ExplicitTransitionSystem[str, str]:

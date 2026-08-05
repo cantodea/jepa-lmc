@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Callable, Generic
+from typing import Generic
 
-from jepa_lmc.checking.transition_system import (
+from jepa_lmc.verification.transition_system import (
     ActionT,
     ExplicitTransitionSystem,
     StateT,
