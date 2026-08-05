@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+from collections.abc import Hashable, Iterable, Mapping
 from dataclasses import dataclass
-from typing import Generic, Hashable, Iterable, Mapping, TypeVar
-
+from typing import Generic, TypeVar
 
 StateT = TypeVar("StateT", bound=Hashable)
 ActionT = TypeVar("ActionT", bound=Hashable)

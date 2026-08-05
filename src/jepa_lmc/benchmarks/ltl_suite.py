@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from jepa_lmc.checking.ltl import (
+from jepa_lmc.verification.ltl import (
     Atom,
     Eventually,
     Formula,

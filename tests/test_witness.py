@@ -2,13 +2,12 @@ from __future__ import annotations
 
 import unittest
 
-from jepa_lmc.checking.ctl import Atom, CTLModelChecker
-from jepa_lmc.checking.witness import (
+from jepa_lmc.verification.ctl import Atom, CTLModelChecker
+from jepa_lmc.verification.witness import (
     find_ag_counterexample,
     find_ef_witness,
     find_eu_witness,
 )
-
 from tests.test_ctl import make_branching_system
 
 

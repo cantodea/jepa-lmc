@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
 from jepa_lmc.envs.gridworld import GridWorld, State
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 def gridworld_to_transition_system(

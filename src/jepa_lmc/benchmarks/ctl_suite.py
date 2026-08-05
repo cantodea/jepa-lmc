@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from jepa_lmc.checking.ctl import AF, AG, EF, EG, EU, Atom, Formula, Not
+from jepa_lmc.verification.ctl import AF, AG, EF, EG, EU, Atom, Formula, Not
 
 
 @dataclass(frozen=True)

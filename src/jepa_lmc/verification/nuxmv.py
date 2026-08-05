@@ -10,8 +10,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Generic
 
-from jepa_lmc.checking import ltl
-from jepa_lmc.checking.ctl import (
+from jepa_lmc.verification import ltl
+from jepa_lmc.verification.ctl import (
     AF,
     AG,
     AX,
@@ -26,7 +26,7 @@ from jepa_lmc.checking.ctl import (
     Not,
     Or,
 )
-from jepa_lmc.checking.transition_system import (
+from jepa_lmc.verification.transition_system import (
     ActionT,
     ExplicitTransitionSystem,
     StateT,

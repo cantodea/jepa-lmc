@@ -5,7 +5,7 @@ import unittest
 import torch
 
 from jepa_lmc.envs.gridworld import GridWorld
-from jepa_lmc.evaluation.jepa_dynamics import (
+from jepa_lmc.evaluation.dynamics import (
     RolloutReport,
     RolloutRetrieval,
     TransitionRetrieval,
@@ -14,7 +14,7 @@ from jepa_lmc.evaluation.jepa_dynamics import (
     evaluate_open_loop_rollouts,
     transition_system_from_retrievals,
 )
-from jepa_lmc.models.action_jepa import ActionJEPA
+from jepa_lmc.learning.model import ActionJEPA
 
 
 def make_env() -> GridWorld:

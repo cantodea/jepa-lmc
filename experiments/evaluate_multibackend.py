@@ -9,26 +9,26 @@ from torch.utils.data import DataLoader
 
 from jepa_lmc.benchmarks.ltl_suite import default_ltl_suite
 from jepa_lmc.benchmarks.random_gridworld import make_pilot_benchmark_splits
-from jepa_lmc.checking.gridworld_adapter import gridworld_to_transition_system
-from jepa_lmc.data.jepa_transitions import GridWorldTransitionDataset
-from jepa_lmc.evaluation.jepa_dynamics import (
+from jepa_lmc.evaluation.dynamics import (
     TransitionRetrievalReport,
     aggregate_transition_reports,
     evaluate_gridworld_transitions,
     transition_system_from_retrievals,
 )
-from jepa_lmc.evaluation.verification_metrics import (
+from jepa_lmc.evaluation.metrics import (
     VerificationReport,
     aggregate_reports,
     evaluate_ctl_suite_for_state_pairs,
     evaluate_ltl_suite_for_state_pairs,
 )
-from jepa_lmc.models.action_jepa import ActionJEPA
-from jepa_lmc.training.action_jepa import (
+from jepa_lmc.learning.data import GridWorldTransitionDataset
+from jepa_lmc.learning.model import ActionJEPA
+from jepa_lmc.learning.training import (
     make_action_jepa_optimizer,
     train_action_jepa_epoch,
 )
-from jepa_lmc.validation.nusmv import find_nusmv_executable
+from jepa_lmc.verification.gridworld import gridworld_to_transition_system
+from jepa_lmc.verification.nuxmv import find_nusmv_executable
 
 
 def parse_args() -> argparse.Namespace:
@@ -81,7 +81,7 @@ def main() -> None:
     executable = find_nusmv_executable(args.executable)
     if executable is None:
         raise FileNotFoundError(
-            "Step 05 requires nuXmv/NuSMV for the independent LTL backend. "
+            "Multi-backend evaluation requires nuXmv/NuSMV for LTL. "
             "Set NUXMV_BINARY or pass --executable PATH."
         )
 
@@ -113,7 +113,7 @@ def main() -> None:
         learning_rate=args.learning_rate,
     )
 
-    print("=== Step 05A: train once, verify with CTL and LTL ===")
+    print("=== Train once, verify with CTL and LTL ===")
     print(f"Training maps: {len(train_specs)}")
     print(f"Held-out test maps: {len(test_specs)}")
     print(f"Training transitions: {len(dataset)}")

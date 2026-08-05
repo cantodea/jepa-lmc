@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List, Set, Tuple
+from typing import ClassVar
 
-
-State = Tuple[int, int]
+State = tuple[int, int]
 
 
 @dataclass(frozen=True)
@@ -15,14 +14,14 @@ class Transition:
 
 
 class GridWorld:
-    ACTIONS: Dict[int, Tuple[int, int]] = {
+    ACTIONS: ClassVar[dict[int, tuple[int, int]]] = {
         0: (-1, 0),
         1: (1, 0),
         2: (0, -1),
         3: (0, 1),
     }
 
-    ACTION_NAMES: Dict[int, str] = {
+    ACTION_NAMES: ClassVar[dict[int, str]] = {
         0: "up",
         1: "down",
         2: "left",
@@ -35,8 +34,8 @@ class GridWorld:
         height: int,
         start: State,
         goal: State,
-        walls: Set[State],
-        dangers: Set[State],
+        walls: set[State],
+        dangers: set[State],
     ) -> None:
         self.width = width
         self.height = height
@@ -81,8 +80,8 @@ class GridWorld:
     def is_valid_state(self, state: State) -> bool:
         return self.in_bounds(state) and not self.is_wall(state)
 
-    def all_states(self) -> List[State]:
-        states: List[State] = []
+    def all_states(self) -> list[State]:
+        states: list[State] = []
 
         for row in range(self.height):
             for col in range(self.width):
@@ -108,8 +107,8 @@ class GridWorld:
 
         return next_state
 
-    def all_transitions(self) -> List[Transition]:
-        transitions: List[Transition] = []
+    def all_transitions(self) -> list[Transition]:
+        transitions: list[Transition] = []
 
         for s in self.all_states():
             for a in self.ACTIONS:

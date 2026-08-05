@@ -4,8 +4,8 @@ from collections import deque
 from dataclasses import dataclass
 from typing import Generic
 
-from jepa_lmc.checking.ctl import CTLModelChecker, Formula
-from jepa_lmc.checking.transition_system import (
+from jepa_lmc.verification.ctl import CTLModelChecker, Formula
+from jepa_lmc.verification.transition_system import (
     ActionT,
     ExplicitTransitionSystem,
     StateT,

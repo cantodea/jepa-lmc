@@ -7,9 +7,9 @@ from typing import TypeVar
 
 from jepa_lmc.benchmarks.ctl_suite import CTLProperty, default_ctl_suite
 from jepa_lmc.benchmarks.ltl_suite import LTLProperty, default_ltl_suite
-from jepa_lmc.checking.ctl import CTLModelChecker
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-from jepa_lmc.validation.nusmv import LTLQuery, evaluate_ltl_queries_with_nusmv
+from jepa_lmc.verification.ctl import CTLModelChecker
+from jepa_lmc.verification.nuxmv import LTLQuery, evaluate_ltl_queries_with_nusmv
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 GroundStateT = TypeVar("GroundStateT", bound=Hashable)
 GroundActionT = TypeVar("GroundActionT", bound=Hashable)

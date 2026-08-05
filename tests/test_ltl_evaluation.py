@@ -4,7 +4,10 @@ import unittest
 from unittest.mock import patch
 
 from jepa_lmc.benchmarks.ltl_suite import LTLProperty, default_ltl_suite
-from jepa_lmc.checking.ltl import (
+from jepa_lmc.evaluation.metrics import (
+    evaluate_ltl_suite_for_state_pairs,
+)
+from jepa_lmc.verification.ltl import (
     Atom,
     Eventually,
     Globally,
@@ -13,11 +16,8 @@ from jepa_lmc.checking.ltl import (
     Until,
     atoms,
 )
-from jepa_lmc.checking.transition_system import ExplicitTransitionSystem
-from jepa_lmc.evaluation.verification_metrics import (
-    evaluate_ltl_suite_for_state_pairs,
-)
-from jepa_lmc.validation.nusmv import NuSMVLTLReport
+from jepa_lmc.verification.nuxmv import NuSMVLTLReport
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 def make_system(target: str) -> ExplicitTransitionSystem[str, str]:
@@ -70,7 +70,7 @@ class LTLFormulaTests(unittest.TestCase):
 
 
 class LTLEvaluationTests(unittest.TestCase):
-    @patch("jepa_lmc.evaluation.verification_metrics.evaluate_ltl_queries_with_nusmv")
+    @patch("jepa_lmc.evaluation.metrics.evaluate_ltl_queries_with_nusmv")
     def test_external_verdicts_use_shared_property_scorecard(self, mock_run) -> None:
         ground_truth = make_system("danger")
         learned = make_system("goal")
