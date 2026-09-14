@@ -59,6 +59,19 @@ The main experiment scripts are under `experiments/`.
 
 `evaluate_multibackend.py` evaluates the same learned transition system with both CTL and LTL backends.
 
+`oracle_latent_radius.py` adds a frozen-model diagnostic: measure latent prediction
+errors, form successor sets at the maximum/95th/99th-percentile radii, and compare
+coverage, set size, singleton rate and CTL precision/soundness. It audits both
+action-labelled and ordinary transition inclusion without changing JEPA.
+
+```powershell
+& .\.venv\Scripts\python.exe experiments\oracle_latent_radius.py
+```
+
+See the [protocol and Windows commands](docs/oracle_latent_radius.md) and
+[recorded pilot results](docs/oracle_latent_radius_pilot.md). Test-derived radii
+are oracle diagnostics, not guaranteed error bounds for unseen maps.
+
 ## Current results
 
 In the current deterministic GridWorld pilot, the action-conditioned model reached approximately 94% Top-1 next-state accuracy and 95% CTL agreement on held-out maps.

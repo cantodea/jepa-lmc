@@ -8,6 +8,7 @@ dist/
 
 outputs/models/
 outputs/figures/
+outputs/latent_radius/
 *.log
 
 .DS_Store
