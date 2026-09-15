@@ -10,6 +10,7 @@ outputs/models/
 outputs/figures/
 outputs/latent_radius/
 outputs/refinement/
+outputs/behavioral_relations/
 *.log
 
 .DS_Store
