@@ -142,5 +142,5 @@ The related [2024 predecessor, Proposition 1](https://arxiv.org/html/2402.11739v
 uses a guaranteed model discrepancy and a geometric margin for transition
 correspondence. The relevant discrepancy here is `d(g(s,a),h(T(s,a)))` in target
 latent space. A physical-state error bound cannot simply be substituted for it.
-The target reference remains [Yang, Wang and Xiang (2025)](https://doi.org/10.1016/j.neunet.2025.107261);
+The target reference remains [Yang et al. (2025)](https://doi.org/10.1016/j.neunet.2025.107261);
 the theorem above is stated and proved directly for this repository's construction.
