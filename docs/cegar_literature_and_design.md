@@ -10,6 +10,9 @@ The branch now studies whether a frozen JEPA can reduce those queries. The
 uniform-radius result remains a historical baseline; its certification route
 remains stopped. No JEPA architecture or training change is needed for this pivot.
 
+The fixed experiment has now been run: see the [results and limitations](cegar_results.md).
+The design and screening rule below were written before that run.
+
 ## What the primary literature actually supports
 
 | Source | Relevant result | Boundary for this project |

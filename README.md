@@ -1,8 +1,18 @@
 # JEPA-LMC
 
-JEPA-LMC is an experimental project for learning finite-state transition dynamics with an action-conditioned JEPA model and using the learned model for formal verification.
+JEPA-LMC studies whether an action-conditioned JEPA model can reduce the concrete
+checks needed for finite-state formal verification.
 
-The current implementation uses deterministic GridWorld environments. JEPA is trained from state-action-next-state observations and predicts the next-state representation conditioned on an action. The predicted transitions are then reconstructed as an explicit transition system.
+The current branch focuses on **property-directed successor refinement** in
+deterministic GridWorld. Frozen JEPA predictions rank candidate paths; counted
+exact simulator queries refine the candidate transition relation. Correctness
+comes from preserving lower/upper relations around the true dynamics. A query
+budget can return `unknown`. The JEPA architecture and training remain unchanged.
+
+See the [CEGAR literature, assumptions and proof](docs/cegar_literature_and_design.md)
+and [fixed experiment results](docs/cegar_results.md). On the three-checkpoint
+screen, guidance saves 51–52% of successor queries versus direct BFS. The savings
+come from finding concrete paths sooner; path-absence proofs show no query gain.
 
 At the moment, the project supports:
 
@@ -12,14 +22,19 @@ At the moment, the project supports:
 - action-conditioned JEPA training;
 - reconstruction of learned transition systems;
 - comparison between exact and learned verification results.
+- oracle-backed local successor refinement for safety and finite reachability;
+- uniform, JEPA-ranked, shuffled-ranking and direct BFS query comparisons.
 
-The current learned model has the form
+The earlier learned-transition reconstruction experiments use
 
 $$
 \hat{M} = (S, I, \hat{R}, L),
 $$
 
 where the state space, initial state and atomic propositions are taken from the environment, while the transition relation $\hat{R}$ is predicted by the learned dynamics.
+These experiments, including the stopped uniform-radius route, remain available
+as historical baselines. The refinement loop instead starts with all successors
+possible and only removes candidates after a trusted concrete query.
 
 ## Setup
 
@@ -46,6 +61,20 @@ Run the tests with:
 ## Experiments
 
 The main experiment scripts are under `experiments/`.
+
+The current experiment reuses the three frozen checkpoints from the
+[checkpoint setup commands](docs/latent_radius_stress_results.md#reproduce-and-inspect):
+
+```powershell
+& .\.venv\Scripts\python.exe experiments\cegar_refinement.py --checkpoints outputs/latent_radius/oracle/model.pt outputs/latent_radius/stress_training/seed_20260805/model.pt outputs/latent_radius/stress_training/seed_20260806/model.pt --output-dir outputs/refinement/cegar
+& .\.venv\Scripts\python.exe experiments\audit_cegar_refinement.py --run-dir outputs/refinement/cegar --checkpoints outputs/latent_radius/oracle/model.pt outputs/latent_radius/stress_training/seed_20260805/model.pt outputs/latent_radius/stress_training/seed_20260806/model.pt
+```
+
+The [fixed protocol](configs/cegar_protocol.json) compares query cost for
+`AG !danger`, `EF goal`, and `E[!danger U goal]`. The second command replays every
+budget and checks the exported results. Use a fresh directory for a new run.
+
+Earlier exact-checking and learned-graph experiments:
 
 ```powershell
 & .\.venv\Scripts\python.exe experiments\exact_ctl.py
@@ -81,7 +110,20 @@ and [recorded results with reproducible commands](docs/latent_radius_stress_resu
 
 ## Current results
 
-The three-seed topology screen returned **STOP for the current Yang-style uniform
+The CEGAR query-efficiency screen returned **support for further oracle-backed
+study** on all three seeds. Across 864 full-budget tasks, every verdict matches
+exact CTL truth and every inclusion audit passes. JEPA needs 34.06–34.93 queries
+per task, versus uniform CEGAR's 71.14 and direct BFS's 71.33. At 25% of the full
+transition-table budget, it resolves 55.56% of tasks versus 11.11% for both
+controls. Shuffling the learned rankings removes most of the gain.
+
+The gain is limited to finding real witnesses and safety counterexamples.
+Unreachability/safety proofs require the same queries as the controls, and direct
+BFS is faster on this cheap simulator. Known finite states, exact labels and a
+trusted deterministic successor oracle are assumptions, not outputs of JEPA.
+The [results report](docs/cegar_results.md) records these limits and next controls.
+
+The earlier three-seed topology screen returned **STOP for the current Yang-style uniform
 latent-radius route**. All seeds have 100% oracle successor coverage and zero
 one-sided CTL violations; their non-immediate primary balanced scores are 77.50%,
 65.42% and 100%, against the all-states control's 50%. Seed 20260805 fails the
@@ -94,4 +136,5 @@ In the current deterministic GridWorld pilot, the action-conditioned model reach
 
 These experiments are still preliminary. The current GridWorld transition dynamics are relatively simple, and the learned model does not provide a formal equivalence or bisimulation guarantee.
 
-The next stage of the project is to test learned dynamics across more varied system instances and compare JEPA with simpler neural transition models.
+The next stage is to test query savings with more expensive concrete checks and
+stronger guided-search baselines, including simpler learned transition models.
