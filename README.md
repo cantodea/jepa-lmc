@@ -72,7 +72,23 @@ See the [protocol and Windows commands](docs/oracle_latent_radius.md) and
 [recorded pilot results](docs/oracle_latent_radius_pilot.md). Test-derived radii
 are oracle diagnostics, not guaranteed error bounds for unseen maps.
 
+`stress_latent_radius.py` applies a fixed 24-map topology screen to three frozen
+checkpoints. It excludes source-label base cases, compares exact/all-states
+controls, and applies a prespecified stopping rule. See the
+[protocol](docs/latent_radius_stress_protocol.md),
+[conditional inclusion/CTL theorem](docs/latent_radius_conditional_theorem.md),
+and [recorded results with reproducible commands](docs/latent_radius_stress_results.md).
+
 ## Current results
+
+The three-seed topology screen returned **STOP for the current Yang-style uniform
+latent-radius route**. All seeds have 100% oracle successor coverage and zero
+one-sided CTL violations; their non-immediate primary balanced scores are 77.50%,
+65.42% and 100%, against the all-states control's 50%. Seed 20260805 fails the
+fixed family-consistency requirement (3/8 sealed-region and 1/8 dangerous-gate
+maps recover a proof; at least 4/8 in each was required). This records useful but
+insufficiently stable proving power under that screen, and stops further
+uniform-radius certification work for this construction.
 
 In the current deterministic GridWorld pilot, the action-conditioned model reached approximately 94% Top-1 next-state accuracy and 95% CTL agreement on held-out maps.
 

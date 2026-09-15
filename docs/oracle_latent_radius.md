@@ -4,6 +4,12 @@ This experiment asks whether the **existing frozen JEPA** can produce small
 successor sets that contain the true successor, and whether those sets retain
 useful CTL information. It changes no encoder, predictor, loss or training code.
 
+The follow-up [three-seed topology screen](latent_radius_stress_results.md) is
+complete. Its prespecified decision is **STOP for the current uniform-radius
+route**, because one seed fails consistency across the required topology families.
+The [conditional theorem](latent_radius_conditional_theorem.md) states precisely
+what inclusion and one-sided CTL transfer follow when a domain-wide bound holds.
+
 ## Run on Windows
 
 From the repository root, after the normal editable installation:
@@ -152,7 +158,7 @@ audited inclusion, or if an oracle maximum misses a true action successor.
 
 ## Connection to Yang 2025
 
-The target reference is Yang, Wang and Xiang, *Neural transition system
+The target reference is Yang et al., *Neural transition system
 abstraction for neural network dynamical system models and its application to
 Computational Tree Logic verification*, Neural Networks 186, 107261,
 [DOI](https://doi.org/10.1016/j.neunet.2025.107261).

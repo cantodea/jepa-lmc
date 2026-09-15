@@ -1,0 +1,1586 @@
+{
+  "decision": {
+    "status": "stop",
+    "all_seeds_pass": false,
+    "failed_seeds": [
+      20260805
+    ],
+    "scope": "Current fixed-architecture JEPA and one uniform latent radius per model; deciding whether to invest in Yang-style error certification",
+    "failure_action": "Stop this Yang-style uniform-radius research route for the current JEPA; retain results as a negative experiment. Do not tune this suite or add certification machinery."
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "threads": 4
+  },
+  "protocol_sha256": "78a1e765aed5a635be91b3e1d19d3d3b742763fbc7e57abf2ffc77b6606237b5",
+  "source_revision": "61c58ba33f0800213798cf50e26522eca723ed11",
+  "matching_published_source_commit": "2ff70f945f11f90e9d28dc6033f9cb83d949ce5e",
+  "provenance_note": "The recorded local build 61c58ba and the matching published commit have identical source trees; GitHub connector publication assigns different commit IDs.",
+  "validation": {
+    "unittest_cases": 80,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2,
+    "skip_reason": "Existing external nuXmv cases; executable absent",
+    "execution_platform": "Linux CPU; Windows commands documented but not executed"
+  },
+  "audit": {
+    "errors": 8928,
+    "candidates": 26784,
+    "ctl_rows": 80352,
+    "independent_bfs_truth_checks": 66960,
+    "status": "passed",
+    "checks": [
+      "Unique and complete records",
+      "Source/export SHA-256",
+      "Linear quantiles recomputed from raw errors",
+      "Literal successor membership and radius nesting",
+      "Coverage, mean size, singleton fractions",
+      "Relation inclusion from exported graphs",
+      "Primary CTL truth using independent BFS",
+      "Nontrivial balanced scores and audited proof counts"
+    ]
+  },
+  "scope": {
+    "models": 3,
+    "maps_per_model": 24,
+    "states_per_model": 744,
+    "pairs_per_model": 2976,
+    "primary_nonimmediate_queries_per_variant": 2136,
+    "exact_primary_proof_opportunities": 480
+  },
+  "seeds": [
+    {
+      "seed": 20260804,
+      "radii": {
+        "epsilon_max": 4.763255292832166,
+        "epsilon_95": 2.9712922674546434,
+        "epsilon_99": 4.177051861598034
+      },
+      "gate": {
+        "passes": true,
+        "checks": {
+          "all_maps_evaluated": true,
+          "full_action_coverage": true,
+          "full_relation_inclusion": true,
+          "zero_one_sided_violations": true,
+          "balanced_gain": true,
+          "opportunity_recall": true,
+          "family_consistency": true
+        },
+        "failed_checks": [],
+        "balanced_gain_over_all_states": 0.275,
+        "nontrivial_opportunity_recall": 0.55,
+        "recovered_maps_by_required_family": {
+          "sealed_region": 5,
+          "danger_gate": 5
+        }
+      },
+      "variants": {
+        "top1": {
+          "successor_coverage": 0.9509408602150538,
+          "mean_candidate_size": 1.0,
+          "singleton_fraction": 1.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 2,
+          "relation_inclusion_maps": 2,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.9795114263199369,
+            "agreement": 0.964605734767025,
+            "one_sided_claims": 746,
+            "one_sided_violations": 116,
+            "empirical_one_sided_soundness": 0.8445040214477212
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.9358187134502923,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 90,
+            "opportunity_recall": 0.1875
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 114,
+              "true_negative": 584,
+              "false_positive": 16,
+              "false_negative": 6,
+              "positive_precision": 0.8769230769230769,
+              "balanced_accuracy": 0.9616666666666667,
+              "one_sided_claims": 130,
+              "one_sided_violations": 16
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 551,
+              "true_negative": 114,
+              "false_positive": 6,
+              "false_negative": 49,
+              "positive_precision": 0.9892280071813285,
+              "balanced_accuracy": 0.9341666666666666,
+              "one_sided_claims": 163,
+              "one_sided_violations": 49
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 421,
+              "true_negative": 216,
+              "false_positive": 24,
+              "false_negative": 35,
+              "positive_precision": 0.946067415730337,
+              "balanced_accuracy": 0.9116228070175438,
+              "one_sided_claims": 251,
+              "one_sided_violations": 35
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 90,
+              "opportunity_recall": 0.25
+            }
+          }
+        },
+        "epsilon_95": {
+          "successor_coverage": 0.9499327956989247,
+          "mean_candidate_size": 1.2258064516129032,
+          "singleton_fraction": 0.6774193548387096,
+          "empty_fraction": 0.050067204301075266,
+          "action_inclusion_maps": 0,
+          "relation_inclusion_maps": 22,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 426,
+            "opportunity_recall": 0.8875
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 306,
+              "opportunity_recall": 0.85
+            }
+          }
+        },
+        "epsilon_99": {
+          "successor_coverage": 0.9899193548387096,
+          "mean_candidate_size": 2.381048387096774,
+          "singleton_fraction": 0.1569220430107527,
+          "empty_fraction": 0.006384408602150538,
+          "action_inclusion_maps": 10,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.9727891156462585,
+            "agreement": 0.9798387096774194,
+            "one_sided_claims": 582,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.9250000000000002,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 408,
+            "opportunity_recall": 0.85
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 102,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 18,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.925,
+              "one_sided_claims": 102,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 102,
+              "false_positive": 18,
+              "false_negative": 0,
+              "positive_precision": 0.970873786407767,
+              "balanced_accuracy": 0.925,
+              "one_sided_claims": 102,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 204,
+              "false_positive": 36,
+              "false_negative": 0,
+              "positive_precision": 0.926829268292683,
+              "balanced_accuracy": 0.925,
+              "one_sided_claims": 204,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 102,
+              "opportunity_recall": 0.85
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 306,
+              "opportunity_recall": 0.85
+            }
+          }
+        },
+        "epsilon_max": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 3.0396505376344085,
+          "singleton_fraction": 0.08702956989247312,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.9215686274509803,
+            "agreement": 0.9395161290322581,
+            "one_sided_claims": 402,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.775,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 264,
+            "opportunity_recall": 0.55
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 66,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 54,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.775,
+              "one_sided_claims": 66,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 66,
+              "false_positive": 54,
+              "false_negative": 0,
+              "positive_precision": 0.9174311926605505,
+              "balanced_accuracy": 0.775,
+              "one_sided_claims": 66,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 132,
+              "false_positive": 108,
+              "false_negative": 0,
+              "positive_precision": 0.8085106382978723,
+              "balanced_accuracy": 0.775,
+              "one_sided_claims": 132,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 66,
+              "opportunity_recall": 0.55
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 198,
+              "opportunity_recall": 0.55
+            }
+          }
+        },
+        "all_states": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 31.021505376344088,
+          "singleton_fraction": 0.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.8373983739837398,
+            "agreement": 0.8655913978494624,
+            "one_sided_claims": 72,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.5,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 0,
+            "opportunity_recall": 0.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 0,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 120,
+              "positive_precision": null,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 0,
+              "false_positive": 120,
+              "false_negative": 0,
+              "positive_precision": 0.8333333333333334,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 0,
+              "false_positive": 240,
+              "false_negative": 0,
+              "positive_precision": 0.6551724137931034,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            }
+          }
+        },
+        "exact_graph": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 1.0,
+          "singleton_fraction": 1.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 480,
+            "opportunity_recall": 1.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 360,
+              "opportunity_recall": 1.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 20260805,
+      "radii": {
+        "epsilon_max": 5.291538633772491,
+        "epsilon_95": 3.10966478036249,
+        "epsilon_99": 3.89457685609841
+      },
+      "gate": {
+        "passes": false,
+        "checks": {
+          "all_maps_evaluated": true,
+          "full_action_coverage": true,
+          "full_relation_inclusion": true,
+          "zero_one_sided_violations": true,
+          "balanced_gain": true,
+          "opportunity_recall": true,
+          "family_consistency": false
+        },
+        "failed_checks": [
+          "family_consistency"
+        ],
+        "balanced_gain_over_all_states": 0.15416666666666667,
+        "nontrivial_opportunity_recall": 0.2875,
+        "recovered_maps_by_required_family": {
+          "sealed_region": 3,
+          "danger_gate": 1
+        }
+      },
+      "variants": {
+        "top1": {
+          "successor_coverage": 0.9206989247311828,
+          "mean_candidate_size": 1.0,
+          "singleton_fraction": 1.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 0,
+          "relation_inclusion_maps": 0,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.9499329459097005,
+            "agreement": 0.8702956989247311,
+            "one_sided_claims": 1119,
+            "one_sided_violations": 513,
+            "empirical_one_sided_soundness": 0.5415549597855228
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.8104532163742689,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 0,
+            "opportunity_recall": 0.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 102,
+              "true_negative": 536,
+              "false_positive": 64,
+              "false_negative": 18,
+              "positive_precision": 0.6144578313253012,
+              "balanced_accuracy": 0.8716666666666666,
+              "one_sided_claims": 166,
+              "one_sided_violations": 64
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 384,
+              "true_negative": 114,
+              "false_positive": 6,
+              "false_negative": 216,
+              "positive_precision": 0.9846153846153847,
+              "balanced_accuracy": 0.7949999999999999,
+              "one_sided_claims": 330,
+              "one_sided_violations": 216
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 287,
+              "true_negative": 216,
+              "false_positive": 24,
+              "false_negative": 169,
+              "positive_precision": 0.9228295819935691,
+              "balanced_accuracy": 0.7646929824561404,
+              "one_sided_claims": 385,
+              "one_sided_violations": 169
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            }
+          }
+        },
+        "epsilon_95": {
+          "successor_coverage": 0.9499327956989247,
+          "mean_candidate_size": 1.3044354838709677,
+          "singleton_fraction": 0.6071908602150538,
+          "empty_fraction": 0.04872311827956989,
+          "action_inclusion_maps": 0,
+          "relation_inclusion_maps": 17,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 0.9959677419354839,
+            "one_sided_claims": 690,
+            "one_sided_violations": 18,
+            "empirical_one_sided_soundness": 0.9739130434782609
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.9934210526315789,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 324,
+            "opportunity_recall": 0.675
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 438,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 18,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.9802631578947368,
+              "one_sided_claims": 258,
+              "one_sided_violations": 18
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 90,
+              "opportunity_recall": 0.75
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 234,
+              "opportunity_recall": 0.65
+            }
+          }
+        },
+        "epsilon_99": {
+          "successor_coverage": 0.9899193548387096,
+          "mean_candidate_size": 2.1031586021505375,
+          "singleton_fraction": 0.22815860215053763,
+          "empty_fraction": 0.007056451612903226,
+          "action_inclusion_maps": 14,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.9727891156462585,
+            "agreement": 0.9798387096774194,
+            "one_sided_claims": 582,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.9250000000000002,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 408,
+            "opportunity_recall": 0.85
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 102,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 18,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.925,
+              "one_sided_claims": 102,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 102,
+              "false_positive": 18,
+              "false_negative": 0,
+              "positive_precision": 0.970873786407767,
+              "balanced_accuracy": 0.925,
+              "one_sided_claims": 102,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 204,
+              "false_positive": 36,
+              "false_negative": 0,
+              "positive_precision": 0.926829268292683,
+              "balanced_accuracy": 0.925,
+              "one_sided_claims": 204,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 102,
+              "opportunity_recall": 0.85
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 306,
+              "opportunity_recall": 0.85
+            }
+          }
+        },
+        "epsilon_max": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 4.021505376344086,
+          "singleton_fraction": 0.0198252688172043,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.8802521008403361,
+            "agreement": 0.9059139784946236,
+            "one_sided_claims": 252,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.6541666666666667,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 138,
+            "opportunity_recall": 0.2875
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 42,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 78,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.675,
+              "one_sided_claims": 42,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 42,
+              "false_positive": 78,
+              "false_negative": 0,
+              "positive_precision": 0.8849557522123894,
+              "balanced_accuracy": 0.675,
+              "one_sided_claims": 42,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 54,
+              "false_positive": 186,
+              "false_negative": 0,
+              "positive_precision": 0.7102803738317757,
+              "balanced_accuracy": 0.6125,
+              "one_sided_claims": 54,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 12,
+              "opportunity_recall": 0.1
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 126,
+              "opportunity_recall": 0.35
+            }
+          }
+        },
+        "all_states": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 31.021505376344088,
+          "singleton_fraction": 0.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.8373983739837398,
+            "agreement": 0.8655913978494624,
+            "one_sided_claims": 72,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.5,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 0,
+            "opportunity_recall": 0.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 0,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 120,
+              "positive_precision": null,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 0,
+              "false_positive": 120,
+              "false_negative": 0,
+              "positive_precision": 0.8333333333333334,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 0,
+              "false_positive": 240,
+              "false_negative": 0,
+              "positive_precision": 0.6551724137931034,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            }
+          }
+        },
+        "exact_graph": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 1.0,
+          "singleton_fraction": 1.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 480,
+            "opportunity_recall": 1.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 360,
+              "opportunity_recall": 1.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 20260806,
+      "radii": {
+        "epsilon_max": 3.9781821705368205,
+        "epsilon_95": 3.102031201433813,
+        "epsilon_99": 3.6156737416814706
+      },
+      "gate": {
+        "passes": true,
+        "checks": {
+          "all_maps_evaluated": true,
+          "full_action_coverage": true,
+          "full_relation_inclusion": true,
+          "zero_one_sided_violations": true,
+          "balanced_gain": true,
+          "opportunity_recall": true,
+          "family_consistency": true
+        },
+        "failed_checks": [],
+        "balanced_gain_over_all_states": 0.5,
+        "nontrivial_opportunity_recall": 1.0,
+        "recovered_maps_by_required_family": {
+          "sealed_region": 8,
+          "danger_gate": 8
+        }
+      },
+      "variants": {
+        "top1": {
+          "successor_coverage": 0.9543010752688172,
+          "mean_candidate_size": 1.0,
+          "singleton_fraction": 1.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 0,
+          "relation_inclusion_maps": 0,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.9995780590717299,
+            "agreement": 0.9498207885304659,
+            "one_sided_claims": 896,
+            "one_sided_violations": 224,
+            "empirical_one_sided_soundness": 0.75
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.9314766081871344,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 0,
+            "opportunity_recall": 0.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 599,
+              "false_positive": 1,
+              "false_negative": 0,
+              "positive_precision": 0.9917355371900827,
+              "balanced_accuracy": 0.9991666666666666,
+              "one_sided_claims": 121,
+              "one_sided_violations": 1
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 453,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 147,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.8775,
+              "one_sided_claims": 267,
+              "one_sided_violations": 147
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 381,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 75,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 0.9177631578947368,
+              "one_sided_claims": 315,
+              "one_sided_violations": 75
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            }
+          }
+        },
+        "epsilon_95": {
+          "successor_coverage": 0.9499327956989247,
+          "mean_candidate_size": 1.3797043010752688,
+          "singleton_fraction": 0.5396505376344086,
+          "empty_fraction": 0.04939516129032258,
+          "action_inclusion_maps": 0,
+          "relation_inclusion_maps": 23,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 444,
+            "opportunity_recall": 0.925
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 324,
+              "opportunity_recall": 0.9
+            }
+          }
+        },
+        "epsilon_99": {
+          "successor_coverage": 0.9899193548387096,
+          "mean_candidate_size": 1.9368279569892473,
+          "singleton_fraction": 0.27889784946236557,
+          "empty_fraction": 0.010080645161290322,
+          "action_inclusion_maps": 9,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 480,
+            "opportunity_recall": 1.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 360,
+              "opportunity_recall": 1.0
+            }
+          }
+        },
+        "epsilon_max": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 2.3010752688172045,
+          "singleton_fraction": 0.17573924731182797,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 480,
+            "opportunity_recall": 1.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 360,
+              "opportunity_recall": 1.0
+            }
+          }
+        },
+        "all_states": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 31.021505376344088,
+          "singleton_fraction": 0.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 0.8373983739837398,
+            "agreement": 0.8655913978494624,
+            "one_sided_claims": 72,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 0.5,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 0,
+            "opportunity_recall": 0.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 0,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 120,
+              "positive_precision": null,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 0,
+              "false_positive": 120,
+              "false_negative": 0,
+              "positive_precision": 0.8333333333333334,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 0,
+              "false_positive": 240,
+              "false_negative": 0,
+              "positive_precision": 0.6551724137931034,
+              "balanced_accuracy": 0.5,
+              "one_sided_claims": 0,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 0,
+              "opportunity_recall": 0.0
+            }
+          }
+        },
+        "exact_graph": {
+          "successor_coverage": 1.0,
+          "mean_candidate_size": 1.0,
+          "singleton_fraction": 1.0,
+          "empty_fraction": 0.0,
+          "action_inclusion_maps": 24,
+          "relation_inclusion_maps": 24,
+          "ctl_evaluated_maps": 24,
+          "ctl_skipped_maps": 0,
+          "ctl": {
+            "queries": 4464,
+            "positive_precision": 1.0,
+            "agreement": 1.0,
+            "one_sided_claims": 672,
+            "one_sided_violations": 0,
+            "empirical_one_sided_soundness": 1.0
+          },
+          "nontrivial": {
+            "queries": 2136,
+            "primary_balanced_score": 1.0,
+            "transfer_opportunities": 480,
+            "recovered_opportunities": 480,
+            "opportunity_recall": 1.0
+          },
+          "by_property": {
+            "AG !danger": {
+              "queries": 720,
+              "true_positive": 120,
+              "true_negative": 600,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "EF goal": {
+              "queries": 720,
+              "true_positive": 600,
+              "true_negative": 120,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 120,
+              "one_sided_violations": 0
+            },
+            "E[!danger U goal]": {
+              "queries": 696,
+              "true_positive": 456,
+              "true_negative": 240,
+              "false_positive": 0,
+              "false_negative": 0,
+              "positive_precision": 1.0,
+              "balanced_accuracy": 1.0,
+              "one_sided_claims": 240,
+              "one_sided_violations": 0
+            }
+          },
+          "by_family": {
+            "danger_gate": {
+              "queries": 712,
+              "transfer_opportunities": 120,
+              "recovered_opportunities": 120,
+              "opportunity_recall": 1.0
+            },
+            "safe_detour": {
+              "queries": 736,
+              "transfer_opportunities": 0,
+              "recovered_opportunities": 0,
+              "opportunity_recall": null
+            },
+            "sealed_region": {
+              "queries": 688,
+              "transfer_opportunities": 360,
+              "recovered_opportunities": 360,
+              "opportunity_recall": 1.0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "raw_records": "Delivered to the requester as jepa-lmc-latent-radius-stress-records.zip; not uploaded to the public repository."
+}
