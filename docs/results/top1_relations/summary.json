@@ -1,0 +1,1127 @@
+{
+  "protocol": {
+    "version": 1,
+    "model_seeds": [
+      20260804,
+      20260805,
+      20260806
+    ],
+    "maps": "All 24 existing radius_stress_cases, unchanged",
+    "training": "Reuse the three existing checkpoints; no retraining or model changes",
+    "decoder": "Existing evaluate_gridworld_transitions and transition_system_from_retrievals; float32 torch.cdist and argsort",
+    "graphs": "Full finite state catalogue, identical exact labels and initial states; only transitions differ",
+    "primary_semantics": "Ordinary CTL Kripke graph, ignoring action labels",
+    "secondary_semantics": "Require matching action labels as well as state labels",
+    "relations": [
+      "real_to_top1",
+      "top1_to_real",
+      "bisimulation"
+    ],
+    "direction": "left_to_right means every left step must be matched by a right step",
+    "algorithm": "Greatest fixed point from all label-compatible state pairs; bisimulation requires both step conditions on the same relation",
+    "focus": "Corresponding initial states; also report all same-state diagonal pairs and identity-relation edge comparisons",
+    "validation": [
+      "Survivor closure",
+      "Strictly earlier-round evidence for every excluded pair",
+      "Independent disjoint-union partition refinement for bisimulation",
+      "Existing six CTL formulas checked on all retained state pairs"
+    ],
+    "interpretation": "Exact post-hoc comparison of the constructed finite graphs; no statistical gate, unseen-map certificate or oracle-query efficiency claim"
+  },
+  "source_revision": "a86b4ccc619e108a3f3bd8aed2af2134f791390f",
+  "source_sha256": {
+    "configs/top1_relations_protocol.json": "b2fdd327bfb0362d4b6bcd21a58f1bd0cc2185c223c0e3ec17c9011a05f6e544",
+    "experiments/top1_behavioral_relations.py": "f0f8c990e5dea1c2670f515f67eeb56023affd54825b171150d130b614b08dcd",
+    "experiments/cegar_refinement.py": "fe450ccbf170df65094a5b73be29226dfae18a0393aa3588fc5f239db6aa1022",
+    "src/jepa_lmc/verification/behavioral_relations.py": "aac52cb5c3e78fb70528e6611bff4b388774eb8360cae9f3ba2e4ca03e1b67d0",
+    "src/jepa_lmc/verification/transition_system.py": "230cbba55481c97e54acc16e8ca73d371a3eb1a6452073ddc46f0d8503567033",
+    "src/jepa_lmc/verification/gridworld.py": "ba2c1fd8103bc101d39ad65c5758d35e4a0f003ce03291cc10ce23ba67708dfd",
+    "src/jepa_lmc/verification/ctl.py": "80217d5af517a24b27ad0791118c10884cfd9730a9c79dea9a23cd9fecae5696",
+    "src/jepa_lmc/evaluation/dynamics.py": "8a776eb7932226e4ba6ab6892e5b928be867422453f5ad6898b9b1124285437a",
+    "src/jepa_lmc/learning/model.py": "2ad4956fe466b39ba4190ab542f02b3c4ae4698515894a1d052b0ab74e39c75a",
+    "src/jepa_lmc/learning/data.py": "1a2cacb88ea13913f175331d4289f9b8889edde8da38f6b877ca4ff9e08aa488",
+    "src/jepa_lmc/envs/gridworld.py": "b077cab1a6f8f986a5bd07a9ca0962d628862488b1f8a70d1f2601c26b8fbafe",
+    "src/jepa_lmc/benchmarks/radius_stress.py": "4e5455c7970d24a3cf32d06d5b45325614a3696cbcf0166552e38a9d57b5757a",
+    "src/jepa_lmc/benchmarks/ctl_suite.py": "d5c3928a2a50160b4c654bb58bebcbb9f37295a82e4dc6172a9ab597857bcebc"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.0+cpu",
+    "device": "cpu",
+    "threads": 4
+  },
+  "seeds": [
+    {
+      "seed": 20260804,
+      "checkpoint_sha256": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc",
+      "model_state_sha256": "1c3cb8e99eca32de904f722331edd2670719c824143856a2c3b32f45df1963db",
+      "weights_unchanged": true,
+      "elapsed_seconds": 3.54700639699999,
+      "summary": {
+        "ctl": {
+          "real_to_top1": {
+            "maps": 24,
+            "initial_related_maps": 13,
+            "all_diagonal_related_maps": 7,
+            "diagonal_related_states": 422,
+            "states": 744,
+            "diagonal_related_fraction": 0.5672043010752689,
+            "identity_relation_holds_maps": 2,
+            "initial_related_despite_changed_edges_maps": 11,
+            "retained_pairs": 6163,
+            "max_elimination_round": 15
+          },
+          "top1_to_real": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 6,
+            "diagonal_related_states": 242,
+            "states": 744,
+            "diagonal_related_fraction": 0.32526881720430106,
+            "identity_relation_holds_maps": 4,
+            "initial_related_despite_changed_edges_maps": 6,
+            "retained_pairs": 4169,
+            "max_elimination_round": 10
+          },
+          "bisimulation": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 2,
+            "diagonal_related_states": 144,
+            "states": 744,
+            "diagonal_related_fraction": 0.1935483870967742,
+            "identity_relation_holds_maps": 2,
+            "initial_related_despite_changed_edges_maps": 6,
+            "retained_pairs": 1794,
+            "max_elimination_round": 8
+          }
+        },
+        "action_labelled": {
+          "real_to_top1": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 2,
+            "diagonal_related_states": 144,
+            "states": 744,
+            "diagonal_related_fraction": 0.1935483870967742,
+            "identity_relation_holds_maps": 2,
+            "initial_related_despite_changed_edges_maps": 6,
+            "retained_pairs": 1794,
+            "max_elimination_round": 8
+          },
+          "top1_to_real": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 2,
+            "diagonal_related_states": 144,
+            "states": 744,
+            "diagonal_related_fraction": 0.1935483870967742,
+            "identity_relation_holds_maps": 2,
+            "initial_related_despite_changed_edges_maps": 6,
+            "retained_pairs": 1794,
+            "max_elimination_round": 8
+          },
+          "bisimulation": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 2,
+            "diagonal_related_states": 144,
+            "states": 744,
+            "diagonal_related_fraction": 0.1935483870967742,
+            "identity_relation_holds_maps": 2,
+            "initial_related_despite_changed_edges_maps": 6,
+            "retained_pairs": 1794,
+            "max_elimination_round": 8
+          }
+        }
+      },
+      "by_family": {
+        "danger_gate": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 3,
+              "all_diagonal_related_maps": 1,
+              "diagonal_related_states": 85,
+              "states": 248,
+              "diagonal_related_fraction": 0.34274193548387094,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 3,
+              "retained_pairs": 1136,
+              "max_elimination_round": 15
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 16,
+              "states": 248,
+              "diagonal_related_fraction": 0.06451612903225806,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 464,
+              "max_elimination_round": 10
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            }
+          }
+        },
+        "safe_detour": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 2,
+              "all_diagonal_related_maps": 1,
+              "diagonal_related_states": 117,
+              "states": 256,
+              "diagonal_related_fraction": 0.45703125,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 2,
+              "retained_pairs": 1252,
+              "max_elimination_round": 14
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 10
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            }
+          }
+        },
+        "sealed_region": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 5,
+              "diagonal_related_states": 220,
+              "states": 240,
+              "diagonal_related_fraction": 0.9166666666666666,
+              "identity_relation_holds_maps": 2,
+              "initial_related_despite_changed_edges_maps": 6,
+              "retained_pairs": 3775,
+              "max_elimination_round": 8
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 6,
+              "diagonal_related_states": 226,
+              "states": 240,
+              "diagonal_related_fraction": 0.9416666666666667,
+              "identity_relation_holds_maps": 4,
+              "initial_related_despite_changed_edges_maps": 6,
+              "retained_pairs": 3705,
+              "max_elimination_round": 8
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 2,
+              "diagonal_related_states": 144,
+              "states": 240,
+              "diagonal_related_fraction": 0.6,
+              "identity_relation_holds_maps": 2,
+              "initial_related_despite_changed_edges_maps": 6,
+              "retained_pairs": 1794,
+              "max_elimination_round": 8
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 2,
+              "diagonal_related_states": 144,
+              "states": 240,
+              "diagonal_related_fraction": 0.6,
+              "identity_relation_holds_maps": 2,
+              "initial_related_despite_changed_edges_maps": 6,
+              "retained_pairs": 1794,
+              "max_elimination_round": 7
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 2,
+              "diagonal_related_states": 144,
+              "states": 240,
+              "diagonal_related_fraction": 0.6,
+              "identity_relation_holds_maps": 2,
+              "initial_related_despite_changed_edges_maps": 6,
+              "retained_pairs": 1794,
+              "max_elimination_round": 7
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 2,
+              "diagonal_related_states": 144,
+              "states": 240,
+              "diagonal_related_fraction": 0.6,
+              "identity_relation_holds_maps": 2,
+              "initial_related_despite_changed_edges_maps": 6,
+              "retained_pairs": 1794,
+              "max_elimination_round": 7
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 20260805,
+      "checkpoint_sha256": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262",
+      "model_state_sha256": "6c34a89e2b298800c6ec54bfb7157d951db15a96f0da569fd8071f996fd5f8c3",
+      "weights_unchanged": true,
+      "elapsed_seconds": 3.230203466000006,
+      "summary": {
+        "ctl": {
+          "real_to_top1": {
+            "maps": 24,
+            "initial_related_maps": 10,
+            "all_diagonal_related_maps": 2,
+            "diagonal_related_states": 246,
+            "states": 744,
+            "diagonal_related_fraction": 0.33064516129032256,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 10,
+            "retained_pairs": 4963,
+            "max_elimination_round": 15
+          },
+          "top1_to_real": {
+            "maps": 24,
+            "initial_related_maps": 16,
+            "all_diagonal_related_maps": 12,
+            "diagonal_related_states": 497,
+            "states": 744,
+            "diagonal_related_fraction": 0.668010752688172,
+            "identity_relation_holds_maps": 5,
+            "initial_related_despite_changed_edges_maps": 16,
+            "retained_pairs": 7694,
+            "max_elimination_round": 12
+          },
+          "bisimulation": {
+            "maps": 24,
+            "initial_related_maps": 7,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 102,
+            "states": 744,
+            "diagonal_related_fraction": 0.13709677419354838,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 7,
+            "retained_pairs": 1548,
+            "max_elimination_round": 9
+          }
+        },
+        "action_labelled": {
+          "real_to_top1": {
+            "maps": 24,
+            "initial_related_maps": 7,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 102,
+            "states": 744,
+            "diagonal_related_fraction": 0.13709677419354838,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 7,
+            "retained_pairs": 1548,
+            "max_elimination_round": 8
+          },
+          "top1_to_real": {
+            "maps": 24,
+            "initial_related_maps": 7,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 102,
+            "states": 744,
+            "diagonal_related_fraction": 0.13709677419354838,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 7,
+            "retained_pairs": 1548,
+            "max_elimination_round": 8
+          },
+          "bisimulation": {
+            "maps": 24,
+            "initial_related_maps": 7,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 102,
+            "states": 744,
+            "diagonal_related_fraction": 0.13709677419354838,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 7,
+            "retained_pairs": 1548,
+            "max_elimination_round": 8
+          }
+        }
+      },
+      "by_family": {
+        "danger_gate": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 1,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 61,
+              "states": 248,
+              "diagonal_related_fraction": 0.24596774193548387,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 1,
+              "retained_pairs": 792,
+              "max_elimination_round": 15
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 5,
+              "all_diagonal_related_maps": 4,
+              "diagonal_related_states": 161,
+              "states": 248,
+              "diagonal_related_fraction": 0.6491935483870968,
+              "identity_relation_holds_maps": 1,
+              "initial_related_despite_changed_edges_maps": 5,
+              "retained_pairs": 2580,
+              "max_elimination_round": 11
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 9
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            }
+          }
+        },
+        "safe_detour": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 1,
+              "all_diagonal_related_maps": 1,
+              "diagonal_related_states": 53,
+              "states": 256,
+              "diagonal_related_fraction": 0.20703125,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 1,
+              "retained_pairs": 774,
+              "max_elimination_round": 13
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 4,
+              "all_diagonal_related_maps": 3,
+              "diagonal_related_states": 119,
+              "states": 256,
+              "diagonal_related_fraction": 0.46484375,
+              "identity_relation_holds_maps": 1,
+              "initial_related_despite_changed_edges_maps": 4,
+              "retained_pairs": 1536,
+              "max_elimination_round": 12
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 9
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 8
+            }
+          }
+        },
+        "sealed_region": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 1,
+              "diagonal_related_states": 132,
+              "states": 240,
+              "diagonal_related_fraction": 0.55,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 3397,
+              "max_elimination_round": 7
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 5,
+              "diagonal_related_states": 217,
+              "states": 240,
+              "diagonal_related_fraction": 0.9041666666666667,
+              "identity_relation_holds_maps": 3,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 3578,
+              "max_elimination_round": 9
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 102,
+              "states": 240,
+              "diagonal_related_fraction": 0.425,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 1548,
+              "max_elimination_round": 7
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 102,
+              "states": 240,
+              "diagonal_related_fraction": 0.425,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 1548,
+              "max_elimination_round": 7
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 102,
+              "states": 240,
+              "diagonal_related_fraction": 0.425,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 1548,
+              "max_elimination_round": 7
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 102,
+              "states": 240,
+              "diagonal_related_fraction": 0.425,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 1548,
+              "max_elimination_round": 7
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 20260806,
+      "checkpoint_sha256": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc",
+      "model_state_sha256": "a4124ef40d9c1a86f80012b8e8a90d2283dfdc91d30485e33a220ed7ae6f2e56",
+      "weights_unchanged": true,
+      "elapsed_seconds": 3.213411937999979,
+      "summary": {
+        "ctl": {
+          "real_to_top1": {
+            "maps": 24,
+            "initial_related_maps": 10,
+            "all_diagonal_related_maps": 3,
+            "diagonal_related_states": 211,
+            "states": 744,
+            "diagonal_related_fraction": 0.28360215053763443,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 10,
+            "retained_pairs": 4217,
+            "max_elimination_round": 18
+          },
+          "top1_to_real": {
+            "maps": 24,
+            "initial_related_maps": 22,
+            "all_diagonal_related_maps": 21,
+            "diagonal_related_states": 675,
+            "states": 744,
+            "diagonal_related_fraction": 0.907258064516129,
+            "identity_relation_holds_maps": 13,
+            "initial_related_despite_changed_edges_maps": 22,
+            "retained_pairs": 8339,
+            "max_elimination_round": 12
+          },
+          "bisimulation": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 120,
+            "states": 744,
+            "diagonal_related_fraction": 0.16129032258064516,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 8,
+            "retained_pairs": 1872,
+            "max_elimination_round": 13
+          }
+        },
+        "action_labelled": {
+          "real_to_top1": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 120,
+            "states": 744,
+            "diagonal_related_fraction": 0.16129032258064516,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 8,
+            "retained_pairs": 1872,
+            "max_elimination_round": 13
+          },
+          "top1_to_real": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 120,
+            "states": 744,
+            "diagonal_related_fraction": 0.16129032258064516,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 8,
+            "retained_pairs": 1872,
+            "max_elimination_round": 13
+          },
+          "bisimulation": {
+            "maps": 24,
+            "initial_related_maps": 8,
+            "all_diagonal_related_maps": 0,
+            "diagonal_related_states": 120,
+            "states": 744,
+            "diagonal_related_fraction": 0.16129032258064516,
+            "identity_relation_holds_maps": 0,
+            "initial_related_despite_changed_edges_maps": 8,
+            "retained_pairs": 1872,
+            "max_elimination_round": 13
+          }
+        }
+      },
+      "by_family": {
+        "danger_gate": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 2,
+              "all_diagonal_related_maps": 1,
+              "diagonal_related_states": 53,
+              "states": 248,
+              "diagonal_related_fraction": 0.21370967741935484,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 2,
+              "retained_pairs": 569,
+              "max_elimination_round": 15
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 7,
+              "diagonal_related_states": 217,
+              "states": 248,
+              "diagonal_related_fraction": 0.875,
+              "identity_relation_holds_maps": 4,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 2477,
+              "max_elimination_round": 9
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 13
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 13
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 13
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 248,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 13
+            }
+          }
+        },
+        "safe_detour": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 14,
+              "states": 256,
+              "diagonal_related_fraction": 0.0546875,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 214,
+              "max_elimination_round": 18
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 7,
+              "all_diagonal_related_maps": 7,
+              "diagonal_related_states": 224,
+              "states": 256,
+              "diagonal_related_fraction": 0.875,
+              "identity_relation_holds_maps": 5,
+              "initial_related_despite_changed_edges_maps": 7,
+              "retained_pairs": 2001,
+              "max_elimination_round": 12
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 10
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 10
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 10
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 0,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 0,
+              "states": 256,
+              "diagonal_related_fraction": 0.0,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 0,
+              "retained_pairs": 0,
+              "max_elimination_round": 10
+            }
+          }
+        },
+        "sealed_region": {
+          "ctl": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 2,
+              "diagonal_related_states": 144,
+              "states": 240,
+              "diagonal_related_fraction": 0.6,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 3434,
+              "max_elimination_round": 7
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 7,
+              "diagonal_related_states": 234,
+              "states": 240,
+              "diagonal_related_fraction": 0.975,
+              "identity_relation_holds_maps": 4,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 3861,
+              "max_elimination_round": 8
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 120,
+              "states": 240,
+              "diagonal_related_fraction": 0.5,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 1872,
+              "max_elimination_round": 9
+            }
+          },
+          "action_labelled": {
+            "real_to_top1": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 120,
+              "states": 240,
+              "diagonal_related_fraction": 0.5,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 1872,
+              "max_elimination_round": 7
+            },
+            "top1_to_real": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 120,
+              "states": 240,
+              "diagonal_related_fraction": 0.5,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 1872,
+              "max_elimination_round": 7
+            },
+            "bisimulation": {
+              "maps": 8,
+              "initial_related_maps": 8,
+              "all_diagonal_related_maps": 0,
+              "diagonal_related_states": 120,
+              "states": 240,
+              "diagonal_related_fraction": 0.5,
+              "identity_relation_holds_maps": 0,
+              "initial_related_despite_changed_edges_maps": 8,
+              "retained_pairs": 1872,
+              "max_elimination_round": 7
+            }
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "greatest_relation_certificates_checked": 432,
+    "independent_partition_comparisons": 144,
+    "ctl_pair_formula_checks": 338406,
+    "all_passed": true
+  },
+  "exports": {
+    "maps.csv": "cb495e9b89ad98fff73eb9e17818a40590acae51b0abe018e5cbe36529e45017",
+    "relations.jsonl": "ba8e855729f0070be8f43ca84fdb55bdebf8ac40978b218d035888dd8e1d2226"
+  },
+  "validation": {
+    "unittest_cases": 98,
+    "passed": 96,
+    "skipped": 2,
+    "failures": 0,
+    "errors": 0,
+    "skips": "Existing nuXmv/NuSMV integration checks; binary unavailable",
+    "ruff": "passed",
+    "execution_platform": "Linux CPU; Windows commands not executed"
+  },
+  "export_audit": {
+    "all_checks_passed": true,
+    "serialized_relation_certificates": 432,
+    "serialized_bisimulation_partition_comparisons": 144,
+    "csv_rows_reconciled": 432,
+    "source_and_export_hashes_match": true,
+    "initial_and_diagonal_aggregates_recomputed": true,
+    "original_report_sha256": "854cc99b196024132ee6a1de2699ae59a020b9e7d921656ddd8080e7de89f130",
+    "audit_script_sha256": "30c589f092f8c8bc79cfa9c489f0a4c1aa7fdbf7149abd2658f5b886a6c90f0c"
+  },
+  "diagnostics": {
+    "by_seed": {
+      "20260804": {
+        "top1_correct_pairs": 2830,
+        "pairs": 2976,
+        "top1_accuracy": 0.9509408602150538,
+        "all_six_initial_ctl_formulas_agree_maps": 21,
+        "six_formulas_agree_but_initial_bisimulation_fails_maps": 13
+      },
+      "20260805": {
+        "top1_correct_pairs": 2740,
+        "pairs": 2976,
+        "top1_accuracy": 0.9206989247311828,
+        "all_six_initial_ctl_formulas_agree_maps": 13,
+        "six_formulas_agree_but_initial_bisimulation_fails_maps": 6
+      },
+      "20260806": {
+        "top1_correct_pairs": 2840,
+        "pairs": 2976,
+        "top1_accuracy": 0.9543010752688172,
+        "all_six_initial_ctl_formulas_agree_maps": 18,
+        "six_formulas_agree_but_initial_bisimulation_fails_maps": 10
+      }
+    },
+    "mutual_simulation_without_bisimulation": [
+      {
+        "seed": 20260805,
+        "case": "danger_gate_layout0_rot180"
+      },
+      {
+        "seed": 20260806,
+        "case": "danger_gate_layout0_rot270"
+      },
+      {
+        "seed": 20260806,
+        "case": "danger_gate_layout1_rot270"
+      }
+    ],
+    "all_initial_bisimulation_passes_have_only_safe_reachable_labels": true,
+    "such_passes": 23,
+    "example_rejection": {
+      "seed": 20260805,
+      "case": "danger_gate_layout0_rot180",
+      "initial": [
+        5,
+        5
+      ],
+      "round": 8,
+      "challenging_side": "real",
+      "challenging_successor": [
+        4,
+        5
+      ],
+      "all_top1_replies": [
+        {
+          "state": [
+            4,
+            5
+          ],
+          "pair_rejected_at_round": 7
+        },
+        {
+          "state": [
+            5,
+            4
+          ],
+          "pair_rejected_at_round": 5
+        },
+        {
+          "state": [
+            5,
+            5
+          ],
+          "pair_rejected_at_round": 2
+        }
+      ],
+      "interpretation": "Every reply pair is already excluded; complete recursive rejection DAG is in the private records."
+    }
+  }
+}

@@ -14,6 +14,13 @@ and [fixed experiment results](docs/cegar_results.md). On the three-checkpoint
 screen, guidance saves 51–52% of successor queries versus direct BFS. The savings
 come from finding concrete paths sooner; path-absence proofs show no query gain.
 
+The branch also directly computes the greatest simulation and bisimulation
+relations between the existing Top-1 and real graphs. See the
+[behavioral-relation results](docs/top1_behavioral_relations.md): initial
+bisimulation holds on 8/24, 7/24 and 8/24 maps, all in uniformly safe reachable
+regions. The check distinguishes literal edge equality, initial correspondence
+and same-coordinate correspondence throughout the full graph.
+
 At the moment, the project supports:
 
 - an explicit-state CTL model checker;
@@ -24,6 +31,7 @@ At the moment, the project supports:
 - comparison between exact and learned verification results.
 - oracle-backed local successor refinement for safety and finite reachability;
 - uniform, JEPA-ranked, shuffled-ranking and direct BFS query comparisons.
+- exact greatest simulation/bisimulation with independently checked certificates.
 
 The earlier learned-transition reconstruction experiments use
 
@@ -74,6 +82,18 @@ The [fixed protocol](configs/cegar_protocol.json) compares query cost for
 `AG !danger`, `EF goal`, and `E[!danger U goal]`. The second command replays every
 budget and checks the exported results. Use a fresh directory for a new run.
 
+To compare the existing Top-1 graphs directly with the real graphs:
+
+```powershell
+& .\.venv\Scripts\python.exe experiments\top1_behavioral_relations.py --checkpoints outputs/latent_radius/oracle/model.pt outputs/latent_radius/stress_training/seed_20260805/model.pt outputs/latent_radius/stress_training/seed_20260806/model.pt --output-dir outputs/behavioral_relations/top1
+```
+
+This computes both simulation directions and bisimulation, primarily with
+ordinary CTL semantics and separately with action labels preserved. It exports
+every surviving pair and a rejection certificate for every excluded pair.
+The [protocol](configs/top1_relations_protocol.json) and
+[results/API instructions](docs/top1_behavioral_relations.md) describe the scope.
+
 Earlier exact-checking and learned-graph experiments:
 
 ```powershell
@@ -122,6 +142,14 @@ Unreachability/safety proofs require the same queries as the controls, and direc
 BFS is faster on this cheap simulator. Known finite states, exact labels and a
 trusted deterministic successor oracle are assumptions, not outputs of JEPA.
 The [results report](docs/cegar_results.md) records these limits and next controls.
+
+The Top-1 behavioral check finds initial bisimulation only in the sealed-region
+family; none of the dangerous-gate or safe-detour starts are bisimilar. Three
+actual cases have mutual simulation without bisimulation, and 29 cases agree
+on all six existing start-state CTL queries while failing bisimulation. All 432
+greatest-relation certificates and 144 independent partition comparisons pass.
+These are exact results for the constructed finite graphs, with complete real
+dynamics available for comparison.
 
 The earlier three-seed topology screen returned **STOP for the current Yang-style uniform
 latent-radius route**. All seeds have 100% oracle successor coverage and zero
