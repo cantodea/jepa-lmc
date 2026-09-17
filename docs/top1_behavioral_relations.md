@@ -172,6 +172,61 @@ not establish a relation on unseen maps or solve verification with unknown R.
 Only three checkpoints and six base layouts were examined; rotations are
 correlated. This is a diagnostic result, with no new statistical acceptance gate.
 
+## Optional nuXmv LTL evaluation of the same graphs
+
+The recorded results above include the six CTL checks, but **no external LTL
+run**. Having nuXmv installed does not automatically add LTL to
+`top1_behavioral_relations.py`. The separate command below reads that run's
+`report.json` and `relations.jsonl`, verifies their graph-export hash and map
+coverage, and checks those exact saved graphs. It does not train, load weights,
+or decode predictions again.
+
+After running the Top-1 experiment, use PowerShell from the repository root.
+Replace the executable path with your installed binary. If nuXmv is on PATH,
+the environment assignment can be omitted.
+
+```powershell
+$env:NUXMV_BINARY = "D:\tools\nuXmv\bin\nuXmv.exe"
+& .\.venv\Scripts\python.exe -m unittest tests.test_nuxmv tests.test_top1_ltl_experiment -v
+& .\.venv\Scripts\python.exe experiments\evaluate_top1_ltl.py --run-dir outputs/behavioral_relations/top1_local --output-dir outputs/behavioral_relations/top1_local_ltl
+```
+
+Set `--run-dir` to your actual previous output directory (`top1` if you used
+the reproduction command below). An explicit `--executable PATH` is also
+supported. Each LTL output directory must be fresh. Missing executables and
+incomplete backend verdicts are errors; they never produce a completed report.
+
+The existing LTL suite contains `X !danger`, `F goal`, `G !danger`,
+`safe U goal`, `G F safe`, and `F G !danger`. They are interpreted universally
+over infinite paths, with action labels ignored and no fairness constraints.
+In particular, `F goal` corresponds to CTL `AF goal`, **not** `EF goal`.
+`G !danger` and `F goal` are retained as consistency diagnostics but excluded
+from the existing primary LTL score. Missing positive or negative examples
+produce a null balanced score, rather than an artificial perfect score.
+
+For all 72 saved model/map cases, the command requests 26,784 backend verdicts:
+two graphs times 2,232 states times six formulas. The resulting 13,392
+same-coordinate formula comparisons include 432 initial-state comparisons.
+Progress is printed after each map. Outputs are:
+
+- `report.json`: overall, per-seed and per-map summaries, with initial-state
+  and all-state scores separated; per-property confusion counts, safety false
+  positives, source hashes and backend identity.
+- `queries.csv`: every state/formula comparison, including original coordinates.
+- `backend/`: the exact `.smv` models and nuXmv output, including any printed
+  counterexample traces. File hashes are included in the report.
+
+Bisimulation also preserves these LTL properties. Agreement on this finite
+suite alone does not establish bisimulation. The older
+`evaluate_multibackend.py` trains a new model and evaluates the random pilot
+test maps; it is a separate experiment and does not reproduce this graph suite.
+The new runner has mocked-backend regression checks and an installed-backend
+integration test. The latter requires a local nuXmv/NuSMV installation; no
+full-suite external LTL result is claimed here. For this addition, 28 targeted
+tests ran: 25 passed and three external-backend tests were skipped because
+nuXmv was unavailable. Reading and reconstructing all 72 saved graph pairs
+also passed, including the source-export hash and map-coverage checks.
+
 ## Reproduce and inspect
 
 Reuse the three existing checkpoints described in the
@@ -210,7 +265,8 @@ all surviving and rejected pairs, initial failure evidence, 432 CSV rows, the
 original report, export-audit script/results, test log and checksums. Raw graphs
 and pair tables are not uploaded to the public repository.
 
-Validation: **98 unittest cases, 96 passed and two existing external nuXmv
+Original relation-experiment validation: **98 unittest cases, 96 passed and two
+existing external nuXmv
 checks skipped**; Ruff passes. New tests include exhaustive enumeration of all
 candidate relations on small graphs, nonidentity correspondence, mutual
 simulation without bisimulation, action semantics, unreachable states, multiple

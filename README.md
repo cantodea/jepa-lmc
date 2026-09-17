@@ -94,6 +94,19 @@ every surviving pair and a rejection certificate for every excluded pair.
 The [protocol](configs/top1_relations_protocol.json) and
 [results/API instructions](docs/top1_behavioral_relations.md) describe the scope.
 
+To add nuXmv LTL verdicts for exactly those saved Top-1/real graphs, set
+`NUXMV_BINARY` to your executable (or put nuXmv on PATH), then run:
+
+```powershell
+& .\.venv\Scripts\python.exe experiments\evaluate_top1_ltl.py --run-dir outputs/behavioral_relations/top1 --output-dir outputs/behavioral_relations/top1_ltl
+```
+
+This reuses the graph export without retraining or decoding again. It writes
+initial-state and all-state LTL summaries, per-query CSV results, `.smv` inputs
+and backend logs. See the [LTL instructions](docs/top1_behavioral_relations.md#optional-nuxmv-ltl-evaluation-of-the-same-graphs).
+The previously recorded Top-1 results contain CTL checks only; LTL requires
+this additional command and an installed nuXmv/NuSMV backend.
+
 Earlier exact-checking and learned-graph experiments:
 
 ```powershell
