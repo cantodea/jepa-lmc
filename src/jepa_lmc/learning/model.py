@@ -107,10 +107,13 @@ class ActionConditionedPredictor(nn.Module):
         num_actions: int = 4,
         action_dim: int = 8,
         hidden_dim: int = 64,
+        residual_blocks: int = 0,
     ) -> None:
         super().__init__()
         if min(latent_dim, num_actions, action_dim, hidden_dim) <= 0:
             raise ValueError("Predictor dimensions must be positive.")
+        if not isinstance(residual_blocks, int) or residual_blocks < 0:
+            raise ValueError("Residual block count must be a non-negative integer.")
 
         self.latent_dim = latent_dim
         self.num_actions = num_actions
@@ -121,6 +124,19 @@ class ActionConditionedPredictor(nn.Module):
             nn.GELU(),
             nn.Linear(hidden_dim, latent_dim),
         )
+        # Empty by default: existing checkpoint keys and forward path are retained.
+        # A new block starts as the identity, allowing exact baseline warm starts.
+        self.residual_blocks = nn.ModuleList()
+        for _ in range(residual_blocks):
+            block = nn.Sequential(
+                nn.LayerNorm(hidden_dim),
+                nn.Linear(hidden_dim, hidden_dim),
+                nn.GELU(),
+                nn.Linear(hidden_dim, hidden_dim),
+            )
+            nn.init.zeros_(block[-1].weight)
+            nn.init.zeros_(block[-1].bias)
+            self.residual_blocks.append(block)
 
     def forward(self, context: Tensor, action: Tensor) -> Tensor:
         if context.ndim != 2 or context.shape[1] != self.latent_dim:
@@ -136,7 +152,14 @@ class ActionConditionedPredictor(nn.Module):
             raise ValueError("Action index is outside the configured action space.")
 
         action_features = self.action_embedding(action)
-        delta = self.network(torch.cat((context, action_features), dim=-1))
+        combined = torch.cat((context, action_features), dim=-1)
+        if self.residual_blocks:
+            hidden = self.network[:3](combined)
+            for block in self.residual_blocks:
+                hidden = hidden + block(hidden)
+            delta = self.network[3](hidden)
+        else:
+            delta = self.network(combined)
         return context + delta
 
 
@@ -170,6 +193,7 @@ class ActionJEPA(nn.Module):
         position_scale: float = 4.0,
         action_dim: int = 8,
         predictor_hidden_dim: int = 64,
+        predictor_residual_blocks: int = 0,
         num_actions: int = 4,
     ) -> None:
         super().__init__()
@@ -190,6 +214,7 @@ class ActionJEPA(nn.Module):
             num_actions=num_actions,
             action_dim=action_dim,
             hidden_dim=predictor_hidden_dim,
+            residual_blocks=predictor_residual_blocks,
         )
 
     def train(self, mode: bool = True) -> ActionJEPA:
