@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "model_seeds": [20260804, 20260805, 20260806],
+  "maps": "All 24 existing radius_stress_cases, unchanged",
+  "training": "Reuse the three existing checkpoints; no retraining or model changes",
+  "decoder": "Existing evaluate_gridworld_transitions and transition_system_from_retrievals; float32 torch.cdist and argsort",
+  "graphs": "Full finite state catalogue, identical exact labels and initial states; only transitions differ",
+  "primary_semantics": "Ordinary CTL Kripke graph, ignoring action labels",
+  "secondary_semantics": "Require matching action labels as well as state labels",
+  "relations": ["real_to_top1", "top1_to_real", "bisimulation"],
+  "direction": "left_to_right means every left step must be matched by a right step",
+  "algorithm": "Greatest fixed point from all label-compatible state pairs; bisimulation requires both step conditions on the same relation",
+  "focus": "Corresponding initial states; also report all same-state diagonal pairs and identity-relation edge comparisons",
+  "validation": ["Survivor closure", "Strictly earlier-round evidence for every excluded pair", "Independent disjoint-union partition refinement for bisimulation", "Existing six CTL formulas checked on all retained state pairs"],
+  "interpretation": "Exact post-hoc comparison of the constructed finite graphs; no statistical gate, unseen-map certificate or oracle-query efficiency claim"
+}
