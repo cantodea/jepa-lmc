@@ -13,6 +13,7 @@ if __package__:
         BASELINES,
         ROOT,
         SEEDS,
+        catalogue,
         digest,
         write_csv,
         write_json,
@@ -22,6 +23,7 @@ else:
         BASELINES,
         ROOT,
         SEEDS,
+        catalogue,
         digest,
         write_csv,
         write_json,
@@ -34,6 +36,52 @@ def read_csv(path):
             {k: (v == "True" if v in ("True", "False") else v) for k, v in row.items()}
             for row in csv.DictReader(handle)
         ]
+
+
+def audit_evaluation(directory, scores, seed):
+    for name, expected in scores["exports"].items():
+        if digest(directory / name) != expected:
+            raise AssertionError("Evaluation export hash mismatch.")
+    maps = {m["map"]: (m, s.make_env()) for m, s in catalogue()}
+    expected_keys = {
+        (name, state[0], state[1], action)
+        for name, (_, env) in maps.items()
+        for state in env.all_states()
+        for action in env.ACTIONS
+    }
+    seen = set()
+    totals, errors = {}, {}
+    for row in read_csv(directory / "transitions.csv"):
+        key = (
+            row["map"],
+            int(row["state_row"]),
+            int(row["state_col"]),
+            int(row["action"]),
+        )
+        if key in seen or key not in expected_keys or int(row["seed"]) != seed:
+            raise AssertionError("State-action catalogue mismatch.")
+        seen.add(key)
+        metadata, env = maps[row["map"]]
+        if row["split"] != metadata["split"]:
+            raise AssertionError("A transition was assigned to a different split.")
+        true = (int(row["true_row"]), int(row["true_col"]))
+        predicted = (int(row["pred_row"]), int(row["pred_col"]))
+        if true != env.transition((key[1], key[2]), key[3]):
+            raise AssertionError("Saved ground-truth transition is incorrect.")
+        if row["correct"] != (true == predicted) or not env.is_valid_state(predicted):
+            raise AssertionError("Saved prediction correctness is incorrect.")
+        split = row["split"]
+        totals[split] = totals.get(split, 0) + 1
+        errors[split] = errors.get(split, 0) + (not row["correct"])
+    if seen != expected_keys:
+        raise AssertionError("Evaluation omitted transitions.")
+    for row in scores["by_split"]:
+        if (
+            row["transitions"] != totals[row["split"]]
+            or row["errors"] != errors[row["split"]]
+        ):
+            raise AssertionError("Aggregate Top-1 scores differ from raw records.")
+    return len(seen)
 
 
 def temporal_summary(rows):
@@ -71,6 +119,40 @@ def temporal_summary(rows):
         "maps": len(keys),
         "by_property": by_property,
     }
+
+
+def write_model_bank(run, selection):
+    """Retain baseline and the strongest new candidate without claiming promotion."""
+    destination = run / "model_bank.json"
+    if destination.exists():
+        raise ValueError("Model bank already exists; refusing to overwrite.")
+    options = {o["candidate"]: o for o in selection["options"]}
+    new = max(
+        (o for o in options.values() if o["candidate"] != "baseline"),
+        key=lambda o: (o["mean_validation_accuracy"], -o["parameters"]),
+    )
+    bank = {
+        "selected_best": selection["selected"],
+        "best_new_candidate_by_validation": new["candidate"],
+        "clear_validation_improvement": selection["clear_validation_improvement"],
+        "note": "best aliases the validation winner, which can be baseline. "
+        "best_new_candidate is retained even when it does not improve baseline.",
+        "roles": {},
+    }
+    for role, option in (
+        ("baseline", options["baseline"]),
+        ("best", options[selection["selected"]]),
+        ("best_new_candidate", new),
+    ):
+        bank["roles"][role] = {
+            "candidate": option["candidate"],
+            "checkpoints": {
+                seed: {"path": path, "sha256": digest(ROOT / path)}
+                for seed, path in option["checkpoints"].items()
+            },
+        }
+    write_json(destination, bank)
+    return bank
 
 
 def behavior_summary(run_dir, model):
@@ -196,18 +278,21 @@ def main():
     ):
         raise AssertionError("Frozen protocol changed.")
     rows, histories = [], []
+    audited_transitions = 0
     for name in ("baseline", *(c["name"] for c in protocol["candidates"])):
         for seed in SEEDS:
             if name == "baseline":
                 payload = next(m for m in diagnosis["models"] if m["seed"] == seed)
                 checkpoint = BASELINES[seed]
                 history = payload["training"]["history"]
+                evaluation_dir = run / "diagnosis" / f"seed_{seed}"
             else:
                 directory = run / name / f"seed_{seed}"
                 payload = json.loads((directory / "report.json").read_text())
                 if payload["protocol_sha256"] != selection["protocol_sha256"]:
                     raise AssertionError("Training used a different protocol.")
                 checkpoint = directory / "model.pt"
+                evaluation_dir = directory / "evaluation"
                 history = [
                     json.loads(line)
                     for line in (directory / "history.jsonl").read_text().splitlines()
@@ -221,6 +306,9 @@ def main():
                     )
             if payload["checkpoint_sha256"] != digest(checkpoint):
                 raise AssertionError("Checkpoint digest changed.")
+            audited_transitions += audit_evaluation(
+                evaluation_dir, payload["scores"], seed
+            )
             score = {r["split"]: r for r in payload["scores"]["by_split"]}
             rows.append(
                 {
@@ -251,7 +339,8 @@ def main():
                 }
             )
     baseline = behavior_summary(run, "baseline")
-    best = behavior_summary(run, "best")
+    compare_new_model = selection["selected"] != "baseline"
+    best = behavior_summary(run, "best") if compare_new_model else baseline
     transitions = {
         model: {(m["seed"], m["case"]): m for m in result[1]["maps"]}
         for model, result in (("baseline", baseline), ("best", best))
@@ -335,6 +424,13 @@ def main():
         },
         "baseline_behavior": baseline[0],
         "best_behavior": best[0],
+        "new_model_behavioral_comparison_performed": compare_new_model,
+        "behavioral_comparison_note": (
+            "Validation-selected new checkpoint compared with baseline."
+            if compare_new_model
+            else "Baseline won validation selection. Its results are reused, not "
+            "counted as a second model run or evidence of temporal improvement."
+        ),
         "map_changes": {
             "top1_improved": sum(r["correct_gain"] > 0 for r in map_deltas),
             "top1_unchanged": sum(r["correct_gain"] == 0 for r in map_deltas),
@@ -368,6 +464,7 @@ def main():
             "passed": True,
         },
         "candidate_runs": len(rows) - 3,
+        "audited_evaluation_transitions": audited_transitions,
         "tuning_stopped": True,
     }
     write_csv(run / "model_scores.csv", rows)
@@ -375,6 +472,7 @@ def main():
     if verdict_deltas:
         write_csv(run / "verdict_deltas.csv", verdict_deltas)
     write_json(run / "summary.json", report)
+    write_model_bank(run, selection)
     print(
         json.dumps(
             {k: report[k] for k in ("means", "map_changes", "preservation")}, indent=2

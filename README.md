@@ -3,11 +3,18 @@
 JEPA-LMC studies whether an action-conditioned JEPA model can reduce the concrete
 checks needed for finite-state formal verification.
 
-The current branch focuses on **property-directed successor refinement** in
+The current work is a completed [bounded Top-1 quality study](docs/top1_quality_study.md).
+Nine runs tested more epochs, learning-rate decay and modest capacity increases.
+None improved three-seed mean validation over the original baseline or reached
+99% held-out accuracy. The baseline remains selected; all candidate weights and
+raw records are retained separately. New abstraction experiments are paused.
+
+The branch also contains **property-directed successor refinement** in
 deterministic GridWorld. Frozen JEPA predictions rank candidate paths; counted
 exact simulator queries refine the candidate transition relation. Correctness
 comes from preserving lower/upper relations around the true dynamics. A query
-budget can return `unknown`. The JEPA architecture and training remain unchanged.
+budget can return `unknown`. Those frozen-checkpoint experiments and their
+formal results remain unchanged.
 
 See the [CEGAR literature, assumptions and proof](docs/cegar_literature_and_design.md)
 and [fixed experiment results](docs/cegar_results.md). On the three-checkpoint
