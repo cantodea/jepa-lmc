@@ -107,6 +107,16 @@ and backend logs. See the [LTL instructions](docs/top1_behavioral_relations.md#o
 The previously recorded Top-1 results contain CTL checks only; LTL requires
 this additional command and an installed nuXmv/NuSMV backend.
 
+A completed [strict backend sanity check](docs/backend_sanity_check.md) reuses
+all 72 saved graph pairs. Native CTL and nuXmv CTL agree on all 26,784 checks;
+`AG !danger` / `G !danger` and `AF goal` / `F goal` each agree on all 4,464 checks
+in the same nuXmv process and graph encoding. Initial-state all-six real/Top-1
+CTL agreement remains 52/72. Run this specific audit with:
+
+```powershell
+& .\.venv\Scripts\python.exe experiments\backend_sanity.py --run-dir outputs/behavioral_relations/top1 --output-dir outputs/behavioral_relations/backend_sanity
+```
+
 Earlier exact-checking and learned-graph experiments:
 
 ```powershell

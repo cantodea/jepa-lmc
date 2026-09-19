@@ -174,6 +174,12 @@ correlated. This is a diagnostic result, with no new statistical acceptance gate
 
 ## Optional nuXmv LTL evaluation of the same graphs
 
+The subsequent [backend sanity check](backend_sanity_check.md) has now run all
+six CTL properties and the two equivalent CTL/LTL pairs through actual nuXmv on
+these saved graphs. Every backend and paired-formula comparison agrees, and the
+52/72 initial CTL score is unchanged. The other four LTL properties are outside
+that sanity check's scope.
+
 The recorded results above include the six CTL checks, but **no external LTL
 run**. Having nuXmv installed does not automatically add LTL to
 `top1_behavioral_relations.py`. The separate command below reads that run's
