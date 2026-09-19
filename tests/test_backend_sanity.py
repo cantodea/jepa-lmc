@@ -24,9 +24,9 @@ def make_sanity_run(directory: Path) -> None:
     path = directory / "report.json"
     report = json.loads(path.read_text(encoding="utf-8"))
     report["maps"][0]["initial_ctl_disagreements"] = [
-        "EF danger",
-        "AG !danger",
-        "EG safe",
+        {"property": "EF danger", "real": True, "top1": False},
+        {"property": "AG !danger", "real": False, "top1": True},
+        {"property": "EG safe", "real": False, "top1": True},
     ]
     path.write_text(json.dumps(report), encoding="utf-8")
 

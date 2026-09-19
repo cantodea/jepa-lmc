@@ -197,9 +197,21 @@ def run_audit(
     if output_dir.exists() and any(output_dir.iterdir()):
         raise ValueError("Choose a fresh output directory.")
     metadata = {(r["seed"], r["case"]): r for r in source["maps"]}
+    property_names = {p.name for p in default_ctl_suite()}
     for row in metadata.values():
         if "initial_ctl_disagreements" not in row:
             raise ValueError("Source report lacks the original initial CTL comparison.")
+        differences = row["initial_ctl_disagreements"]
+        names = [entry["property"] for entry in differences]
+        if len(set(names)) != len(names) or not set(names) <= property_names:
+            raise ValueError("Source report has duplicate or unknown CTL properties.")
+        if any(
+            type(entry["real"]) is not bool
+            or type(entry["top1"]) is not bool
+            or entry["real"] == entry["top1"]
+            for entry in differences
+        ):
+            raise ValueError("Source CTL disagreements must contain opposite verdicts.")
     inputs = {
         name: digest(run_dir / name) for name in ("report.json", "relations.jsonl")
     }
@@ -334,7 +346,9 @@ def run_audit(
                         }
                     )
         start = record["initial"]
-        old_differences = set(meta["initial_ctl_disagreements"])
+        old_differences = {
+            entry["property"] for entry in meta["initial_ctl_disagreements"]
+        }
         native_differences, external_differences = [], []
         for prop in default_ctl_suite():
             ir, er = (v[start, prop.name] for v in values["real"])
