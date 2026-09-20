@@ -426,28 +426,52 @@ def select_model(run_dir, protocol):
     print("SELECTED", best["candidate"], "validation gain", gain, flush=True)
 
 
-def evaluate_candidate(run_dir, config, seed):
+def check_validation_counts(score, frozen):
+    # correct / total and 1 - errors / total can differ by one floating-point ULP.
+    # Compare exact counts, without tolerating a changed transition verdict.
+    if any(score[key] != frozen[key] for key in ("transitions", "errors")):
+        raise AssertionError("Final validation differs from frozen selection counts.")
+
+
+def evaluate_candidate(run_dir, config, seed, finalize=False):
     selection_path = run_dir / "selection.json"
     selection = json.loads(selection_path.read_text())
     if selection["protocol_sha256"] != digest(PROTOCOL):
         raise AssertionError("Protocol changed after selection.")
     output = run_dir / config["name"] / f"seed_{seed}"
+    if (output / "report.json").exists():
+        raise ValueError("Evaluation report already exists; refusing to overwrite.")
     metadata = json.loads((output / "validation.json").read_text())
     if digest(output / "model.pt") != metadata["checkpoint_sha256"]:
         raise AssertionError("Selected checkpoint changed.")
     model, _ = load_model(output / "model.pt")
     torch.set_num_threads(4)
-    scores = evaluate_model(model, seed, output / "evaluation")
-    if (
-        next(s for s in scores["by_split"] if s["split"] == "validation")["accuracy"]
-        != metadata["validation"]["accuracy"]
-    ):
-        raise AssertionError(
-            "Final validation differs from frozen selection statistic."
+    if finalize:
+        # Recover a completed raw export after report-only validation failed.
+        # Audit every record/export hash and replay validation with intact weights.
+        from experiments.summarize_top1_quality import audit_evaluation
+
+        scores = json.loads((output / "evaluation/report.json").read_text())
+        audit_evaluation(output / "evaluation", scores, seed)
+        check_validation_counts(
+            accuracy(model, make_pilot_benchmark_splits().validation),
+            metadata["validation"],
         )
+    else:
+        scores = evaluate_model(model, seed, output / "evaluation")
+    check_validation_counts(
+        next(s for s in scores["by_split"] if s["split"] == "validation"),
+        metadata["validation"],
+    )
     write_json(
         output / "report.json",
-        metadata | {"selection_sha256": digest(selection_path), "scores": scores},
+        metadata
+        | {
+            "selection_sha256": digest(selection_path),
+            "evaluation_source_sha256": source_hashes(),
+            "finalized_existing_raw_export": finalize,
+            "scores": scores,
+        },
     )
     print("EVALUATED", config["name"], seed, json.dumps(scores["by_split"]), flush=True)
 
@@ -458,7 +482,9 @@ def main():
     parser.add_argument("--candidate")
     parser.add_argument("--seed", type=int, choices=SEEDS)
     parser.add_argument(
-        "--phase", choices=("initialize", "train", "select", "evaluate"), required=True
+        "--phase",
+        choices=("initialize", "train", "select", "evaluate", "finalize"),
+        required=True,
     )
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
@@ -477,7 +503,9 @@ def main():
     if args.phase == "train":
         run_candidate(run_dir, configs[args.candidate], args.seed, protocol)
     else:
-        evaluate_candidate(run_dir, configs[args.candidate], args.seed)
+        evaluate_candidate(
+            run_dir, configs[args.candidate], args.seed, args.phase == "finalize"
+        )
 
 
 if __name__ == "__main__":

@@ -3,11 +3,15 @@
 JEPA-LMC studies whether an action-conditioned JEPA model can reduce the concrete
 checks needed for finite-state formal verification.
 
-The current work is a completed [bounded Top-1 quality study](docs/top1_quality_study.md).
-Nine runs tested more epochs, learning-rate decay and modest capacity increases.
-None improved three-seed mean validation over the original baseline or reached
-99% held-out accuracy. The baseline remains selected; all candidate weights and
-raw records are retained separately. New abstraction experiments are paused.
+The latest [bounded ranking/depth study](docs/top1_ranking_study.md) finds a better
+Top-1 model without changing the selected model's architecture. Across three seeds,
+ranking loss improves validation from 92.87% to 98.68% and stress from 94.20% to
+98.92%. Initial all-six CTL agreement rises from 52/72 to 68/72 and bisimulation
+from 23/72 to 40/72. All-six LTL stays at 70/72; some individual temporal verdicts
+regress despite higher Top-1 accuracy. Extra predictor depth gives no further gain.
+Both original baseline and ranking checkpoints are retained. This tuning round is
+complete; new abstraction experiments remain paused. The earlier negative
+[epochs/LR/capacity study](docs/top1_quality_study.md) is preserved unchanged.
 
 The branch also contains **property-directed successor refinement** in
 deterministic GridWorld. Frozen JEPA predictions rank candidate paths; counted
@@ -160,6 +164,13 @@ and [recorded results with reproducible commands](docs/latent_radius_stress_resu
 
 ## Current results
 
+The latest ranking model is the validation-selected prediction baseline. The
+[report and reproduction commands](docs/top1_ranking_study.md) give every seed,
+matched training controls, exhaustive held-out scores and the unchanged formal
+pipeline comparison. Validation-best checkpoints are selected before stress
+evaluation. Training still uses only the original 40 maps; there is no stress/test
+transition training. The following results refer to the older frozen checkpoints.
+
 The CEGAR query-efficiency screen returned **support for further oracle-backed
 study** on all three seeds. Across 864 full-budget tasks, every verdict matches
 exact CTL truth and every inclusion audit passes. JEPA needs 34.06–34.93 queries
@@ -173,7 +184,7 @@ BFS is faster on this cheap simulator. Known finite states, exact labels and a
 trusted deterministic successor oracle are assumptions, not outputs of JEPA.
 The [results report](docs/cegar_results.md) records these limits and next controls.
 
-The Top-1 behavioral check finds initial bisimulation only in the sealed-region
+The original Top-1 behavioral check finds initial bisimulation only in the sealed-region
 family; none of the dangerous-gate or safe-detour starts are bisimilar. Three
 actual cases have mutual simulation without bisimulation, and 29 cases agree
 on all six existing start-state CTL queries while failing bisimulation. All 432
@@ -194,5 +205,6 @@ In the current deterministic GridWorld pilot, the action-conditioned model reach
 
 These experiments are still preliminary. The current GridWorld transition dynamics are relatively simple, and the learned model does not provide a formal equivalence or bisimulation guarantee.
 
-The next stage is to test query savings with more expensive concrete checks and
-stronger guided-search baselines, including simpler learned transition models.
+The earlier proposal to test query savings with more expensive concrete checks
+and stronger search baselines remains deferred while model-quality comparisons
+are assessed.

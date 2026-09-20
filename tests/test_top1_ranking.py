@@ -14,6 +14,7 @@ from experiments.improve_top1 import cached_training_data
 from experiments.improve_top1_ranking import (
     PROTOCOL,
     batch_maps,
+    check_validation_counts,
     select_model,
     training_maps,
 )
@@ -42,6 +43,14 @@ class Top1RankingTests(unittest.TestCase):
             float(loss.detach()),
         )
         self.assertEqual(int((updated - targets.detach().T).square().argmin()), 1)
+
+    def test_validation_guard_accepts_roundoff_but_not_verdict_changes(self):
+        frozen = {"transitions": 2404, "errors": 152, "accuracy": 2252 / 2404}
+        equivalent = frozen | {"accuracy": 1 - 152 / 2404}
+        self.assertNotEqual(frozen["accuracy"], equivalent["accuracy"])
+        check_validation_counts(equivalent, frozen)
+        with self.assertRaisesRegex(AssertionError, "counts"):
+            check_validation_counts(equivalent | {"errors": 151}, frozen)
 
     def test_other_maps_cannot_act_as_negatives(self):
         prediction = torch.tensor([[0.5]], requires_grad=True)
