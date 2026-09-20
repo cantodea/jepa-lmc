@@ -9,6 +9,7 @@ description = "Action-conditioned JEPA transition models for formal verification
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "numpy>=1.24",
     "pandas>=2.0",
     "PyYAML>=6.0",
     "torch>=2.1",

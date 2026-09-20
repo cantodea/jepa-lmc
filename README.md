@@ -3,14 +3,25 @@
 JEPA-LMC studies whether an action-conditioned JEPA model can reduce the concrete
 checks needed for finite-state formal verification.
 
-The latest [bounded ranking/depth study](docs/top1_ranking_study.md) finds a better
+The latest [oracle local abstraction study](docs/oracle_local_abstraction.md)
+freezes the `c15c457` ranking checkpoints. On 8,928 stress state-action queries,
+the oracle local candidate set has 100% successor coverage, mean size 1.0112,
+maximum size 3 and 98.925% singletons. Identity simulation holds on all 72 graphs.
+Non-immediate primary CTL proof recovery rises from the historical global
+baseline's 61.25% to 91.25%; non-immediate safety proof recovery is 90%.
+All three seeds pass the predeclared feasibility gate. Native CTL and nuXmv
+agree exactly. This supports a later study of unknown-dynamics local bounds;
+the current oracle bounds themselves are not deployable estimates. No training,
+architecture changes or new formulas were introduced in this study.
+
+The completed [bounded ranking/depth study](docs/top1_ranking_study.md) finds a better
 Top-1 model without changing the selected model's architecture. Across three seeds,
 ranking loss improves validation from 92.87% to 98.68% and stress from 94.20% to
 98.92%. Initial all-six CTL agreement rises from 52/72 to 68/72 and bisimulation
 from 23/72 to 40/72. All-six LTL stays at 70/72; some individual temporal verdicts
 regress despite higher Top-1 accuracy. Extra predictor depth gives no further gain.
-Both original baseline and ranking checkpoints are retained. This tuning round is
-complete; new abstraction experiments remain paused. The earlier negative
+Both original baseline and ranking checkpoints are retained. Architecture tuning
+is complete; ranking is the main predictor for the local abstraction study. The earlier negative
 [epochs/LR/capacity study](docs/top1_quality_study.md) is preserved unchanged.
 
 The branch also contains **property-directed successor refinement** in

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import platform
 import subprocess
 from pathlib import Path
@@ -323,7 +324,7 @@ def run(output):
             "partitions": 0,
             "preservation": 0,
         }
-    pairs, ranks, seed_results = [], [], []
+    pairs, ranks, seed_results, radius_replay = [], [], [], []
     with (output / "distance_tables.jsonl").open("w") as raw:
         for seed in SEEDS:
             tables = {}
@@ -351,8 +352,19 @@ def run(output):
                     )
                     ranks.extend(metadata | row for row in ranking_rows(table))
             old_seed = next(r for r in historical["seeds"] if r["seed"] == seed)
-            if radii["regression"] != old_seed["radii"]["epsilon_max"]:
-                raise AssertionError("Historical maximum radius changed.")
+            saved_radius = old_seed["radii"]["epsilon_max"]
+            # Floating inference need not be bitwise identical across CPU builds.
+            # This scalar tolerance never relaxes the exact set/CTL replay below.
+            radius_replay.append(
+                {
+                    "seed": seed,
+                    "historical": saved_radius,
+                    "recomputed": radii["regression"],
+                    "absolute_difference": abs(radii["regression"] - saved_radius),
+                }
+            )
+            if not math.isclose(radii["regression"], saved_radius, rel_tol=1e-5):
+                raise AssertionError("Historical maximum radius materially changed.")
             for variant in protocol["variants"]:
                 predictor = (
                     "regression" if variant.startswith("regression_") else "ranking"
@@ -498,6 +510,7 @@ def run(output):
             "seed_results": seed_results,
             "historical_max_candidate_sets_reproduced": len(old_sets),
             "frozen_ranking_top1_graphs_reproduced": len(old_top1),
+            "historical_radius_numerical_replay": radius_replay,
             "all_distance_orderings_independently_verified": True,
             "exports": {
                 p.name: digest(p)
