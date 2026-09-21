@@ -66,3 +66,9 @@ In the current deterministic GridWorld pilot, the action-conditioned model reach
 These experiments are still preliminary. The current GridWorld transition dynamics are relatively simple, and the learned model does not provide a formal equivalence or bisimulation guarantee.
 
 The next stage of the project is to test learned dynamics across more varied system instances and compare JEPA with simpler neural transition models.
+
+## Updates (September 2026)
+
+Added [simulation/bisimulation checks](docs/top1_behavioral_relations.md) and a [nuXmv CTL/LTL backend audit](docs/backend_sanity_check.md).
+[Ranking-loss training](docs/top1_ranking_study.md) improves stress Top-1 accuracy to 98.92% across three seeds.
+The [oracle local abstraction study](docs/oracle_local_abstraction.md) achieves 100% successor coverage with mean candidate size 1.0112; these bounds use oracle truth and do not yet guarantee coverage under unknown dynamics.

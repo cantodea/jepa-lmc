@@ -1,0 +1,52 @@
+{
+  "study": "frozen_ranking_oracle_local_abstraction",
+  "predictor_commit": "c15c457c029df6bb120e9d64d71b2fa66eaf1200",
+  "seeds": [20260804, 20260805, 20260806],
+  "model_bank": "outputs/top1_quality/round2/model_bank.json",
+  "checkpoint_roles": ["best", "baseline"],
+  "checkpoint_sha256": {
+    "ranking/20260804": "c3f864497896f184d4df9d90838cf1c7cb35c8e066006dddfcf70c264d4782f3",
+    "ranking/20260805": "bed30275338ffbfd82bbe246d593355a65370e5bea044dd8b5ec7b203f095fda",
+    "ranking/20260806": "e3782ee92741de336a1df565b5bd2b0732587b45ba34d0bffc6b0951bad4b343",
+    "regression/20260804": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc",
+    "regression/20260805": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262",
+    "regression/20260806": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc"
+  },
+  "maps": "The unchanged 24 radius_stress_cases: 3 families x 2 layouts x 4 rotations",
+  "pairs_per_seed": 2976,
+  "primary_variant": "ranking_local",
+  "variants": {
+    "ranking_local": "Ranking checkpoint, b(s,a)=the true successor distance; closed ball including ties",
+    "ranking_global": "Same ranking checkpoint; one epsilon_max pooled over all 24 stress maps per seed",
+    "regression_local": "Original regression checkpoint, same oracle local construction; geometry control",
+    "regression_global": "Original checkpoint and pooled epsilon_max; reproduce every saved historical maximum-radius candidate set and CTL score",
+    "ranking_top1": "Frozen c15c457 Top-1 graph, checked against its saved export",
+    "all_states": "All valid same-map successors for every action; negative control",
+    "exact_graph": "True action-labelled graph; positive control"
+  },
+  "distance": "Unnormalised Euclidean distance between float32 network outputs, computed using direct float64 cdist (no matrix-multiply shortcut), exactly as in the historical radius evaluator. Audit full rankings against independent direct subtraction and canonical float32 Top-1.",
+  "sorting": "Ascending distance with original state index breaking ties. Export full distances and ordered indices, true rank, d1/d2/d3, d_true, d2-d1, tie count and deterministic Top-1/2/3 coverage. Oracle balls include the entire boundary tie block.",
+  "spurious_edge_rate": "Pooled action-labelled spurious edges / all included action-labelled edges. Also report extra edges per true edge and unlabelled edge counts separately.",
+  "formal_pipeline": "Existing greatest simulation/bisimulation and native CTL on every variant. Existing nuXmv CTL sanity and all six LTL formulas on ranking_local, ranking_global and regression_global. Reuse hash-checked ranking_top1 temporal records; prove/check controls separately. Same states, labels, initial states, graph encoding and no fairness. Legacy backend export key top1 is an explicitly labelled adapter for the candidate graph, not a new point prediction.",
+  "proving_power": "Reuse the historical non-immediate primary CTL opportunities for AG !danger, EF goal and E[!danger U goal]. Separately report all/initial/non-immediate ACTL and universally interpreted LTL true-proof recall, denominators and false claims. AF goal has no non-immediate positive opportunity on this suite; report N/A, not evidence of useful liveness proving power.",
+  "continue_gate": {
+    "per_seed": {
+      "successor_coverage": 1.0,
+      "identity_simulation_all_maps": true,
+      "one_sided_ctl_ltl_violations": 0,
+      "maximum_mean_candidate_size": 1.10,
+      "maximum_candidate_size": 5,
+      "minimum_singleton_fraction": 0.95,
+      "minimum_non_immediate_AG_true_proof_recall": 0.75,
+      "minimum_primary_proof_recall": 0.75,
+      "minimum_maps_with_proof_in_each_required_family": 4,
+      "no_primary_proof_recall_regression_vs_historical_global": true
+    },
+    "pooled": {
+      "minimum_candidate_count_reduction_vs_historical_global": 0.50,
+      "minimum_primary_proof_recall_gain_vs_historical_global": 0.10
+    },
+    "interpretation": "Engineering feasibility screen, not a statistical significance test. Every seed must pass; no post-result threshold or checkpoint changes. Required proof families remain sealed_region and danger_gate."
+  },
+  "scope": "Oracle best-case diagnostic within the fixed distance-ball family. No training, architecture changes, new temporal formulas, validation/test-fitted estimator, conformal/PAC, or claim of a deployable unknown-R error bound. Full oracle truth is used only to construct/evaluate the diagnostic bounds and exact controls. Stop after this study and report whether to consider bound estimation in a later stage."
+}

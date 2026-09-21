@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "scope": "Finite known states and exact labels; deterministic stationary dynamics; trusted resettable successor oracle",
+  "model_seeds": [20260804, 20260805, 20260806],
+  "maps": "The existing 24 radius_stress_cases, unchanged",
+  "queries": "Each map's start state, independently for AG !danger, EF goal, and E[!danger U goal]",
+  "query_count_per_seed_and_method": 72,
+  "training": "Reuse the three existing 40-map, 100-epoch checkpoints; no training or architecture changes",
+  "initial_upper_relation": "All states are possible successors of each state/action; no test-fitted radius",
+  "initial_lower_relation": "No observed transitions",
+  "refinement": "Validate a candidate path from its start; each new exact successor query replaces only that action's upper set by the observed singleton; recheck on the first mismatch",
+  "cache": "Fresh per map/start/property/method; count every distinct queried state/action once",
+  "methods": ["cegar_uniform", "cegar_jepa", "cegar_shuffled", "direct_bfs"],
+  "priority": {
+    "cegar_uniform": "Unit edge cost",
+    "cegar_jepa": "Unknown edge cost is 1 plus the zero-based same-row target-distance rank; confirmed edges cost 1",
+    "cegar_shuffled": "Independently permute each target rank row with a fixed seed derived from model seed and case index; confirmed edges cost 1",
+    "direct_bfs": "Exact on-demand breadth-first exploration with fixed action order, stopping on a witness or exhausted reachable region"
+  },
+  "budget_fractions_of_full_state_action_table": [0.1, 0.25, 0.5, 1.0],
+  "metrics": ["wrong_conclusive_verdicts", "inclusion_audit_failures", "oracle_queries", "query_fraction", "resolved_fraction_at_budget", "spurious_paths", "remaining_upper_candidates", "verification_seconds", "neural_preparation_seconds"],
+  "exploratory_support_rule": {
+    "all_conclusive_verdicts_correct": true,
+    "all_relation_audits_pass": true,
+    "every_seed_reduction_vs_uniform_and_direct_bfs": 0.20,
+    "every_seed_strictly_fewer_queries_than_shuffled": true,
+    "interpretation": "Engineering screen for JEPA's incremental query-saving value, not statistical significance, scalability evidence, or a generalization certificate"
+  },
+  "prohibited_shortcuts": ["Calling true dynamics during neural priority construction", "Using test errors to initialize a radius", "Deleting an edge because the network assigns low plausibility", "Totalizing the observed lower graph with invented self-loops", "Reporting unknown as true or false", "Pooling seeds to conceal failure", "Tuning priorities after observing these results"]
+}

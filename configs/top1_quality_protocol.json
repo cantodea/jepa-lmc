@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "purpose": "Bounded Top-1 quality diagnosis; no new abstraction experiments",
+  "model_seeds": [20260804, 20260805, 20260806],
+  "max_candidate_configurations": 3,
+  "max_training_runs": 9,
+  "train_maps": "Exactly the original first 40 pilot training maps (4736 transitions)",
+  "validation": "The original 20 held-out pilot validation maps (2404 transitions)",
+  "secondary_validation": "Three rotations of those same validation maps; diagnostic only, excluded from selection",
+  "stress": "All 24 existing stress maps (2976 transitions); already inspected, excluded from training and selection",
+  "untouched_test": "The 50 pilot test maps are neither trained on nor scored in this round",
+  "data_augmentation": "None",
+  "decoder": "Unchanged full-state target-latent float32 torch.cdist/argsort",
+  "loss": "Unchanged action_jepa_loss; variance 0.1, covariance 0.01",
+  "batch_size": 512,
+  "ema_momentum": 0.99,
+  "weight_decay": 0.0001,
+  "threads": 4,
+  "evaluation_epochs": [100, 150, 200, 250, 300],
+  "checkpoint_rule": "Only epoch 300 is eligible; intermediate original-validation scores diagnose convergence, not checkpoint selection",
+  "optimizer_restart": "Baselines contain no AdamW/RNG state. Continuations explicitly restart AdamW and loader generator at epoch 100. Capacity control uses the same restart at epoch 100.",
+  "candidates": [
+    {
+      "name": "long_constant",
+      "initialization": "baseline",
+      "initial_epoch": 100,
+      "final_epoch": 300,
+      "learning_rate": 0.0003,
+      "final_learning_rate": 0.0003,
+      "model_kwargs": {"height": 6, "width": 6, "latent_dim": 32}
+    },
+    {
+      "name": "long_cosine",
+      "initialization": "baseline",
+      "initial_epoch": 100,
+      "final_epoch": 300,
+      "learning_rate": 0.0003,
+      "final_learning_rate": 0.00003,
+      "model_kwargs": {"height": 6, "width": 6, "latent_dim": 32}
+    },
+    {
+      "name": "capacity_cosine",
+      "initialization": "fresh",
+      "initial_epoch": 0,
+      "final_epoch": 300,
+      "learning_rate": 0.0003,
+      "final_learning_rate": 0.00003,
+      "model_kwargs": {"height": 6, "width": 6, "latent_dim": 64, "hidden_channels": 48, "predictor_hidden_dim": 128}
+    }
+  ],
+  "schedule": "Constant through epoch 100; cosine from the stated learning_rate at epoch 101 to final_learning_rate at epoch 300 (constant when endpoints equal)",
+  "selection": "Include baseline; maximize mean original-validation Top-1 accuracy across all three seeds; ties prefer fewer trainable parameters, then listed order. Select one configuration for every seed.",
+  "clear_validation_improvement": "At least 1 percentage point in three-seed mean and strictly better on every seed",
+  "99_percent_goal": "Report whether every seed reaches 99% on validation and separately on stress; 100% means zero errors on the full enumerated split",
+  "stop": "Stop after these three configurations regardless of results; no extra epochs, configurations, decoder search or stress-directed tuning",
+  "behavior": "Same greatest simulation/bisimulation algorithms and independent audits, six native CTL properties, six nuXmv LTL properties; also reuse strict nuXmv CTL/paired-formula sanity checker",
+  "preservation": "Original weights, source learning/verification/evaluation modules and all previous output files remain byte-identical; new outputs/top1_quality/round1 only"
+}

@@ -1,0 +1,44 @@
+{
+  "protocol_version": 1,
+  "decision_scope": "Current fixed-architecture JEPA and one uniform latent radius per model; deciding whether to invest in Yang-style error certification",
+  "model_seeds": [20260804, 20260805, 20260806],
+  "training": {
+    "train_maps": 40,
+    "epochs": 100,
+    "batch_size": 512,
+    "latent_dim": 32,
+    "learning_rate": 0.0003,
+    "ema_momentum": 0.99,
+    "architecture_changes": false,
+    "stress_maps_used_for_training": false
+  },
+  "maps": {
+    "families": ["sealed_region", "danger_gate", "safe_detour"],
+    "layouts_per_family": 2,
+    "rotations_per_layout": 4,
+    "total": 24,
+    "dimensions": [6, 6]
+  },
+  "evaluation": {
+    "radius_source": "All state-action errors on all 24 stress maps, pooled separately for each frozen checkpoint",
+    "primary_variant": "epsilon_max",
+    "diagnostic_variants": ["top1", "epsilon_95", "epsilon_99"],
+    "controls": ["all_states", "exact_graph"],
+    "membership": "Closed Euclidean ball; same-map target encoder; no repair or topology filter",
+    "primary_properties": ["AG !danger", "EF goal", "E[!danger U goal]"],
+    "nontrivial_filter": "Exclude source-label base cases before primary CTL scoring",
+    "balanced_score": "Macro-average positive/negative recall balance over the three primary properties",
+    "opportunity_recall": "Audited correct non-immediate one-sided claims / exact graph non-immediate one-sided claims"
+  },
+  "continue_only_if_every_seed_passes": {
+    "action_successor_coverage": 1.0,
+    "maps_with_relation_inclusion": 24,
+    "one_sided_violations": 0,
+    "minimum_primary_balanced_gain_over_all_states": 0.10,
+    "minimum_nontrivial_opportunity_recall": 0.10,
+    "required_opportunity_families": ["sealed_region", "danger_gate"],
+    "minimum_maps_with_recovered_opportunity_per_required_family": 4
+  },
+  "failure_action": "Stop this Yang-style uniform-radius research route for the current JEPA; retain results as a negative experiment. Do not tune this suite or add certification machinery.",
+  "interpretation": "This is a prespecified research screening rule, not a statistical significance test or an impossibility theorem about Yang 2025. Ten percentage points and ten percent recall are engineering decision thresholds."
+}

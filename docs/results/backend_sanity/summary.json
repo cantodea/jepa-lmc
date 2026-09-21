@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "saved_graph_cases": 72,
+  "graphs_checked": 144,
+  "graph_states_checked": 4464,
+  "source_run_revision": "a86b4ccc619e108a3f3bd8aed2af2134f791390f",
+  "source_input_sha256": {
+    "report.json": "854cc99b196024132ee6a1de2699ae59a020b9e7d921656ddd8080e7de89f130",
+    "relations.jsonl": "ba8e855729f0070be8f43ca84fdb55bdebf8ac40978b218d035888dd8e1d2226"
+  },
+  "checker_source_sha256": {
+    "experiments/backend_sanity.py": "95bf881f5aabe1eb6c2e068937ea60ba946dd8bc644fd07991a76f060b36be19",
+    "experiments/evaluate_top1_ltl.py": "b97d46c5df91a77f211fc35c0a834499a3b809c96cac8e7e1f2c491ec3234366",
+    "src/jepa_lmc/verification/ctl.py": "80217d5af517a24b27ad0791118c10884cfd9730a9c79dea9a23cd9fecae5696",
+    "src/jepa_lmc/verification/ltl.py": "a22dab7fa41565d211ef5b16cf8645e943c780b2127fb34611c27a97bccfd672",
+    "src/jepa_lmc/verification/nuxmv.py": "ba4cb4ed10d2ad6a92076f1d3d23ef105b3d0eed308b1f85ffcff09ccb58231e",
+    "src/jepa_lmc/verification/transition_system.py": "230cbba55481c97e54acc16e8ca73d371a3eb1a6452073ddc46f0d8503567033",
+    "src/jepa_lmc/benchmarks/ctl_suite.py": "d5c3928a2a50160b4c654bb58bebcbb9f37295a82e4dc6172a9ab597857bcebc",
+    "src/jepa_lmc/benchmarks/ltl_suite.py": "5cb6c251ae96d7ec2d998bb16fb3c42f8de8b7edee2734c7eb4cd51d4b4e1ed0"
+  },
+  "checker_revision": "d4093219c24f3f91290dadf20694d859fd1772aa",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "backend": {
+    "sha256": "758c252e60ad92072e64a8790e4dd8b5c6c1460a1cffdf2ecf889b768a125dfe",
+    "banner": "*** This is nuXmv 2.2.0 (compiled on Fri May 29 11:00:56 2026)",
+    "arguments": [
+      "-s"
+    ],
+    "mode": "exact finite-state batch checking; no BMC bound"
+  },
+  "encoding": {
+    "shared_ctl_ltl_file_and_process": true,
+    "fairness": false,
+    "actions": "ignored",
+    "labels": "all saved propositions",
+    "initial": "all states, with the same state-specific implication guard",
+    "designated_initial": "saved initial index used for the all-six score",
+    "independent_graph_label_encoding_audits": 144
+  },
+  "input_backend_and_sources_unchanged": true,
+  "external_backend_calls": 144,
+  "external_ctl_verdicts": 26784,
+  "external_ltl_verdicts": 8928,
+  "internal_ctl_vs_nuxmv_ctl": {
+    "comparisons": 26784,
+    "matched": 26784,
+    "agreement": 1.0,
+    "mismatches": 0,
+    "left_true": 14921,
+    "right_true": 14921
+  },
+  "internal_ctl_vs_nuxmv_ctl_by_property": {
+    "EF danger": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 3687,
+      "right_true": 3687
+    },
+    "EF goal": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 3344,
+      "right_true": 3344
+    },
+    "E[!danger U goal]": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 2649,
+      "right_true": 2649
+    },
+    "AG !danger": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 777,
+      "right_true": 777
+    },
+    "AF goal": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 144,
+      "right_true": 144
+    },
+    "EG safe": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 4320,
+      "right_true": 4320
+    }
+  },
+  "paired_formulas": {
+    "AG !danger <=> G !danger": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 777,
+      "right_true": 777
+    },
+    "AF goal <=> F goal": {
+      "comparisons": 4464,
+      "matched": 4464,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 144,
+      "right_true": 144
+    }
+  },
+  "initial_all_six": {
+    "maps": 72,
+    "saved": 52,
+    "internal": 52,
+    "nuxmv": 52,
+    "changed_maps": 0,
+    "changed_formula_agreements": 0
+  },
+  "by_seed": {
+    "20260804": {
+      "internal_ctl_vs_nuxmv_ctl": {
+        "comparisons": 8928,
+        "matched": 8928,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 5130,
+        "right_true": 5130
+      },
+      "paired_formulas": {
+        "comparisons": 2976,
+        "matched": 2976,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 298,
+        "right_true": 298
+      },
+      "initial_all_six": 21
+    },
+    "20260805": {
+      "internal_ctl_vs_nuxmv_ctl": {
+        "comparisons": 8928,
+        "matched": 8928,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 4829,
+        "right_true": 4829
+      },
+      "paired_formulas": {
+        "comparisons": 2976,
+        "matched": 2976,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 334,
+        "right_true": 334
+      },
+      "initial_all_six": 13
+    },
+    "20260806": {
+      "internal_ctl_vs_nuxmv_ctl": {
+        "comparisons": 8928,
+        "matched": 8928,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 4962,
+        "right_true": 4962
+      },
+      "paired_formulas": {
+        "comparisons": 2976,
+        "matched": 2976,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 289,
+        "right_true": 289
+      },
+      "initial_all_six": 18
+    }
+  },
+  "by_graph": {
+    "real": {
+      "comparisons": 13392,
+      "matched": 13392,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 7776,
+      "right_true": 7776
+    },
+    "top1": {
+      "comparisons": 13392,
+      "matched": 13392,
+      "agreement": 1.0,
+      "mismatches": 0,
+      "left_true": 7145,
+      "right_true": 7145
+    }
+  },
+  "mismatch_count": 0,
+  "elapsed_seconds": 29.210013287000038,
+  "official_download": {
+    "download_url": "https://nuxmv.fbk.eu/downloads/2.2.0/nuXmv-2.2.0-linux64.tar.xz",
+    "archive_sha256": "d31709895ae2d7737e1e3c59eec9442c76527d2273380eaff6f3aea8cce9f946",
+    "official_checksum_verified": true,
+    "archive_bytes": 13631488
+  },
+  "validation": {
+    "targeted_tests": 32,
+    "passed": 32,
+    "skipped": 0,
+    "ruff_passed": true,
+    "record_replay": {
+      "all_passed": true,
+      "backend_logs_checked": 144,
+      "csv_comparisons_reconciled": 35712,
+      "initial_formula_rows_checked": 432,
+      "native_ctl_verdicts_recomputed": 26784,
+      "initial_all_six": 52,
+      "mismatches": 0,
+      "export_file_hashes_checked": 435
+    },
+    "preservation": {
+      "all_unchanged": true,
+      "no_learning_source_diff_from_main": true,
+      "sha256_before": {
+        "outputs/latent_radius/oracle/model.pt": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc",
+        "outputs/latent_radius/stress_training/seed_20260805/model.pt": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262",
+        "outputs/latent_radius/stress_training/seed_20260806/model.pt": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc",
+        "src/jepa_lmc/learning/__init__.py": "44940b81afcf498e1dbb6ed67d5f70a34800797998f8b3055616adb368417b8a",
+        "src/jepa_lmc/learning/data.py": "1a2cacb88ea13913f175331d4289f9b8889edde8da38f6b877ca4ff9e08aa488",
+        "src/jepa_lmc/learning/model.py": "2ad4956fe466b39ba4190ab542f02b3c4ae4698515894a1d052b0ab74e39c75a",
+        "src/jepa_lmc/learning/training.py": "6834220b97fff5c86b784a43c2f10db74eedfe05c6a2837bdc1fb60397890283"
+      },
+      "sha256_after": {
+        "outputs/latent_radius/oracle/model.pt": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc",
+        "outputs/latent_radius/stress_training/seed_20260805/model.pt": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262",
+        "outputs/latent_radius/stress_training/seed_20260806/model.pt": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc",
+        "src/jepa_lmc/learning/__init__.py": "44940b81afcf498e1dbb6ed67d5f70a34800797998f8b3055616adb368417b8a",
+        "src/jepa_lmc/learning/data.py": "1a2cacb88ea13913f175331d4289f9b8889edde8da38f6b877ca4ff9e08aa488",
+        "src/jepa_lmc/learning/model.py": "2ad4956fe466b39ba4190ab542f02b3c4ae4698515894a1d052b0ab74e39c75a",
+        "src/jepa_lmc/learning/training.py": "6834220b97fff5c86b784a43c2f10db74eedfe05c6a2837bdc1fb60397890283"
+      }
+    },
+    "record_replay_script_sha256": "422dc1b725e660bcb28eb256579af6f6caadb3d3c93d07c69d9299d09c8f3058"
+  },
+  "private_records": {
+    "filename": "jepa-lmc-backend-sanity-records.zip",
+    "archive_sha256": "eec733a5c00f52b6d580a3e068279adeb5bb2c391d22f9822683b7bbac68ff2f",
+    "original_report_sha256": "80ba304e6f136ecda77da3927e3be01324b96497250e9426da1f2db964795841",
+    "export_hashes_checked": 435
+  }
+}

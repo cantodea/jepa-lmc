@@ -8,6 +8,11 @@ dist/
 
 outputs/models/
 outputs/figures/
+outputs/latent_radius/
+outputs/refinement/
+outputs/behavioral_relations/
+outputs/top1_quality/
+outputs/local_abstraction/
 *.log
 
 .DS_Store

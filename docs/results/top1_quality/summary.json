@@ -1,0 +1,3192 @@
+{
+  "status": "completed",
+  "protocol_sha256": "06859b507d079aa0388c8b2257e7b927968ebbde40ae3c24382fabc0e6cc37af",
+  "selection": {
+    "protocol_sha256": "06859b507d079aa0388c8b2257e7b927968ebbde40ae3c24382fabc0e6cc37af",
+    "options": [
+      {
+        "candidate": "baseline",
+        "parameters": 90776,
+        "validation": {
+          "20260804": 0.9280366056572379,
+          "20260805": 0.9209650582362728,
+          "20260806": 0.9371880199667222
+        },
+        "checkpoints": {
+          "20260804": "outputs/latent_radius/oracle/model.pt",
+          "20260805": "outputs/latent_radius/stress_training/seed_20260805/model.pt",
+          "20260806": "outputs/latent_radius/stress_training/seed_20260806/model.pt"
+        },
+        "mean_validation_accuracy": 0.9287298946200776
+      },
+      {
+        "candidate": "long_constant",
+        "validation": {
+          "20260804": 0.8806156405990017,
+          "20260805": 0.882279534109817,
+          "20260806": 0.8864392678868552
+        },
+        "checkpoints": {
+          "20260804": "outputs/top1_quality/round1/long_constant/seed_20260804/model.pt",
+          "20260805": "outputs/top1_quality/round1/long_constant/seed_20260805/model.pt",
+          "20260806": "outputs/top1_quality/round1/long_constant/seed_20260806/model.pt"
+        },
+        "parameters": 90776,
+        "mean_validation_accuracy": 0.8831114808652246
+      },
+      {
+        "candidate": "long_cosine",
+        "validation": {
+          "20260804": 0.9126455906821963,
+          "20260805": 0.9138935108153078,
+          "20260806": 0.9238768718801996
+        },
+        "checkpoints": {
+          "20260804": "outputs/top1_quality/round1/long_cosine/seed_20260804/model.pt",
+          "20260805": "outputs/top1_quality/round1/long_cosine/seed_20260805/model.pt",
+          "20260806": "outputs/top1_quality/round1/long_cosine/seed_20260806/model.pt"
+        },
+        "parameters": 90776,
+        "mean_validation_accuracy": 0.9168053244592346
+      },
+      {
+        "candidate": "capacity_cosine",
+        "validation": {
+          "20260804": 0.9521630615640599,
+          "20260805": 0.9222129783693843,
+          "20260806": 0.901414309484193
+        },
+        "checkpoints": {
+          "20260804": "outputs/top1_quality/round1/capacity_cosine/seed_20260804/model.pt",
+          "20260805": "outputs/top1_quality/round1/capacity_cosine/seed_20260805/model.pt",
+          "20260806": "outputs/top1_quality/round1/capacity_cosine/seed_20260806/model.pt"
+        },
+        "parameters": 212056,
+        "mean_validation_accuracy": 0.925263449805879
+      }
+    ],
+    "selected": "baseline",
+    "selected_checkpoints": {
+      "20260804": "outputs/latent_radius/oracle/model.pt",
+      "20260805": "outputs/latent_radius/stress_training/seed_20260805/model.pt",
+      "20260806": "outputs/latent_radius/stress_training/seed_20260806/model.pt"
+    },
+    "mean_validation_gain": 0.0,
+    "clear_validation_improvement": false,
+    "stress_used_for_selection": false
+  },
+  "split_audit": {
+    "base_train_maps": 40,
+    "original_validation_maps": 20,
+    "rotated_validation_maps": 60,
+    "stress_maps": 24,
+    "untouched_pilot_test_maps": 50,
+    "train_rotation_orbit_maps": 160,
+    "training_orbit_vs_evaluation_map_overlap": 0,
+    "train_map_seeds": [
+      20260802,
+      20260803,
+      20260804,
+      20260805,
+      20260806,
+      20260807,
+      20260808,
+      20260809,
+      20260810,
+      20260811,
+      20260812,
+      20260813,
+      20260814,
+      20260815,
+      20260816,
+      20260817,
+      20260818,
+      20260819,
+      20260820,
+      20260821,
+      20260822,
+      20260823,
+      20260824,
+      20260825,
+      20260826,
+      20260827,
+      20260828,
+      20260829,
+      20260830,
+      20260831,
+      20260832,
+      20260833,
+      20260834,
+      20260835,
+      20260836,
+      20260837,
+      20260838,
+      20260839,
+      20260840,
+      20260841
+    ],
+    "validation_map_seeds": [
+      20260902,
+      20260903,
+      20260904,
+      20260905,
+      20260906,
+      20260907,
+      20260908,
+      20260909,
+      20260910,
+      20260911,
+      20260912,
+      20260913,
+      20260914,
+      20260915,
+      20260916,
+      20260917,
+      20260918,
+      20260919,
+      20260920,
+      20260921
+    ],
+    "stress_used_for_training_or_model_selection": false,
+    "note": "Stress is an already-inspected diagnostic suite, not a fresh test."
+  },
+  "model_scores": [
+    {
+      "candidate": "baseline",
+      "seed": 20260804,
+      "epochs": 100,
+      "parameters": 90776,
+      "stress_accuracy": 0.9509408602150538,
+      "train_accuracy": 0.9457347972972973,
+      "validation_accuracy": 0.9280366056572379,
+      "validation_rotated_accuracy": 0.9316417082640045,
+      "stress_errors": 146,
+      "train_errors": 257,
+      "validation_errors": 173,
+      "validation_rotated_errors": 493,
+      "checkpoint": "outputs/latent_radius/oracle/model.pt",
+      "checkpoint_sha256": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc",
+      "training_seconds_new": 0
+    },
+    {
+      "candidate": "baseline",
+      "seed": 20260805,
+      "epochs": 100,
+      "parameters": 90776,
+      "stress_accuracy": 0.9206989247311828,
+      "train_accuracy": 0.9446790540540541,
+      "validation_accuracy": 0.9209650582362728,
+      "validation_rotated_accuracy": 0.901275651691625,
+      "stress_errors": 236,
+      "train_errors": 262,
+      "validation_errors": 190,
+      "validation_rotated_errors": 712,
+      "checkpoint": "outputs/latent_radius/stress_training/seed_20260805/model.pt",
+      "checkpoint_sha256": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262",
+      "training_seconds_new": 0
+    },
+    {
+      "candidate": "baseline",
+      "seed": 20260806,
+      "epochs": 100,
+      "parameters": 90776,
+      "stress_accuracy": 0.9543010752688172,
+      "train_accuracy": 0.9600929054054054,
+      "validation_accuracy": 0.9371880199667222,
+      "validation_rotated_accuracy": 0.9346921797004992,
+      "stress_errors": 136,
+      "train_errors": 189,
+      "validation_errors": 151,
+      "validation_rotated_errors": 471,
+      "checkpoint": "outputs/latent_radius/stress_training/seed_20260806/model.pt",
+      "checkpoint_sha256": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc",
+      "training_seconds_new": 0
+    },
+    {
+      "candidate": "long_constant",
+      "seed": 20260804,
+      "epochs": 300,
+      "parameters": 90776,
+      "stress_accuracy": 0.8706317204301075,
+      "train_accuracy": 0.9896537162162162,
+      "validation_accuracy": 0.8806156405990017,
+      "validation_rotated_accuracy": 0.8928175263449806,
+      "stress_errors": 385,
+      "train_errors": 49,
+      "validation_errors": 287,
+      "validation_rotated_errors": 773,
+      "checkpoint": "outputs/top1_quality/round1/long_constant/seed_20260804/model.pt",
+      "checkpoint_sha256": "94a9d4e793158bae3a251cf72141d43e40543410b623770734c79c1311219beb",
+      "training_seconds_new": 244.51832116800006
+    },
+    {
+      "candidate": "long_constant",
+      "seed": 20260805,
+      "epochs": 300,
+      "parameters": 90776,
+      "stress_accuracy": 0.8279569892473118,
+      "train_accuracy": 0.9898648648648649,
+      "validation_accuracy": 0.882279534109817,
+      "validation_rotated_accuracy": 0.8652246256239601,
+      "stress_errors": 512,
+      "train_errors": 48,
+      "validation_errors": 283,
+      "validation_rotated_errors": 972,
+      "checkpoint": "outputs/top1_quality/round1/long_constant/seed_20260805/model.pt",
+      "checkpoint_sha256": "815a3d9cb07ece7a446eb36f9980d23e29530e891b02909939352bf0f5eb0d20",
+      "training_seconds_new": 231.88611759799994
+    },
+    {
+      "candidate": "long_constant",
+      "seed": 20260806,
+      "epochs": 300,
+      "parameters": 90776,
+      "stress_accuracy": 0.8763440860215054,
+      "train_accuracy": 0.9845861486486487,
+      "validation_accuracy": 0.8864392678868552,
+      "validation_rotated_accuracy": 0.8362451469772602,
+      "stress_errors": 368,
+      "train_errors": 73,
+      "validation_errors": 273,
+      "validation_rotated_errors": 1181,
+      "checkpoint": "outputs/top1_quality/round1/long_constant/seed_20260806/model.pt",
+      "checkpoint_sha256": "99138c3a78bd3476e7e23f93cae8106b918559051dfaba98d87483f859c57c16",
+      "training_seconds_new": 342.84474950599997
+    },
+    {
+      "candidate": "long_cosine",
+      "seed": 20260804,
+      "epochs": 300,
+      "parameters": 90776,
+      "stress_accuracy": 0.9035618279569892,
+      "train_accuracy": 0.9710726351351351,
+      "validation_accuracy": 0.9126455906821963,
+      "validation_rotated_accuracy": 0.9120909595119245,
+      "stress_errors": 287,
+      "train_errors": 137,
+      "validation_errors": 210,
+      "validation_rotated_errors": 634,
+      "checkpoint": "outputs/top1_quality/round1/long_cosine/seed_20260804/model.pt",
+      "checkpoint_sha256": "254a202488316ec19095f99b82d848f7b7ca67a0d4c322b37d0917a295b69a68",
+      "training_seconds_new": 330.8705153389999
+    },
+    {
+      "candidate": "long_cosine",
+      "seed": 20260805,
+      "epochs": 300,
+      "parameters": 90776,
+      "stress_accuracy": 0.8746639784946236,
+      "train_accuracy": 0.9689611486486487,
+      "validation_accuracy": 0.9138935108153078,
+      "validation_rotated_accuracy": 0.8872712146422629,
+      "stress_errors": 373,
+      "train_errors": 147,
+      "validation_errors": 207,
+      "validation_rotated_errors": 813,
+      "checkpoint": "outputs/top1_quality/round1/long_cosine/seed_20260805/model.pt",
+      "checkpoint_sha256": "023755424a6390bce61f70a55b755d08c17bd4b3972d4093b7e2e86f5b8bc947",
+      "training_seconds_new": 292.72722645199997
+    },
+    {
+      "candidate": "long_cosine",
+      "seed": 20260806,
+      "epochs": 300,
+      "parameters": 90776,
+      "stress_accuracy": 0.9200268817204301,
+      "train_accuracy": 0.9681165540540541,
+      "validation_accuracy": 0.9238768718801996,
+      "validation_rotated_accuracy": 0.8936494731003882,
+      "stress_errors": 238,
+      "train_errors": 151,
+      "validation_errors": 183,
+      "validation_rotated_errors": 767,
+      "checkpoint": "outputs/top1_quality/round1/long_cosine/seed_20260806/model.pt",
+      "checkpoint_sha256": "0c5a65124f1ce3d20eb7af9ba0067b041beec9d25b687b81b844a4609d87ef3d",
+      "training_seconds_new": 264.71139644000004
+    },
+    {
+      "candidate": "capacity_cosine",
+      "seed": 20260804,
+      "epochs": 300,
+      "parameters": 212056,
+      "stress_accuracy": 0.9086021505376344,
+      "train_accuracy": 0.9881756756756757,
+      "validation_accuracy": 0.9521630615640599,
+      "validation_rotated_accuracy": 0.9259567387687188,
+      "stress_errors": 272,
+      "train_errors": 56,
+      "validation_errors": 115,
+      "validation_rotated_errors": 534,
+      "checkpoint": "outputs/top1_quality/round1/capacity_cosine/seed_20260804/model.pt",
+      "checkpoint_sha256": "77c305b46a798afe7f74eedef8ef8badc9bb6d6089039b4730d121da8921a7ea",
+      "training_seconds_new": 467.8985060539999
+    },
+    {
+      "candidate": "capacity_cosine",
+      "seed": 20260805,
+      "epochs": 300,
+      "parameters": 212056,
+      "stress_accuracy": 0.935483870967742,
+      "train_accuracy": 0.9786739864864865,
+      "validation_accuracy": 0.9222129783693843,
+      "validation_rotated_accuracy": 0.891708264004437,
+      "stress_errors": 192,
+      "train_errors": 101,
+      "validation_errors": 187,
+      "validation_rotated_errors": 781,
+      "checkpoint": "outputs/top1_quality/round1/capacity_cosine/seed_20260805/model.pt",
+      "checkpoint_sha256": "6459272d46d997b20423914d5ed2d053711b9f36b89d5d595528baf34d6f7ecd",
+      "training_seconds_new": 487.77874075299997
+    },
+    {
+      "candidate": "capacity_cosine",
+      "seed": 20260806,
+      "epochs": 300,
+      "parameters": 212056,
+      "stress_accuracy": 0.9146505376344086,
+      "train_accuracy": 0.984375,
+      "validation_accuracy": 0.901414309484193,
+      "validation_rotated_accuracy": 0.8843594009983361,
+      "stress_errors": 254,
+      "train_errors": 74,
+      "validation_errors": 237,
+      "validation_rotated_errors": 834,
+      "checkpoint": "outputs/top1_quality/round1/capacity_cosine/seed_20260806/model.pt",
+      "checkpoint_sha256": "852a2e0ac838927f35a25af56e0703ac0670572203678a962662e48959e2d7c0",
+      "training_seconds_new": 472.294831013
+    }
+  ],
+  "convergence": [
+    {
+      "candidate": "baseline",
+      "seed": 20260804,
+      "final_loss": 0.10243740395919697,
+      "final_prediction_loss": 0.04328942278752456,
+      "validation_checkpoints": []
+    },
+    {
+      "candidate": "baseline",
+      "seed": 20260805,
+      "final_loss": 0.10706518993184373,
+      "final_prediction_loss": 0.04718782853435825,
+      "validation_checkpoints": []
+    },
+    {
+      "candidate": "baseline",
+      "seed": 20260806,
+      "final_loss": 0.10630736459751387,
+      "final_prediction_loss": 0.04884469791038616,
+      "validation_checkpoints": []
+    },
+    {
+      "candidate": "long_constant",
+      "seed": 20260804,
+      "final_loss": 0.07973262466288902,
+      "final_prediction_loss": 0.02714262399319056,
+      "validation_checkpoints": [
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 149,
+          "accuracy": 0.9380199667221298
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 148,
+          "accuracy": 0.9384359400998337
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 210,
+          "accuracy": 0.9126455906821963
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 287,
+          "accuracy": 0.8806156405990017
+        }
+      ]
+    },
+    {
+      "candidate": "long_constant",
+      "seed": 20260805,
+      "final_loss": 0.08142482066476667,
+      "final_prediction_loss": 0.028540077845792513,
+      "validation_checkpoints": [
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 192,
+          "accuracy": 0.9201331114808652
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 166,
+          "accuracy": 0.9309484193011647
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 192,
+          "accuracy": 0.9201331114808652
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 283,
+          "accuracy": 0.882279534109817
+        }
+      ]
+    },
+    {
+      "candidate": "long_constant",
+      "seed": 20260806,
+      "final_loss": 0.07925295547859089,
+      "final_prediction_loss": 0.026394334596556587,
+      "validation_checkpoints": [
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 140,
+          "accuracy": 0.9417637271214643
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 155,
+          "accuracy": 0.9355241264559068
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 207,
+          "accuracy": 0.9138935108153078
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 273,
+          "accuracy": 0.8864392678868552
+        }
+      ]
+    },
+    {
+      "candidate": "long_cosine",
+      "seed": 20260804,
+      "final_loss": 0.08276157443587845,
+      "final_prediction_loss": 0.02947680521252993,
+      "validation_checkpoints": [
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 149,
+          "accuracy": 0.9380199667221298
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 147,
+          "accuracy": 0.9388519134775375
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 181,
+          "accuracy": 0.9247088186356073
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 210,
+          "accuracy": 0.9126455906821963
+        }
+      ]
+    },
+    {
+      "candidate": "long_cosine",
+      "seed": 20260805,
+      "final_loss": 0.08416447869023762,
+      "final_prediction_loss": 0.030229705511718184,
+      "validation_checkpoints": [
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 191,
+          "accuracy": 0.920549084858569
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 193,
+          "accuracy": 0.9197171381031614
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 194,
+          "accuracy": 0.9193011647254575
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 207,
+          "accuracy": 0.9138935108153078
+        }
+      ]
+    },
+    {
+      "candidate": "long_cosine",
+      "seed": 20260806,
+      "final_loss": 0.08212668791010573,
+      "final_prediction_loss": 0.028591447988071957,
+      "validation_checkpoints": [
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 139,
+          "accuracy": 0.9421797004991681
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 155,
+          "accuracy": 0.9355241264559068
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 172,
+          "accuracy": 0.9284525790349417
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 183,
+          "accuracy": 0.9238768718801996
+        }
+      ]
+    },
+    {
+      "candidate": "capacity_cosine",
+      "seed": 20260804,
+      "final_loss": 0.05059584169774442,
+      "final_prediction_loss": 0.015776328390111793,
+      "validation_checkpoints": [
+        {
+          "epoch": 100,
+          "transitions": 2404,
+          "errors": 133,
+          "accuracy": 0.9446755407653911
+        },
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 111,
+          "accuracy": 0.9538269550748752
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 105,
+          "accuracy": 0.9563227953410982
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 113,
+          "accuracy": 0.9529950083194676
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 115,
+          "accuracy": 0.9521630615640599
+        }
+      ]
+    },
+    {
+      "candidate": "capacity_cosine",
+      "seed": 20260805,
+      "final_loss": 0.0493961732733894,
+      "final_prediction_loss": 0.015598453984067246,
+      "validation_checkpoints": [
+        {
+          "epoch": 100,
+          "transitions": 2404,
+          "errors": 163,
+          "accuracy": 0.9321963394342762
+        },
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 160,
+          "accuracy": 0.9334442595673876
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 154,
+          "accuracy": 0.9359400998336106
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 168,
+          "accuracy": 0.930116472545757
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 187,
+          "accuracy": 0.9222129783693843
+        }
+      ]
+    },
+    {
+      "candidate": "capacity_cosine",
+      "seed": 20260806,
+      "final_loss": 0.049164006637560355,
+      "final_prediction_loss": 0.01430506309544718,
+      "validation_checkpoints": [
+        {
+          "epoch": 100,
+          "transitions": 2404,
+          "errors": 153,
+          "accuracy": 0.9363560732113144
+        },
+        {
+          "epoch": 150,
+          "transitions": 2404,
+          "errors": 146,
+          "accuracy": 0.9392678868552413
+        },
+        {
+          "epoch": 200,
+          "transitions": 2404,
+          "errors": 152,
+          "accuracy": 0.9367720465890182
+        },
+        {
+          "epoch": 250,
+          "transitions": 2404,
+          "errors": 194,
+          "accuracy": 0.9193011647254575
+        },
+        {
+          "epoch": 300,
+          "transitions": 2404,
+          "errors": 237,
+          "accuracy": 0.901414309484193
+        }
+      ]
+    }
+  ],
+  "means": {
+    "baseline": {
+      "train": 0.9501689189189189,
+      "validation": 0.9287298946200776,
+      "validation_rotated": 0.9225365132187096,
+      "stress": 0.9419802867383512
+    },
+    "long_constant": {
+      "train": 0.9880349099099099,
+      "validation": 0.8831114808652246,
+      "validation_rotated": 0.8647624329820669,
+      "stress": 0.8583109318996416
+    },
+    "long_cosine": {
+      "train": 0.9693834459459459,
+      "validation": 0.9168053244592346,
+      "validation_rotated": 0.8976705490848585,
+      "stress": 0.8994175627240143
+    },
+    "capacity_cosine": {
+      "train": 0.9837415540540541,
+      "validation": 0.925263449805879,
+      "validation_rotated": 0.9006748012571639,
+      "stress": 0.919578853046595
+    }
+  },
+  "baseline_behavior": {
+    "ctl": {
+      "comparisons": 13392,
+      "matched": 12431,
+      "agreement": 0.9282407407407407,
+      "initial_formula_agreement": 0.9351851851851852,
+      "initial_all_six_maps": 52,
+      "maps": 72,
+      "by_property": {
+        "AF goal": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 72,
+          "tn": 2160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "AG !danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "EF danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 1791,
+          "tn": 336,
+          "fp": 24,
+          "fn": 81,
+          "precision": 0.9867768595041322,
+          "recall": 0.9567307692307693
+        },
+        "EF goal": {
+          "comparisons": 2232,
+          "matched": 1808,
+          "agreement": 0.8100358422939068,
+          "tp": 1460,
+          "tn": 348,
+          "fp": 12,
+          "fn": 412,
+          "precision": 0.9918478260869565,
+          "recall": 0.7799145299145299
+        },
+        "EG safe": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 2160,
+          "tn": 72,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "E[!danger U goal]": {
+          "comparisons": 2232,
+          "matched": 1905,
+          "agreement": 0.853494623655914,
+          "tp": 1161,
+          "tn": 744,
+          "fp": 48,
+          "fn": 279,
+          "precision": 0.9602977667493796,
+          "recall": 0.80625
+        }
+      }
+    },
+    "ltl": {
+      "comparisons": 13392,
+      "matched": 13067,
+      "agreement": 0.975731780167264,
+      "initial_formula_agreement": 0.9861111111111112,
+      "initial_all_six_maps": 70,
+      "maps": 72,
+      "by_property": {
+        "F G !danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "F goal": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 72,
+          "tn": 2160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "G !danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "G F safe": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "X !danger": {
+          "comparisons": 2232,
+          "matched": 2222,
+          "agreement": 0.9955197132616488,
+          "tp": 1984,
+          "tn": 238,
+          "fp": 2,
+          "fn": 8,
+          "precision": 0.998992950654582,
+          "recall": 0.9959839357429718
+        },
+        "safe U goal": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 72,
+          "tn": 2160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      }
+    },
+    "relations": {
+      "ctl": {
+        "real_to_top1": 33,
+        "top1_to_real": 46,
+        "bisimulation": 23
+      },
+      "action_labelled": {
+        "real_to_top1": 23,
+        "top1_to_real": 23,
+        "bisimulation": 23
+      }
+    },
+    "by_seed": [
+      {
+        "seed": 20260804,
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 4306,
+          "agreement": 0.964605734767025,
+          "initial_formula_agreement": 0.9791666666666666,
+          "initial_all_six_maps": 21,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 608,
+              "tn": 114,
+              "fp": 6,
+              "fn": 16,
+              "precision": 0.990228013029316,
+              "recall": 0.9743589743589743
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 689,
+              "agreement": 0.9260752688172043,
+              "tp": 575,
+              "tn": 114,
+              "fp": 6,
+              "fn": 49,
+              "precision": 0.9896729776247849,
+              "recall": 0.9214743589743589
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 685,
+              "agreement": 0.9206989247311828,
+              "tp": 445,
+              "tn": 240,
+              "fp": 24,
+              "fn": 35,
+              "precision": 0.9488272921108742,
+              "recall": 0.9270833333333334
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4393,
+          "agreement": 0.984094982078853,
+          "initial_formula_agreement": 1.0,
+          "initial_all_six_maps": 24,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 739,
+              "agreement": 0.9932795698924731,
+              "tp": 659,
+              "tn": 80,
+              "fp": 0,
+              "fn": 5,
+              "precision": 1.0,
+              "recall": 0.9924698795180723
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "relations": {
+          "ctl": {
+            "real_to_top1": 13,
+            "top1_to_real": 8,
+            "bisimulation": 8
+          },
+          "action_labelled": {
+            "real_to_top1": 8,
+            "top1_to_real": 8,
+            "bisimulation": 8
+          }
+        }
+      },
+      {
+        "seed": 20260805,
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 3885,
+          "agreement": 0.8702956989247311,
+          "initial_formula_agreement": 0.8819444444444444,
+          "initial_all_six_maps": 13,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 560,
+              "tn": 102,
+              "fp": 18,
+              "fn": 64,
+              "precision": 0.9688581314878892,
+              "recall": 0.8974358974358975
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 522,
+              "agreement": 0.7016129032258065,
+              "tp": 408,
+              "tn": 114,
+              "fp": 6,
+              "fn": 216,
+              "precision": 0.9855072463768116,
+              "recall": 0.6538461538461539
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 551,
+              "agreement": 0.7405913978494624,
+              "tp": 311,
+              "tn": 240,
+              "fp": 24,
+              "fn": 169,
+              "precision": 0.9283582089552239,
+              "recall": 0.6479166666666667
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4214,
+          "agreement": 0.9439964157706093,
+          "initial_formula_agreement": 0.9583333333333334,
+          "initial_all_six_maps": 22,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 740,
+              "agreement": 0.9946236559139785,
+              "tp": 661,
+              "tn": 79,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.9984894259818731,
+              "recall": 0.9954819277108434
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "relations": {
+          "ctl": {
+            "real_to_top1": 10,
+            "top1_to_real": 16,
+            "bisimulation": 7
+          },
+          "action_labelled": {
+            "real_to_top1": 7,
+            "top1_to_real": 7,
+            "bisimulation": 7
+          }
+        }
+      },
+      {
+        "seed": 20260806,
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 4240,
+          "agreement": 0.9498207885304659,
+          "initial_formula_agreement": 0.9444444444444444,
+          "initial_all_six_maps": 18,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 623,
+              "tn": 120,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9983974358974359
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 597,
+              "agreement": 0.8024193548387096,
+              "tp": 477,
+              "tn": 120,
+              "fp": 0,
+              "fn": 147,
+              "precision": 1.0,
+              "recall": 0.7644230769230769
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 669,
+              "agreement": 0.8991935483870968,
+              "tp": 405,
+              "tn": 264,
+              "fp": 0,
+              "fn": 75,
+              "precision": 1.0,
+              "recall": 0.84375
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4460,
+          "agreement": 0.9991039426523297,
+          "initial_formula_agreement": 1.0,
+          "initial_all_six_maps": 24,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 664,
+              "tn": 79,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9984962406015038,
+              "recall": 1.0
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "relations": {
+          "ctl": {
+            "real_to_top1": 10,
+            "top1_to_real": 22,
+            "bisimulation": 8
+          },
+          "action_labelled": {
+            "real_to_top1": 8,
+            "top1_to_real": 8,
+            "bisimulation": 8
+          }
+        }
+      }
+    ],
+    "by_family": {
+      "danger_gate": {
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 3990,
+          "agreement": 0.8938172043010753,
+          "initial_formula_agreement": 0.9097222222222222,
+          "initial_all_six_maps": 13,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 671,
+              "tn": 0,
+              "fp": 0,
+              "fn": 73,
+              "precision": 1.0,
+              "recall": 0.9018817204301075
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 517,
+              "agreement": 0.6948924731182796,
+              "tp": 517,
+              "tn": 0,
+              "fp": 0,
+              "fn": 227,
+              "precision": 1.0,
+              "recall": 0.6948924731182796
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 643,
+              "agreement": 0.864247311827957,
+              "tp": 295,
+              "tn": 348,
+              "fp": 36,
+              "fn": 65,
+              "precision": 0.8912386706948641,
+              "recall": 0.8194444444444444
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4241,
+          "agreement": 0.9500448028673835,
+          "initial_formula_agreement": 0.9791666666666666,
+          "initial_all_six_maps": 23,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 740,
+              "agreement": 0.9946236559139785,
+              "tp": 668,
+              "tn": 72,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.9940476190476191
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "initial_bisimulation": 0
+      },
+      "safe_detour": {
+        "ctl": {
+          "comparisons": 4608,
+          "matched": 4332,
+          "agreement": 0.9401041666666666,
+          "initial_formula_agreement": 0.9097222222222222,
+          "initial_all_six_maps": 16,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 744,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "EF danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 760,
+              "tn": 0,
+              "fp": 0,
+              "fn": 8,
+              "precision": 1.0,
+              "recall": 0.9895833333333334
+            },
+            "EF goal": {
+              "comparisons": 768,
+              "matched": 655,
+              "agreement": 0.8528645833333334,
+              "tp": 655,
+              "tn": 0,
+              "fp": 0,
+              "fn": 113,
+              "precision": 1.0,
+              "recall": 0.8528645833333334
+            },
+            "EG safe": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 744,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 768,
+              "matched": 621,
+              "agreement": 0.80859375,
+              "tp": 597,
+              "tn": 24,
+              "fp": 0,
+              "fn": 147,
+              "precision": 1.0,
+              "recall": 0.8024193548387096
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4608,
+          "matched": 4580,
+          "agreement": 0.9939236111111112,
+          "initial_formula_agreement": 1.0,
+          "initial_all_six_maps": 24,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "F goal": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 744,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "G F safe": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "X !danger": {
+              "comparisons": 768,
+              "matched": 764,
+              "agreement": 0.9947916666666666,
+              "tp": 692,
+              "tn": 72,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.9942528735632183
+            },
+            "safe U goal": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 744,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "initial_bisimulation": 0
+      },
+      "sealed_region": {
+        "ctl": {
+          "comparisons": 4320,
+          "matched": 4109,
+          "agreement": 0.9511574074074074,
+          "initial_formula_agreement": 0.9861111111111112,
+          "initial_all_six_maps": 23,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 696,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "EF danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 360,
+              "tn": 336,
+              "fp": 24,
+              "fn": 0,
+              "precision": 0.9375,
+              "recall": 1.0
+            },
+            "EF goal": {
+              "comparisons": 720,
+              "matched": 636,
+              "agreement": 0.8833333333333333,
+              "tp": 288,
+              "tn": 348,
+              "fp": 12,
+              "fn": 72,
+              "precision": 0.96,
+              "recall": 0.8
+            },
+            "EG safe": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 696,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 720,
+              "matched": 641,
+              "agreement": 0.8902777777777777,
+              "tp": 269,
+              "tn": 372,
+              "fp": 12,
+              "fn": 67,
+              "precision": 0.9572953736654805,
+              "recall": 0.8005952380952381
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4320,
+          "matched": 4246,
+          "agreement": 0.9828703703703704,
+          "initial_formula_agreement": 0.9791666666666666,
+          "initial_all_six_maps": 23,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "F goal": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 696,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "G F safe": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "X !danger": {
+              "comparisons": 720,
+              "matched": 718,
+              "agreement": 0.9972222222222222,
+              "tp": 624,
+              "tn": 94,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.9968051118210862,
+              "recall": 1.0
+            },
+            "safe U goal": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 696,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "initial_bisimulation": 23
+      }
+    },
+    "audits": {
+      "certificates": 432,
+      "partition_comparisons": 144,
+      "ctl_preservation_checks": 338406,
+      "passed": true,
+      "baseline_full_record_parity": true
+    },
+    "backend_audit": {
+      "internal_ctl_vs_nuxmv_ctl": {
+        "comparisons": 26784,
+        "matched": 26784,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 14921,
+        "right_true": 14921
+      },
+      "paired_formulas": {
+        "AG !danger <=> G !danger": {
+          "comparisons": 4464,
+          "matched": 4464,
+          "agreement": 1.0,
+          "mismatches": 0,
+          "left_true": 777,
+          "right_true": 777
+        },
+        "AF goal <=> F goal": {
+          "comparisons": 4464,
+          "matched": 4464,
+          "agreement": 1.0,
+          "mismatches": 0,
+          "left_true": 144,
+          "right_true": 144
+        }
+      },
+      "mismatches": 0,
+      "full_ltl_vs_paired_audit_verdicts": 8928,
+      "native_ctl_export_vs_audit_verdicts": 26784,
+      "nuxmv_sha256": "758c252e60ad92072e64a8790e4dd8b5c6c1460a1cffdf2ecf889b768a125dfe"
+    }
+  },
+  "best_behavior": {
+    "ctl": {
+      "comparisons": 13392,
+      "matched": 12431,
+      "agreement": 0.9282407407407407,
+      "initial_formula_agreement": 0.9351851851851852,
+      "initial_all_six_maps": 52,
+      "maps": 72,
+      "by_property": {
+        "AF goal": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 72,
+          "tn": 2160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "AG !danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "EF danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 1791,
+          "tn": 336,
+          "fp": 24,
+          "fn": 81,
+          "precision": 0.9867768595041322,
+          "recall": 0.9567307692307693
+        },
+        "EF goal": {
+          "comparisons": 2232,
+          "matched": 1808,
+          "agreement": 0.8100358422939068,
+          "tp": 1460,
+          "tn": 348,
+          "fp": 12,
+          "fn": 412,
+          "precision": 0.9918478260869565,
+          "recall": 0.7799145299145299
+        },
+        "EG safe": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 2160,
+          "tn": 72,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "E[!danger U goal]": {
+          "comparisons": 2232,
+          "matched": 1905,
+          "agreement": 0.853494623655914,
+          "tp": 1161,
+          "tn": 744,
+          "fp": 48,
+          "fn": 279,
+          "precision": 0.9602977667493796,
+          "recall": 0.80625
+        }
+      }
+    },
+    "ltl": {
+      "comparisons": 13392,
+      "matched": 13067,
+      "agreement": 0.975731780167264,
+      "initial_formula_agreement": 0.9861111111111112,
+      "initial_all_six_maps": 70,
+      "maps": 72,
+      "by_property": {
+        "F G !danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "F goal": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 72,
+          "tn": 2160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "G !danger": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "G F safe": {
+          "comparisons": 2232,
+          "matched": 2127,
+          "agreement": 0.9529569892473119,
+          "tp": 336,
+          "tn": 1791,
+          "fp": 81,
+          "fn": 24,
+          "precision": 0.8057553956834532,
+          "recall": 0.9333333333333333
+        },
+        "X !danger": {
+          "comparisons": 2232,
+          "matched": 2222,
+          "agreement": 0.9955197132616488,
+          "tp": 1984,
+          "tn": 238,
+          "fp": 2,
+          "fn": 8,
+          "precision": 0.998992950654582,
+          "recall": 0.9959839357429718
+        },
+        "safe U goal": {
+          "comparisons": 2232,
+          "matched": 2232,
+          "agreement": 1.0,
+          "tp": 72,
+          "tn": 2160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      }
+    },
+    "relations": {
+      "ctl": {
+        "real_to_top1": 33,
+        "top1_to_real": 46,
+        "bisimulation": 23
+      },
+      "action_labelled": {
+        "real_to_top1": 23,
+        "top1_to_real": 23,
+        "bisimulation": 23
+      }
+    },
+    "by_seed": [
+      {
+        "seed": 20260804,
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 4306,
+          "agreement": 0.964605734767025,
+          "initial_formula_agreement": 0.9791666666666666,
+          "initial_all_six_maps": 21,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 608,
+              "tn": 114,
+              "fp": 6,
+              "fn": 16,
+              "precision": 0.990228013029316,
+              "recall": 0.9743589743589743
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 689,
+              "agreement": 0.9260752688172043,
+              "tp": 575,
+              "tn": 114,
+              "fp": 6,
+              "fn": 49,
+              "precision": 0.9896729776247849,
+              "recall": 0.9214743589743589
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 685,
+              "agreement": 0.9206989247311828,
+              "tp": 445,
+              "tn": 240,
+              "fp": 24,
+              "fn": 35,
+              "precision": 0.9488272921108742,
+              "recall": 0.9270833333333334
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4393,
+          "agreement": 0.984094982078853,
+          "initial_formula_agreement": 1.0,
+          "initial_all_six_maps": 24,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 722,
+              "agreement": 0.9704301075268817,
+              "tp": 114,
+              "tn": 608,
+              "fp": 16,
+              "fn": 6,
+              "precision": 0.8769230769230769,
+              "recall": 0.95
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 739,
+              "agreement": 0.9932795698924731,
+              "tp": 659,
+              "tn": 80,
+              "fp": 0,
+              "fn": 5,
+              "precision": 1.0,
+              "recall": 0.9924698795180723
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "relations": {
+          "ctl": {
+            "real_to_top1": 13,
+            "top1_to_real": 8,
+            "bisimulation": 8
+          },
+          "action_labelled": {
+            "real_to_top1": 8,
+            "top1_to_real": 8,
+            "bisimulation": 8
+          }
+        }
+      },
+      {
+        "seed": 20260805,
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 3885,
+          "agreement": 0.8702956989247311,
+          "initial_formula_agreement": 0.8819444444444444,
+          "initial_all_six_maps": 13,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 560,
+              "tn": 102,
+              "fp": 18,
+              "fn": 64,
+              "precision": 0.9688581314878892,
+              "recall": 0.8974358974358975
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 522,
+              "agreement": 0.7016129032258065,
+              "tp": 408,
+              "tn": 114,
+              "fp": 6,
+              "fn": 216,
+              "precision": 0.9855072463768116,
+              "recall": 0.6538461538461539
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 551,
+              "agreement": 0.7405913978494624,
+              "tp": 311,
+              "tn": 240,
+              "fp": 24,
+              "fn": 169,
+              "precision": 0.9283582089552239,
+              "recall": 0.6479166666666667
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4214,
+          "agreement": 0.9439964157706093,
+          "initial_formula_agreement": 0.9583333333333334,
+          "initial_all_six_maps": 22,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 662,
+              "agreement": 0.8897849462365591,
+              "tp": 102,
+              "tn": 560,
+              "fp": 64,
+              "fn": 18,
+              "precision": 0.6144578313253012,
+              "recall": 0.85
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 740,
+              "agreement": 0.9946236559139785,
+              "tp": 661,
+              "tn": 79,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.9984894259818731,
+              "recall": 0.9954819277108434
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "relations": {
+          "ctl": {
+            "real_to_top1": 10,
+            "top1_to_real": 16,
+            "bisimulation": 7
+          },
+          "action_labelled": {
+            "real_to_top1": 7,
+            "top1_to_real": 7,
+            "bisimulation": 7
+          }
+        }
+      },
+      {
+        "seed": 20260806,
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 4240,
+          "agreement": 0.9498207885304659,
+          "initial_formula_agreement": 0.9444444444444444,
+          "initial_all_six_maps": 18,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 623,
+              "tn": 120,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9983974358974359
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 597,
+              "agreement": 0.8024193548387096,
+              "tp": 477,
+              "tn": 120,
+              "fp": 0,
+              "fn": 147,
+              "precision": 1.0,
+              "recall": 0.7644230769230769
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 669,
+              "agreement": 0.8991935483870968,
+              "tp": 405,
+              "tn": 264,
+              "fp": 0,
+              "fn": 75,
+              "precision": 1.0,
+              "recall": 0.84375
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4460,
+          "agreement": 0.9991039426523297,
+          "initial_formula_agreement": 1.0,
+          "initial_all_six_maps": 24,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 120,
+              "tn": 623,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9917355371900827,
+              "recall": 1.0
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 743,
+              "agreement": 0.9986559139784946,
+              "tp": 664,
+              "tn": 79,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9984962406015038,
+              "recall": 1.0
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "relations": {
+          "ctl": {
+            "real_to_top1": 10,
+            "top1_to_real": 22,
+            "bisimulation": 8
+          },
+          "action_labelled": {
+            "real_to_top1": 8,
+            "top1_to_real": 8,
+            "bisimulation": 8
+          }
+        }
+      }
+    ],
+    "by_family": {
+      "danger_gate": {
+        "ctl": {
+          "comparisons": 4464,
+          "matched": 3990,
+          "agreement": 0.8938172043010753,
+          "initial_formula_agreement": 0.9097222222222222,
+          "initial_all_six_maps": 13,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "EF danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 671,
+              "tn": 0,
+              "fp": 0,
+              "fn": 73,
+              "precision": 1.0,
+              "recall": 0.9018817204301075
+            },
+            "EF goal": {
+              "comparisons": 744,
+              "matched": 517,
+              "agreement": 0.6948924731182796,
+              "tp": 517,
+              "tn": 0,
+              "fp": 0,
+              "fn": 227,
+              "precision": 1.0,
+              "recall": 0.6948924731182796
+            },
+            "EG safe": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 720,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 744,
+              "matched": 643,
+              "agreement": 0.864247311827957,
+              "tp": 295,
+              "tn": 348,
+              "fp": 36,
+              "fn": 65,
+              "precision": 0.8912386706948641,
+              "recall": 0.8194444444444444
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4464,
+          "matched": 4241,
+          "agreement": 0.9500448028673835,
+          "initial_formula_agreement": 0.9791666666666666,
+          "initial_all_six_maps": 23,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "F goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "G F safe": {
+              "comparisons": 744,
+              "matched": 671,
+              "agreement": 0.9018817204301075,
+              "tp": 0,
+              "tn": 671,
+              "fp": 73,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "X !danger": {
+              "comparisons": 744,
+              "matched": 740,
+              "agreement": 0.9946236559139785,
+              "tp": 668,
+              "tn": 72,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.9940476190476191
+            },
+            "safe U goal": {
+              "comparisons": 744,
+              "matched": 744,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 720,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "initial_bisimulation": 0
+      },
+      "safe_detour": {
+        "ctl": {
+          "comparisons": 4608,
+          "matched": 4332,
+          "agreement": 0.9401041666666666,
+          "initial_formula_agreement": 0.9097222222222222,
+          "initial_all_six_maps": 16,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 744,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "EF danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 760,
+              "tn": 0,
+              "fp": 0,
+              "fn": 8,
+              "precision": 1.0,
+              "recall": 0.9895833333333334
+            },
+            "EF goal": {
+              "comparisons": 768,
+              "matched": 655,
+              "agreement": 0.8528645833333334,
+              "tp": 655,
+              "tn": 0,
+              "fp": 0,
+              "fn": 113,
+              "precision": 1.0,
+              "recall": 0.8528645833333334
+            },
+            "EG safe": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 744,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 768,
+              "matched": 621,
+              "agreement": 0.80859375,
+              "tp": 597,
+              "tn": 24,
+              "fp": 0,
+              "fn": 147,
+              "precision": 1.0,
+              "recall": 0.8024193548387096
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4608,
+          "matched": 4580,
+          "agreement": 0.9939236111111112,
+          "initial_formula_agreement": 1.0,
+          "initial_all_six_maps": 24,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "F goal": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 744,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "G F safe": {
+              "comparisons": 768,
+              "matched": 760,
+              "agreement": 0.9895833333333334,
+              "tp": 0,
+              "tn": 760,
+              "fp": 8,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": null
+            },
+            "X !danger": {
+              "comparisons": 768,
+              "matched": 764,
+              "agreement": 0.9947916666666666,
+              "tp": 692,
+              "tn": 72,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.9942528735632183
+            },
+            "safe U goal": {
+              "comparisons": 768,
+              "matched": 768,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 744,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "initial_bisimulation": 0
+      },
+      "sealed_region": {
+        "ctl": {
+          "comparisons": 4320,
+          "matched": 4109,
+          "agreement": 0.9511574074074074,
+          "initial_formula_agreement": 0.9861111111111112,
+          "initial_all_six_maps": 23,
+          "maps": 24,
+          "by_property": {
+            "AF goal": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 696,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "AG !danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "EF danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 360,
+              "tn": 336,
+              "fp": 24,
+              "fn": 0,
+              "precision": 0.9375,
+              "recall": 1.0
+            },
+            "EF goal": {
+              "comparisons": 720,
+              "matched": 636,
+              "agreement": 0.8833333333333333,
+              "tp": 288,
+              "tn": 348,
+              "fp": 12,
+              "fn": 72,
+              "precision": 0.96,
+              "recall": 0.8
+            },
+            "EG safe": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 696,
+              "tn": 24,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "E[!danger U goal]": {
+              "comparisons": 720,
+              "matched": 641,
+              "agreement": 0.8902777777777777,
+              "tp": 269,
+              "tn": 372,
+              "fp": 12,
+              "fn": 67,
+              "precision": 0.9572953736654805,
+              "recall": 0.8005952380952381
+            }
+          }
+        },
+        "ltl": {
+          "comparisons": 4320,
+          "matched": 4246,
+          "agreement": 0.9828703703703704,
+          "initial_formula_agreement": 0.9791666666666666,
+          "initial_all_six_maps": 23,
+          "maps": 24,
+          "by_property": {
+            "F G !danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "F goal": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 696,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            },
+            "G !danger": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "G F safe": {
+              "comparisons": 720,
+              "matched": 696,
+              "agreement": 0.9666666666666667,
+              "tp": 336,
+              "tn": 360,
+              "fp": 0,
+              "fn": 24,
+              "precision": 1.0,
+              "recall": 0.9333333333333333
+            },
+            "X !danger": {
+              "comparisons": 720,
+              "matched": 718,
+              "agreement": 0.9972222222222222,
+              "tp": 624,
+              "tn": 94,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.9968051118210862,
+              "recall": 1.0
+            },
+            "safe U goal": {
+              "comparisons": 720,
+              "matched": 720,
+              "agreement": 1.0,
+              "tp": 24,
+              "tn": 696,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0
+            }
+          }
+        },
+        "initial_bisimulation": 23
+      }
+    },
+    "audits": {
+      "certificates": 432,
+      "partition_comparisons": 144,
+      "ctl_preservation_checks": 338406,
+      "passed": true,
+      "baseline_full_record_parity": true
+    },
+    "backend_audit": {
+      "internal_ctl_vs_nuxmv_ctl": {
+        "comparisons": 26784,
+        "matched": 26784,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 14921,
+        "right_true": 14921
+      },
+      "paired_formulas": {
+        "AG !danger <=> G !danger": {
+          "comparisons": 4464,
+          "matched": 4464,
+          "agreement": 1.0,
+          "mismatches": 0,
+          "left_true": 777,
+          "right_true": 777
+        },
+        "AF goal <=> F goal": {
+          "comparisons": 4464,
+          "matched": 4464,
+          "agreement": 1.0,
+          "mismatches": 0,
+          "left_true": 144,
+          "right_true": 144
+        }
+      },
+      "mismatches": 0,
+      "full_ltl_vs_paired_audit_verdicts": 8928,
+      "native_ctl_export_vs_audit_verdicts": 26784,
+      "nuxmv_sha256": "758c252e60ad92072e64a8790e4dd8b5c6c1460a1cffdf2ecf889b768a125dfe"
+    }
+  },
+  "new_model_behavioral_comparison_performed": false,
+  "behavioral_comparison_note": "Baseline won validation selection. Its results are reused, not counted as a second model run or evidence of temporal improvement.",
+  "map_changes": {
+    "top1_improved": 0,
+    "top1_unchanged": 72,
+    "top1_worsened": 0,
+    "bisimulation_gained": 0,
+    "bisimulation_lost": 0,
+    "ctl_all_six_gained": 0,
+    "ctl_all_six_lost": 0,
+    "ltl_all_six_gained": 0,
+    "ltl_all_six_lost": 0,
+    "better_top1_but_ctl_all_six_lost": 0,
+    "better_top1_but_ltl_all_six_lost": 0
+  },
+  "preservation": {
+    "checked_files": 578,
+    "changed_files": [],
+    "passed": true
+  },
+  "candidate_runs": 9,
+  "audited_evaluation_transitions": 207936,
+  "tuning_stopped": true,
+  "completion_audit": {
+    "candidate_training_runs": 9,
+    "training_tensor_sha256": "a2184db8da410d7b664a0a8d5e13b4fefc167aa088b676d23f23886aa39f0eaf",
+    "all_training_source_hashes_match": true,
+    "retrieval_float32_vs_direct64_disagreements": 0,
+    "selected_best_is_baseline": true,
+    "selected_best_graphs_byte_identical_to_baseline": true,
+    "selected_best_repeat_backend_audit": {
+      "internal_ctl_vs_nuxmv_ctl": {
+        "comparisons": 26784,
+        "matched": 26784,
+        "agreement": 1.0,
+        "mismatches": 0,
+        "left_true": 14921,
+        "right_true": 14921
+      },
+      "paired_formulas": {
+        "AG !danger <=> G !danger": {
+          "comparisons": 4464,
+          "matched": 4464,
+          "agreement": 1.0,
+          "mismatches": 0,
+          "left_true": 777,
+          "right_true": 777
+        },
+        "AF goal <=> F goal": {
+          "comparisons": 4464,
+          "matched": 4464,
+          "agreement": 1.0,
+          "mismatches": 0,
+          "left_true": 144,
+          "right_true": 144
+        }
+      },
+      "mismatches": 0,
+      "full_ltl_vs_paired_audit_verdicts": 8928,
+      "native_ctl_export_vs_audit_verdicts": 26784,
+      "nuxmv_sha256": "758c252e60ad92072e64a8790e4dd8b5c6c1460a1cffdf2ecf889b768a125dfe"
+    },
+    "repeated_baseline_verdicts_are_not_new_model_evidence": true,
+    "unit_and_pipeline_tests": {
+      "passed": 37,
+      "skipped": 0
+    },
+    "model_bank_sha256": "bb121487645f355dc13ccd88397a0eae16fe347e2b5db19389265d338f64474f"
+  },
+  "model_bank": {
+    "selected_best": "baseline",
+    "best_new_candidate_by_validation": "capacity_cosine",
+    "clear_validation_improvement": false,
+    "note": "best aliases the validation winner, which can be baseline. best_new_candidate is retained even when it does not improve baseline.",
+    "roles": {
+      "baseline": {
+        "candidate": "baseline",
+        "checkpoints": {
+          "20260804": {
+            "path": "outputs/latent_radius/oracle/model.pt",
+            "sha256": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc"
+          },
+          "20260805": {
+            "path": "outputs/latent_radius/stress_training/seed_20260805/model.pt",
+            "sha256": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262"
+          },
+          "20260806": {
+            "path": "outputs/latent_radius/stress_training/seed_20260806/model.pt",
+            "sha256": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc"
+          }
+        }
+      },
+      "best": {
+        "candidate": "baseline",
+        "checkpoints": {
+          "20260804": {
+            "path": "outputs/latent_radius/oracle/model.pt",
+            "sha256": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc"
+          },
+          "20260805": {
+            "path": "outputs/latent_radius/stress_training/seed_20260805/model.pt",
+            "sha256": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262"
+          },
+          "20260806": {
+            "path": "outputs/latent_radius/stress_training/seed_20260806/model.pt",
+            "sha256": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc"
+          }
+        }
+      },
+      "best_new_candidate": {
+        "candidate": "capacity_cosine",
+        "checkpoints": {
+          "20260804": {
+            "path": "outputs/top1_quality/round1/capacity_cosine/seed_20260804/model.pt",
+            "sha256": "77c305b46a798afe7f74eedef8ef8badc9bb6d6089039b4730d121da8921a7ea"
+          },
+          "20260805": {
+            "path": "outputs/top1_quality/round1/capacity_cosine/seed_20260805/model.pt",
+            "sha256": "6459272d46d997b20423914d5ed2d053711b9f36b89d5d595528baf34d6f7ecd"
+          },
+          "20260806": {
+            "path": "outputs/top1_quality/round1/capacity_cosine/seed_20260806/model.pt",
+            "sha256": "852a2e0ac838927f35a25af56e0703ac0670572203678a962662e48959e2d7c0"
+          }
+        }
+      }
+    }
+  }
+}
