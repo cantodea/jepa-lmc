@@ -1,5 +1,10 @@
 # Bounded ranking and predictor-depth study (round 2)
 
+The [October structural evaluation](structural_evaluation.md) is the current
+primary model scorecard. It replays these frozen graphs with uniform simulation,
+initial/identity bisimulation and action-sensitive metrics, retaining this
+historical study and its CTL/LTL diagnostics unchanged.
+
 **Decision: use `ranking` as the improved prediction model and retain the original
 baseline. Stop this tuning round.** All nine predeclared runs completed. Ranking
 improves every seed on both validation and stress while retaining the original

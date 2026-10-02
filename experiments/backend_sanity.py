@@ -429,6 +429,10 @@ def run_audit(
     report = {
         "status": "passed" if not mismatches else "mismatch",
         "saved_graph_cases": len(records),
+        "evaluation_role": (
+            "Additional CTL/LTL backend validation; model equivalence is "
+            "evaluated in evaluate_structural.py."
+        ),
         "graphs_checked": 2 * len(records),
         "graph_states_checked": sum(len(r["states"]) for r in records) * 2,
         "source_run_dir": str(run_dir.resolve()),

@@ -72,3 +72,17 @@ The next stage of the project is to test learned dynamics across more varied sys
 Added [simulation/bisimulation checks](docs/top1_behavioral_relations.md) and a [nuXmv CTL/LTL backend audit](docs/backend_sanity_check.md).
 [Ranking-loss training](docs/top1_ranking_study.md) improves stress Top-1 accuracy to 98.92% across three seeds.
 The [oracle local abstraction study](docs/oracle_local_abstraction.md) achieves 100% successor coverage with mean candidate size 1.0112; these bounds use oracle truth and do not yet guarantee coverage under unknown dynamics.
+
+## Primary model evaluation (October 2026)
+
+Simulation and bisimulation are now the primary formal comparison of real and
+learned models; Top-1 accuracy and the fixed CTL/LTL suites remain additional
+diagnostics. The [unified structural report](docs/structural_evaluation.md) defines
+initial and identity metrics for both Kripke and action-sensitive semantics,
+with complete per-case results and mismatch lists.
+
+Re-evaluating the same frozen 72 graph pairs gives ranking Top-1 **40/72 initial
+and 33/72 identity bisimulation**, and oracle-local **49/72 and 46/72** under
+ordinary Kripke semantics. All-six initial CTL agreement remains **68/72** and
+**69/72**, respectively. No models, checkpoints or data were changed or retrained.
+Run `python -m experiments.evaluate_structural --help` for saved-graph evaluation.

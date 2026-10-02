@@ -39,6 +39,7 @@ from jepa_lmc.evaluation.dynamics import (
     evaluate_gridworld_transitions,
     transition_system_from_retrievals,
 )
+from jepa_lmc.evaluation.structural import evaluate_model_pair, model_evaluation_report
 from jepa_lmc.verification.behavioral_relations import (
     audit_greatest_relation,
     bisimulation_by_partition,
@@ -167,6 +168,7 @@ def run(checkpoints, output, baseline=False):
                     },
                     "relations": [],
                 }
+                computed = {}
                 for actions in (False, True):
                     results = {}
                     for name in NAMES:
@@ -205,6 +207,7 @@ def run(checkpoints, output, baseline=False):
                                     raise AssertionError("CTL preservation violation.")
                                 preservation += 1
                         results[name] = result
+                        computed[actions, name] = result
                         relations.append(
                             {
                                 "seed": seed,
@@ -232,6 +235,12 @@ def run(checkpoints, output, baseline=False):
                         raise AssertionError(
                             "Total action-deterministic consistency failed."
                         )
+                maps[-1]["evaluation"] = evaluate_model_pair(
+                    real,
+                    top1,
+                    top1_counts=(maps[-1]["correct_top1_pairs"], retrieval.total),
+                    relations=computed,
+                )
                 if baseline and record != saved[seed, case.name]:
                     raise AssertionError(
                         "Baseline graph or full greatest relation changed."
@@ -257,6 +266,17 @@ def run(checkpoints, output, baseline=False):
         },
         "checkpoint_sha256": checkpoint_hashes,
         "maps": maps,
+        "model_evaluation": model_evaluation_report(
+            [
+                {
+                    "seed": m["seed"],
+                    "case": m["case"],
+                    "family": m["family"],
+                    **m["evaluation"],
+                }
+                for m in maps
+            ]
+        ),
         "audit": {
             "certificates": certificates,
             "partition_comparisons": partitions,

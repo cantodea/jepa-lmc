@@ -17,8 +17,11 @@ import torch
 from jepa_lmc.benchmarks.radius_stress import radius_stress_cases
 from jepa_lmc.benchmarks.random_gridworld import make_pilot_benchmark_splits
 from jepa_lmc.evaluation.dynamics import evaluate_gridworld_transitions
+from jepa_lmc.evaluation.structural import evaluate_model_pair, model_evaluation_report
 from jepa_lmc.learning.data import gridworld_observation
 from jepa_lmc.learning.model import ActionJEPA
+from jepa_lmc.verification.gridworld import gridworld_to_transition_system
+from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 ROOT = Path(__file__).resolve().parents[1]
 SEEDS = (20260804, 20260805, 20260806)
@@ -257,15 +260,41 @@ def grouped(rows, fields):
 
 def evaluate_model(model, seed, output_dir):
     output_dir = fresh_directory(output_dir)
-    rows, maps = [], []
+    rows, maps, comparisons = [], [], []
     for metadata, spec in catalogue():
         outcomes, geometry = inspect_map(model, spec, metadata, seed)
         rows.extend(outcomes)
         maps.append(geometry)
+        env = spec.make_env()
+        real = gridworld_to_transition_system(env)
+        edges = {s: [] for s in real.states}
+        for row in outcomes:
+            edges[row["state_row"], row["state_col"]].append(
+                (row["action"], (row["pred_row"], row["pred_col"]))
+            )
+        learned = ExplicitTransitionSystem(
+            states=real.states,
+            initial_states=real.initial_states,
+            transitions=edges,
+            labels={s: real.propositions(s) for s in real.states},
+        )
+        comparisons.append(
+            {
+                "seed": seed,
+                "case": metadata["map"],
+                **metadata,
+                **evaluate_model_pair(
+                    real,
+                    learned,
+                    top1_counts=(sum(r["correct"] for r in outcomes), len(outcomes)),
+                ),
+            }
+        )
     write_csv(output_dir / "transitions.csv", rows)
     write_csv(output_dir / "map_geometry.csv", maps)
     report = {
         "seed": seed,
+        "model_evaluation": model_evaluation_report(comparisons),
         "by_split": grouped(rows, ("split",)),
         "by_map": grouped(rows, ("split", "map", "family", "rotation")),
         "by_family": grouped(rows, ("split", "family")),

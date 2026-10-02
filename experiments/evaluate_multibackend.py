@@ -21,6 +21,7 @@ from jepa_lmc.evaluation.metrics import (
     evaluate_ctl_suite_for_state_pairs,
     evaluate_ltl_suite_for_state_pairs,
 )
+from jepa_lmc.evaluation.structural import evaluate_model_pair, save_model_evaluation
 from jepa_lmc.learning.data import GridWorldTransitionDataset
 from jepa_lmc.learning.model import ActionJEPA
 from jepa_lmc.learning.training import (
@@ -45,6 +46,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--log-every", type=int, default=10)
     parser.add_argument("--seed", type=int, default=20260805)
     parser.add_argument("--executable", type=Path)
+    parser.add_argument(
+        "--output-dir", type=Path, default=Path("outputs/model_evaluation/multibackend")
+    )
     return parser.parse_args()
 
 
@@ -62,7 +66,7 @@ def print_logic_report(logic: str, report: VerificationReport) -> None:
     print(f"{logic} agreement: {report.agreement:.1%}")
     balanced = report.primary_balanced_score
     print(
-        f"Primary balanced {logic} score: "
+        f"Additional balanced {logic} diagnostic: "
         + ("N/A" if balanced is None else f"{balanced:.1%}")
     )
     print(f"False-safe count: {report.false_safe_count}")
@@ -73,6 +77,8 @@ def print_logic_report(logic: str, report: VerificationReport) -> None:
 
 def main() -> None:
     args = parse_args()
+    if args.output_dir.exists() and any(args.output_dir.iterdir()):
+        raise ValueError("Choose a fresh output directory.")
     if min(args.train_maps, args.test_maps, args.epochs, args.log_every) <= 0:
         raise ValueError("Map, epoch, and log counts must be positive.")
     if args.batch_size < 2:
@@ -142,8 +148,9 @@ def main() -> None:
     ctl_reports: list[VerificationReport] = []
     ltl_reports: list[VerificationReport] = []
     ltl_suite = default_ltl_suite()
+    comparisons = []
 
-    for spec in test_specs:
+    for index, spec in enumerate(test_specs):
         env = spec.make_env()
         ground_truth = gridworld_to_transition_system(env)
         state_pairs = tuple((state, state) for state in ground_truth.states)
@@ -167,11 +174,45 @@ def main() -> None:
                 executable,
             )
         )
+        comparison = {
+            "seed": args.seed,
+            "case": str(index),
+            **evaluate_model_pair(
+                ground_truth,
+                learned_system,
+                top1_counts=(
+                    sum(o.correct for o in retrievals.outcomes),
+                    retrievals.total,
+                ),
+            ),
+        }
+        # Reuse the existing state-major query order; no extra backend calls.
+        initial = [
+            outcome
+            for i, (state, _) in enumerate(state_pairs)
+            if state in ground_truth.initial_states
+            for outcome in ltl_reports[-1].outcomes[
+                i * len(ltl_suite) : (i + 1) * len(ltl_suite)
+            ]
+        ]
+        comparison["diagnostics"]["ltl"] = {
+            "initial_all_six_agreement": all(o.matches for o in initial),
+            "initial_mismatches": [
+                {"property": o.name, "real": o.ground_truth, "learned": o.learned}
+                for o in initial
+                if not o.matches
+            ],
+            "comparisons": ltl_reports[-1].total,
+            "matched": ltl_reports[-1].matched,
+        }
+        comparisons.append(comparison)
 
     transitions = aggregate_transition_reports(transition_reports)
     ctl_report = aggregate_reports(ctl_reports)
     ltl_report = aggregate_reports(ltl_reports)
 
+    structural = save_model_evaluation(args.output_dir / "report.json", comparisons)
+    print(f"Primary structural metrics: {structural['summary']['primary_metrics']}")
     print_transition_report(transitions)
     print_logic_report("CTL", ctl_report)
     print_logic_report("LTL", ltl_report)

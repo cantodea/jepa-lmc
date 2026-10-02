@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import random
+from pathlib import Path
 
 import torch
 from torch.utils.data import DataLoader
@@ -21,6 +22,7 @@ from jepa_lmc.evaluation.metrics import (
     aggregate_reports,
     evaluate_ctl_suite_for_state_pairs,
 )
+from jepa_lmc.evaluation.structural import evaluate_model_pair, save_model_evaluation
 from jepa_lmc.learning.data import GridWorldTransitionDataset
 from jepa_lmc.learning.model import ActionJEPA
 from jepa_lmc.learning.training import (
@@ -44,6 +46,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--rollouts-per-state", type=int, default=2)
     parser.add_argument("--log-every", type=int, default=10)
     parser.add_argument("--seed", type=int, default=20260804)
+    parser.add_argument(
+        "--output-dir", type=Path, default=Path("outputs/model_evaluation/jepa")
+    )
     return parser.parse_args()
 
 
@@ -75,7 +80,7 @@ def print_ctl_report(title: str, report: VerificationReport) -> None:
     print(f"CTL agreement: {report.agreement:.1%}")
     balanced = report.primary_balanced_score
     print(
-        "Primary balanced CTL score: "
+        "Additional balanced CTL diagnostic: "
         + ("N/A" if balanced is None else f"{balanced:.1%}")
     )
     print(f"False-safe count: {report.false_safe_count}")
@@ -97,6 +102,8 @@ def print_rollout_report(report: RolloutReport) -> None:
 
 def main() -> None:
     args = parse_args()
+    if args.output_dir.exists() and any(args.output_dir.iterdir()):
+        raise ValueError("Choose a fresh output directory.")
     if (
         min(
             args.train_maps,
@@ -164,6 +171,7 @@ def main() -> None:
     rollout_reports: list[RolloutReport] = []
     jepa_ctl_reports: list[VerificationReport] = []
     ablated_ctl_reports: list[VerificationReport] = []
+    comparisons = {"jepa": [], "action_masked": []}
 
     for index, spec in enumerate(test_specs):
         env = spec.make_env()
@@ -189,6 +197,24 @@ def main() -> None:
 
         jepa_system = transition_system_from_retrievals(env, jepa_transitions)
         ablated_system = transition_system_from_retrievals(env, ablated_transitions)
+        for name, graph, retrieval in (
+            ("jepa", jepa_system, jepa_transitions),
+            ("action_masked", ablated_system, ablated_transitions),
+        ):
+            comparisons[name].append(
+                {
+                    "seed": args.seed,
+                    "case": str(index),
+                    **evaluate_model_pair(
+                        ground_truth,
+                        graph,
+                        top1_counts=(
+                            sum(o.correct for o in retrieval.outcomes),
+                            retrieval.total,
+                        ),
+                    ),
+                }
+            )
         jepa_ctl_reports.append(
             evaluate_ctl_suite_for_state_pairs(
                 ground_truth,
@@ -210,6 +236,11 @@ def main() -> None:
     jepa_ctl = aggregate_reports(jepa_ctl_reports)
     ablated_ctl = aggregate_reports(ablated_ctl_reports)
 
+    for name, cases in comparisons.items():
+        report = save_model_evaluation(args.output_dir / f"{name}.json", cases)
+        print(
+            f"{name} primary structural metrics: {report['summary']['primary_metrics']}"
+        )
     print_transition_report("Action-conditioned JEPA", jepa_transitions)
     print_transition_report("Action-masked ablation", ablated_transitions)
     print_rollout_report(rollouts)

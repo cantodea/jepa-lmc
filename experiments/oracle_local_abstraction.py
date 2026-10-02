@@ -40,6 +40,7 @@ from jepa_lmc.evaluation.radius_stress import (
     annotate_stress_result,
     summarize_stress_maps,
 )
+from jepa_lmc.evaluation.structural import evaluate_model_pair, model_evaluation_report
 from jepa_lmc.learning.data import gridworld_observation
 from jepa_lmc.verification.behavioral_relations import (
     audit_greatest_relation,
@@ -161,6 +162,7 @@ def analyze_graph(case, table, mask, seed, variant, accumulator):
         "identity_plain_simulation": plain,
         "relations": [],
     }
+    computed = {}
     for actions in (False, True):
         for name in NAMES:
             left, right = (
@@ -171,6 +173,7 @@ def analyze_graph(case, table, mask, seed, variant, accumulator):
             relation = greatest_relation(
                 left, right, kind=kind, action_sensitive=actions
             )
+            computed[actions, name] = relation
             audit_greatest_relation(left, right, relation)
             accumulator["certificates"] += 1
             if kind == "bisimulation":
@@ -235,6 +238,22 @@ def analyze_graph(case, table, mask, seed, variant, accumulator):
             "unlabelled_exact_edges": result["exact_edges"],
             "unlabelled_candidate_edges": result["candidate_edges"],
             "unlabelled_spurious_edges": result["extra_edges"],
+            "evaluation": evaluate_model_pair(
+                real,
+                candidate,
+                relations=computed,
+                top1_counts=(
+                    int(
+                        (
+                            table.distances.argmin(1)
+                            == torch.tensor(table.true_indices)
+                        ).sum()
+                    ),
+                    len(table.pairs),
+                )
+                if variant not in ("all_states", "exact_graph")
+                else None,
+            ),
         }
     )
     return result, record
@@ -465,6 +484,19 @@ def run(output):
                 "The legacy top1 key holds the explicitly identified candidate graph."
             ),
             "maps": acc["maps"],
+            "model_evaluation": model_evaluation_report(
+                [
+                    {
+                        "seed": m["seed"],
+                        "case": m["case"],
+                        "family": m["family"],
+                        "variant": variant,
+                        **m["evaluation"],
+                    }
+                    for m in acc["maps"]
+                ],
+                top1_role="underlying point predictor; not candidate coverage",
+            ),
             "audit": {
                 "passed": True,
                 "certificates": acc["certificates"],

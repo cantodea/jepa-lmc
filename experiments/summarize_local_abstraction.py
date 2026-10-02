@@ -9,6 +9,7 @@ from pathlib import Path
 
 import numpy as np
 
+from experiments.evaluate_structural import evaluate_saved_run
 from experiments.oracle_local_abstraction import (
     BACKEND_VARIANTS,
     DEFAULT_RUN,
@@ -449,6 +450,15 @@ def summarize(run):
                 "backend_audit": None,
             }
         selected = [r for r in pairs if r["variant"] == variant]
+        # Include the primary scorecard even for variants without an LTL backend run.
+        if variant != "ranking_top1":
+            formal["model_evaluation"] = evaluate_saved_run(
+                directory,
+                ltl_dir=(run / "temporal" / f"{variant}_ltl")
+                if variant in BACKEND_VARIANTS else None,
+                predictor_run_dir=RANKING_RUN / "behavioral/best"
+                if variant.startswith("ranking_") else None,
+            )
         value = {
             "candidates": summarize_candidates(selected),
             "formal": formal,

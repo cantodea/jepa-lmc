@@ -8,6 +8,8 @@ import json
 from pathlib import Path
 from statistics import mean
 
+from experiments.evaluate_structural import evaluate_saved_run
+
 if __package__:
     from .top1_quality_diagnosis import (
         BASELINES,
@@ -209,6 +211,9 @@ def behavior_summary(run_dir, model):
         native_links += 1
     result = {
         "ctl": temporal_summary(ctl),
+        "model_evaluation": evaluate_saved_run(
+            directory, ltl_dir=run_dir / "temporal" / f"{model}_ltl"
+        ),
         "ltl": temporal_summary(ltl),
         "relations": {
             semantics: {

@@ -13,6 +13,7 @@ outputs/refinement/
 outputs/behavioral_relations/
 outputs/top1_quality/
 outputs/local_abstraction/
+outputs/model_evaluation/
 *.log
 
 .DS_Store

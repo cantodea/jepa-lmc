@@ -36,7 +36,12 @@ class BehavioralRelation:
     rounds: int
 
     def relates_initials(self, left, right) -> bool:
-        """Simulation covers left initials; bisimulation covers both sets."""
+        """Cover designated initials (not every state used in SMV queries).
+
+        Simulation: every left initial has a related right initial.
+        Bisimulation additionally covers every right initial. For singleton
+        initial sets this is precisely membership of the designated pair.
+        """
         forward = all(
             any((s, t) in self.pairs for t in right.initial_states)
             for s in left.initial_states
@@ -46,6 +51,18 @@ class BehavioralRelation:
             for t in right.initial_states
         )
         return forward and (self.kind == "simulation" or backward)
+
+    def relates_identity(self, left, right) -> bool | None:
+        """Whether every (s, s) belongs to this greatest relation.
+
+        Return None for different state spaces. This does NOT require that
+        the diagonal alone is a simulation/bisimulation: matching successors
+        may use non-diagonal pairs in the greatest relation. All states,
+        including unreachable ones, are tested; initial sets may differ.
+        """
+        if left.states != right.states:
+            return None
+        return all((s, s) in self.pairs for s in left.states)
 
 
 def _edges(system, action_sensitive: bool) -> dict:

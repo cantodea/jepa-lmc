@@ -1,0 +1,47 @@
+{
+  "evaluation_date": "2026-10-02",
+  "base_main": "88e116cc9cad75c77456f7a1d9096356c9e25f10",
+  "original_artifacts_verified_unchanged": 3825,
+  "changed_artifacts": [],
+  "frozen_checkpoint_sha256": {
+    "baseline/20260804": "69baa7604d1eab11ac1fb7d23b016ee127583bfa53aaba4a558cccca4fcf59bc",
+    "baseline/20260805": "8bfa332c6a6ae2a4fed683b95f8811dd4181c8fe54b9a4ff55840560c0488262",
+    "baseline/20260806": "1d28e75bf0eb2b6c45612955df6357129e790d538c8e6c6945c84b287af996dc",
+    "best/20260804": "c3f864497896f184d4df9d90838cf1c7cb35c8e066006dddfcf70c264d4782f3",
+    "best/20260805": "bed30275338ffbfd82bbe246d593355a65370e5bea044dd8b5ec7b203f095fda",
+    "best/20260806": "e3782ee92741de336a1df565b5bd2b0732587b45ba34d0bffc6b0951bad4b343"
+  },
+  "archive_sha256": {
+    "jepa-lmc-top1-ranking-round2-records.zip": "e8db5df155bfb77f80b34cbd3a5055da9203b14cb289d1c1e3064400aa7d173c",
+    "jepa-lmc-oracle-local-abstraction-records.zip": "030ee0ae2b55bed4aca601e2554325f2ff05d43f74a003844759c33a004ff014"
+  },
+  "protected_source_paths_unchanged": [
+    "src/jepa_lmc/learning",
+    "configs",
+    "src/jepa_lmc/envs",
+    "src/jepa_lmc/benchmarks",
+    "src/jepa_lmc/verification/nuxmv.py",
+    "src/jepa_lmc/verification/transition_system.py",
+    "src/jepa_lmc/verification/ctl.py",
+    "src/jepa_lmc/verification/ltl.py"
+  ],
+  "training": false,
+  "inference": false,
+  "test_command": "NUXMV_BINARY=/path/to/nuXmv OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m unittest discover -s tests -v",
+  "test_result": {
+    "run": 132,
+    "passed": 132,
+    "skipped": 0,
+    "failed": 0,
+    "errors": 0
+  },
+  "lint": "All changed Python files pass ruff. Two pre-existing RUF005 findings remain in untouched gridworld.py and witness.py.",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "nuXmv": "2.2.0",
+    "nuXmv_sha256": "758c252e60ad92072e64a8790e4dd8b5c6c1460a1cffdf2ecf889b768a125dfe",
+    "OMP_NUM_THREADS": 2,
+    "MKL_NUM_THREADS": 2
+  }
+}

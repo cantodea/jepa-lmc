@@ -71,7 +71,7 @@ class BinaryConfusion:
 
 @dataclass(frozen=True)
 class VerificationReport:
-    """Property-level comparison used as the main JEPA verification scorecard."""
+    """Additional property diagnostics; structural.py owns the primary scorecard."""
 
     outcomes: tuple[PropertyOutcome, ...]
 

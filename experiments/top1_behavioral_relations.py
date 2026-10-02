@@ -20,6 +20,7 @@ from jepa_lmc.evaluation.dynamics import (
     evaluate_gridworld_transitions,
     transition_system_from_retrievals,
 )
+from jepa_lmc.evaluation.structural import evaluate_model_pair, model_evaluation_report
 from jepa_lmc.learning.model import ActionJEPA
 from jepa_lmc.verification.behavioral_relations import (
     audit_greatest_relation,
@@ -204,6 +205,7 @@ def main():
                         ]
                         for s in states
                     ]
+                computed = {}
                 for actions in (False, True):
                     results = {}
                     for name in protocol["relations"]:
@@ -281,6 +283,7 @@ def main():
                         )
                         raw_map["relations"].append(exported)
                         results[name] = result
+                        computed[actions, name] = result
                     if actions:
                         # Both models have one outcome for each GridWorld action.
                         if results["real_to_top1"].pairs != results[
@@ -291,6 +294,12 @@ def main():
                             raise AssertionError(
                                 "Total action-deterministic consistency failed."
                             )
+                map_scores[-1]["evaluation"] = evaluate_model_pair(
+                    real,
+                    learned,
+                    top1_counts=(map_scores[-1]["correct_top1_pairs"], retrieval.total),
+                    relations=computed,
+                )
                 raw.write(json.dumps(raw_map, allow_nan=False) + "\n")
             if model_digest(model) != before:
                 raise AssertionError("The frozen JEPA weights changed.")
@@ -353,6 +362,17 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
     report["maps"] = map_scores
+    report["model_evaluation"] = model_evaluation_report(
+        [
+            {
+                "seed": m["seed"],
+                "case": m["case"],
+                "family": m["family"],
+                **m["evaluation"],
+            }
+            for m in map_scores
+        ]
+    )
     report["audit"] = {
         "greatest_relation_certificates_checked": certificate_checks,
         "independent_partition_comparisons": partition_checks,

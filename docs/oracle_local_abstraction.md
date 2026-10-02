@@ -1,5 +1,10 @@
 # Oracle local successor abstraction on frozen ranking JEPA
 
+The [October structural evaluation](structural_evaluation.md) is the current
+primary model scorecard. It replays the frozen graphs with uniform simulation,
+initial/identity bisimulation and action-sensitive metrics, retaining this
+historical study and its CTL/LTL diagnostics unchanged.
+
 This study freezes the three `ranking` checkpoints selected at commit `c15c457`.
 It asks whether the learned geometry can yield useful, tight overapproximations
 if correct local error bounds are supplied. It does not estimate such bounds.
