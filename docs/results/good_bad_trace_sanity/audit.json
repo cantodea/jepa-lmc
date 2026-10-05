@@ -1,0 +1,44 @@
+{
+  "base_revision": "fedf3310bdcdd2254e29f73f907702d6e21a387c",
+  "october_archived_real_graphs_identical": 72,
+  "october_archive_relations_sha256": "8d51e45e76bf1f5a0c70732fdcfa90f72b08780c0558e6d8bea39793b2eb5d98",
+  "october_archive_report_sha256": "485d73909f54ed1d6c6d266ee6c123d0504abf4e14941d2956bc27186fcb5277",
+  "graph_equality_checks": [
+    "state_catalogue",
+    "initial_states",
+    "proposition_labels",
+    "action_labelled_edges"
+  ],
+  "export_hashes_verified": true,
+  "evaluator_source_hashes_verified": true,
+  "baseline_tracked_files_unchanged": true,
+  "test_suite": {
+    "passed": 145,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "new_tests": 13,
+    "nuxmv_integration_tests": "executed"
+  },
+  "ruff_new_python_files": "passed",
+  "ruff_repository_preexisting_only": [
+    "src/jepa_lmc/envs/gridworld.py:RUF005",
+    "src/jepa_lmc/verification/witness.py:RUF005"
+  ],
+  "saved_record_counts": {
+    "cases": 360,
+    "trace_pools": 72,
+    "good_traces": 1152,
+    "bad_traces": 1152
+  },
+  "aggregate_means_rechecked": true,
+  "all_completed_initial_bisimulation_passes_are_sealed_region": true,
+  "files_sha256": {
+    "benchmark.json": "272cb88fda0a149ff2fbfc108683ebb637dadf9ecc1f33b5ae0dcce7dbbed5a5",
+    "cases.jsonl": "b4f425b2ca23043adad83c9c6451ada2bd009d100eaf3fc864d03a3574dc1d40",
+    "report.json": "5acf113bcc445c3b1baec0e26f1be1824861bf6e489234a9cea676d1b4621d5a",
+    "report.md": "4780bc1351b89178037bbced825e4c996624cfb8ef8cf782bb2ae4ecf806a321",
+    "test_results.txt": "1faa38663e2947dcac60fa0d0cd610dcb3eab63f0848095ef927a67fe244212f",
+    "trace_pools.jsonl": "dd3ffee04b4d31b3d08621b8a8b54d37d91ed7bbc5538de824aa3d60bded15f3"
+  }
+}
