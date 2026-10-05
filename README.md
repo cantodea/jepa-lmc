@@ -86,3 +86,11 @@ and 33/72 identity bisimulation**, and oracle-local **49/72 and 46/72** under
 ordinary Kripke semantics. All-six initial CTL agreement remains **68/72** and
 **69/72**, respectively. No models, checkpoints or data were changed or retrained.
 Run `python -m experiments.evaluate_structural --help` for saved-graph evaluation.
+
+The independent [good/bad trace sanity experiment](docs/good_bad_trace_sanity.md)
+tests the known-state, hidden-transition formulation without JEPA training.
+Across 24 stress maps and three seeds, observed-edge memorisation achieves 100%
+good acceptance and bad rejection while recovering only 9.37%-41.06% of real
+transitions at budgets of 1-16 trajectories. Sample consistency is evaluated on
+the partial relation; simulation/bisimulation and CTL are evaluated separately
+under explicit self-loop completion.
