@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "model_case_records_replayed": 1080,
+  "seed_map_pools_checked": 72,
+  "structural_replays_using_existing_evaluate_model_pair": 1080,
+  "unique_nuxmv_outputs_and_verdicts_verified": 998,
+  "historical_result_files_unchanged": 25,
+  "full_tests": {
+    "passed": 162,
+    "failed": 0,
+    "skipped": 0,
+    "new_tests": 17
+  },
+  "full_config_training_reruns_with_identical_parameters_and_predictions": 4,
+  "shared_observed_examples_only": true,
+  "all_heldout_unique_disjoint_real_and_reproducible": true,
+  "nested_budgets_verified": true,
+  "saved_transition_trace_structural_ctl_and_ltl_results_verified": true,
+  "unseen_edge_diagnostic_consistent_with_main_scores": true,
+  "postprocessing_source_sha256": {
+    "complete_finite_trace_run.py": "ba21d7ff1236a3edb55bccc99bdf0f31ee16fc2ffa61c7987bc9842e969a85b8",
+    "diagnose_finite_trace_predictions.py": "efa3c34f93094e1dda0b46fd49b86a704ff120306dfd3c0d5f98a29a1f1a2b0b"
+  },
+  "artifact_sha256": {
+    "benchmark_log.txt": "a0dd7dbedf6c2716522e7662b106eebfe225c8ac694f90f5a18be852e6c5a809",
+    "cases.jsonl": "d43c85664b8a369d6b8f8044b9bf33b5b1cc426a34c473c16939c690d52e8b42",
+    "experiment_config.json": "cae6f6f983087ae2e8c8b7e18cbf77f37fe66e62270d582d8d8ef6802ef564c4",
+    "ltl_backend.jsonl.gz": "c1d7ab1e1a9479b1c11d0d6d6fbae66a8671bb39bbecad39afc651331f78955f",
+    "report.json": "9e02c5f183f383359be18888d4fff5e2e8e73aa15cd5acf102b8efd6e6a7bedb",
+    "report.md": "b301f98ef0e98ad69a8488556c97f028cf76969a50e5b8e01f7b6dcbcfab36cd",
+    "reproducibility_check.json": "15ea9dba8a422675ad36decd7b6e6ec2b9a069ed0e7328f8ce87059b9294ea70",
+    "run_started.json": "37076da8ccb91349cef0dbd2cf35124d9d8b003b3b5b4f07ca34e652740c632d",
+    "test_log.txt": "b961d640eace41657d067645eb7bf11f4e4deeeedb679cdbe81d5f5353b1031b",
+    "trace_pools.jsonl": "526fdd878667ec3091695a0fd5cc01357bdb29b3cb7b567c40e83f552572c10d",
+    "unseen_edge_diagnostics.json": "90f773a727c768e20fc027c64f807e8c3001f18b97b6655ac1f9816e51139908",
+    "unseen_edge_diagnostics.md": "9a1ee1a31470aa8b8893f653fffd37b12edd04d77f58fc906467369de8529f52"
+  }
+}
