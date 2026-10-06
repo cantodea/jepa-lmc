@@ -1,0 +1,30 @@
+Replayed sealed_region_layout0_rot0: 45/1080
+Replayed sealed_region_layout0_rot90: 90/1080
+Replayed sealed_region_layout0_rot180: 135/1080
+Replayed sealed_region_layout0_rot270: 180/1080
+Replayed sealed_region_layout1_rot0: 225/1080
+Replayed sealed_region_layout1_rot90: 270/1080
+Replayed sealed_region_layout1_rot180: 315/1080
+Replayed sealed_region_layout1_rot270: 360/1080
+Replayed danger_gate_layout0_rot0: 405/1080
+Replayed danger_gate_layout0_rot90: 450/1080
+Replayed danger_gate_layout0_rot180: 495/1080
+Replayed danger_gate_layout0_rot270: 540/1080
+Replayed danger_gate_layout1_rot0: 585/1080
+Replayed danger_gate_layout1_rot90: 630/1080
+Replayed danger_gate_layout1_rot180: 675/1080
+Replayed danger_gate_layout1_rot270: 720/1080
+Replayed safe_detour_layout0_rot0: 765/1080
+Replayed safe_detour_layout0_rot90: 810/1080
+Replayed safe_detour_layout0_rot180: 855/1080
+Replayed safe_detour_layout0_rot270: 900/1080
+Replayed safe_detour_layout1_rot0: 945/1080
+Replayed safe_detour_layout1_rot90: 990/1080
+Replayed safe_detour_layout1_rot180: 1035/1080
+Replayed safe_detour_layout1_rot270: 1080/1080
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/workspace/scratch/e5f0c69e1ff1/read_only_replay.py", line 143, in finish
+    assert meta['final_state_sha256'] == r['training']['final_state_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

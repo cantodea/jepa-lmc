@@ -132,3 +132,13 @@ Then run python -m experiments.diagnose_finite_trace_predictions
 sources and historical result hashes are recorded for reproduction.
 The branch-specific GitHub workflow runs the same fixed configuration
 and commits only complete, verified results to the experiment branch.
+
+## Independent revalidation on 2026-10-06
+
+The existing complete experiment was independently rechecked: 162 tests pass,
+all 1,080 saved metric records replay consistently, and four fixed 300-epoch
+reruns reproduce all 480 decoded predictions. Final parameter hashes differ
+across the two environments (maximum logged-loss difference 2.38e-7), so this
+revalidation establishes prediction agreement for those checks, not bitwise
+weight equality. The original outputs and failed strict-hash assertion remain
+available in the [revalidation record](results/finite_trace_mlp_vs_jepa/revalidation_20261006/report.md).
