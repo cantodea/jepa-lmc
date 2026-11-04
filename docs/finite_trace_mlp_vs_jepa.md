@@ -1,3 +1,5 @@
+> 当前默认 MLP 已更新为 900 epochs、lr=0.001；见[权重、结果与说明](results/mlp_900_fairness/README.md)。以下原 300 轮实验报告作为历史对照保留，历史结果文件未改。
+
 # Finite-trace successor prediction: MLP vs JEPA
 
 Complete fixed-protocol benchmark: 24 existing October stress maps,

@@ -36,11 +36,15 @@ from jepa_lmc.learning.finite_trace import (
     FiniteTraceData,
     fit_finite_model,
     predict_successors,
+    training_settings,
 )
 from jepa_lmc.verification.gridworld import gridworld_to_transition_system
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "configs/finite_trace_mlp_vs_jepa.json"
+# CONFIG remains the historical protocol for the legacy completion/replay tool.
+# New runs use the adequately trained MLP; JEPA retains its original settings.
+DEFAULT_CONFIG = ROOT / "configs/finite_trace_mlp900_vs_jepa.json"
 MODELS = ("observed_edge", "mlp", "jepa")
 OLD_RUN = ROOT / "docs/results/good_bad_trace_sanity"
 NEW_SOURCES = (
@@ -210,7 +214,7 @@ def paired_comparison(rows):
     }
 
 
-def run_experiment(output_dir, *, config_path=CONFIG, executable=None):
+def run_experiment(output_dir, *, config_path=DEFAULT_CONFIG, executable=None):
     config = json.loads(Path(config_path).read_text())
     maps, october = benchmark_catalogue()
     if (
@@ -518,6 +522,9 @@ def run_experiment(output_dir, *, config_path=CONFIG, executable=None):
 
 
 def render_report(report):
+    mlp_training = training_settings(report["config"], "mlp")
+    jepa_training = training_settings(report["config"], "jepa")
+
     def pct(value):
         return "n/a" if value is None else f"{value * 100:.2f}%"
 
@@ -540,8 +547,14 @@ def render_report(report):
         "prediction/variance/covariance losses plus ranking weight 0.1. All "
         "known states can be candidates; only observed successors label examples.",
         "",
-        "Both methods use AdamW, lr 0.0003, weight decay 0.0001, 300 full-batch "
-        "epochs and final-epoch selection. No pretrained checkpoints, early "
+        "Both methods use AdamW and final-epoch selection. "
+        f"MLP: lr {mlp_training['learning_rate']}, "
+        f"weight decay {mlp_training['weight_decay']}, "
+        f"{mlp_training['epochs']} full-batch epochs. "
+        f"JEPA: lr {jepa_training['learning_rate']}, "
+        f"weight decay {jepa_training['weight_decay']}, "
+        f"{jepa_training['epochs']} full-batch epochs. "
+        "These schedules do not imply equal compute. No pretrained checkpoints, early "
         "stopping, oracle repair, heldout selection or hyperparameter search.",
         "",
         "Training pools exactly match the original sanity experiment. Each seed/map "
@@ -753,7 +766,7 @@ def render_report(report):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument("--config", type=Path, default=CONFIG)
+    parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--executable", type=Path)
     args = parser.parse_args()
     report = run_experiment(

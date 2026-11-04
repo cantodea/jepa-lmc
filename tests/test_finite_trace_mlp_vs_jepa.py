@@ -11,6 +11,7 @@ import torch
 
 from experiments.finite_trace_mlp_vs_jepa import (
     CONFIG,
+    DEFAULT_CONFIG,
     aggregate,
     known_catalogue,
     paired_comparison,
@@ -45,6 +46,7 @@ from jepa_lmc.learning.finite_trace import (
     known_observations,
     predict_successors,
     tensor_digest,
+    training_settings,
 )
 from jepa_lmc.learning.ranking import same_map_ranking_loss
 from jepa_lmc.verification.gridworld import gridworld_to_transition_system
@@ -53,12 +55,23 @@ from jepa_lmc.verification.transition_system import ExplicitTransitionSystem
 
 
 def test_config():
-    config = json.loads(CONFIG.read_text())
+    config = json.loads(DEFAULT_CONFIG.read_text())
     config["training"]["epochs"] = 2
+    config["mlp"]["training"]["epochs"] = 2
     return config
 
 
 class FiniteTraceLearningTests(unittest.TestCase):
+    def test_default_mlp_schedule_preserves_historical_jepa_and_config(self):
+        current = json.loads(DEFAULT_CONFIG.read_text())
+        historical = json.loads(CONFIG.read_text())
+        self.assertEqual(training_settings(current, "jepa"), historical["training"])
+        self.assertEqual(current["jepa"], historical["jepa"])
+        self.assertEqual(training_settings(current, "mlp")["epochs"], 900)
+        self.assertEqual(training_settings(current, "mlp")["learning_rate"], 0.001)
+        self.assertEqual(training_settings(historical, "mlp")["epochs"], 300)
+        self.assertEqual(training_settings(historical, "mlp")["learning_rate"], 0.0003)
+
     @classmethod
     def setUpClass(cls):
         torch.set_num_threads(1)

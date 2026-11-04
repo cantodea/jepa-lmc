@@ -147,11 +147,18 @@ class DirectSuccessorMLP(nn.Module):
         return self.network(features)
 
 
+def training_settings(config: dict, kind: str) -> dict:
+    """Resolve fixed per-model settings without mutating the shared protocol."""
+    if kind not in ("mlp", "jepa"):
+        raise ValueError("Choose mlp or jepa.")
+    return {**config["training"], **config[kind].get("training", {})}
+
+
 def fit_finite_model(data: FiniteTraceData, *, kind: str, seed: int, config: dict):
     """Fit from scratch, fixed epochs, without truth/evaluation/heldout arguments."""
     if kind not in ("mlp", "jepa"):
         raise ValueError("Choose mlp or jepa.")
-    train = config["training"]
+    train = training_settings(config, kind)
     if train["epochs"] < 1 or train["device"] != "cpu":
         raise ValueError("This reproducibility protocol uses positive epochs on CPU.")
     torch.set_num_threads(train["threads"])
@@ -259,6 +266,8 @@ def fit_finite_model(data: FiniteTraceData, *, kind: str, seed: int, config: dic
         "from_scratch": True,
         "model_kwargs": kwargs,
         "epochs": train["epochs"],
+        "learning_rate": train["learning_rate"],
+        "weight_decay": train["weight_decay"],
         "optimizer_steps": train["epochs"],
         "steps_per_epoch": len(data.actions),
         "examples_processed": train["epochs"] * len(data.actions),
