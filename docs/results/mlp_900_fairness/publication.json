@@ -1,0 +1,35 @@
+{
+  "published_baseline": "mlp_A_900",
+  "trained_on": "2026-11-03",
+  "publication_prepared_on": "2026-11-04",
+  "source_commit": "d191e010f07b9e0fb241bdfe8c40a5cd2dc76b02",
+  "cases": 360,
+  "checkpoint_files": 360,
+  "epochs": 900,
+  "learning_rate": 0.001,
+  "selection": "User requested publishing pre-locked A; no new tuning or test-based checkpoint selection.",
+  "history": "Original 300-epoch config and all original result files are retained unchanged.",
+  "csv_derivation": "Select original Experiment04 rows not involving mlp_B_1800; preserve field strings, missing values and denominators. No metrics recomputed.",
+  "csv_rows": {
+    "case_metrics.csv": 1080,
+    "initial_property_agreement.csv": 1008,
+    "learning_curve_summary.csv": 130,
+    "learning_curves.csv": 9360,
+    "paired_block_means.csv": 11088,
+    "paired_budget1_to16_changes.csv": 216,
+    "paired_case_differences.csv": 720,
+    "paired_leave_one_group_out.csv": 6048,
+    "paired_summary.csv": 1568,
+    "summary_by_budget_split.csv": 84,
+    "summary_rates_with_denominators.csv": 1176,
+    "training_costs.csv": 84,
+    "unseen_gap_decomposition.csv": 720
+  },
+  "provenance_scope": "Unedited Experiment04 records refer to the full A/B study (720 new fits); this publication contains only the 360 A weights. Prior no-push protocol describes the completed study; subsequent user request authorizes this publication.",
+  "source_artifact_sha256": {
+    "training_inputs.json": "e7def852a3e072766c5c3bdf46c79a1a34c862105ef976330ee9fac4830d2b83",
+    "cases.jsonl": "1a0db3bff5899adeaaa12d5cad63e01c933cfeb89ad6d00942adcaf8e0dbdc22",
+    "training_frozen.json": "b232c8e4b5ec03c808a47079998e03f4662954d5fed302f690e15034dd4761a4",
+    "verification.json": "c9a5ed153d175bf0ca7f3bf382ce208cfbe68b850c38220d65a9cab8b5bb4fde"
+  }
+}

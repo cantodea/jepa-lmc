@@ -1,0 +1,62 @@
+name: Finite-trace MLP vs JEPA benchmark
+on:
+  push:
+    branches: [experiment/finite-trace-mlp-vs-jepa]
+    paths:
+      - '.github/workflows/finite-trace-benchmark.yml'
+      - 'experiments/complete_finite_trace_run.py'
+permissions:
+  contents: write
+concurrency:
+  group: finite-trace-mlp-vs-jepa
+  cancel-in-progress: false
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PYTHONPATH: src
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -e '.[dev]'
+      - name: Install official nuXmv 2.2.0
+        run: |
+          nuxmv_download=$(mktemp -d)
+          cd "$nuxmv_download"
+          curl --retry 3 -fsSLO https://nuxmv.fbk.eu/downloads/2.2.0/nuXmv-2.2.0-linux64.tar.xz
+          curl --retry 3 -fsSLO https://nuxmv.fbk.eu/downloads/2.2.0/nuXmv-2.2.0-linux64.tar.xz.sha256sum
+          sha256sum -c nuXmv-2.2.0-linux64.tar.xz.sha256sum
+          tar -xf nuXmv-2.2.0-linux64.tar.xz
+          test -x "$nuxmv_download/nuXmv-2.2.0-linux64/usr/local/bin/nuXmv"
+          printf 'NUXMV_BINARY=%s\n' "$nuxmv_download/nuXmv-2.2.0-linux64/usr/local/bin/nuXmv" >> "$GITHUB_ENV"
+      - name: Full tests and core-source lint
+        run: |
+          set -o pipefail
+          python -m compileall -q experiments/complete_finite_trace_run.py
+          python -m ruff check experiments/finite_trace_mlp_vs_jepa.py experiments/diagnose_finite_trace_predictions.py src/jepa_lmc/learning/finite_trace.py src/jepa_lmc/evaluation/finite_trace.py tests/test_finite_trace_mlp_vs_jepa.py
+          python -m unittest discover -s tests -v 2>&1 | tee "$RUNNER_TEMP/finite_trace_tests.log"
+      - name: Complete fixed benchmark
+        run: |
+          set -o pipefail
+          python -m experiments.finite_trace_mlp_vs_jepa --output-dir docs/results/finite_trace_mlp_vs_jepa 2>&1 | tee "$RUNNER_TEMP/finite_trace_benchmark.log"
+      - name: Diagnose and replay saved results
+        run: |
+          python -m experiments.diagnose_finite_trace_predictions --result-dir docs/results/finite_trace_mlp_vs_jepa
+          python -m experiments.complete_finite_trace_run --result-dir docs/results/finite_trace_mlp_vs_jepa --test-log "$RUNNER_TEMP/finite_trace_tests.log" --benchmark-log "$RUNNER_TEMP/finite_trace_benchmark.log"
+      - name: Commit complete results to the experiment branch
+        run: |
+          test "$GITHUB_REF" = refs/heads/experiment/finite-trace-mlp-vs-jepa
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/finite_trace_mlp_vs_jepa.md docs/results/finite_trace_mlp_vs_jepa
+          git diff --cached --check
+          git commit -m 'Record complete finite-trace benchmark and validation'
+          git push origin HEAD:refs/heads/experiment/finite-trace-mlp-vs-jepa

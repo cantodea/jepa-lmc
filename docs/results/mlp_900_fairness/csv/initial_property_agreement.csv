@@ -1,0 +1,1009 @@
+﻿split,budget,model,logic,property,n_cases,agreement,false_positive,false_negative,real_true,learned_true
+all360,0,mlp_original_300,ctl,EF danger,360,0.37222222222222223,0,226,240,14
+all360,0,mlp_original_300,ctl,EF goal,360,0.3333333333333333,0,240,240,0
+all360,0,mlp_original_300,ctl,E[!danger U goal],360,0.6666666666666666,0,120,120,0
+all360,0,mlp_original_300,ctl,AG !danger,360,0.37222222222222223,226,0,120,346
+all360,0,mlp_original_300,ctl,AF goal,360,1,0,0,0,0
+all360,0,mlp_original_300,ctl,EG safe,360,1,0,0,360,360
+all360,0,mlp_original_300,ltl,X !danger,360,0.9833333333333333,0,6,360,354
+all360,0,mlp_original_300,ltl,F goal,360,1,0,0,0,0
+all360,0,mlp_original_300,ltl,G !danger,360,0.37222222222222223,226,0,120,346
+all360,0,mlp_original_300,ltl,safe U goal,360,1,0,0,0,0
+all360,0,mlp_original_300,ltl,G F safe,360,0.35833333333333334,231,0,120,351
+all360,0,mlp_original_300,ltl,F G !danger,360,0.37222222222222223,226,0,120,346
+all360,0,jepa_original_300,ctl,EF danger,360,0.6166666666666667,0,138,240,102
+all360,0,jepa_original_300,ctl,EF goal,360,0.33611111111111114,0,239,240,1
+all360,0,jepa_original_300,ctl,E[!danger U goal],360,0.6694444444444444,0,119,120,1
+all360,0,jepa_original_300,ctl,AG !danger,360,0.6166666666666667,138,0,120,258
+all360,0,jepa_original_300,ctl,AF goal,360,1,0,0,0,0
+all360,0,jepa_original_300,ctl,EG safe,360,1,0,0,360,360
+all360,0,jepa_original_300,ltl,X !danger,360,1,0,0,360,360
+all360,0,jepa_original_300,ltl,F goal,360,1,0,0,0,0
+all360,0,jepa_original_300,ltl,G !danger,360,0.6166666666666667,138,0,120,258
+all360,0,jepa_original_300,ltl,safe U goal,360,1,0,0,0,0
+all360,0,jepa_original_300,ltl,G F safe,360,0.6111111111111112,140,0,120,260
+all360,0,jepa_original_300,ltl,F G !danger,360,0.6166666666666667,138,0,120,258
+all360,0,mlp_A_900,ctl,EF danger,360,0.6166666666666667,0,138,240,102
+all360,0,mlp_A_900,ctl,EF goal,360,0.3388888888888889,0,238,240,2
+all360,0,mlp_A_900,ctl,E[!danger U goal],360,0.6722222222222223,0,118,120,2
+all360,0,mlp_A_900,ctl,AG !danger,360,0.6166666666666667,138,0,120,258
+all360,0,mlp_A_900,ctl,AF goal,360,1,0,0,0,0
+all360,0,mlp_A_900,ctl,EG safe,360,1,0,0,360,360
+all360,0,mlp_A_900,ltl,X !danger,360,0.9972222222222222,0,1,360,359
+all360,0,mlp_A_900,ltl,F goal,360,1,0,0,0,0
+all360,0,mlp_A_900,ltl,G !danger,360,0.6166666666666667,138,0,120,258
+all360,0,mlp_A_900,ltl,safe U goal,360,1,0,0,0,0
+all360,0,mlp_A_900,ltl,G F safe,360,0.5333333333333333,168,0,120,288
+all360,0,mlp_A_900,ltl,F G !danger,360,0.6138888888888889,139,0,120,259
+all360,1,mlp_original_300,ctl,EF danger,72,0.3888888888888889,0,44,48,4
+all360,1,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,1,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,1,mlp_original_300,ctl,AG !danger,72,0.3888888888888889,44,0,24,68
+all360,1,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,1,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,1,mlp_original_300,ltl,X !danger,72,0.9583333333333334,0,3,72,69
+all360,1,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+all360,1,mlp_original_300,ltl,G !danger,72,0.3888888888888889,44,0,24,68
+all360,1,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,1,mlp_original_300,ltl,G F safe,72,0.375,45,0,24,69
+all360,1,mlp_original_300,ltl,F G !danger,72,0.3888888888888889,44,0,24,68
+all360,1,jepa_original_300,ctl,EF danger,72,0.4166666666666667,0,42,48,6
+all360,1,jepa_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,1,jepa_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,1,jepa_original_300,ctl,AG !danger,72,0.4166666666666667,42,0,24,66
+all360,1,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,1,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,1,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,1,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+all360,1,jepa_original_300,ltl,G !danger,72,0.4166666666666667,42,0,24,66
+all360,1,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,1,jepa_original_300,ltl,G F safe,72,0.4166666666666667,42,0,24,66
+all360,1,jepa_original_300,ltl,F G !danger,72,0.4166666666666667,42,0,24,66
+all360,1,mlp_A_900,ctl,EF danger,72,0.4166666666666667,0,42,48,6
+all360,1,mlp_A_900,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,1,mlp_A_900,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,1,mlp_A_900,ctl,AG !danger,72,0.4166666666666667,42,0,24,66
+all360,1,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+all360,1,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+all360,1,mlp_A_900,ltl,X !danger,72,0.9861111111111112,0,1,72,71
+all360,1,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+all360,1,mlp_A_900,ltl,G !danger,72,0.4166666666666667,42,0,24,66
+all360,1,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+all360,1,mlp_A_900,ltl,G F safe,72,0.3888888888888889,44,0,24,68
+all360,1,mlp_A_900,ltl,F G !danger,72,0.4166666666666667,42,0,24,66
+all360,2,mlp_original_300,ctl,EF danger,72,0.4027777777777778,0,43,48,5
+all360,2,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,2,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,2,mlp_original_300,ctl,AG !danger,72,0.4027777777777778,43,0,24,67
+all360,2,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,2,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,2,mlp_original_300,ltl,X !danger,72,0.9583333333333334,0,3,72,69
+all360,2,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+all360,2,mlp_original_300,ltl,G !danger,72,0.4027777777777778,43,0,24,67
+all360,2,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,2,mlp_original_300,ltl,G F safe,72,0.375,45,0,24,69
+all360,2,mlp_original_300,ltl,F G !danger,72,0.4027777777777778,43,0,24,67
+all360,2,jepa_original_300,ctl,EF danger,72,0.5416666666666666,0,33,48,15
+all360,2,jepa_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,2,jepa_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,2,jepa_original_300,ctl,AG !danger,72,0.5416666666666666,33,0,24,57
+all360,2,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,2,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,2,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,2,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+all360,2,jepa_original_300,ltl,G !danger,72,0.5416666666666666,33,0,24,57
+all360,2,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,2,jepa_original_300,ltl,G F safe,72,0.5138888888888888,35,0,24,59
+all360,2,jepa_original_300,ltl,F G !danger,72,0.5416666666666666,33,0,24,57
+all360,2,mlp_A_900,ctl,EF danger,72,0.5416666666666666,0,33,48,15
+all360,2,mlp_A_900,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,2,mlp_A_900,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,2,mlp_A_900,ctl,AG !danger,72,0.5416666666666666,33,0,24,57
+all360,2,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+all360,2,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+all360,2,mlp_A_900,ltl,X !danger,72,1,0,0,72,72
+all360,2,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+all360,2,mlp_A_900,ltl,G !danger,72,0.5416666666666666,33,0,24,57
+all360,2,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+all360,2,mlp_A_900,ltl,G F safe,72,0.4166666666666667,42,0,24,66
+all360,2,mlp_A_900,ltl,F G !danger,72,0.5277777777777778,34,0,24,58
+all360,4,mlp_original_300,ctl,EF danger,72,0.4027777777777778,0,43,48,5
+all360,4,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,4,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,4,mlp_original_300,ctl,AG !danger,72,0.4027777777777778,43,0,24,67
+all360,4,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,4,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,4,mlp_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,4,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+all360,4,mlp_original_300,ltl,G !danger,72,0.4027777777777778,43,0,24,67
+all360,4,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,4,mlp_original_300,ltl,G F safe,72,0.375,45,0,24,69
+all360,4,mlp_original_300,ltl,F G !danger,72,0.4027777777777778,43,0,24,67
+all360,4,jepa_original_300,ctl,EF danger,72,0.6388888888888888,0,26,48,22
+all360,4,jepa_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,4,jepa_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,4,jepa_original_300,ctl,AG !danger,72,0.6388888888888888,26,0,24,50
+all360,4,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,4,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,4,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,4,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+all360,4,jepa_original_300,ltl,G !danger,72,0.6388888888888888,26,0,24,50
+all360,4,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,4,jepa_original_300,ltl,G F safe,72,0.6388888888888888,26,0,24,50
+all360,4,jepa_original_300,ltl,F G !danger,72,0.6388888888888888,26,0,24,50
+all360,4,mlp_A_900,ctl,EF danger,72,0.6388888888888888,0,26,48,22
+all360,4,mlp_A_900,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,4,mlp_A_900,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,4,mlp_A_900,ctl,AG !danger,72,0.6388888888888888,26,0,24,50
+all360,4,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+all360,4,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+all360,4,mlp_A_900,ltl,X !danger,72,1,0,0,72,72
+all360,4,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+all360,4,mlp_A_900,ltl,G !danger,72,0.6388888888888888,26,0,24,50
+all360,4,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+all360,4,mlp_A_900,ltl,G F safe,72,0.5138888888888888,35,0,24,59
+all360,4,mlp_A_900,ltl,F G !danger,72,0.6388888888888888,26,0,24,50
+all360,8,mlp_original_300,ctl,EF danger,72,0.3333333333333333,0,48,48,0
+all360,8,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,8,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,8,mlp_original_300,ctl,AG !danger,72,0.3333333333333333,48,0,24,72
+all360,8,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,8,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,8,mlp_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,8,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+all360,8,mlp_original_300,ltl,G !danger,72,0.3333333333333333,48,0,24,72
+all360,8,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,8,mlp_original_300,ltl,G F safe,72,0.3333333333333333,48,0,24,72
+all360,8,mlp_original_300,ltl,F G !danger,72,0.3333333333333333,48,0,24,72
+all360,8,jepa_original_300,ctl,EF danger,72,0.7361111111111112,0,19,48,29
+all360,8,jepa_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,8,jepa_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,8,jepa_original_300,ctl,AG !danger,72,0.7361111111111112,19,0,24,43
+all360,8,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,8,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,8,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,8,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+all360,8,jepa_original_300,ltl,G !danger,72,0.7361111111111112,19,0,24,43
+all360,8,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,8,jepa_original_300,ltl,G F safe,72,0.7361111111111112,19,0,24,43
+all360,8,jepa_original_300,ltl,F G !danger,72,0.7361111111111112,19,0,24,43
+all360,8,mlp_A_900,ctl,EF danger,72,0.7361111111111112,0,19,48,29
+all360,8,mlp_A_900,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,8,mlp_A_900,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,8,mlp_A_900,ctl,AG !danger,72,0.7361111111111112,19,0,24,43
+all360,8,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+all360,8,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+all360,8,mlp_A_900,ltl,X !danger,72,1,0,0,72,72
+all360,8,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+all360,8,mlp_A_900,ltl,G !danger,72,0.7361111111111112,19,0,24,43
+all360,8,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+all360,8,mlp_A_900,ltl,G F safe,72,0.6388888888888888,26,0,24,50
+all360,8,mlp_A_900,ltl,F G !danger,72,0.7361111111111112,19,0,24,43
+all360,16,mlp_original_300,ctl,EF danger,72,0.3333333333333333,0,48,48,0
+all360,16,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+all360,16,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+all360,16,mlp_original_300,ctl,AG !danger,72,0.3333333333333333,48,0,24,72
+all360,16,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,16,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,16,mlp_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,16,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+all360,16,mlp_original_300,ltl,G !danger,72,0.3333333333333333,48,0,24,72
+all360,16,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,16,mlp_original_300,ltl,G F safe,72,0.3333333333333333,48,0,24,72
+all360,16,mlp_original_300,ltl,F G !danger,72,0.3333333333333333,48,0,24,72
+all360,16,jepa_original_300,ctl,EF danger,72,0.75,0,18,48,30
+all360,16,jepa_original_300,ctl,EF goal,72,0.3472222222222222,0,47,48,1
+all360,16,jepa_original_300,ctl,E[!danger U goal],72,0.6805555555555556,0,23,24,1
+all360,16,jepa_original_300,ctl,AG !danger,72,0.75,18,0,24,42
+all360,16,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+all360,16,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+all360,16,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+all360,16,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+all360,16,jepa_original_300,ltl,G !danger,72,0.75,18,0,24,42
+all360,16,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+all360,16,jepa_original_300,ltl,G F safe,72,0.75,18,0,24,42
+all360,16,jepa_original_300,ltl,F G !danger,72,0.75,18,0,24,42
+all360,16,mlp_A_900,ctl,EF danger,72,0.75,0,18,48,30
+all360,16,mlp_A_900,ctl,EF goal,72,0.3611111111111111,0,46,48,2
+all360,16,mlp_A_900,ctl,E[!danger U goal],72,0.6944444444444444,0,22,24,2
+all360,16,mlp_A_900,ctl,AG !danger,72,0.75,18,0,24,42
+all360,16,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+all360,16,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+all360,16,mlp_A_900,ltl,X !danger,72,1,0,0,72,72
+all360,16,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+all360,16,mlp_A_900,ltl,G !danger,72,0.75,18,0,24,42
+all360,16,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+all360,16,mlp_A_900,ltl,G F safe,72,0.7083333333333334,21,0,24,45
+all360,16,mlp_A_900,ltl,F G !danger,72,0.75,18,0,24,42
+pilot9,0,mlp_original_300,ctl,EF danger,9,0.3333333333333333,0,6,6,0
+pilot9,0,mlp_original_300,ctl,EF goal,9,0.3333333333333333,0,6,6,0
+pilot9,0,mlp_original_300,ctl,E[!danger U goal],9,0.6666666666666666,0,3,3,0
+pilot9,0,mlp_original_300,ctl,AG !danger,9,0.3333333333333333,6,0,3,9
+pilot9,0,mlp_original_300,ctl,AF goal,9,1,0,0,0,0
+pilot9,0,mlp_original_300,ctl,EG safe,9,1,0,0,9,9
+pilot9,0,mlp_original_300,ltl,X !danger,9,1,0,0,9,9
+pilot9,0,mlp_original_300,ltl,F goal,9,1,0,0,0,0
+pilot9,0,mlp_original_300,ltl,G !danger,9,0.3333333333333333,6,0,3,9
+pilot9,0,mlp_original_300,ltl,safe U goal,9,1,0,0,0,0
+pilot9,0,mlp_original_300,ltl,G F safe,9,0.3333333333333333,6,0,3,9
+pilot9,0,mlp_original_300,ltl,F G !danger,9,0.3333333333333333,6,0,3,9
+pilot9,0,jepa_original_300,ctl,EF danger,9,0.6666666666666666,0,3,6,3
+pilot9,0,jepa_original_300,ctl,EF goal,9,0.3333333333333333,0,6,6,0
+pilot9,0,jepa_original_300,ctl,E[!danger U goal],9,0.6666666666666666,0,3,3,0
+pilot9,0,jepa_original_300,ctl,AG !danger,9,0.6666666666666666,3,0,3,6
+pilot9,0,jepa_original_300,ctl,AF goal,9,1,0,0,0,0
+pilot9,0,jepa_original_300,ctl,EG safe,9,1,0,0,9,9
+pilot9,0,jepa_original_300,ltl,X !danger,9,1,0,0,9,9
+pilot9,0,jepa_original_300,ltl,F goal,9,1,0,0,0,0
+pilot9,0,jepa_original_300,ltl,G !danger,9,0.6666666666666666,3,0,3,6
+pilot9,0,jepa_original_300,ltl,safe U goal,9,1,0,0,0,0
+pilot9,0,jepa_original_300,ltl,G F safe,9,0.6666666666666666,3,0,3,6
+pilot9,0,jepa_original_300,ltl,F G !danger,9,0.6666666666666666,3,0,3,6
+pilot9,0,mlp_A_900,ctl,EF danger,9,0.6666666666666666,0,3,6,3
+pilot9,0,mlp_A_900,ctl,EF goal,9,0.3333333333333333,0,6,6,0
+pilot9,0,mlp_A_900,ctl,E[!danger U goal],9,0.6666666666666666,0,3,3,0
+pilot9,0,mlp_A_900,ctl,AG !danger,9,0.6666666666666666,3,0,3,6
+pilot9,0,mlp_A_900,ctl,AF goal,9,1,0,0,0,0
+pilot9,0,mlp_A_900,ctl,EG safe,9,1,0,0,9,9
+pilot9,0,mlp_A_900,ltl,X !danger,9,1,0,0,9,9
+pilot9,0,mlp_A_900,ltl,F goal,9,1,0,0,0,0
+pilot9,0,mlp_A_900,ltl,G !danger,9,0.6666666666666666,3,0,3,6
+pilot9,0,mlp_A_900,ltl,safe U goal,9,1,0,0,0,0
+pilot9,0,mlp_A_900,ltl,G F safe,9,0.5555555555555556,4,0,3,7
+pilot9,0,mlp_A_900,ltl,F G !danger,9,0.6666666666666666,3,0,3,6
+pilot9,1,mlp_original_300,ctl,EF danger,3,0.3333333333333333,0,2,2,0
+pilot9,1,mlp_original_300,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,1,mlp_original_300,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,1,mlp_original_300,ctl,AG !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_original_300,ctl,AF goal,3,1,0,0,0,0
+pilot9,1,mlp_original_300,ctl,EG safe,3,1,0,0,3,3
+pilot9,1,mlp_original_300,ltl,X !danger,3,1,0,0,3,3
+pilot9,1,mlp_original_300,ltl,F goal,3,1,0,0,0,0
+pilot9,1,mlp_original_300,ltl,G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_original_300,ltl,safe U goal,3,1,0,0,0,0
+pilot9,1,mlp_original_300,ltl,G F safe,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_original_300,ltl,F G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,jepa_original_300,ctl,EF danger,3,0.3333333333333333,0,2,2,0
+pilot9,1,jepa_original_300,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,1,jepa_original_300,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,1,jepa_original_300,ctl,AG !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,jepa_original_300,ctl,AF goal,3,1,0,0,0,0
+pilot9,1,jepa_original_300,ctl,EG safe,3,1,0,0,3,3
+pilot9,1,jepa_original_300,ltl,X !danger,3,1,0,0,3,3
+pilot9,1,jepa_original_300,ltl,F goal,3,1,0,0,0,0
+pilot9,1,jepa_original_300,ltl,G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,jepa_original_300,ltl,safe U goal,3,1,0,0,0,0
+pilot9,1,jepa_original_300,ltl,G F safe,3,0.3333333333333333,2,0,1,3
+pilot9,1,jepa_original_300,ltl,F G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_A_900,ctl,EF danger,3,0.3333333333333333,0,2,2,0
+pilot9,1,mlp_A_900,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,1,mlp_A_900,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,1,mlp_A_900,ctl,AG !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_A_900,ctl,AF goal,3,1,0,0,0,0
+pilot9,1,mlp_A_900,ctl,EG safe,3,1,0,0,3,3
+pilot9,1,mlp_A_900,ltl,X !danger,3,1,0,0,3,3
+pilot9,1,mlp_A_900,ltl,F goal,3,1,0,0,0,0
+pilot9,1,mlp_A_900,ltl,G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_A_900,ltl,safe U goal,3,1,0,0,0,0
+pilot9,1,mlp_A_900,ltl,G F safe,3,0.3333333333333333,2,0,1,3
+pilot9,1,mlp_A_900,ltl,F G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,4,mlp_original_300,ctl,EF danger,3,0.3333333333333333,0,2,2,0
+pilot9,4,mlp_original_300,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,4,mlp_original_300,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,4,mlp_original_300,ctl,AG !danger,3,0.3333333333333333,2,0,1,3
+pilot9,4,mlp_original_300,ctl,AF goal,3,1,0,0,0,0
+pilot9,4,mlp_original_300,ctl,EG safe,3,1,0,0,3,3
+pilot9,4,mlp_original_300,ltl,X !danger,3,1,0,0,3,3
+pilot9,4,mlp_original_300,ltl,F goal,3,1,0,0,0,0
+pilot9,4,mlp_original_300,ltl,G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,4,mlp_original_300,ltl,safe U goal,3,1,0,0,0,0
+pilot9,4,mlp_original_300,ltl,G F safe,3,0.3333333333333333,2,0,1,3
+pilot9,4,mlp_original_300,ltl,F G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,4,jepa_original_300,ctl,EF danger,3,0.6666666666666666,0,1,2,1
+pilot9,4,jepa_original_300,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,4,jepa_original_300,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,4,jepa_original_300,ctl,AG !danger,3,0.6666666666666666,1,0,1,2
+pilot9,4,jepa_original_300,ctl,AF goal,3,1,0,0,0,0
+pilot9,4,jepa_original_300,ctl,EG safe,3,1,0,0,3,3
+pilot9,4,jepa_original_300,ltl,X !danger,3,1,0,0,3,3
+pilot9,4,jepa_original_300,ltl,F goal,3,1,0,0,0,0
+pilot9,4,jepa_original_300,ltl,G !danger,3,0.6666666666666666,1,0,1,2
+pilot9,4,jepa_original_300,ltl,safe U goal,3,1,0,0,0,0
+pilot9,4,jepa_original_300,ltl,G F safe,3,0.6666666666666666,1,0,1,2
+pilot9,4,jepa_original_300,ltl,F G !danger,3,0.6666666666666666,1,0,1,2
+pilot9,4,mlp_A_900,ctl,EF danger,3,0.6666666666666666,0,1,2,1
+pilot9,4,mlp_A_900,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,4,mlp_A_900,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,4,mlp_A_900,ctl,AG !danger,3,0.6666666666666666,1,0,1,2
+pilot9,4,mlp_A_900,ctl,AF goal,3,1,0,0,0,0
+pilot9,4,mlp_A_900,ctl,EG safe,3,1,0,0,3,3
+pilot9,4,mlp_A_900,ltl,X !danger,3,1,0,0,3,3
+pilot9,4,mlp_A_900,ltl,F goal,3,1,0,0,0,0
+pilot9,4,mlp_A_900,ltl,G !danger,3,0.6666666666666666,1,0,1,2
+pilot9,4,mlp_A_900,ltl,safe U goal,3,1,0,0,0,0
+pilot9,4,mlp_A_900,ltl,G F safe,3,0.3333333333333333,2,0,1,3
+pilot9,4,mlp_A_900,ltl,F G !danger,3,0.6666666666666666,1,0,1,2
+pilot9,16,mlp_original_300,ctl,EF danger,3,0.3333333333333333,0,2,2,0
+pilot9,16,mlp_original_300,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,16,mlp_original_300,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,16,mlp_original_300,ctl,AG !danger,3,0.3333333333333333,2,0,1,3
+pilot9,16,mlp_original_300,ctl,AF goal,3,1,0,0,0,0
+pilot9,16,mlp_original_300,ctl,EG safe,3,1,0,0,3,3
+pilot9,16,mlp_original_300,ltl,X !danger,3,1,0,0,3,3
+pilot9,16,mlp_original_300,ltl,F goal,3,1,0,0,0,0
+pilot9,16,mlp_original_300,ltl,G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,16,mlp_original_300,ltl,safe U goal,3,1,0,0,0,0
+pilot9,16,mlp_original_300,ltl,G F safe,3,0.3333333333333333,2,0,1,3
+pilot9,16,mlp_original_300,ltl,F G !danger,3,0.3333333333333333,2,0,1,3
+pilot9,16,jepa_original_300,ctl,EF danger,3,1,0,0,2,2
+pilot9,16,jepa_original_300,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,16,jepa_original_300,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,16,jepa_original_300,ctl,AG !danger,3,1,0,0,1,1
+pilot9,16,jepa_original_300,ctl,AF goal,3,1,0,0,0,0
+pilot9,16,jepa_original_300,ctl,EG safe,3,1,0,0,3,3
+pilot9,16,jepa_original_300,ltl,X !danger,3,1,0,0,3,3
+pilot9,16,jepa_original_300,ltl,F goal,3,1,0,0,0,0
+pilot9,16,jepa_original_300,ltl,G !danger,3,1,0,0,1,1
+pilot9,16,jepa_original_300,ltl,safe U goal,3,1,0,0,0,0
+pilot9,16,jepa_original_300,ltl,G F safe,3,1,0,0,1,1
+pilot9,16,jepa_original_300,ltl,F G !danger,3,1,0,0,1,1
+pilot9,16,mlp_A_900,ctl,EF danger,3,1,0,0,2,2
+pilot9,16,mlp_A_900,ctl,EF goal,3,0.3333333333333333,0,2,2,0
+pilot9,16,mlp_A_900,ctl,E[!danger U goal],3,0.6666666666666666,0,1,1,0
+pilot9,16,mlp_A_900,ctl,AG !danger,3,1,0,0,1,1
+pilot9,16,mlp_A_900,ctl,AF goal,3,1,0,0,0,0
+pilot9,16,mlp_A_900,ctl,EG safe,3,1,0,0,3,3
+pilot9,16,mlp_A_900,ltl,X !danger,3,1,0,0,3,3
+pilot9,16,mlp_A_900,ltl,F goal,3,1,0,0,0,0
+pilot9,16,mlp_A_900,ltl,G !danger,3,1,0,0,1,1
+pilot9,16,mlp_A_900,ltl,safe U goal,3,1,0,0,0,0
+pilot9,16,mlp_A_900,ltl,G F safe,3,1,0,0,1,1
+pilot9,16,mlp_A_900,ltl,F G !danger,3,1,0,0,1,1
+remaining351,0,mlp_original_300,ctl,EF danger,351,0.3732193732193732,0,220,234,14
+remaining351,0,mlp_original_300,ctl,EF goal,351,0.3333333333333333,0,234,234,0
+remaining351,0,mlp_original_300,ctl,E[!danger U goal],351,0.6666666666666666,0,117,117,0
+remaining351,0,mlp_original_300,ctl,AG !danger,351,0.3732193732193732,220,0,117,337
+remaining351,0,mlp_original_300,ctl,AF goal,351,1,0,0,0,0
+remaining351,0,mlp_original_300,ctl,EG safe,351,1,0,0,351,351
+remaining351,0,mlp_original_300,ltl,X !danger,351,0.9829059829059829,0,6,351,345
+remaining351,0,mlp_original_300,ltl,F goal,351,1,0,0,0,0
+remaining351,0,mlp_original_300,ltl,G !danger,351,0.3732193732193732,220,0,117,337
+remaining351,0,mlp_original_300,ltl,safe U goal,351,1,0,0,0,0
+remaining351,0,mlp_original_300,ltl,G F safe,351,0.358974358974359,225,0,117,342
+remaining351,0,mlp_original_300,ltl,F G !danger,351,0.3732193732193732,220,0,117,337
+remaining351,0,jepa_original_300,ctl,EF danger,351,0.6153846153846154,0,135,234,99
+remaining351,0,jepa_original_300,ctl,EF goal,351,0.33618233618233617,0,233,234,1
+remaining351,0,jepa_original_300,ctl,E[!danger U goal],351,0.6695156695156695,0,116,117,1
+remaining351,0,jepa_original_300,ctl,AG !danger,351,0.6153846153846154,135,0,117,252
+remaining351,0,jepa_original_300,ctl,AF goal,351,1,0,0,0,0
+remaining351,0,jepa_original_300,ctl,EG safe,351,1,0,0,351,351
+remaining351,0,jepa_original_300,ltl,X !danger,351,1,0,0,351,351
+remaining351,0,jepa_original_300,ltl,F goal,351,1,0,0,0,0
+remaining351,0,jepa_original_300,ltl,G !danger,351,0.6153846153846154,135,0,117,252
+remaining351,0,jepa_original_300,ltl,safe U goal,351,1,0,0,0,0
+remaining351,0,jepa_original_300,ltl,G F safe,351,0.6096866096866097,137,0,117,254
+remaining351,0,jepa_original_300,ltl,F G !danger,351,0.6153846153846154,135,0,117,252
+remaining351,0,mlp_A_900,ctl,EF danger,351,0.6153846153846154,0,135,234,99
+remaining351,0,mlp_A_900,ctl,EF goal,351,0.33903133903133903,0,232,234,2
+remaining351,0,mlp_A_900,ctl,E[!danger U goal],351,0.6723646723646723,0,115,117,2
+remaining351,0,mlp_A_900,ctl,AG !danger,351,0.6153846153846154,135,0,117,252
+remaining351,0,mlp_A_900,ctl,AF goal,351,1,0,0,0,0
+remaining351,0,mlp_A_900,ctl,EG safe,351,1,0,0,351,351
+remaining351,0,mlp_A_900,ltl,X !danger,351,0.9971509971509972,0,1,351,350
+remaining351,0,mlp_A_900,ltl,F goal,351,1,0,0,0,0
+remaining351,0,mlp_A_900,ltl,G !danger,351,0.6153846153846154,135,0,117,252
+remaining351,0,mlp_A_900,ltl,safe U goal,351,1,0,0,0,0
+remaining351,0,mlp_A_900,ltl,G F safe,351,0.5327635327635327,164,0,117,281
+remaining351,0,mlp_A_900,ltl,F G !danger,351,0.6125356125356125,136,0,117,253
+remaining351,1,mlp_original_300,ctl,EF danger,69,0.391304347826087,0,42,46,4
+remaining351,1,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,1,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,1,mlp_original_300,ctl,AG !danger,69,0.391304347826087,42,0,23,65
+remaining351,1,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+remaining351,1,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+remaining351,1,mlp_original_300,ltl,X !danger,69,0.9565217391304348,0,3,69,66
+remaining351,1,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+remaining351,1,mlp_original_300,ltl,G !danger,69,0.391304347826087,42,0,23,65
+remaining351,1,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+remaining351,1,mlp_original_300,ltl,G F safe,69,0.37681159420289856,43,0,23,66
+remaining351,1,mlp_original_300,ltl,F G !danger,69,0.391304347826087,42,0,23,65
+remaining351,1,jepa_original_300,ctl,EF danger,69,0.42028985507246375,0,40,46,6
+remaining351,1,jepa_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,1,jepa_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,1,jepa_original_300,ctl,AG !danger,69,0.42028985507246375,40,0,23,63
+remaining351,1,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+remaining351,1,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+remaining351,1,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+remaining351,1,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+remaining351,1,jepa_original_300,ltl,G !danger,69,0.42028985507246375,40,0,23,63
+remaining351,1,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+remaining351,1,jepa_original_300,ltl,G F safe,69,0.42028985507246375,40,0,23,63
+remaining351,1,jepa_original_300,ltl,F G !danger,69,0.42028985507246375,40,0,23,63
+remaining351,1,mlp_A_900,ctl,EF danger,69,0.42028985507246375,0,40,46,6
+remaining351,1,mlp_A_900,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,1,mlp_A_900,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,1,mlp_A_900,ctl,AG !danger,69,0.42028985507246375,40,0,23,63
+remaining351,1,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+remaining351,1,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+remaining351,1,mlp_A_900,ltl,X !danger,69,0.9855072463768116,0,1,69,68
+remaining351,1,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+remaining351,1,mlp_A_900,ltl,G !danger,69,0.42028985507246375,40,0,23,63
+remaining351,1,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+remaining351,1,mlp_A_900,ltl,G F safe,69,0.391304347826087,42,0,23,65
+remaining351,1,mlp_A_900,ltl,F G !danger,69,0.42028985507246375,40,0,23,63
+remaining351,2,mlp_original_300,ctl,EF danger,72,0.4027777777777778,0,43,48,5
+remaining351,2,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+remaining351,2,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+remaining351,2,mlp_original_300,ctl,AG !danger,72,0.4027777777777778,43,0,24,67
+remaining351,2,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+remaining351,2,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+remaining351,2,mlp_original_300,ltl,X !danger,72,0.9583333333333334,0,3,72,69
+remaining351,2,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+remaining351,2,mlp_original_300,ltl,G !danger,72,0.4027777777777778,43,0,24,67
+remaining351,2,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+remaining351,2,mlp_original_300,ltl,G F safe,72,0.375,45,0,24,69
+remaining351,2,mlp_original_300,ltl,F G !danger,72,0.4027777777777778,43,0,24,67
+remaining351,2,jepa_original_300,ctl,EF danger,72,0.5416666666666666,0,33,48,15
+remaining351,2,jepa_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+remaining351,2,jepa_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+remaining351,2,jepa_original_300,ctl,AG !danger,72,0.5416666666666666,33,0,24,57
+remaining351,2,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+remaining351,2,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+remaining351,2,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+remaining351,2,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+remaining351,2,jepa_original_300,ltl,G !danger,72,0.5416666666666666,33,0,24,57
+remaining351,2,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+remaining351,2,jepa_original_300,ltl,G F safe,72,0.5138888888888888,35,0,24,59
+remaining351,2,jepa_original_300,ltl,F G !danger,72,0.5416666666666666,33,0,24,57
+remaining351,2,mlp_A_900,ctl,EF danger,72,0.5416666666666666,0,33,48,15
+remaining351,2,mlp_A_900,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+remaining351,2,mlp_A_900,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+remaining351,2,mlp_A_900,ctl,AG !danger,72,0.5416666666666666,33,0,24,57
+remaining351,2,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+remaining351,2,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+remaining351,2,mlp_A_900,ltl,X !danger,72,1,0,0,72,72
+remaining351,2,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+remaining351,2,mlp_A_900,ltl,G !danger,72,0.5416666666666666,33,0,24,57
+remaining351,2,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+remaining351,2,mlp_A_900,ltl,G F safe,72,0.4166666666666667,42,0,24,66
+remaining351,2,mlp_A_900,ltl,F G !danger,72,0.5277777777777778,34,0,24,58
+remaining351,4,mlp_original_300,ctl,EF danger,69,0.4057971014492754,0,41,46,5
+remaining351,4,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,4,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,4,mlp_original_300,ctl,AG !danger,69,0.4057971014492754,41,0,23,64
+remaining351,4,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+remaining351,4,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+remaining351,4,mlp_original_300,ltl,X !danger,69,1,0,0,69,69
+remaining351,4,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+remaining351,4,mlp_original_300,ltl,G !danger,69,0.4057971014492754,41,0,23,64
+remaining351,4,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+remaining351,4,mlp_original_300,ltl,G F safe,69,0.37681159420289856,43,0,23,66
+remaining351,4,mlp_original_300,ltl,F G !danger,69,0.4057971014492754,41,0,23,64
+remaining351,4,jepa_original_300,ctl,EF danger,69,0.6376811594202898,0,25,46,21
+remaining351,4,jepa_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,4,jepa_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,4,jepa_original_300,ctl,AG !danger,69,0.6376811594202898,25,0,23,48
+remaining351,4,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+remaining351,4,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+remaining351,4,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+remaining351,4,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+remaining351,4,jepa_original_300,ltl,G !danger,69,0.6376811594202898,25,0,23,48
+remaining351,4,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+remaining351,4,jepa_original_300,ltl,G F safe,69,0.6376811594202898,25,0,23,48
+remaining351,4,jepa_original_300,ltl,F G !danger,69,0.6376811594202898,25,0,23,48
+remaining351,4,mlp_A_900,ctl,EF danger,69,0.6376811594202898,0,25,46,21
+remaining351,4,mlp_A_900,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,4,mlp_A_900,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,4,mlp_A_900,ctl,AG !danger,69,0.6376811594202898,25,0,23,48
+remaining351,4,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+remaining351,4,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+remaining351,4,mlp_A_900,ltl,X !danger,69,1,0,0,69,69
+remaining351,4,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+remaining351,4,mlp_A_900,ltl,G !danger,69,0.6376811594202898,25,0,23,48
+remaining351,4,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+remaining351,4,mlp_A_900,ltl,G F safe,69,0.5217391304347826,33,0,23,56
+remaining351,4,mlp_A_900,ltl,F G !danger,69,0.6376811594202898,25,0,23,48
+remaining351,8,mlp_original_300,ctl,EF danger,72,0.3333333333333333,0,48,48,0
+remaining351,8,mlp_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+remaining351,8,mlp_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+remaining351,8,mlp_original_300,ctl,AG !danger,72,0.3333333333333333,48,0,24,72
+remaining351,8,mlp_original_300,ctl,AF goal,72,1,0,0,0,0
+remaining351,8,mlp_original_300,ctl,EG safe,72,1,0,0,72,72
+remaining351,8,mlp_original_300,ltl,X !danger,72,1,0,0,72,72
+remaining351,8,mlp_original_300,ltl,F goal,72,1,0,0,0,0
+remaining351,8,mlp_original_300,ltl,G !danger,72,0.3333333333333333,48,0,24,72
+remaining351,8,mlp_original_300,ltl,safe U goal,72,1,0,0,0,0
+remaining351,8,mlp_original_300,ltl,G F safe,72,0.3333333333333333,48,0,24,72
+remaining351,8,mlp_original_300,ltl,F G !danger,72,0.3333333333333333,48,0,24,72
+remaining351,8,jepa_original_300,ctl,EF danger,72,0.7361111111111112,0,19,48,29
+remaining351,8,jepa_original_300,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+remaining351,8,jepa_original_300,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+remaining351,8,jepa_original_300,ctl,AG !danger,72,0.7361111111111112,19,0,24,43
+remaining351,8,jepa_original_300,ctl,AF goal,72,1,0,0,0,0
+remaining351,8,jepa_original_300,ctl,EG safe,72,1,0,0,72,72
+remaining351,8,jepa_original_300,ltl,X !danger,72,1,0,0,72,72
+remaining351,8,jepa_original_300,ltl,F goal,72,1,0,0,0,0
+remaining351,8,jepa_original_300,ltl,G !danger,72,0.7361111111111112,19,0,24,43
+remaining351,8,jepa_original_300,ltl,safe U goal,72,1,0,0,0,0
+remaining351,8,jepa_original_300,ltl,G F safe,72,0.7361111111111112,19,0,24,43
+remaining351,8,jepa_original_300,ltl,F G !danger,72,0.7361111111111112,19,0,24,43
+remaining351,8,mlp_A_900,ctl,EF danger,72,0.7361111111111112,0,19,48,29
+remaining351,8,mlp_A_900,ctl,EF goal,72,0.3333333333333333,0,48,48,0
+remaining351,8,mlp_A_900,ctl,E[!danger U goal],72,0.6666666666666666,0,24,24,0
+remaining351,8,mlp_A_900,ctl,AG !danger,72,0.7361111111111112,19,0,24,43
+remaining351,8,mlp_A_900,ctl,AF goal,72,1,0,0,0,0
+remaining351,8,mlp_A_900,ctl,EG safe,72,1,0,0,72,72
+remaining351,8,mlp_A_900,ltl,X !danger,72,1,0,0,72,72
+remaining351,8,mlp_A_900,ltl,F goal,72,1,0,0,0,0
+remaining351,8,mlp_A_900,ltl,G !danger,72,0.7361111111111112,19,0,24,43
+remaining351,8,mlp_A_900,ltl,safe U goal,72,1,0,0,0,0
+remaining351,8,mlp_A_900,ltl,G F safe,72,0.6388888888888888,26,0,24,50
+remaining351,8,mlp_A_900,ltl,F G !danger,72,0.7361111111111112,19,0,24,43
+remaining351,16,mlp_original_300,ctl,EF danger,69,0.3333333333333333,0,46,46,0
+remaining351,16,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+remaining351,16,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+remaining351,16,mlp_original_300,ctl,AG !danger,69,0.3333333333333333,46,0,23,69
+remaining351,16,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+remaining351,16,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+remaining351,16,mlp_original_300,ltl,X !danger,69,1,0,0,69,69
+remaining351,16,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+remaining351,16,mlp_original_300,ltl,G !danger,69,0.3333333333333333,46,0,23,69
+remaining351,16,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+remaining351,16,mlp_original_300,ltl,G F safe,69,0.3333333333333333,46,0,23,69
+remaining351,16,mlp_original_300,ltl,F G !danger,69,0.3333333333333333,46,0,23,69
+remaining351,16,jepa_original_300,ctl,EF danger,69,0.7391304347826086,0,18,46,28
+remaining351,16,jepa_original_300,ctl,EF goal,69,0.34782608695652173,0,45,46,1
+remaining351,16,jepa_original_300,ctl,E[!danger U goal],69,0.6811594202898551,0,22,23,1
+remaining351,16,jepa_original_300,ctl,AG !danger,69,0.7391304347826086,18,0,23,41
+remaining351,16,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+remaining351,16,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+remaining351,16,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+remaining351,16,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+remaining351,16,jepa_original_300,ltl,G !danger,69,0.7391304347826086,18,0,23,41
+remaining351,16,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+remaining351,16,jepa_original_300,ltl,G F safe,69,0.7391304347826086,18,0,23,41
+remaining351,16,jepa_original_300,ltl,F G !danger,69,0.7391304347826086,18,0,23,41
+remaining351,16,mlp_A_900,ctl,EF danger,69,0.7391304347826086,0,18,46,28
+remaining351,16,mlp_A_900,ctl,EF goal,69,0.36231884057971014,0,44,46,2
+remaining351,16,mlp_A_900,ctl,E[!danger U goal],69,0.6956521739130435,0,21,23,2
+remaining351,16,mlp_A_900,ctl,AG !danger,69,0.7391304347826086,18,0,23,41
+remaining351,16,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+remaining351,16,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+remaining351,16,mlp_A_900,ltl,X !danger,69,1,0,0,69,69
+remaining351,16,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+remaining351,16,mlp_A_900,ltl,G !danger,69,0.7391304347826086,18,0,23,41
+remaining351,16,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+remaining351,16,mlp_A_900,ltl,G F safe,69,0.6956521739130435,21,0,23,44
+remaining351,16,mlp_A_900,ltl,F G !danger,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,0,mlp_original_300,ctl,EF danger,345,0.3739130434782609,0,216,230,14
+exclude_pilot_pools345,0,mlp_original_300,ctl,EF goal,345,0.3333333333333333,0,230,230,0
+exclude_pilot_pools345,0,mlp_original_300,ctl,E[!danger U goal],345,0.6666666666666666,0,115,115,0
+exclude_pilot_pools345,0,mlp_original_300,ctl,AG !danger,345,0.3739130434782609,216,0,115,331
+exclude_pilot_pools345,0,mlp_original_300,ctl,AF goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,mlp_original_300,ctl,EG safe,345,1,0,0,345,345
+exclude_pilot_pools345,0,mlp_original_300,ltl,X !danger,345,0.9826086956521739,0,6,345,339
+exclude_pilot_pools345,0,mlp_original_300,ltl,F goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,mlp_original_300,ltl,G !danger,345,0.3739130434782609,216,0,115,331
+exclude_pilot_pools345,0,mlp_original_300,ltl,safe U goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,mlp_original_300,ltl,G F safe,345,0.35942028985507246,221,0,115,336
+exclude_pilot_pools345,0,mlp_original_300,ltl,F G !danger,345,0.3739130434782609,216,0,115,331
+exclude_pilot_pools345,0,jepa_original_300,ctl,EF danger,345,0.6115942028985507,0,134,230,96
+exclude_pilot_pools345,0,jepa_original_300,ctl,EF goal,345,0.336231884057971,0,229,230,1
+exclude_pilot_pools345,0,jepa_original_300,ctl,E[!danger U goal],345,0.6695652173913044,0,114,115,1
+exclude_pilot_pools345,0,jepa_original_300,ctl,AG !danger,345,0.6115942028985507,134,0,115,249
+exclude_pilot_pools345,0,jepa_original_300,ctl,AF goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,jepa_original_300,ctl,EG safe,345,1,0,0,345,345
+exclude_pilot_pools345,0,jepa_original_300,ltl,X !danger,345,1,0,0,345,345
+exclude_pilot_pools345,0,jepa_original_300,ltl,F goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,jepa_original_300,ltl,G !danger,345,0.6115942028985507,134,0,115,249
+exclude_pilot_pools345,0,jepa_original_300,ltl,safe U goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,jepa_original_300,ltl,G F safe,345,0.6086956521739131,135,0,115,250
+exclude_pilot_pools345,0,jepa_original_300,ltl,F G !danger,345,0.6115942028985507,134,0,115,249
+exclude_pilot_pools345,0,mlp_A_900,ctl,EF danger,345,0.6115942028985507,0,134,230,96
+exclude_pilot_pools345,0,mlp_A_900,ctl,EF goal,345,0.3391304347826087,0,228,230,2
+exclude_pilot_pools345,0,mlp_A_900,ctl,E[!danger U goal],345,0.672463768115942,0,113,115,2
+exclude_pilot_pools345,0,mlp_A_900,ctl,AG !danger,345,0.6115942028985507,134,0,115,249
+exclude_pilot_pools345,0,mlp_A_900,ctl,AF goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,mlp_A_900,ctl,EG safe,345,1,0,0,345,345
+exclude_pilot_pools345,0,mlp_A_900,ltl,X !danger,345,0.9971014492753624,0,1,345,344
+exclude_pilot_pools345,0,mlp_A_900,ltl,F goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,mlp_A_900,ltl,G !danger,345,0.6115942028985507,134,0,115,249
+exclude_pilot_pools345,0,mlp_A_900,ltl,safe U goal,345,1,0,0,0,0
+exclude_pilot_pools345,0,mlp_A_900,ltl,G F safe,345,0.5333333333333333,161,0,115,276
+exclude_pilot_pools345,0,mlp_A_900,ltl,F G !danger,345,0.6086956521739131,135,0,115,250
+exclude_pilot_pools345,1,mlp_original_300,ctl,EF danger,69,0.391304347826087,0,42,46,4
+exclude_pilot_pools345,1,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,1,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,1,mlp_original_300,ctl,AG !danger,69,0.391304347826087,42,0,23,65
+exclude_pilot_pools345,1,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,1,mlp_original_300,ltl,X !danger,69,0.9565217391304348,0,3,69,66
+exclude_pilot_pools345,1,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,mlp_original_300,ltl,G !danger,69,0.391304347826087,42,0,23,65
+exclude_pilot_pools345,1,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,mlp_original_300,ltl,G F safe,69,0.37681159420289856,43,0,23,66
+exclude_pilot_pools345,1,mlp_original_300,ltl,F G !danger,69,0.391304347826087,42,0,23,65
+exclude_pilot_pools345,1,jepa_original_300,ctl,EF danger,69,0.42028985507246375,0,40,46,6
+exclude_pilot_pools345,1,jepa_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,1,jepa_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,1,jepa_original_300,ctl,AG !danger,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,1,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,1,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,1,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,jepa_original_300,ltl,G !danger,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,1,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,jepa_original_300,ltl,G F safe,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,1,jepa_original_300,ltl,F G !danger,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,1,mlp_A_900,ctl,EF danger,69,0.42028985507246375,0,40,46,6
+exclude_pilot_pools345,1,mlp_A_900,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,1,mlp_A_900,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,1,mlp_A_900,ctl,AG !danger,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,1,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,1,mlp_A_900,ltl,X !danger,69,0.9855072463768116,0,1,69,68
+exclude_pilot_pools345,1,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,mlp_A_900,ltl,G !danger,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,1,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,1,mlp_A_900,ltl,G F safe,69,0.391304347826087,42,0,23,65
+exclude_pilot_pools345,1,mlp_A_900,ltl,F G !danger,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,2,mlp_original_300,ctl,EF danger,69,0.4057971014492754,0,41,46,5
+exclude_pilot_pools345,2,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,2,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,2,mlp_original_300,ctl,AG !danger,69,0.4057971014492754,41,0,23,64
+exclude_pilot_pools345,2,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,2,mlp_original_300,ltl,X !danger,69,0.9565217391304348,0,3,69,66
+exclude_pilot_pools345,2,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,mlp_original_300,ltl,G !danger,69,0.4057971014492754,41,0,23,64
+exclude_pilot_pools345,2,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,mlp_original_300,ltl,G F safe,69,0.37681159420289856,43,0,23,66
+exclude_pilot_pools345,2,mlp_original_300,ltl,F G !danger,69,0.4057971014492754,41,0,23,64
+exclude_pilot_pools345,2,jepa_original_300,ctl,EF danger,69,0.5362318840579711,0,32,46,14
+exclude_pilot_pools345,2,jepa_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,2,jepa_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,2,jepa_original_300,ctl,AG !danger,69,0.5362318840579711,32,0,23,55
+exclude_pilot_pools345,2,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,2,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,2,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,jepa_original_300,ltl,G !danger,69,0.5362318840579711,32,0,23,55
+exclude_pilot_pools345,2,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,jepa_original_300,ltl,G F safe,69,0.5217391304347826,33,0,23,56
+exclude_pilot_pools345,2,jepa_original_300,ltl,F G !danger,69,0.5362318840579711,32,0,23,55
+exclude_pilot_pools345,2,mlp_A_900,ctl,EF danger,69,0.5362318840579711,0,32,46,14
+exclude_pilot_pools345,2,mlp_A_900,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,2,mlp_A_900,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,2,mlp_A_900,ctl,AG !danger,69,0.5362318840579711,32,0,23,55
+exclude_pilot_pools345,2,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,2,mlp_A_900,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,2,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,mlp_A_900,ltl,G !danger,69,0.5362318840579711,32,0,23,55
+exclude_pilot_pools345,2,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,2,mlp_A_900,ltl,G F safe,69,0.42028985507246375,40,0,23,63
+exclude_pilot_pools345,2,mlp_A_900,ltl,F G !danger,69,0.5217391304347826,33,0,23,56
+exclude_pilot_pools345,4,mlp_original_300,ctl,EF danger,69,0.4057971014492754,0,41,46,5
+exclude_pilot_pools345,4,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,4,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,4,mlp_original_300,ctl,AG !danger,69,0.4057971014492754,41,0,23,64
+exclude_pilot_pools345,4,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,4,mlp_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,4,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,mlp_original_300,ltl,G !danger,69,0.4057971014492754,41,0,23,64
+exclude_pilot_pools345,4,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,mlp_original_300,ltl,G F safe,69,0.37681159420289856,43,0,23,66
+exclude_pilot_pools345,4,mlp_original_300,ltl,F G !danger,69,0.4057971014492754,41,0,23,64
+exclude_pilot_pools345,4,jepa_original_300,ctl,EF danger,69,0.6376811594202898,0,25,46,21
+exclude_pilot_pools345,4,jepa_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,4,jepa_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,4,jepa_original_300,ctl,AG !danger,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,4,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,4,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,4,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,jepa_original_300,ltl,G !danger,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,4,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,jepa_original_300,ltl,G F safe,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,4,jepa_original_300,ltl,F G !danger,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,4,mlp_A_900,ctl,EF danger,69,0.6376811594202898,0,25,46,21
+exclude_pilot_pools345,4,mlp_A_900,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,4,mlp_A_900,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,4,mlp_A_900,ctl,AG !danger,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,4,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,4,mlp_A_900,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,4,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,mlp_A_900,ltl,G !danger,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,4,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,4,mlp_A_900,ltl,G F safe,69,0.5217391304347826,33,0,23,56
+exclude_pilot_pools345,4,mlp_A_900,ltl,F G !danger,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,8,mlp_original_300,ctl,EF danger,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,8,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,8,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,8,mlp_original_300,ctl,AG !danger,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,8,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,8,mlp_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,8,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,mlp_original_300,ltl,G !danger,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,8,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,mlp_original_300,ltl,G F safe,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,8,mlp_original_300,ltl,F G !danger,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,8,jepa_original_300,ctl,EF danger,69,0.7246376811594203,0,19,46,27
+exclude_pilot_pools345,8,jepa_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,8,jepa_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,8,jepa_original_300,ctl,AG !danger,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,8,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,8,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,8,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,jepa_original_300,ltl,G !danger,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,8,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,jepa_original_300,ltl,G F safe,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,8,jepa_original_300,ltl,F G !danger,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,8,mlp_A_900,ctl,EF danger,69,0.7246376811594203,0,19,46,27
+exclude_pilot_pools345,8,mlp_A_900,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,8,mlp_A_900,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,8,mlp_A_900,ctl,AG !danger,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,8,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,8,mlp_A_900,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,8,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,mlp_A_900,ltl,G !danger,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,8,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,8,mlp_A_900,ltl,G F safe,69,0.6376811594202898,25,0,23,48
+exclude_pilot_pools345,8,mlp_A_900,ltl,F G !danger,69,0.7246376811594203,19,0,23,42
+exclude_pilot_pools345,16,mlp_original_300,ctl,EF danger,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,16,mlp_original_300,ctl,EF goal,69,0.3333333333333333,0,46,46,0
+exclude_pilot_pools345,16,mlp_original_300,ctl,E[!danger U goal],69,0.6666666666666666,0,23,23,0
+exclude_pilot_pools345,16,mlp_original_300,ctl,AG !danger,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,16,mlp_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,mlp_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,16,mlp_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,16,mlp_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,mlp_original_300,ltl,G !danger,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,16,mlp_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,mlp_original_300,ltl,G F safe,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,16,mlp_original_300,ltl,F G !danger,69,0.3333333333333333,46,0,23,69
+exclude_pilot_pools345,16,jepa_original_300,ctl,EF danger,69,0.7391304347826086,0,18,46,28
+exclude_pilot_pools345,16,jepa_original_300,ctl,EF goal,69,0.34782608695652173,0,45,46,1
+exclude_pilot_pools345,16,jepa_original_300,ctl,E[!danger U goal],69,0.6811594202898551,0,22,23,1
+exclude_pilot_pools345,16,jepa_original_300,ctl,AG !danger,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,16,jepa_original_300,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,jepa_original_300,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,16,jepa_original_300,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,16,jepa_original_300,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,jepa_original_300,ltl,G !danger,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,16,jepa_original_300,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,jepa_original_300,ltl,G F safe,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,16,jepa_original_300,ltl,F G !danger,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,16,mlp_A_900,ctl,EF danger,69,0.7391304347826086,0,18,46,28
+exclude_pilot_pools345,16,mlp_A_900,ctl,EF goal,69,0.36231884057971014,0,44,46,2
+exclude_pilot_pools345,16,mlp_A_900,ctl,E[!danger U goal],69,0.6956521739130435,0,21,23,2
+exclude_pilot_pools345,16,mlp_A_900,ctl,AG !danger,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,16,mlp_A_900,ctl,AF goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,mlp_A_900,ctl,EG safe,69,1,0,0,69,69
+exclude_pilot_pools345,16,mlp_A_900,ltl,X !danger,69,1,0,0,69,69
+exclude_pilot_pools345,16,mlp_A_900,ltl,F goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,mlp_A_900,ltl,G !danger,69,0.7391304347826086,18,0,23,41
+exclude_pilot_pools345,16,mlp_A_900,ltl,safe U goal,69,1,0,0,0,0
+exclude_pilot_pools345,16,mlp_A_900,ltl,G F safe,69,0.6956521739130435,21,0,23,44
+exclude_pilot_pools345,16,mlp_A_900,ltl,F G !danger,69,0.7391304347826086,18,0,23,41
+layout1_only180,0,mlp_original_300,ctl,EF danger,180,0.3333333333333333,0,120,120,0
+layout1_only180,0,mlp_original_300,ctl,EF goal,180,0.3333333333333333,0,120,120,0
+layout1_only180,0,mlp_original_300,ctl,E[!danger U goal],180,0.6666666666666666,0,60,60,0
+layout1_only180,0,mlp_original_300,ctl,AG !danger,180,0.3333333333333333,120,0,60,180
+layout1_only180,0,mlp_original_300,ctl,AF goal,180,1,0,0,0,0
+layout1_only180,0,mlp_original_300,ctl,EG safe,180,1,0,0,180,180
+layout1_only180,0,mlp_original_300,ltl,X !danger,180,1,0,0,180,180
+layout1_only180,0,mlp_original_300,ltl,F goal,180,1,0,0,0,0
+layout1_only180,0,mlp_original_300,ltl,G !danger,180,0.3333333333333333,120,0,60,180
+layout1_only180,0,mlp_original_300,ltl,safe U goal,180,1,0,0,0,0
+layout1_only180,0,mlp_original_300,ltl,G F safe,180,0.3333333333333333,120,0,60,180
+layout1_only180,0,mlp_original_300,ltl,F G !danger,180,0.3333333333333333,120,0,60,180
+layout1_only180,0,jepa_original_300,ctl,EF danger,180,0.42777777777777776,0,103,120,17
+layout1_only180,0,jepa_original_300,ctl,EF goal,180,0.3333333333333333,0,120,120,0
+layout1_only180,0,jepa_original_300,ctl,E[!danger U goal],180,0.6666666666666666,0,60,60,0
+layout1_only180,0,jepa_original_300,ctl,AG !danger,180,0.42777777777777776,103,0,60,163
+layout1_only180,0,jepa_original_300,ctl,AF goal,180,1,0,0,0,0
+layout1_only180,0,jepa_original_300,ctl,EG safe,180,1,0,0,180,180
+layout1_only180,0,jepa_original_300,ltl,X !danger,180,1,0,0,180,180
+layout1_only180,0,jepa_original_300,ltl,F goal,180,1,0,0,0,0
+layout1_only180,0,jepa_original_300,ltl,G !danger,180,0.42777777777777776,103,0,60,163
+layout1_only180,0,jepa_original_300,ltl,safe U goal,180,1,0,0,0,0
+layout1_only180,0,jepa_original_300,ltl,G F safe,180,0.42777777777777776,103,0,60,163
+layout1_only180,0,jepa_original_300,ltl,F G !danger,180,0.42777777777777776,103,0,60,163
+layout1_only180,0,mlp_A_900,ctl,EF danger,180,0.42777777777777776,0,103,120,17
+layout1_only180,0,mlp_A_900,ctl,EF goal,180,0.3388888888888889,0,119,120,1
+layout1_only180,0,mlp_A_900,ctl,E[!danger U goal],180,0.6722222222222223,0,59,60,1
+layout1_only180,0,mlp_A_900,ctl,AG !danger,180,0.42777777777777776,103,0,60,163
+layout1_only180,0,mlp_A_900,ctl,AF goal,180,1,0,0,0,0
+layout1_only180,0,mlp_A_900,ctl,EG safe,180,1,0,0,180,180
+layout1_only180,0,mlp_A_900,ltl,X !danger,180,1,0,0,180,180
+layout1_only180,0,mlp_A_900,ltl,F goal,180,1,0,0,0,0
+layout1_only180,0,mlp_A_900,ltl,G !danger,180,0.42777777777777776,103,0,60,163
+layout1_only180,0,mlp_A_900,ltl,safe U goal,180,1,0,0,0,0
+layout1_only180,0,mlp_A_900,ltl,G F safe,180,0.37777777777777777,112,0,60,172
+layout1_only180,0,mlp_A_900,ltl,F G !danger,180,0.42777777777777776,103,0,60,163
+layout1_only180,1,mlp_original_300,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,1,mlp_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,1,mlp_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,1,mlp_original_300,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,1,mlp_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,1,mlp_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,1,mlp_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,1,mlp_original_300,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,1,mlp_original_300,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_original_300,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,jepa_original_300,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,1,jepa_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,1,jepa_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,1,jepa_original_300,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,jepa_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,1,jepa_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,1,jepa_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,1,jepa_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,1,jepa_original_300,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,jepa_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,1,jepa_original_300,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,jepa_original_300,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_A_900,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,1,mlp_A_900,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,1,mlp_A_900,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,1,mlp_A_900,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_A_900,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,1,mlp_A_900,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,1,mlp_A_900,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,1,mlp_A_900,ltl,F goal,36,1,0,0,0,0
+layout1_only180,1,mlp_A_900,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_A_900,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,1,mlp_A_900,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,1,mlp_A_900,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,2,mlp_original_300,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,2,mlp_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,2,mlp_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,2,mlp_original_300,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,2,mlp_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,2,mlp_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,2,mlp_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,2,mlp_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,2,mlp_original_300,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,2,mlp_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,2,mlp_original_300,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,2,mlp_original_300,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,2,jepa_original_300,ctl,EF danger,36,0.4166666666666667,0,21,24,3
+layout1_only180,2,jepa_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,2,jepa_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,2,jepa_original_300,ctl,AG !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,2,jepa_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,2,jepa_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,2,jepa_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,2,jepa_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,2,jepa_original_300,ltl,G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,2,jepa_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,2,jepa_original_300,ltl,G F safe,36,0.4166666666666667,21,0,12,33
+layout1_only180,2,jepa_original_300,ltl,F G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,2,mlp_A_900,ctl,EF danger,36,0.4166666666666667,0,21,24,3
+layout1_only180,2,mlp_A_900,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,2,mlp_A_900,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,2,mlp_A_900,ctl,AG !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,2,mlp_A_900,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,2,mlp_A_900,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,2,mlp_A_900,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,2,mlp_A_900,ltl,F goal,36,1,0,0,0,0
+layout1_only180,2,mlp_A_900,ltl,G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,2,mlp_A_900,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,2,mlp_A_900,ltl,G F safe,36,0.3611111111111111,23,0,12,35
+layout1_only180,2,mlp_A_900,ltl,F G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,mlp_original_300,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,4,mlp_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,4,mlp_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,4,mlp_original_300,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,4,mlp_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,4,mlp_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,4,mlp_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,4,mlp_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,4,mlp_original_300,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,4,mlp_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,4,mlp_original_300,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,4,mlp_original_300,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,4,jepa_original_300,ctl,EF danger,36,0.4166666666666667,0,21,24,3
+layout1_only180,4,jepa_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,4,jepa_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,4,jepa_original_300,ctl,AG !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,jepa_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,4,jepa_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,4,jepa_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,4,jepa_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,4,jepa_original_300,ltl,G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,jepa_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,4,jepa_original_300,ltl,G F safe,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,jepa_original_300,ltl,F G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,mlp_A_900,ctl,EF danger,36,0.4166666666666667,0,21,24,3
+layout1_only180,4,mlp_A_900,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,4,mlp_A_900,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,4,mlp_A_900,ctl,AG !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,mlp_A_900,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,4,mlp_A_900,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,4,mlp_A_900,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,4,mlp_A_900,ltl,F goal,36,1,0,0,0,0
+layout1_only180,4,mlp_A_900,ltl,G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,4,mlp_A_900,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,4,mlp_A_900,ltl,G F safe,36,0.3611111111111111,23,0,12,35
+layout1_only180,4,mlp_A_900,ltl,F G !danger,36,0.4166666666666667,21,0,12,33
+layout1_only180,8,mlp_original_300,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,8,mlp_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,8,mlp_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,8,mlp_original_300,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,8,mlp_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,8,mlp_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,8,mlp_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,8,mlp_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,8,mlp_original_300,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,8,mlp_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,8,mlp_original_300,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,8,mlp_original_300,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,8,jepa_original_300,ctl,EF danger,36,0.4722222222222222,0,19,24,5
+layout1_only180,8,jepa_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,8,jepa_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,8,jepa_original_300,ctl,AG !danger,36,0.4722222222222222,19,0,12,31
+layout1_only180,8,jepa_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,8,jepa_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,8,jepa_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,8,jepa_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,8,jepa_original_300,ltl,G !danger,36,0.4722222222222222,19,0,12,31
+layout1_only180,8,jepa_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,8,jepa_original_300,ltl,G F safe,36,0.4722222222222222,19,0,12,31
+layout1_only180,8,jepa_original_300,ltl,F G !danger,36,0.4722222222222222,19,0,12,31
+layout1_only180,8,mlp_A_900,ctl,EF danger,36,0.4722222222222222,0,19,24,5
+layout1_only180,8,mlp_A_900,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,8,mlp_A_900,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,8,mlp_A_900,ctl,AG !danger,36,0.4722222222222222,19,0,12,31
+layout1_only180,8,mlp_A_900,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,8,mlp_A_900,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,8,mlp_A_900,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,8,mlp_A_900,ltl,F goal,36,1,0,0,0,0
+layout1_only180,8,mlp_A_900,ltl,G !danger,36,0.4722222222222222,19,0,12,31
+layout1_only180,8,mlp_A_900,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,8,mlp_A_900,ltl,G F safe,36,0.3888888888888889,22,0,12,34
+layout1_only180,8,mlp_A_900,ltl,F G !danger,36,0.4722222222222222,19,0,12,31
+layout1_only180,16,mlp_original_300,ctl,EF danger,36,0.3333333333333333,0,24,24,0
+layout1_only180,16,mlp_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,16,mlp_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,16,mlp_original_300,ctl,AG !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,16,mlp_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,16,mlp_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,16,mlp_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,16,mlp_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,16,mlp_original_300,ltl,G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,16,mlp_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,16,mlp_original_300,ltl,G F safe,36,0.3333333333333333,24,0,12,36
+layout1_only180,16,mlp_original_300,ltl,F G !danger,36,0.3333333333333333,24,0,12,36
+layout1_only180,16,jepa_original_300,ctl,EF danger,36,0.5,0,18,24,6
+layout1_only180,16,jepa_original_300,ctl,EF goal,36,0.3333333333333333,0,24,24,0
+layout1_only180,16,jepa_original_300,ctl,E[!danger U goal],36,0.6666666666666666,0,12,12,0
+layout1_only180,16,jepa_original_300,ctl,AG !danger,36,0.5,18,0,12,30
+layout1_only180,16,jepa_original_300,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,16,jepa_original_300,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,16,jepa_original_300,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,16,jepa_original_300,ltl,F goal,36,1,0,0,0,0
+layout1_only180,16,jepa_original_300,ltl,G !danger,36,0.5,18,0,12,30
+layout1_only180,16,jepa_original_300,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,16,jepa_original_300,ltl,G F safe,36,0.5,18,0,12,30
+layout1_only180,16,jepa_original_300,ltl,F G !danger,36,0.5,18,0,12,30
+layout1_only180,16,mlp_A_900,ctl,EF danger,36,0.5,0,18,24,6
+layout1_only180,16,mlp_A_900,ctl,EF goal,36,0.3611111111111111,0,23,24,1
+layout1_only180,16,mlp_A_900,ctl,E[!danger U goal],36,0.6944444444444444,0,11,12,1
+layout1_only180,16,mlp_A_900,ctl,AG !danger,36,0.5,18,0,12,30
+layout1_only180,16,mlp_A_900,ctl,AF goal,36,1,0,0,0,0
+layout1_only180,16,mlp_A_900,ctl,EG safe,36,1,0,0,36,36
+layout1_only180,16,mlp_A_900,ltl,X !danger,36,1,0,0,36,36
+layout1_only180,16,mlp_A_900,ltl,F goal,36,1,0,0,0,0
+layout1_only180,16,mlp_A_900,ltl,G !danger,36,0.5,18,0,12,30
+layout1_only180,16,mlp_A_900,ltl,safe U goal,36,1,0,0,0,0
+layout1_only180,16,mlp_A_900,ltl,G F safe,36,0.4444444444444444,20,0,12,32
+layout1_only180,16,mlp_A_900,ltl,F G !danger,36,0.5,18,0,12,30

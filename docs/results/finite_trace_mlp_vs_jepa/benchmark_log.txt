@@ -1,0 +1,427 @@
+[3/1080] sealed_region_layout0_rot0 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.538 unseen=0.009; jepa observed=1.000 unseen=0.280
+[6/1080] sealed_region_layout0_rot0 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.440 unseen=0.000; jepa observed=1.000 unseen=0.337
+[9/1080] sealed_region_layout0_rot0 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.300 unseen=0.000; jepa observed=1.000 unseen=0.311
+[12/1080] sealed_region_layout0_rot0 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.303 unseen=0.000; jepa observed=1.000 unseen=0.287
+[15/1080] sealed_region_layout0_rot0 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.250 unseen=0.000; jepa observed=1.000 unseen=0.289
+[18/1080] sealed_region_layout0_rot0 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.028; jepa observed=1.000 unseen=0.259
+[21/1080] sealed_region_layout0_rot0 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.293
+[24/1080] sealed_region_layout0_rot0 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.321 unseen=0.000; jepa observed=1.000 unseen=0.293
+[27/1080] sealed_region_layout0_rot0 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.355 unseen=0.000; jepa observed=1.000 unseen=0.281
+[30/1080] sealed_region_layout0_rot0 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.314 unseen=0.000; jepa observed=1.000 unseen=0.294
+[33/1080] sealed_region_layout0_rot0 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.018; jepa observed=1.000 unseen=0.282
+[36/1080] sealed_region_layout0_rot0 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.010; jepa observed=1.000 unseen=0.276
+[39/1080] sealed_region_layout0_rot0 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.478 unseen=0.010; jepa observed=1.000 unseen=0.299
+[42/1080] sealed_region_layout0_rot0 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.321 unseen=0.000; jepa observed=0.964 unseen=0.261
+[45/1080] sealed_region_layout0_rot0 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.286 unseen=0.000; jepa observed=0.971 unseen=0.271
+[48/1080] sealed_region_layout0_rot90 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.636 unseen=0.018; jepa observed=1.000 unseen=0.266
+[51/1080] sealed_region_layout0_rot90 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.278 unseen=0.010; jepa observed=1.000 unseen=0.275
+[54/1080] sealed_region_layout0_rot90 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.345 unseen=0.000; jepa observed=1.000 unseen=0.242
+[57/1080] sealed_region_layout0_rot90 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.222 unseen=0.000; jepa observed=1.000 unseen=0.250
+[60/1080] sealed_region_layout0_rot90 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.220 unseen=0.000; jepa observed=0.976 unseen=0.241
+[63/1080] sealed_region_layout0_rot90 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.692 unseen=0.019; jepa observed=1.000 unseen=0.252
+[66/1080] sealed_region_layout0_rot90 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.286 unseen=0.000; jepa observed=1.000 unseen=0.242
+[69/1080] sealed_region_layout0_rot90 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.250 unseen=0.000; jepa observed=1.000 unseen=0.330
+[72/1080] sealed_region_layout0_rot90 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.205 unseen=0.000; jepa observed=1.000 unseen=0.296
+[75/1080] sealed_region_layout0_rot90 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.238 unseen=0.000; jepa observed=1.000 unseen=0.282
+[78/1080] sealed_region_layout0_rot90 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.018; jepa observed=1.000 unseen=0.272
+[81/1080] sealed_region_layout0_rot90 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.545 unseen=0.000; jepa observed=1.000 unseen=0.266
+[84/1080] sealed_region_layout0_rot90 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.391 unseen=0.000; jepa observed=1.000 unseen=0.299
+[87/1080] sealed_region_layout0_rot90 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.290 unseen=0.000; jepa observed=1.000 unseen=0.303
+[90/1080] sealed_region_layout0_rot90 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.250 unseen=0.000; jepa observed=0.975 unseen=0.275
+[93/1080] sealed_region_layout0_rot180 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.778 unseen=0.009; jepa observed=1.000 unseen=0.270
+[96/1080] sealed_region_layout0_rot180 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.000; jepa observed=1.000 unseen=0.255
+[99/1080] sealed_region_layout0_rot180 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.000; jepa observed=1.000 unseen=0.263
+[102/1080] sealed_region_layout0_rot180 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.310 unseen=0.000; jepa observed=1.000 unseen=0.264
+[105/1080] sealed_region_layout0_rot180 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.237 unseen=0.000; jepa observed=0.974 unseen=0.268
+[108/1080] sealed_region_layout0_rot180 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.000; jepa observed=1.000 unseen=0.261
+[111/1080] sealed_region_layout0_rot180 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.692 unseen=0.000; jepa observed=1.000 unseen=0.280
+[114/1080] sealed_region_layout0_rot180 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.600 unseen=0.000; jepa observed=1.000 unseen=0.276
+[117/1080] sealed_region_layout0_rot180 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.293
+[120/1080] sealed_region_layout0_rot180 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.385 unseen=0.000; jepa observed=1.000 unseen=0.287
+[123/1080] sealed_region_layout0_rot180 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.538 unseen=0.009; jepa observed=1.000 unseen=0.271
+[126/1080] sealed_region_layout0_rot180 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.412 unseen=0.000; jepa observed=1.000 unseen=0.291
+[129/1080] sealed_region_layout0_rot180 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.259 unseen=0.000; jepa observed=1.000 unseen=0.258
+[132/1080] sealed_region_layout0_rot180 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.000; jepa observed=1.000 unseen=0.267
+[135/1080] sealed_region_layout0_rot180 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.214 unseen=0.000; jepa observed=1.000 unseen=0.269
+[138/1080] sealed_region_layout0_rot270 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.009; jepa observed=1.000 unseen=0.255
+[141/1080] sealed_region_layout0_rot270 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.478 unseen=0.021; jepa observed=1.000 unseen=0.320
+[144/1080] sealed_region_layout0_rot270 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.300 unseen=0.000; jepa observed=1.000 unseen=0.289
+[147/1080] sealed_region_layout0_rot270 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.226 unseen=0.000; jepa observed=1.000 unseen=0.281
+[150/1080] sealed_region_layout0_rot270 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.171 unseen=0.000; jepa observed=1.000 unseen=0.278
+[153/1080] sealed_region_layout0_rot270 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.009; jepa observed=1.000 unseen=0.269
+[156/1080] sealed_region_layout0_rot270 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.009; jepa observed=1.000 unseen=0.259
+[159/1080] sealed_region_layout0_rot270 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.318 unseen=0.000; jepa observed=1.000 unseen=0.276
+[162/1080] sealed_region_layout0_rot270 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.346 unseen=0.000; jepa observed=1.000 unseen=0.287
+[165/1080] sealed_region_layout0_rot270 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.263 unseen=0.000; jepa observed=1.000 unseen=0.268
+[168/1080] sealed_region_layout0_rot270 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.545 unseen=0.018; jepa observed=1.000 unseen=0.239
+[171/1080] sealed_region_layout0_rot270 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.412 unseen=0.000; jepa observed=1.000 unseen=0.272
+[174/1080] sealed_region_layout0_rot270 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.389 unseen=0.000; jepa observed=1.000 unseen=0.275
+[177/1080] sealed_region_layout0_rot270 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.414 unseen=0.000; jepa observed=1.000 unseen=0.297
+[180/1080] sealed_region_layout0_rot270 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.243 unseen=0.000; jepa observed=1.000 unseen=0.301
+[183/1080] sealed_region_layout1_rot0 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.019; jepa observed=1.000 unseen=0.315
+[186/1080] sealed_region_layout1_rot0 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.438 unseen=0.010; jepa observed=1.000 unseen=0.327
+[189/1080] sealed_region_layout1_rot0 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.478 unseen=0.000; jepa observed=1.000 unseen=0.320
+[192/1080] sealed_region_layout1_rot0 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.256 unseen=0.000; jepa observed=1.000 unseen=0.333
+[195/1080] sealed_region_layout1_rot0 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.182 unseen=0.000; jepa observed=1.000 unseen=0.338
+[198/1080] sealed_region_layout1_rot0 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.714 unseen=0.019; jepa observed=1.000 unseen=0.264
+[201/1080] sealed_region_layout1_rot0 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.350 unseen=0.000; jepa observed=1.000 unseen=0.270
+[204/1080] sealed_region_layout1_rot0 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.233 unseen=0.000; jepa observed=1.000 unseen=0.256
+[207/1080] sealed_region_layout1_rot0 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.178 unseen=0.000; jepa observed=1.000 unseen=0.293
+[210/1080] sealed_region_layout1_rot0 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.179 unseen=0.000; jepa observed=1.000 unseen=0.328
+[213/1080] sealed_region_layout1_rot0 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.600 unseen=0.000; jepa observed=1.000 unseen=0.282
+[216/1080] sealed_region_layout1_rot0 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.455 unseen=0.000; jepa observed=1.000 unseen=0.275
+[219/1080] sealed_region_layout1_rot0 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.217 unseen=0.000; jepa observed=1.000 unseen=0.330
+[222/1080] sealed_region_layout1_rot0 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.135 unseen=0.000; jepa observed=1.000 unseen=0.325
+[225/1080] sealed_region_layout1_rot0 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.115 unseen=0.000; jepa observed=0.981 unseen=0.279
+[228/1080] sealed_region_layout1_rot90 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.615 unseen=0.009; jepa observed=1.000 unseen=0.290
+[231/1080] sealed_region_layout1_rot90 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.407 unseen=0.011; jepa observed=1.000 unseen=0.301
+[234/1080] sealed_region_layout1_rot90 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.350 unseen=0.013; jepa observed=1.000 unseen=0.362
+[237/1080] sealed_region_layout1_rot90 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.229 unseen=0.000; jepa observed=1.000 unseen=0.347
+[240/1080] sealed_region_layout1_rot90 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.222 unseen=0.000; jepa observed=0.981 unseen=0.348
+[243/1080] sealed_region_layout1_rot90 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.857 unseen=0.019; jepa observed=1.000 unseen=0.292
+[246/1080] sealed_region_layout1_rot90 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.333
+[249/1080] sealed_region_layout1_rot90 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.267 unseen=0.000; jepa observed=1.000 unseen=0.333
+[252/1080] sealed_region_layout1_rot90 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.263 unseen=0.000; jepa observed=1.000 unseen=0.329
+[255/1080] sealed_region_layout1_rot90 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.140 unseen=0.000; jepa observed=1.000 unseen=0.349
+[258/1080] sealed_region_layout1_rot90 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.000; jepa observed=1.000 unseen=0.259
+[261/1080] sealed_region_layout1_rot90 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.010; jepa observed=1.000 unseen=0.295
+[264/1080] sealed_region_layout1_rot90 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.192 unseen=0.000; jepa observed=1.000 unseen=0.287
+[267/1080] sealed_region_layout1_rot90 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.209 unseen=0.000; jepa observed=0.977 unseen=0.299
+[270/1080] sealed_region_layout1_rot90 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.151 unseen=0.000; jepa observed=0.981 unseen=0.313
+[273/1080] sealed_region_layout1_rot180 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.625 unseen=0.009; jepa observed=1.000 unseen=0.277
+[276/1080] sealed_region_layout1_rot180 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.000; jepa observed=1.000 unseen=0.278
+[279/1080] sealed_region_layout1_rot180 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.421 unseen=0.000; jepa observed=1.000 unseen=0.307
+[282/1080] sealed_region_layout1_rot180 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.205 unseen=0.000; jepa observed=1.000 unseen=0.309
+[285/1080] sealed_region_layout1_rot180 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.151 unseen=0.000; jepa observed=1.000 unseen=0.358
+[288/1080] sealed_region_layout1_rot180 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.455 unseen=0.018; jepa observed=1.000 unseen=0.303
+[291/1080] sealed_region_layout1_rot180 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.524 unseen=0.020; jepa observed=1.000 unseen=0.333
+[294/1080] sealed_region_layout1_rot180 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.367 unseen=0.000; jepa observed=1.000 unseen=0.311
+[297/1080] sealed_region_layout1_rot180 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.371 unseen=0.000; jepa observed=1.000 unseen=0.318
+[300/1080] sealed_region_layout1_rot180 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.310 unseen=0.000; jepa observed=0.952 unseen=0.308
+[303/1080] sealed_region_layout1_rot180 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.643 unseen=0.000; jepa observed=1.000 unseen=0.330
+[306/1080] sealed_region_layout1_rot180 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.316 unseen=0.000; jepa observed=1.000 unseen=0.297
+[309/1080] sealed_region_layout1_rot180 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.294 unseen=0.000; jepa observed=1.000 unseen=0.326
+[312/1080] sealed_region_layout1_rot180 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.190 unseen=0.000; jepa observed=1.000 unseen=0.321
+[315/1080] sealed_region_layout1_rot180 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.307
+[318/1080] sealed_region_layout1_rot270 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.929 unseen=0.000; jepa observed=1.000 unseen=0.302
+[321/1080] sealed_region_layout1_rot270 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.000; jepa observed=1.000 unseen=0.333
+[324/1080] sealed_region_layout1_rot270 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.290 unseen=0.000; jepa observed=1.000 unseen=0.281
+[327/1080] sealed_region_layout1_rot270 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.255 unseen=0.000; jepa observed=1.000 unseen=0.315
+[330/1080] sealed_region_layout1_rot270 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.271 unseen=0.000; jepa observed=1.000 unseen=0.311
+[333/1080] sealed_region_layout1_rot270 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.462 unseen=0.000; jepa observed=1.000 unseen=0.290
+[336/1080] sealed_region_layout1_rot270 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.348 unseen=0.000; jepa observed=1.000 unseen=0.299
+[339/1080] sealed_region_layout1_rot270 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.353 unseen=0.000; jepa observed=1.000 unseen=0.302
+[342/1080] sealed_region_layout1_rot270 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.205 unseen=0.000; jepa observed=1.000 unseen=0.289
+[345/1080] sealed_region_layout1_rot270 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.093 unseen=0.000; jepa observed=1.000 unseen=0.333
+[348/1080] sealed_region_layout1_rot270 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.800 unseen=0.000; jepa observed=1.000 unseen=0.300
+[351/1080] sealed_region_layout1_rot270 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.381 unseen=0.010; jepa observed=1.000 unseen=0.323
+[354/1080] sealed_region_layout1_rot270 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.265 unseen=0.000; jepa observed=1.000 unseen=0.395
+[357/1080] sealed_region_layout1_rot270 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.160 unseen=0.000; jepa observed=1.000 unseen=0.329
+[360/1080] sealed_region_layout1_rot270 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.107 unseen=0.000; jepa observed=0.982 unseen=0.359
+[363/1080] danger_gate_layout0_rot0 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.556 unseen=0.009; jepa observed=1.000 unseen=0.270
+[366/1080] danger_gate_layout0_rot0 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.476 unseen=0.010; jepa observed=1.000 unseen=0.272
+[369/1080] danger_gate_layout0_rot0 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.423 unseen=0.000; jepa observed=1.000 unseen=0.286
+[372/1080] danger_gate_layout0_rot0 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.275 unseen=0.000; jepa observed=1.000 unseen=0.310
+[375/1080] danger_gate_layout0_rot0 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.163 unseen=0.000; jepa observed=0.980 unseen=0.307
+[378/1080] danger_gate_layout0_rot0 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.556 unseen=0.009; jepa observed=1.000 unseen=0.270
+[381/1080] danger_gate_layout0_rot0 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.462 unseen=0.009; jepa observed=1.000 unseen=0.261
+[384/1080] danger_gate_layout0_rot0 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.421 unseen=0.000; jepa observed=1.000 unseen=0.276
+[387/1080] danger_gate_layout0_rot0 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.312 unseen=0.000; jepa observed=1.000 unseen=0.261
+[390/1080] danger_gate_layout0_rot0 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.205 unseen=0.000; jepa observed=1.000 unseen=0.294
+[393/1080] danger_gate_layout0_rot0 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.027; jepa observed=1.000 unseen=0.245
+[396/1080] danger_gate_layout0_rot0 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.222 unseen=0.000; jepa observed=1.000 unseen=0.255
+[399/1080] danger_gate_layout0_rot0 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.000; jepa observed=1.000 unseen=0.232
+[402/1080] danger_gate_layout0_rot0 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.265 unseen=0.000; jepa observed=1.000 unseen=0.267
+[405/1080] danger_gate_layout0_rot0 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.183 unseen=0.000; jepa observed=0.967 unseen=0.297
+[408/1080] danger_gate_layout0_rot90 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.009; jepa observed=1.000 unseen=0.232
+[411/1080] danger_gate_layout0_rot90 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.009; jepa observed=1.000 unseen=0.245
+[414/1080] danger_gate_layout0_rot90 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.286 unseen=0.000; jepa observed=1.000 unseen=0.260
+[417/1080] danger_gate_layout0_rot90 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.243 unseen=0.000; jepa observed=1.000 unseen=0.241
+[420/1080] danger_gate_layout0_rot90 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.189 unseen=0.000; jepa observed=0.981 unseen=0.268
+[423/1080] danger_gate_layout0_rot90 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.692 unseen=0.009; jepa observed=1.000 unseen=0.270
+[426/1080] danger_gate_layout0_rot90 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.526 unseen=0.010; jepa observed=1.000 unseen=0.295
+[429/1080] danger_gate_layout0_rot90 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.207 unseen=0.000; jepa observed=1.000 unseen=0.274
+[432/1080] danger_gate_layout0_rot90 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.163 unseen=0.000; jepa observed=1.000 unseen=0.247
+[435/1080] danger_gate_layout0_rot90 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.170 unseen=0.000; jepa observed=0.943 unseen=0.324
+[438/1080] danger_gate_layout0_rot90 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.533 unseen=0.018; jepa observed=1.000 unseen=0.284
+[441/1080] danger_gate_layout0_rot90 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.526 unseen=0.010; jepa observed=1.000 unseen=0.267
+[444/1080] danger_gate_layout0_rot90 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.259 unseen=0.000; jepa observed=1.000 unseen=0.289
+[447/1080] danger_gate_layout0_rot90 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.235 unseen=0.000; jepa observed=1.000 unseen=0.256
+[450/1080] danger_gate_layout0_rot90 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.167 unseen=0.000; jepa observed=0.958 unseen=0.250
+[453/1080] danger_gate_layout0_rot180 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.750 unseen=0.000; jepa observed=1.000 unseen=0.277
+[456/1080] danger_gate_layout0_rot180 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.375 unseen=0.000; jepa observed=1.000 unseen=0.269
+[459/1080] danger_gate_layout0_rot180 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.261 unseen=0.000; jepa observed=1.000 unseen=0.297
+[462/1080] danger_gate_layout0_rot180 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.233 unseen=0.000; jepa observed=0.933 unseen=0.309
+[465/1080] danger_gate_layout0_rot180 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.113 unseen=0.000; jepa observed=0.981 unseen=0.282
+[468/1080] danger_gate_layout0_rot180 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.009; jepa observed=1.000 unseen=0.255
+[471/1080] danger_gate_layout0_rot180 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.609 unseen=0.000; jepa observed=1.000 unseen=0.287
+[474/1080] danger_gate_layout0_rot180 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.321 unseen=0.000; jepa observed=1.000 unseen=0.260
+[477/1080] danger_gate_layout0_rot180 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.194 unseen=0.000; jepa observed=1.000 unseen=0.261
+[480/1080] danger_gate_layout0_rot180 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.244 unseen=0.000; jepa observed=1.000 unseen=0.277
+[483/1080] danger_gate_layout0_rot180 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.692 unseen=0.009; jepa observed=1.000 unseen=0.252
+[486/1080] danger_gate_layout0_rot180 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.619 unseen=0.000; jepa observed=1.000 unseen=0.262
+[489/1080] danger_gate_layout0_rot180 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.000; jepa observed=1.000 unseen=0.260
+[492/1080] danger_gate_layout0_rot180 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.312 unseen=0.000; jepa observed=1.000 unseen=0.261
+[495/1080] danger_gate_layout0_rot180 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.189 unseen=0.000; jepa observed=0.981 unseen=0.296
+[498/1080] danger_gate_layout0_rot270 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.018; jepa observed=1.000 unseen=0.286
+[501/1080] danger_gate_layout0_rot270 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.280 unseen=0.020; jepa observed=1.000 unseen=0.303
+[504/1080] danger_gate_layout0_rot270 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.200 unseen=0.000; jepa observed=1.000 unseen=0.270
+[507/1080] danger_gate_layout0_rot270 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.137 unseen=0.000; jepa observed=1.000 unseen=0.274
+[510/1080] danger_gate_layout0_rot270 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.116 unseen=0.000; jepa observed=0.957 unseen=0.236
+[513/1080] danger_gate_layout0_rot270 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.778 unseen=0.000; jepa observed=1.000 unseen=0.261
+[516/1080] danger_gate_layout0_rot270 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.538 unseen=0.009; jepa observed=1.000 unseen=0.279
+[519/1080] danger_gate_layout0_rot270 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.292 unseen=0.000; jepa observed=1.000 unseen=0.270
+[522/1080] danger_gate_layout0_rot270 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.162 unseen=0.000; jepa observed=0.973 unseen=0.276
+[525/1080] danger_gate_layout0_rot270 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.128 unseen=0.000; jepa observed=0.979 unseen=0.234
+[528/1080] danger_gate_layout0_rot270 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.009; jepa observed=1.000 unseen=0.268
+[531/1080] danger_gate_layout0_rot270 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.438 unseen=0.000; jepa observed=1.000 unseen=0.259
+[534/1080] danger_gate_layout0_rot270 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.345 unseen=0.011; jepa observed=1.000 unseen=0.274
+[537/1080] danger_gate_layout0_rot270 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.211 unseen=0.012; jepa observed=0.974 unseen=0.244
+[540/1080] danger_gate_layout0_rot270 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.170 unseen=0.000; jepa observed=0.979 unseen=0.273
+[543/1080] danger_gate_layout1_rot0 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.643 unseen=0.018; jepa observed=1.000 unseen=0.255
+[546/1080] danger_gate_layout1_rot0 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.478 unseen=0.010; jepa observed=1.000 unseen=0.257
+[549/1080] danger_gate_layout1_rot0 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.312 unseen=0.000; jepa observed=1.000 unseen=0.293
+[552/1080] danger_gate_layout1_rot0 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.184 unseen=0.000; jepa observed=1.000 unseen=0.293
+[555/1080] danger_gate_layout1_rot0 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.127 unseen=0.000; jepa observed=0.982 unseen=0.319
+[558/1080] danger_gate_layout1_rot0 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.009; jepa observed=1.000 unseen=0.270
+[561/1080] danger_gate_layout1_rot0 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.438 unseen=0.000; jepa observed=1.000 unseen=0.278
+[564/1080] danger_gate_layout1_rot0 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.207 unseen=0.000; jepa observed=1.000 unseen=0.274
+[567/1080] danger_gate_layout1_rot0 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.256 unseen=0.000; jepa observed=1.000 unseen=0.271
+[570/1080] danger_gate_layout1_rot0 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.140 unseen=0.000; jepa observed=1.000 unseen=0.299
+[573/1080] danger_gate_layout1_rot0 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.018; jepa observed=1.000 unseen=0.268
+[576/1080] danger_gate_layout1_rot0 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.000; jepa observed=1.000 unseen=0.272
+[579/1080] danger_gate_layout1_rot0 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.296 unseen=0.000; jepa observed=1.000 unseen=0.278
+[582/1080] danger_gate_layout1_rot0 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.235 unseen=0.000; jepa observed=1.000 unseen=0.289
+[585/1080] danger_gate_layout1_rot0 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.156 unseen=0.000; jepa observed=0.956 unseen=0.342
+[588/1080] danger_gate_layout1_rot90 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.600 unseen=0.000; jepa observed=1.000 unseen=0.281
+[591/1080] danger_gate_layout1_rot90 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.364 unseen=0.000; jepa observed=1.000 unseen=0.294
+[594/1080] danger_gate_layout1_rot90 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.233 unseen=0.000; jepa observed=1.000 unseen=0.340
+[597/1080] danger_gate_layout1_rot90 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.275 unseen=0.000; jepa observed=1.000 unseen=0.321
+[600/1080] danger_gate_layout1_rot90 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.213 unseen=0.000; jepa observed=1.000 unseen=0.364
+[603/1080] danger_gate_layout1_rot90 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.867 unseen=0.018; jepa observed=1.000 unseen=0.284
+[606/1080] danger_gate_layout1_rot90 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.364 unseen=0.000; jepa observed=1.000 unseen=0.284
+[609/1080] danger_gate_layout1_rot90 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.250 unseen=0.000; jepa observed=1.000 unseen=0.281
+[612/1080] danger_gate_layout1_rot90 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.217 unseen=0.000; jepa observed=1.000 unseen=0.308
+[615/1080] danger_gate_layout1_rot90 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.189 unseen=0.000; jepa observed=1.000 unseen=0.282
+[618/1080] danger_gate_layout1_rot90 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.818 unseen=0.000; jepa observed=1.000 unseen=0.257
+[621/1080] danger_gate_layout1_rot90 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.000; jepa observed=1.000 unseen=0.250
+[624/1080] danger_gate_layout1_rot90 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.312 unseen=0.000; jepa observed=1.000 unseen=0.304
+[627/1080] danger_gate_layout1_rot90 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.308 unseen=0.000; jepa observed=1.000 unseen=0.294
+[630/1080] danger_gate_layout1_rot90 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.204 unseen=0.000; jepa observed=1.000 unseen=0.307
+[633/1080] danger_gate_layout1_rot180 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.643 unseen=0.000; jepa observed=1.000 unseen=0.318
+[636/1080] danger_gate_layout1_rot180 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.320
+[639/1080] danger_gate_layout1_rot180 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.212 unseen=0.000; jepa observed=1.000 unseen=0.352
+[642/1080] danger_gate_layout1_rot180 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.268 unseen=0.000; jepa observed=1.000 unseen=0.337
+[645/1080] danger_gate_layout1_rot180 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.122 unseen=0.000; jepa observed=1.000 unseen=0.360
+[648/1080] danger_gate_layout1_rot180 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.583 unseen=0.000; jepa observed=1.000 unseen=0.268
+[651/1080] danger_gate_layout1_rot180 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.421 unseen=0.000; jepa observed=1.000 unseen=0.276
+[654/1080] danger_gate_layout1_rot180 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.281 unseen=0.000; jepa observed=1.000 unseen=0.315
+[657/1080] danger_gate_layout1_rot180 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.250 unseen=0.000; jepa observed=1.000 unseen=0.345
+[660/1080] danger_gate_layout1_rot180 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.280 unseen=0.000; jepa observed=0.960 unseen=0.324
+[663/1080] danger_gate_layout1_rot180 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.778 unseen=0.009; jepa observed=1.000 unseen=0.287
+[666/1080] danger_gate_layout1_rot180 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.300 unseen=0.000; jepa observed=1.000 unseen=0.279
+[669/1080] danger_gate_layout1_rot180 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.219 unseen=0.000; jepa observed=1.000 unseen=0.283
+[672/1080] danger_gate_layout1_rot180 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.152 unseen=0.013; jepa observed=1.000 unseen=0.333
+[675/1080] danger_gate_layout1_rot180 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.184 unseen=0.000; jepa observed=1.000 unseen=0.307
+[678/1080] danger_gate_layout1_rot270 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.571 unseen=0.000; jepa observed=1.000 unseen=0.291
+[681/1080] danger_gate_layout1_rot270 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.286 unseen=0.000; jepa observed=1.000 unseen=0.311
+[684/1080] danger_gate_layout1_rot270 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.200 unseen=0.000; jepa observed=1.000 unseen=0.319
+[687/1080] danger_gate_layout1_rot270 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.125 unseen=0.013; jepa observed=1.000 unseen=0.329
+[690/1080] danger_gate_layout1_rot270 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.164 unseen=0.000; jepa observed=1.000 unseen=0.333
+[693/1080] danger_gate_layout1_rot270 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.009; jepa observed=1.000 unseen=0.259
+[696/1080] danger_gate_layout1_rot270 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.278
+[699/1080] danger_gate_layout1_rot270 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.200 unseen=0.000; jepa observed=1.000 unseen=0.329
+[702/1080] danger_gate_layout1_rot270 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.189 unseen=0.000; jepa observed=1.000 unseen=0.310
+[705/1080] danger_gate_layout1_rot270 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.194 unseen=0.000; jepa observed=0.985 unseen=0.351
+[708/1080] danger_gate_layout1_rot270 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.700 unseen=0.000; jepa observed=1.000 unseen=0.263
+[711/1080] danger_gate_layout1_rot270 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.266
+[714/1080] danger_gate_layout1_rot270 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.231 unseen=0.000; jepa observed=1.000 unseen=0.286
+[717/1080] danger_gate_layout1_rot270 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.152 unseen=0.000; jepa observed=1.000 unseen=0.269
+[720/1080] danger_gate_layout1_rot270 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.204 unseen=0.000; jepa observed=1.000 unseen=0.357
+[723/1080] safe_detour_layout0_rot0 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.017; jepa observed=1.000 unseen=0.259
+[726/1080] safe_detour_layout0_rot0 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.412 unseen=0.000; jepa observed=1.000 unseen=0.252
+[729/1080] safe_detour_layout0_rot0 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.344 unseen=0.000; jepa observed=1.000 unseen=0.260
+[732/1080] safe_detour_layout0_rot0 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.175 unseen=0.000; jepa observed=1.000 unseen=0.261
+[735/1080] safe_detour_layout0_rot0 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.145 unseen=0.000; jepa observed=0.964 unseen=0.301
+[738/1080] safe_detour_layout0_rot0 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.545 unseen=0.009; jepa observed=1.000 unseen=0.248
+[741/1080] safe_detour_layout0_rot0 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.444 unseen=0.000; jepa observed=1.000 unseen=0.245
+[744/1080] safe_detour_layout0_rot0 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.231 unseen=0.010; jepa observed=1.000 unseen=0.255
+[747/1080] safe_detour_layout0_rot0 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.258 unseen=0.000; jepa observed=1.000 unseen=0.258
+[750/1080] safe_detour_layout0_rot0 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.175 unseen=0.000; jepa observed=1.000 unseen=0.261
+[753/1080] safe_detour_layout0_rot0 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.009; jepa observed=1.000 unseen=0.246
+[756/1080] safe_detour_layout0_rot0 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.440 unseen=0.000; jepa observed=1.000 unseen=0.223
+[759/1080] safe_detour_layout0_rot0 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.000; jepa observed=1.000 unseen=0.226
+[762/1080] safe_detour_layout0_rot0 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.432 unseen=0.000; jepa observed=0.977 unseen=0.238
+[765/1080] safe_detour_layout0_rot0 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.182 unseen=0.000; jepa observed=0.982 unseen=0.274
+[768/1080] safe_detour_layout0_rot90 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.008; jepa observed=1.000 unseen=0.252
+[771/1080] safe_detour_layout0_rot90 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.009; jepa observed=1.000 unseen=0.257
+[774/1080] safe_detour_layout0_rot90 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.290 unseen=0.000; jepa observed=1.000 unseen=0.247
+[777/1080] safe_detour_layout0_rot90 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.282 unseen=0.000; jepa observed=1.000 unseen=0.247
+[780/1080] safe_detour_layout0_rot90 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.235 unseen=0.000; jepa observed=1.000 unseen=0.234
+[783/1080] safe_detour_layout0_rot90 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.600 unseen=0.017; jepa observed=1.000 unseen=0.254
+[786/1080] safe_detour_layout0_rot90 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.571 unseen=0.000; jepa observed=1.000 unseen=0.254
+[789/1080] safe_detour_layout0_rot90 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.462 unseen=0.010; jepa observed=1.000 unseen=0.245
+[792/1080] safe_detour_layout0_rot90 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.351 unseen=0.000; jepa observed=0.973 unseen=0.264
+[795/1080] safe_detour_layout0_rot90 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.161 unseen=0.000; jepa observed=0.946 unseen=0.292
+[798/1080] safe_detour_layout0_rot90 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.538 unseen=0.009; jepa observed=1.000 unseen=0.243
+[801/1080] safe_detour_layout0_rot90 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.350 unseen=0.009; jepa observed=1.000 unseen=0.259
+[804/1080] safe_detour_layout0_rot90 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.274
+[807/1080] safe_detour_layout0_rot90 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.200 unseen=0.000; jepa observed=1.000 unseen=0.273
+[810/1080] safe_detour_layout0_rot90 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.167 unseen=0.000; jepa observed=0.979 unseen=0.287
+[813/1080] safe_detour_layout0_rot180 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.009; jepa observed=1.000 unseen=0.233
+[816/1080] safe_detour_layout0_rot180 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.308 unseen=0.010; jepa observed=1.000 unseen=0.284
+[819/1080] safe_detour_layout0_rot180 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.242 unseen=0.021; jepa observed=1.000 unseen=0.274
+[822/1080] safe_detour_layout0_rot180 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.159 unseen=0.000; jepa observed=1.000 unseen=0.262
+[825/1080] safe_detour_layout0_rot180 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.164 unseen=0.000; jepa observed=0.964 unseen=0.260
+[828/1080] safe_detour_layout0_rot180 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.857 unseen=0.008; jepa observed=1.000 unseen=0.240
+[831/1080] safe_detour_layout0_rot180 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.714 unseen=0.000; jepa observed=1.000 unseen=0.254
+[834/1080] safe_detour_layout0_rot180 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.450 unseen=0.000; jepa observed=1.000 unseen=0.269
+[837/1080] safe_detour_layout0_rot180 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.244 unseen=0.000; jepa observed=0.976 unseen=0.287
+[840/1080] safe_detour_layout0_rot180 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.131 unseen=0.000; jepa observed=0.967 unseen=0.313
+[843/1080] safe_detour_layout0_rot180 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.900 unseen=0.008; jepa observed=1.000 unseen=0.237
+[846/1080] safe_detour_layout0_rot180 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.471 unseen=0.009; jepa observed=1.000 unseen=0.270
+[849/1080] safe_detour_layout0_rot180 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.367 unseen=0.010; jepa observed=1.000 unseen=0.255
+[852/1080] safe_detour_layout0_rot180 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.171 unseen=0.000; jepa observed=1.000 unseen=0.253
+[855/1080] safe_detour_layout0_rot180 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.180 unseen=0.000; jepa observed=0.960 unseen=0.282
+[858/1080] safe_detour_layout0_rot270 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.778 unseen=0.000; jepa observed=1.000 unseen=0.252
+[861/1080] safe_detour_layout0_rot270 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.467 unseen=0.000; jepa observed=1.000 unseen=0.257
+[864/1080] safe_detour_layout0_rot270 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.231
+[867/1080] safe_detour_layout0_rot270 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.220 unseen=0.000; jepa observed=1.000 unseen=0.253
+[870/1080] safe_detour_layout0_rot270 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.205 unseen=0.000; jepa observed=0.977 unseen=0.286
+[873/1080] safe_detour_layout0_rot270 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=1.000 unseen=0.008; jepa observed=1.000 unseen=0.250
+[876/1080] safe_detour_layout0_rot270 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.009; jepa observed=1.000 unseen=0.264
+[879/1080] safe_detour_layout0_rot270 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.276 unseen=0.000; jepa observed=1.000 unseen=0.263
+[882/1080] safe_detour_layout0_rot270 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.156 unseen=0.000; jepa observed=1.000 unseen=0.289
+[885/1080] safe_detour_layout0_rot270 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.167 unseen=0.000; jepa observed=0.938 unseen=0.287
+[888/1080] safe_detour_layout0_rot270 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.008; jepa observed=1.000 unseen=0.269
+[891/1080] safe_detour_layout0_rot270 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.019; jepa observed=1.000 unseen=0.271
+[894/1080] safe_detour_layout0_rot270 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.345 unseen=0.000; jepa observed=1.000 unseen=0.263
+[897/1080] safe_detour_layout0_rot270 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.417 unseen=0.000; jepa observed=1.000 unseen=0.239
+[900/1080] safe_detour_layout0_rot270 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.244 unseen=0.000; jepa observed=0.867 unseen=0.265
+[903/1080] safe_detour_layout1_rot0 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.714 unseen=0.000; jepa observed=1.000 unseen=0.246
+[906/1080] safe_detour_layout1_rot0 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.455 unseen=0.009; jepa observed=1.000 unseen=0.264
+[909/1080] safe_detour_layout1_rot0 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.222 unseen=0.000; jepa observed=1.000 unseen=0.261
+[912/1080] safe_detour_layout1_rot0 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.209 unseen=0.000; jepa observed=1.000 unseen=0.259
+[915/1080] safe_detour_layout1_rot0 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.138 unseen=0.000; jepa observed=0.966 unseen=0.271
+[918/1080] safe_detour_layout1_rot0 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.571 unseen=0.000; jepa observed=1.000 unseen=0.254
+[921/1080] safe_detour_layout1_rot0 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.000; jepa observed=1.000 unseen=0.283
+[924/1080] safe_detour_layout1_rot0 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.243 unseen=0.000; jepa observed=1.000 unseen=0.264
+[927/1080] safe_detour_layout1_rot0 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.137 unseen=0.000; jepa observed=0.980 unseen=0.325
+[930/1080] safe_detour_layout1_rot0 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.117 unseen=0.000; jepa observed=1.000 unseen=0.324
+[933/1080] safe_detour_layout1_rot0 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.538 unseen=0.000; jepa observed=1.000 unseen=0.252
+[936/1080] safe_detour_layout1_rot0 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.391 unseen=0.000; jepa observed=1.000 unseen=0.267
+[939/1080] safe_detour_layout1_rot0 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.333 unseen=0.000; jepa observed=1.000 unseen=0.276
+[942/1080] safe_detour_layout1_rot0 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.232 unseen=0.000; jepa observed=1.000 unseen=0.278
+[945/1080] safe_detour_layout1_rot0 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.086 unseen=0.000; jepa observed=0.957 unseen=0.241
+[948/1080] safe_detour_layout1_rot90 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.667 unseen=0.009; jepa observed=1.000 unseen=0.265
+[951/1080] safe_detour_layout1_rot90 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.381 unseen=0.000; jepa observed=1.000 unseen=0.262
+[954/1080] safe_detour_layout1_rot90 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.265 unseen=0.000; jepa observed=1.000 unseen=0.277
+[957/1080] safe_detour_layout1_rot90 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.188 unseen=0.000; jepa observed=1.000 unseen=0.250
+[960/1080] safe_detour_layout1_rot90 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.211 unseen=0.000; jepa observed=1.000 unseen=0.268
+[963/1080] safe_detour_layout1_rot90 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.008; jepa observed=1.000 unseen=0.254
+[966/1080] safe_detour_layout1_rot90 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.389 unseen=0.009; jepa observed=1.000 unseen=0.282
+[969/1080] safe_detour_layout1_rot90 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.355 unseen=0.000; jepa observed=1.000 unseen=0.278
+[972/1080] safe_detour_layout1_rot90 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.160 unseen=0.000; jepa observed=1.000 unseen=0.295
+[975/1080] safe_detour_layout1_rot90 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.135 unseen=0.000; jepa observed=0.973 unseen=0.370
+[978/1080] safe_detour_layout1_rot90 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.889 unseen=0.000; jepa observed=1.000 unseen=0.269
+[981/1080] safe_detour_layout1_rot90 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.357 unseen=0.009; jepa observed=1.000 unseen=0.263
+[984/1080] safe_detour_layout1_rot90 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.370 unseen=0.000; jepa observed=1.000 unseen=0.257
+[987/1080] safe_detour_layout1_rot90 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.156 unseen=0.000; jepa observed=1.000 unseen=0.289
+[990/1080] safe_detour_layout1_rot90 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.172 unseen=0.000; jepa observed=0.983 unseen=0.329
+[993/1080] safe_detour_layout1_rot180 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.692 unseen=0.009; jepa observed=1.000 unseen=0.296
+[996/1080] safe_detour_layout1_rot180 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.381 unseen=0.000; jepa observed=1.000 unseen=0.299
+[999/1080] safe_detour_layout1_rot180 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.258 unseen=0.000; jepa observed=1.000 unseen=0.299
+[1002/1080] safe_detour_layout1_rot180 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.370 unseen=0.000; jepa observed=1.000 unseen=0.329
+[1005/1080] safe_detour_layout1_rot180 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.111 unseen=0.000; jepa observed=0.981 unseen=0.338
+[1008/1080] safe_detour_layout1_rot180 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.000; jepa observed=1.000 unseen=0.263
+[1011/1080] safe_detour_layout1_rot180 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.000; jepa observed=1.000 unseen=0.269
+[1014/1080] safe_detour_layout1_rot180 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.226 unseen=0.000; jepa observed=1.000 unseen=0.247
+[1017/1080] safe_detour_layout1_rot180 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.270 unseen=0.000; jepa observed=1.000 unseen=0.264
+[1020/1080] safe_detour_layout1_rot180 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.167 unseen=0.000; jepa observed=1.000 unseen=0.297
+[1023/1080] safe_detour_layout1_rot180 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.600 unseen=0.000; jepa observed=1.000 unseen=0.246
+[1026/1080] safe_detour_layout1_rot180 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.429 unseen=0.000; jepa observed=1.000 unseen=0.272
+[1029/1080] safe_detour_layout1_rot180 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.233 unseen=0.000; jepa observed=1.000 unseen=0.286
+[1032/1080] safe_detour_layout1_rot180 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.140 unseen=0.000; jepa observed=1.000 unseen=0.294
+[1035/1080] safe_detour_layout1_rot180 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.121 unseen=0.000; jepa observed=0.966 unseen=0.314
+[1038/1080] safe_detour_layout1_rot270 seed=20260804 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.008; jepa observed=1.000 unseen=0.242
+[1041/1080] safe_detour_layout1_rot270 seed=20260804 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.400 unseen=0.009; jepa observed=1.000 unseen=0.259
+[1044/1080] safe_detour_layout1_rot270 seed=20260804 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.303 unseen=0.000; jepa observed=1.000 unseen=0.295
+[1047/1080] safe_detour_layout1_rot270 seed=20260804 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.289 unseen=0.000; jepa observed=1.000 unseen=0.322
+[1050/1080] safe_detour_layout1_rot270 seed=20260804 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.148 unseen=0.000; jepa observed=0.963 unseen=0.324
+[1053/1080] safe_detour_layout1_rot270 seed=20260805 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.018; jepa observed=1.000 unseen=0.307
+[1056/1080] safe_detour_layout1_rot270 seed=20260805 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.381 unseen=0.019; jepa observed=1.000 unseen=0.299
+[1059/1080] safe_detour_layout1_rot270 seed=20260805 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.273 unseen=0.021; jepa observed=1.000 unseen=0.326
+[1062/1080] safe_detour_layout1_rot270 seed=20260805 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.136 unseen=0.000; jepa observed=1.000 unseen=0.333
+[1065/1080] safe_detour_layout1_rot270 seed=20260805 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.123 unseen=0.000; jepa observed=0.985 unseen=0.349
+[1068/1080] safe_detour_layout1_rot270 seed=20260806 budget=1: observed_edge observed=1.000 unseen=0.000; mlp observed=0.500 unseen=0.009; jepa observed=1.000 unseen=0.263
+[1071/1080] safe_detour_layout1_rot270 seed=20260806 budget=2: observed_edge observed=1.000 unseen=0.000; mlp observed=0.360 unseen=0.010; jepa observed=1.000 unseen=0.272
+[1074/1080] safe_detour_layout1_rot270 seed=20260806 budget=4: observed_edge observed=1.000 unseen=0.000; mlp observed=0.229 unseen=0.000; jepa observed=1.000 unseen=0.312
+[1077/1080] safe_detour_layout1_rot270 seed=20260806 budget=8: observed_edge observed=1.000 unseen=0.000; mlp observed=0.167 unseen=0.000; jepa observed=1.000 unseen=0.350
+[1080/1080] safe_detour_layout1_rot270 seed=20260806 budget=16: observed_edge observed=1.000 unseen=0.000; mlp observed=0.125 unseen=0.000; jepa observed=0.984 unseen=0.344
+{
+  "1": {
+    "cases": 72,
+    "jepa_minus_mlp_unseen_accuracy": {
+      "evaluated": 72,
+      "mean": 0.2590632621697746,
+      "min": 0.21818181818181817,
+      "max": 0.330188679245283,
+      "std": 0.02214558584083426
+    },
+    "jepa_wins": 72,
+    "mlp_wins": 0,
+    "ties": 0
+  },
+  "2": {
+    "cases": 72,
+    "jepa_minus_mlp_unseen_accuracy": {
+      "evaluated": 72,
+      "mean": 0.2737272389162546,
+      "min": 0.22330097087378642,
+      "max": 0.3368421052631579,
+      "std": 0.023444768499666948
+    },
+    "jepa_wins": 72,
+    "mlp_wins": 0,
+    "ties": 0
+  },
+  "4": {
+    "cases": 72,
+    "jepa_minus_mlp_unseen_accuracy": {
+      "evaluated": 72,
+      "mean": 0.28411097923580425,
+      "min": 0.22580645161290322,
+      "max": 0.3953488372093023,
+      "std": 0.03155853707825465
+    },
+    "jepa_wins": 72,
+    "mlp_wins": 0,
+    "ties": 0
+  },
+  "8": {
+    "cases": 72,
+    "jepa_minus_mlp_unseen_accuracy": {
+      "evaluated": 72,
+      "mean": 0.28825323234944694,
+      "min": 0.23255813953488372,
+      "max": 0.35,
+      "std": 0.029977557120192788
+    },
+    "jepa_wins": 72,
+    "mlp_wins": 0,
+    "ties": 0
+  },
+  "16": {
+    "cases": 72,
+    "jepa_minus_mlp_unseen_accuracy": {
+      "evaluated": 72,
+      "mean": 0.30071808028317304,
+      "min": 0.23376623376623376,
+      "max": 0.37037037037037035,
+      "std": 0.03447900334951834
+    },
+    "jepa_wins": 72,
+    "mlp_wins": 0,
+    "ties": 0
+  }
+}

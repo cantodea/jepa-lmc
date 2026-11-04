@@ -1,0 +1,33 @@
+{
+  "model": "mlp_A_900",
+  "files_sha256": {
+    "cases.jsonl": "d20b8ad5a72bb0d4e738d8aa4efa8b77f9367ab85a6addbda09e766f9d33dab7",
+    "csv/case_metrics.csv": "5e43fca7d5a15a46fb82c0ccf4614e405ad276455374012a4651e264ea64e754",
+    "csv/initial_property_agreement.csv": "b89c631242139ecd25f265c160b211f9a04e7b8b2357deb2502a6ed88bce55f6",
+    "csv/learning_curve_summary.csv": "3ce553f21398b4589eca50c784375de8d537a3125e5e8b66cbe0e5ea22e3cf0c",
+    "csv/learning_curves.csv": "f66ae7580424adb9fbc6a2cebba3b9b62d0d67f65950ef90d007a07b2f6a8301",
+    "csv/paired_block_means.csv": "66be3af68ed50d9a53951e2447ee96e87c27a6dbb0e2f502f67d3ee143c88c01",
+    "csv/paired_budget1_to16_changes.csv": "138d99edac8d3a8c317fe57e910a51cf46d1edc647a2d8febe3092d5c571056e",
+    "csv/paired_case_differences.csv": "e6b9aee808918c69e3223217e544d5d2d708f6cd286b39984acf326541fb5f64",
+    "csv/paired_leave_one_group_out.csv": "b87da4872cdc8e36c8a7fb2da7fd6447075ee85824cb02e475435c0cdf9e2f3d",
+    "csv/paired_summary.csv": "da455eec69ad453975a1c8b5d20605ba5d5f4c9ec253e8f0563264666a5ddd22",
+    "csv/summary_by_budget_split.csv": "f7d52d9b5c6d7f23d0b9a5501ca6da326ac6c266ea77b047e0aa8db7ab3e17f7",
+    "csv/summary_rates_with_denominators.csv": "be693665433400337f9cae745cb875e9051566be857a35b263e3e85d118eeaa1",
+    "csv/training_costs.csv": "111f338c626f1c60b8a670928301e97d48b9903542d69111a932220eaaa45e6d",
+    "csv/unseen_gap_decomposition.csv": "bb3c76895cd7fedd71bd4cd7672af26a16883f7dbe60e0c75453daa275b011c6",
+    "experiment04_provenance/analysis_plan_addendum.json": "a40f80a3983209122182e192ec798a69b86a757b13c208a8e6495c9969dbe446",
+    "experiment04_provenance/evaluation_complete.json": "41ca43847b9caa69ce31d161e1790c838b16861c89a6e4f7d133da4b418558c0",
+    "experiment04_provenance/Experiment04_\u4e2d\u6587\u7814\u7a76\u62a5\u544a.md": "60cd8e9a09a45073ed22f6343e0463030226d3a234cb8fee0262ee5dbe7e62d1",
+    "experiment04_provenance/protocol.json": "91254ec6e67ce61d3cefbf345e8a67f30f57e782f87c72a6b256a24b73a07ae0",
+    "experiment04_provenance/runtime.json": "96330a53db9908961a3bac57e34948fa81293de208414791acaafecc152235a7",
+    "experiment04_provenance/verification.json": "c9a5ed153d175bf0ca7f3bf382ce208cfbe68b850c38220d65a9cab8b5bb4fde",
+    "experiment_config.json": "5c2fae9a4e797f39f972a9267e87cec32bfba0afeaf1c8df840cdfc9a31725b4",
+    "publication.json": "3ba424d35eefd47b1e51718b16167e8ac89ba082fee54d42f29eefcc7327362f",
+    "README.md": "e55fe9a327d85a2a1fd085f950f6b345d03cde15262f00706accacaefbd085c6",
+    "release_test_log.txt": "c34824c4bf86d0b28c3abe31a758bc6420e0f7064ab420b3811310adcd5796f8",
+    "release_validation.json": "8c3e4638daf8f0631b0eee1c23afbab254eebee51f0dc0d535fcc171ad9edce6",
+    "runs.jsonl": "a4be74132ff9847a6ceec65e3b438f545539c87c62c1499382184454f1b11b66",
+    "training_inputs.json": "e7def852a3e072766c5c3bdf46c79a1a34c862105ef976330ee9fac4830d2b83",
+    "weights.zip": "efb0f1f04e38f182f1c9dc562f873b2a7b6d84a5fa4f4980dff66f7701fb9d93"
+  }
+}

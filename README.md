@@ -43,6 +43,15 @@ Run the tests with:
 & .\.venv\Scripts\python.exe -m unittest discover -v
 ```
 
+## Finite-trace MLP baseline (updated 2026-11-04)
+
+The default finite-trace comparison now uses the original MLP architecture with
+**900 epochs and learning rate 0.001**. JEPA remains at its original 300-epoch
+configuration. All 360 MLP checkpoints and their results are available in the
+[MLP-900 model card](docs/results/mlp_900_fairness/README.md).
+The MLP fits all observed transitions, but unseen moving accuracy remains 0.277%.
+The original 300-epoch configuration and historical results are retained.
+
 ## Experiments
 
 The main experiment scripts are under `experiments/`.

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "experiment": "finite_trace_mlp_vs_jepa",
+  "seeds": [
+    20260804,
+    20260805,
+    20260806
+  ],
+  "trajectory_budgets": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "trajectory_length": 16,
+  "training_pool_size": 16,
+  "heldout_trajectories": 64,
+  "benchmark": "radius_stress_cases: existing 24 October maps",
+  "training": {
+    "epochs": 300,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "batching": "One full batch of all observed trace steps per epoch, including repeated edges, identical for both models",
+    "initialization": "From scratch per seed/map/budget; same model initialization across nested budgets; no pretrained checkpoints",
+    "selection": "Fixed final epoch; no validation/heldout/unseen/formal metric selection",
+    "device": "cpu",
+    "threads": 1,
+    "deterministic_algorithms": true,
+    "hyperparameter_search": false
+  },
+  "representation": "Identical float32 [4,6,6] wall/danger/goal/agent tensors built only from known S and L; identical action indices. Internal encoders differ by architecture.",
+  "mlp": {
+    "hidden_dim": 64,
+    "action_dim": 8,
+    "definition": "Flatten state tensor, concatenate learned action embedding, Linear(152,64), GELU, Linear(64,|S|); successor cross-entropy"
+  },
+  "jepa": {
+    "latent_dim": 32,
+    "hidden_channels": 32,
+    "position_dim": 8,
+    "position_scale": 4.0,
+    "action_dim": 8,
+    "predictor_hidden_dim": 64,
+    "predictor_residual_blocks": 0,
+    "ema_momentum": 0.99,
+    "variance_weight": 0.1,
+    "covariance_weight": 0.01,
+    "ranking_weight": 0.1,
+    "ranking_temperature": 1.0,
+    "decoder": "Unchanged float32 torch.cdist Top-1 over all known valid state EMA embeddings; no topology filter or oracle repair"
+  },
+  "evaluation": {
+    "transition_domain": "All known S x A, including unreachable states; each (s,a) counted once",
+    "heldout": "Independent seeded stream; disjoint from all 16 training-pool trajectories, unique within heldout; fixed across budgets and models",
+    "observed_edge_abstention": "Unseen pairs are undefined and counted as incorrect (0% recall), not as neural predictions",
+    "observed_edge_formal": "Existing evaluation-only observed_self_loop_completion; no structural claims about raw partial R_G",
+    "primary": "Observed/unseen transition generalization and existing simulation/bisimulation with both action semantics",
+    "diagnostics": "Existing six CTL and six universal-path nuXmv LTL formulas at initial and all states; no fairness constraints",
+    "additional_split": "Reachable unseen and unreachable unseen state-action pairs reported separately",
+    "aggregation": "Macro case mean plus pooled correct/total and per-seed/per-family statistics"
+  }
+}

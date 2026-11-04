@@ -1,0 +1,262 @@
+{
+  "python": "3.12.14",
+  "torch": "2.14.1+cpu",
+  "torch_build": "PyTorch built with:\n  - GCC 13.3\n  - C++ Version: 202002\n  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22)\n  - OpenMP 201511 (a.k.a. OpenMP 4.5)\n  - LAPACK is enabled (usually provided by MKL)\n  - NNPACK is enabled\n  - CPU capability usage: AVX512\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=5c4886908584029761b579af026dcfb627c84070, CUDA_FLAGS= -DLIBCUDACXX_ENABLE_SIMPLIFIED_COMPLEX_OPERATIONS -Xfatbin -compress-all  -Wno-deprecated-gpu-targets --expt-extended-lambda -DCUB_WRAPPED_NAMESPACE=at_cuda_detail -DDISABLE_CUSPARSE_DEPRECATED -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -DC10_NODEPRECATED, CXX_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -faligned-new -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-dangling-reference -Wno-error=dangling-reference -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.14.1, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_HIPSPARSELT=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n",
+  "checks": [
+    {
+      "case": "sealed_region_layout0_rot0",
+      "seed": 20260804,
+      "trajectory_budget": 1,
+      "model": "mlp",
+      "epochs": 300,
+      "initial_parameters_bitwise_identical": true,
+      "final_parameters_bitwise_identical": false,
+      "saved_final_sha256": "c5e094e270e5b55d00a44406402c10f43263f0e9b2844c653b6d524465516f5a",
+      "retrained_final_sha256": "aec9dfe2041856e4066c0cfbcee55b678d72cecfa9e356f56d8f1caa1f044901",
+      "training_tensor_hash_identical": true,
+      "prediction_count": 120,
+      "prediction_mismatches": [],
+      "predictions_identical": true,
+      "max_logged_loss_absolute_difference": 1.1920928955078125e-07,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 3.363743782043457,
+          "cross_entropy": 3.363743782043457
+        },
+        {
+          "epoch": 50,
+          "loss": 2.97967791557312,
+          "cross_entropy": 2.97967791557312
+        },
+        {
+          "epoch": 100,
+          "loss": 2.2975454330444336,
+          "cross_entropy": 2.2975454330444336
+        },
+        {
+          "epoch": 150,
+          "loss": 1.7625043392181396,
+          "cross_entropy": 1.7625043392181396
+        },
+        {
+          "epoch": 200,
+          "loss": 1.485558271408081,
+          "cross_entropy": 1.485558271408081
+        },
+        {
+          "epoch": 250,
+          "loss": 1.2863582372665405,
+          "cross_entropy": 1.2863582372665405
+        },
+        {
+          "epoch": 300,
+          "loss": 1.1143876314163208,
+          "cross_entropy": 1.1143876314163208
+        }
+      ]
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "seed": 20260804,
+      "trajectory_budget": 1,
+      "model": "jepa",
+      "epochs": 300,
+      "initial_parameters_bitwise_identical": true,
+      "final_parameters_bitwise_identical": false,
+      "saved_final_sha256": "0b7d63b597cf725a9ecb4f6fb192af3d1ec7806b43dc3e651d9ecb6961b73d37",
+      "retrained_final_sha256": "b1c49c2540daf5b6984dd535d4a0c10fff0557b7b0afbd1525e98a07e2815781",
+      "training_tensor_hash_identical": true,
+      "prediction_count": 120,
+      "prediction_mismatches": [],
+      "predictions_identical": true,
+      "max_logged_loss_absolute_difference": 1.1920928955078125e-07,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 2.067595958709717,
+          "prediction": 0.21239961683750153,
+          "variance": 0.7021946310997009,
+          "covariance": 3.1152517795562744,
+          "ranking": 17.538244247436523
+        },
+        {
+          "epoch": 50,
+          "loss": 1.0518485307693481,
+          "prediction": 0.1514645218849182,
+          "variance": 0.5881175994873047,
+          "covariance": 2.333414077758789,
+          "ranking": 8.182380676269531
+        },
+        {
+          "epoch": 100,
+          "loss": 0.2031000256538391,
+          "prediction": 0.10659341514110565,
+          "variance": 0.5949655771255493,
+          "covariance": 2.2538504600524902,
+          "ranking": 0.14471539855003357
+        },
+        {
+          "epoch": 150,
+          "loss": 0.1593562513589859,
+          "prediction": 0.07254406809806824,
+          "variance": 0.6141305565834045,
+          "covariance": 2.2490501403808594,
+          "ranking": 0.02908630482852459
+        },
+        {
+          "epoch": 200,
+          "loss": 0.14059890806674957,
+          "prediction": 0.05676110461354256,
+          "variance": 0.6033381223678589,
+          "covariance": 2.2402725219726562,
+          "ranking": 0.011012653820216656
+        },
+        {
+          "epoch": 250,
+          "loss": 0.12654301524162292,
+          "prediction": 0.04425249993801117,
+          "variance": 0.5892781615257263,
+          "covariance": 2.2955775260925293,
+          "ranking": 0.004069211892783642
+        },
+        {
+          "epoch": 300,
+          "loss": 0.11798922717571259,
+          "prediction": 0.03630277141928673,
+          "variance": 0.5801420211791992,
+          "covariance": 2.3550004959106445,
+          "ranking": 0.00122250581625849
+        }
+      ]
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "seed": 20260804,
+      "trajectory_budget": 16,
+      "model": "mlp",
+      "epochs": 300,
+      "initial_parameters_bitwise_identical": true,
+      "final_parameters_bitwise_identical": false,
+      "saved_final_sha256": "8b1d042ffbb798022717edf7ce7746c865d0c307189b2a33b030ae4e98cd5253",
+      "retrained_final_sha256": "5efc3dff9bb53aaa21ad1e1f11bd37590d0cb6107dd6bda6a4e950100867fed6",
+      "training_tensor_hash_identical": true,
+      "prediction_count": 120,
+      "prediction_mismatches": [],
+      "predictions_identical": true,
+      "max_logged_loss_absolute_difference": 2.384185791015625e-07,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 3.384995460510254,
+          "cross_entropy": 3.384995460510254
+        },
+        {
+          "epoch": 50,
+          "loss": 3.071687936782837,
+          "cross_entropy": 3.071687936782837
+        },
+        {
+          "epoch": 100,
+          "loss": 2.5242462158203125,
+          "cross_entropy": 2.5242462158203125
+        },
+        {
+          "epoch": 150,
+          "loss": 2.0477354526519775,
+          "cross_entropy": 2.0477354526519775
+        },
+        {
+          "epoch": 200,
+          "loss": 1.816059947013855,
+          "cross_entropy": 1.816059947013855
+        },
+        {
+          "epoch": 250,
+          "loss": 1.6560633182525635,
+          "cross_entropy": 1.6560633182525635
+        },
+        {
+          "epoch": 300,
+          "loss": 1.5083614587783813,
+          "cross_entropy": 1.5083614587783813
+        }
+      ]
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "seed": 20260804,
+      "trajectory_budget": 16,
+      "model": "jepa",
+      "epochs": 300,
+      "initial_parameters_bitwise_identical": true,
+      "final_parameters_bitwise_identical": false,
+      "saved_final_sha256": "73dc08c8251a8c40cde8528d78280fee95b7c27584848599a7e784042593f142",
+      "retrained_final_sha256": "c4f6cfa39654911b669b2e9908b1fc37319cdf254f49fe64c254d5dd827ff9e4",
+      "training_tensor_hash_identical": true,
+      "prediction_count": 120,
+      "prediction_mismatches": [],
+      "predictions_identical": true,
+      "max_logged_loss_absolute_difference": 8.940696716308594e-08,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 1.5280466079711914,
+          "prediction": 0.17917749285697937,
+          "variance": 0.6944776773452759,
+          "covariance": 1.6562659740447998,
+          "ranking": 12.628586769104004
+        },
+        {
+          "epoch": 50,
+          "loss": 0.9593591690063477,
+          "prediction": 0.13204525411128998,
+          "variance": 0.6009975075721741,
+          "covariance": 1.5996779203414917,
+          "ranking": 7.512173652648926
+        },
+        {
+          "epoch": 100,
+          "loss": 0.40013009309768677,
+          "prediction": 0.11880319565534592,
+          "variance": 0.565842866897583,
+          "covariance": 1.7793114185333252,
+          "ranking": 2.0694949626922607
+        },
+        {
+          "epoch": 150,
+          "loss": 0.2578449547290802,
+          "prediction": 0.09745654463768005,
+          "variance": 0.5691428780555725,
+          "covariance": 1.8850672245025635,
+          "ranking": 0.8462345600128174
+        },
+        {
+          "epoch": 200,
+          "loss": 0.18428438901901245,
+          "prediction": 0.08773184567689896,
+          "variance": 0.53577721118927,
+          "covariance": 2.092695951461792,
+          "ranking": 0.22047877311706543
+        },
+        {
+          "epoch": 250,
+          "loss": 0.15251529216766357,
+          "prediction": 0.07572831958532333,
+          "variance": 0.5084168910980225,
+          "covariance": 2.234720468521118,
+          "ranking": 0.03598067909479141
+        },
+        {
+          "epoch": 300,
+          "loss": 0.1410626471042633,
+          "prediction": 0.06694311648607254,
+          "variance": 0.4893772304058075,
+          "covariance": 2.3538215160369873,
+          "ranking": 0.01643599011003971
+        }
+      ]
+    }
+  ],
+  "seconds": 9.591465567000114
+}

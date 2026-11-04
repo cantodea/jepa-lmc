@@ -1,0 +1,963 @@
+{
+  "status": "complete",
+  "scope": "Post-inference evaluator-only diagnostic; no training, tuning or selection",
+  "completion_policy": "Keep observed successors; use source state on unseen pairs. This is an evaluation policy, not learned inference.",
+  "denominator": "Unseen pairs in full known S x A, including unreachable states; stratified by reference successor equal/different to source",
+  "cases_sha256": "d43c85664b8a369d6b8f8044b9bf33b5b1cc426a34c473c16939c690d52e8b42",
+  "source_script_sha256": "efa3c34f93094e1dda0b46fd49b86a704ff120306dfd3c0d5f98a29a1f1a2b0b",
+  "validated_original_records": 1080,
+  "by_budget": {
+    "1": {
+      "observed_edge": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 2220,
+            "accuracy": 0.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 5872,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 8092,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "mlp": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.01215747985509526,
+            "min": 0.0,
+            "max": 0.06896551724137931,
+            "std": 0.01752288248574255
+          },
+          "pooled": {
+            "correct": 27,
+            "total": 2220,
+            "accuracy": 0.012162162162162163
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.007501498468238055,
+            "min": 0.0,
+            "max": 0.02564102564102564,
+            "std": 0.007005563998352423
+          },
+          "pooled": {
+            "correct": 44,
+            "total": 5872,
+            "accuracy": 0.007493188010899182
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.008834452966163265,
+            "min": 0.0,
+            "max": 0.027777777777777776,
+            "std": 0.0073501433521171965
+          },
+          "pooled": {
+            "correct": 71,
+            "total": 8092,
+            "accuracy": 0.008774097874443896
+          }
+        }
+      },
+      "jepa": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.9464141496069333,
+            "min": 0.8387096774193549,
+            "max": 1.0,
+            "std": 0.04593449431533572
+          },
+          "pooled": {
+            "correct": 2100,
+            "total": 2220,
+            "accuracy": 0.9459459459459459
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.01138599882637883,
+            "min": 0.0,
+            "max": 0.06493506493506493,
+            "std": 0.015555606215727609
+          },
+          "pooled": {
+            "correct": 65,
+            "total": 5872,
+            "accuracy": 0.011069482288828338
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.26789771513593785,
+            "min": 0.23214285714285715,
+            "max": 0.330188679245283,
+            "std": 0.020609795172151852
+          },
+          "pooled": {
+            "correct": 2165,
+            "total": 8092,
+            "accuracy": 0.2675481957488878
+          }
+        }
+      },
+      "observed_self_loop_completion_evaluation_only": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 2220,
+            "total": 2220,
+            "accuracy": 1.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 5872,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.2747008215428348,
+            "min": 0.24786324786324787,
+            "max": 0.30275229357798167,
+            "std": 0.014183363568827432
+          },
+          "pooled": {
+            "correct": 2220,
+            "total": 8092,
+            "accuracy": 0.27434503213049927
+          }
+        }
+      }
+    },
+    "2": {
+      "observed_edge": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 2105,
+            "accuracy": 0.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 5453,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 7558,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "mlp": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.006003570853404002,
+            "min": 0.0,
+            "max": 0.06060606060606061,
+            "std": 0.013769578129142323
+          },
+          "pooled": {
+            "correct": 13,
+            "total": 2105,
+            "accuracy": 0.006175771971496437
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.003849305886504179,
+            "min": 0.0,
+            "max": 0.015384615384615385,
+            "std": 0.0060205434242879925
+          },
+          "pooled": {
+            "correct": 21,
+            "total": 5453,
+            "accuracy": 0.0038510911424903724
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.004523826286918233,
+            "min": 0.0,
+            "max": 0.020618556701030927,
+            "std": 0.006036846142224468
+          },
+          "pooled": {
+            "correct": 34,
+            "total": 7558,
+            "accuracy": 0.00449854458851548
+          }
+        }
+      },
+      "jepa": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.9616478646516844,
+            "min": 0.7931034482758621,
+            "max": 1.0,
+            "std": 0.041851137815681366
+          },
+          "pooled": {
+            "correct": 2024,
+            "total": 2105,
+            "accuracy": 0.961520190023753
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.014020571407684777,
+            "min": 0.0,
+            "max": 0.07462686567164178,
+            "std": 0.017943456983024342
+          },
+          "pooled": {
+            "correct": 74,
+            "total": 5453,
+            "accuracy": 0.013570511644966074
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.2782510652031729,
+            "min": 0.22330097087378642,
+            "max": 0.3368421052631579,
+            "std": 0.023942877951861733
+          },
+          "pooled": {
+            "correct": 2098,
+            "total": 7558,
+            "accuracy": 0.2775866631383964
+          }
+        }
+      },
+      "observed_self_loop_completion_evaluation_only": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 2105,
+            "total": 2105,
+            "accuracy": 1.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 5453,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.2790510741728298,
+            "min": 0.25225225225225223,
+            "max": 0.3333333333333333,
+            "std": 0.01671991132817248
+          },
+          "pooled": {
+            "correct": 2105,
+            "total": 7558,
+            "accuracy": 0.27851283408309074
+          }
+        }
+      }
+    },
+    "4": {
+      "observed_edge": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 1915,
+            "accuracy": 0.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 4928,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 6843,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "mlp": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.002159702437480215,
+            "min": 0.0,
+            "max": 0.04,
+            "std": 0.00890942182372612
+          },
+          "pooled": {
+            "correct": 4,
+            "total": 1915,
+            "accuracy": 0.0020887728459530026
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0012476243852345018,
+            "min": 0.0,
+            "max": 0.028985507246376812,
+            "std": 0.004814827718422387
+          },
+          "pooled": {
+            "correct": 6,
+            "total": 4928,
+            "accuracy": 0.0012175324675324675
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0014618441953859979,
+            "min": 0.0,
+            "max": 0.021052631578947368,
+            "std": 0.004413135391308368
+          },
+          "pooled": {
+            "correct": 10,
+            "total": 6843,
+            "accuracy": 0.0014613473622680112
+          }
+        }
+      },
+      "jepa": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.9671441851737926,
+            "min": 0.8518518518518519,
+            "max": 1.0,
+            "std": 0.03956443499581934
+          },
+          "pooled": {
+            "correct": 1852,
+            "total": 1915,
+            "accuracy": 0.9671018276762402
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.020312195074686342,
+            "min": 0.0,
+            "max": 0.1206896551724138,
+            "std": 0.02348910605294147
+          },
+          "pooled": {
+            "correct": 96,
+            "total": 4928,
+            "accuracy": 0.01948051948051948
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.2855728234311903,
+            "min": 0.22580645161290322,
+            "max": 0.3953488372093023,
+            "std": 0.03150235325814294
+          },
+          "pooled": {
+            "correct": 1948,
+            "total": 6843,
+            "accuracy": 0.28467046616980857
+          }
+        }
+      },
+      "observed_self_loop_completion_evaluation_only": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 1915,
+            "total": 1915,
+            "accuracy": 1.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 4928,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.28046413588433555,
+            "min": 0.24509803921568626,
+            "max": 0.3291139240506329,
+            "std": 0.019938278071877095
+          },
+          "pooled": {
+            "correct": 1915,
+            "total": 6843,
+            "accuracy": 0.2798480198743241
+          }
+        }
+      }
+    },
+    "8": {
+      "observed_edge": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 1717,
+            "accuracy": 0.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 4347,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 6064,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "mlp": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0005555555555555556,
+            "min": 0.0,
+            "max": 0.04,
+            "std": 0.0046811943184313105
+          },
+          "pooled": {
+            "correct": 1,
+            "total": 1717,
+            "accuracy": 0.0005824111822947001
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0004927897084759829,
+            "min": 0.0,
+            "max": 0.0196078431372549,
+            "std": 0.002931949349721812
+          },
+          "pooled": {
+            "correct": 2,
+            "total": 4347,
+            "accuracy": 0.00046008741660915573
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0005223099240847099,
+            "min": 0.0,
+            "max": 0.013157894736842105,
+            "std": 0.002508490615935861
+          },
+          "pooled": {
+            "correct": 3,
+            "total": 6064,
+            "accuracy": 0.0004947229551451188
+          }
+        }
+      },
+      "jepa": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.9685713188672127,
+            "min": 0.8181818181818182,
+            "max": 1.0,
+            "std": 0.04304582636674272
+          },
+          "pooled": {
+            "correct": 1663,
+            "total": 1717,
+            "accuracy": 0.9685497961560862
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.019164891175442077,
+            "min": 0.0,
+            "max": 0.08771929824561403,
+            "std": 0.01983800007317367
+          },
+          "pooled": {
+            "correct": 82,
+            "total": 4347,
+            "accuracy": 0.018863584080975385
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.28877554227353164,
+            "min": 0.23809523809523808,
+            "max": 0.35,
+            "std": 0.030141498934462326
+          },
+          "pooled": {
+            "correct": 1745,
+            "total": 6064,
+            "accuracy": 0.2877638522427441
+          }
+        }
+      },
+      "observed_self_loop_completion_evaluation_only": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 1717,
+            "total": 1717,
+            "accuracy": 1.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 4347,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.28423979677826416,
+            "min": 0.22988505747126436,
+            "max": 0.3333333333333333,
+            "std": 0.02556768951274608
+          },
+          "pooled": {
+            "correct": 1717,
+            "total": 6064,
+            "accuracy": 0.28314643799472294
+          }
+        }
+      }
+    },
+    "16": {
+      "observed_edge": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 1539,
+            "accuracy": 0.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 3718,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 5257,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "mlp": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 1539,
+            "accuracy": 0.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 3718,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 5257,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "jepa": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.9725836804543841,
+            "min": 0.8235294117647058,
+            "max": 1.0,
+            "std": 0.03748976287254377
+          },
+          "pooled": {
+            "correct": 1497,
+            "total": 1539,
+            "accuracy": 0.9727095516569201
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.020545390617467088,
+            "min": 0.0,
+            "max": 0.08928571428571429,
+            "std": 0.022551100550877837
+          },
+          "pooled": {
+            "correct": 76,
+            "total": 3718,
+            "accuracy": 0.020441097364174286
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.30071808028317304,
+            "min": 0.23376623376623376,
+            "max": 0.37037037037037035,
+            "std": 0.03447900334951834
+          },
+          "pooled": {
+            "correct": 1573,
+            "total": 5257,
+            "accuracy": 0.2992200875023778
+          }
+        }
+      },
+      "observed_self_loop_completion_evaluation_only": {
+        "true_self_loop": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 1.0,
+            "min": 1.0,
+            "max": 1.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 1539,
+            "total": 1539,
+            "accuracy": 1.0
+          }
+        },
+        "moving": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.0,
+            "min": 0.0,
+            "max": 0.0,
+            "std": 0.0
+          },
+          "pooled": {
+            "correct": 0,
+            "total": 3718,
+            "accuracy": 0.0
+          }
+        },
+        "unseen": {
+          "macro": {
+            "evaluated": 72,
+            "mean": 0.29432389583457225,
+            "min": 0.23376623376623376,
+            "max": 0.35185185185185186,
+            "std": 0.02875450129985342
+          },
+          "pooled": {
+            "correct": 1539,
+            "total": 5257,
+            "accuracy": 0.29275252044892525
+          }
+        }
+      }
+    }
+  },
+  "paired_jepa_vs_completion": {
+    "1": {
+      "jepa_minus_completion_unseen": {
+        "evaluated": 72,
+        "mean": -0.0068031064068969785,
+        "min": -0.04464285714285715,
+        "max": 0.03508771929824561,
+        "std": 0.015616741028881338
+      },
+      "jepa_wins": 15,
+      "completion_wins": 39,
+      "ties": 18
+    },
+    "2": {
+      "jepa_minus_completion_unseen": {
+        "evaluated": 72,
+        "mean": -0.0008000089696569471,
+        "min": -0.0505050505050505,
+        "max": 0.04210526315789476,
+        "std": 0.015373659929168417
+      },
+      "jepa_wins": 21,
+      "completion_wins": 27,
+      "ties": 24
+    },
+    "4": {
+      "jepa_minus_completion_unseen": {
+        "evaluated": 72,
+        "mean": 0.005108687546854684,
+        "min": -0.03296703296703299,
+        "max": 0.06976744186046507,
+        "std": 0.019051767393315742
+      },
+      "jepa_wins": 32,
+      "completion_wins": 20,
+      "ties": 20
+    },
+    "8": {
+      "jepa_minus_completion_unseen": {
+        "evaluated": 72,
+        "mean": 0.004535745495267472,
+        "min": -0.03846153846153849,
+        "max": 0.0625,
+        "std": 0.018651863877294027
+      },
+      "jepa_wins": 32,
+      "completion_wins": 16,
+      "ties": 24
+    },
+    "16": {
+      "jepa_minus_completion_unseen": {
+        "evaluated": 72,
+        "mean": 0.006394184448600808,
+        "min": -0.05172413793103445,
+        "max": 0.05633802816901412,
+        "std": 0.01973521764242606
+      },
+      "jepa_wins": 32,
+      "completion_wins": 16,
+      "ties": 24
+    }
+  }
+}

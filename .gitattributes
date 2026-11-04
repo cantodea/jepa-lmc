@@ -1,0 +1,2 @@
+# Preserve published artifact bytes and hashes across checkout platforms.
+docs/results/mlp_900_fairness/** -text
