@@ -1,0 +1,232 @@
+1/72 20260804_sealed_region_layout0_rot0: errors=0, initial=True
+2/72 20260804_sealed_region_layout0_rot90: errors=0, initial=True
+3/72 20260804_sealed_region_layout0_rot180: errors=4, initial=True
+4/72 20260804_sealed_region_layout0_rot270: errors=0, initial=True
+5/72 20260804_sealed_region_layout1_rot0: errors=4, initial=True
+6/72 20260804_sealed_region_layout1_rot90: errors=1, initial=False
+7/72 20260804_sealed_region_layout1_rot180: errors=0, initial=True
+8/72 20260804_sealed_region_layout1_rot270: errors=0, initial=True
+9/72 20260804_danger_gate_layout0_rot0: errors=1, initial=False
+10/72 20260804_danger_gate_layout0_rot90: errors=0, initial=True
+11/72 20260804_danger_gate_layout0_rot180: errors=1, initial=False
+12/72 20260804_danger_gate_layout0_rot270: errors=3, initial=False
+13/72 20260804_danger_gate_layout1_rot0: errors=1, initial=False
+14/72 20260804_danger_gate_layout1_rot90: errors=0, initial=True
+15/72 20260804_danger_gate_layout1_rot180: errors=2, initial=False
+16/72 20260804_danger_gate_layout1_rot270: errors=0, initial=True
+17/72 20260804_safe_detour_layout0_rot0: errors=1, initial=False
+18/72 20260804_safe_detour_layout0_rot90: errors=1, initial=False
+19/72 20260804_safe_detour_layout0_rot180: errors=1, initial=False
+20/72 20260804_safe_detour_layout0_rot270: errors=2, initial=False
+21/72 20260804_safe_detour_layout1_rot0: errors=1, initial=False
+22/72 20260804_safe_detour_layout1_rot90: errors=1, initial=False
+23/72 20260804_safe_detour_layout1_rot180: errors=3, initial=False
+24/72 20260804_safe_detour_layout1_rot270: errors=2, initial=False
+25/72 20260805_sealed_region_layout0_rot0: errors=3, initial=True
+26/72 20260805_sealed_region_layout0_rot90: errors=0, initial=True
+27/72 20260805_sealed_region_layout0_rot180: errors=3, initial=True
+28/72 20260805_sealed_region_layout0_rot270: errors=9, initial=True
+29/72 20260805_sealed_region_layout1_rot0: errors=0, initial=True
+30/72 20260805_sealed_region_layout1_rot90: errors=2, initial=False
+31/72 20260805_sealed_region_layout1_rot180: errors=3, initial=True
+32/72 20260805_sealed_region_layout1_rot270: errors=0, initial=True
+33/72 20260805_danger_gate_layout0_rot0: errors=3, initial=False
+34/72 20260805_danger_gate_layout0_rot90: errors=1, initial=False
+35/72 20260805_danger_gate_layout0_rot180: errors=2, initial=False
+36/72 20260805_danger_gate_layout0_rot270: errors=2, initial=False
+37/72 20260805_danger_gate_layout1_rot0: errors=0, initial=True
+38/72 20260805_danger_gate_layout1_rot90: errors=3, initial=False
+39/72 20260805_danger_gate_layout1_rot180: errors=5, initial=False
+40/72 20260805_danger_gate_layout1_rot270: errors=1, initial=False
+41/72 20260805_safe_detour_layout0_rot0: errors=1, initial=False
+42/72 20260805_safe_detour_layout0_rot90: errors=5, initial=False
+43/72 20260805_safe_detour_layout0_rot180: errors=0, initial=True
+44/72 20260805_safe_detour_layout0_rot270: errors=3, initial=False
+45/72 20260805_safe_detour_layout1_rot0: errors=0, initial=True
+46/72 20260805_safe_detour_layout1_rot90: errors=5, initial=False
+47/72 20260805_safe_detour_layout1_rot180: errors=1, initial=False
+48/72 20260805_safe_detour_layout1_rot270: errors=4, initial=False
+49/72 20260806_sealed_region_layout0_rot0: errors=0, initial=True
+50/72 20260806_sealed_region_layout0_rot90: errors=0, initial=True
+51/72 20260806_sealed_region_layout0_rot180: errors=2, initial=True
+52/72 20260806_sealed_region_layout0_rot270: errors=0, initial=True
+53/72 20260806_sealed_region_layout1_rot0: errors=0, initial=True
+54/72 20260806_sealed_region_layout1_rot90: errors=0, initial=True
+55/72 20260806_sealed_region_layout1_rot180: errors=0, initial=True
+56/72 20260806_sealed_region_layout1_rot270: errors=0, initial=True
+57/72 20260806_danger_gate_layout0_rot0: errors=0, initial=True
+58/72 20260806_danger_gate_layout0_rot90: errors=2, initial=False
+59/72 20260806_danger_gate_layout0_rot180: errors=0, initial=True
+60/72 20260806_danger_gate_layout0_rot270: errors=0, initial=True
+61/72 20260806_danger_gate_layout1_rot0: errors=0, initial=True
+62/72 20260806_danger_gate_layout1_rot90: errors=0, initial=True
+63/72 20260806_danger_gate_layout1_rot180: errors=0, initial=True
+64/72 20260806_danger_gate_layout1_rot270: errors=2, initial=False
+65/72 20260806_safe_detour_layout0_rot0: errors=0, initial=True
+66/72 20260806_safe_detour_layout0_rot90: errors=3, initial=False
+67/72 20260806_safe_detour_layout0_rot180: errors=0, initial=True
+68/72 20260806_safe_detour_layout0_rot270: errors=0, initial=True
+69/72 20260806_safe_detour_layout1_rot0: errors=0, initial=True
+70/72 20260806_safe_detour_layout1_rot90: errors=0, initial=True
+71/72 20260806_safe_detour_layout1_rot180: errors=0, initial=True
+72/72 20260806_safe_detour_layout1_rot270: errors=2, initial=False
+{
+  "overall": {
+    "cases": 72,
+    "transitions": 8928,
+    "errors": 96,
+    "initial_pass": 40,
+    "identity_pass": 33,
+    "reachable_errors": 78,
+    "unreachable_errors": 18,
+    "motion": {
+      "move_to_self_loop": 74,
+      "self_loop_to_move": 22
+    },
+    "successor_label_mismatches": 10,
+    "successor_pairs_bisimilar_in_real": 10,
+    "involves_goal": 2,
+    "involves_danger": 8,
+    "ctl_all_six": 68,
+    "ltl_all_six": 70,
+    "both_all_state": 66
+  },
+  "by_initial": {
+    "True": {
+      "cases": 40,
+      "transitions": 4904,
+      "errors": 28,
+      "initial_pass": 40,
+      "identity_pass": 33,
+      "reachable_errors": 10,
+      "unreachable_errors": 18,
+      "motion": {
+        "move_to_self_loop": 27,
+        "self_loop_to_move": 1
+      },
+      "successor_label_mismatches": 3,
+      "successor_pairs_bisimilar_in_real": 10,
+      "involves_goal": 1,
+      "involves_danger": 2,
+      "ctl_all_six": 40,
+      "ltl_all_six": 40,
+      "both_all_state": 39
+    },
+    "False": {
+      "cases": 32,
+      "transitions": 4024,
+      "errors": 68,
+      "initial_pass": 0,
+      "identity_pass": 0,
+      "reachable_errors": 68,
+      "unreachable_errors": 0,
+      "motion": {
+        "self_loop_to_move": 21,
+        "move_to_self_loop": 47
+      },
+      "successor_label_mismatches": 7,
+      "successor_pairs_bisimilar_in_real": 0,
+      "involves_goal": 1,
+      "involves_danger": 6,
+      "ctl_all_six": 28,
+      "ltl_all_six": 30,
+      "both_all_state": 27
+    }
+  },
+  "by_family": {
+    "danger_gate": {
+      "cases": 24,
+      "transitions": 2976,
+      "errors": 29,
+      "initial_pass": 10,
+      "identity_pass": 10,
+      "reachable_errors": 29,
+      "unreachable_errors": 0,
+      "motion": {
+        "self_loop_to_move": 6,
+        "move_to_self_loop": 23
+      },
+      "successor_label_mismatches": 3,
+      "successor_pairs_bisimilar_in_real": 0,
+      "involves_goal": 0,
+      "involves_danger": 3,
+      "ctl_all_six": 23,
+      "ltl_all_six": 24,
+      "both_all_state": 23
+    },
+    "safe_detour": {
+      "cases": 24,
+      "transitions": 3072,
+      "errors": 36,
+      "initial_pass": 8,
+      "identity_pass": 8,
+      "reachable_errors": 36,
+      "unreachable_errors": 0,
+      "motion": {
+        "self_loop_to_move": 12,
+        "move_to_self_loop": 24
+      },
+      "successor_label_mismatches": 4,
+      "successor_pairs_bisimilar_in_real": 0,
+      "involves_goal": 1,
+      "involves_danger": 3,
+      "ctl_all_six": 23,
+      "ltl_all_six": 24,
+      "both_all_state": 22
+    },
+    "sealed_region": {
+      "cases": 24,
+      "transitions": 2880,
+      "errors": 31,
+      "initial_pass": 22,
+      "identity_pass": 15,
+      "reachable_errors": 13,
+      "unreachable_errors": 18,
+      "motion": {
+        "move_to_self_loop": 27,
+        "self_loop_to_move": 4
+      },
+      "successor_label_mismatches": 3,
+      "successor_pairs_bisimilar_in_real": 10,
+      "involves_goal": 1,
+      "involves_danger": 2,
+      "ctl_all_six": 22,
+      "ltl_all_six": 22,
+      "both_all_state": 21
+    }
+  },
+  "minimum_repairs_histogram": {
+    "1": 13,
+    "3": 6,
+    "2": 9,
+    "5": 3,
+    "4": 1
+  },
+  "failed_subsets": 222,
+  "passing_subsets": 572,
+  "fail_single_repair_trials": 13,
+  "counts": {
+    "prediction_rows_checked": 8928,
+    "certificates": 2524,
+    "alternative_valid_challenge_choices": 8868,
+    "historical_certificates_checked": 432,
+    "saved_relations_reproduced": 432,
+    "partition_checks": 1804,
+    "native_ctl_verdicts_reproduced": 26784,
+    "rooted_dags_checked": 64
+  },
+  "same_reachability_for_error_sources": true,
+  "cases_same_reachable_sets": 70,
+  "full_bisimulation_relations_equal": 72,
+  "all_failed_require_all_errors": true,
+  "all_passing_subsets_pass": true,
+  "initial_round_histogram": {
+    "9": 5,
+    "5": 5,
+    "11": 4,
+    "6": 3,
+    "10": 6,
+    "8": 8,
+    "7": 1
+  }
+}

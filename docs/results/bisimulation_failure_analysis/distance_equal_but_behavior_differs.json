@@ -1,0 +1,54 @@
+[
+  {
+    "edge_id": "20260804_safe_detour_layout1_rot180:s23:a1",
+    "seed": 20260804,
+    "case": "safe_detour_layout1_rot180",
+    "family": "safe_detour",
+    "source": 23,
+    "source_coord": [
+      4,
+      2
+    ],
+    "action": 1,
+    "action_name": "down",
+    "true_successor": 23,
+    "true_coord": [
+      4,
+      2
+    ],
+    "pred_successor": 28,
+    "pred_coord": [
+      5,
+      1
+    ],
+    "source_labels": [
+      "safe"
+    ],
+    "true_labels": [
+      "safe"
+    ],
+    "pred_labels": [
+      "safe"
+    ],
+    "reachable_real": true,
+    "reachable_pred": true,
+    "motion": "self_loop_to_move",
+    "successor_label_mismatch": false,
+    "involves_goal": false,
+    "involves_danger": false,
+    "involves_safe": true,
+    "targets_bisimilar_in_real": false,
+    "initial_bisimulation": false,
+    "identity_bisimulation": false,
+    "true_motion_saved": "wall_block",
+    "true_kind_saved": "self_loop",
+    "single_repair_restores": false,
+    "only_this_error_retained_passes": false,
+    "can_remain_in_any_successful_subset": false,
+    "true_target_distance_to_goal_in_real": 6,
+    "pred_target_distance_to_goal_in_real": 6,
+    "true_target_distance_to_danger_in_real": 5,
+    "pred_target_distance_to_danger_in_real": 5,
+    "target_goal_or_danger_distance_differs_in_real": false
+  }
+]
