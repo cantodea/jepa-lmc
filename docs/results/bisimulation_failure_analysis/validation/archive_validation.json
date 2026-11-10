@@ -1,0 +1,33 @@
+{
+  "purpose": "Archive and validate completed results; no new experiments",
+  "tests": {
+    "public_archive_integrity": 8,
+    "analysis_unit_tests": 4,
+    "upstream_behavioral_relations": 8,
+    "passed": 20,
+    "failed": 0
+  },
+  "graph_sha256": "8d51e45e76bf1f5a0c70732fdcfa90f72b08780c0558e6d8bea39793b2eb5d98",
+  "required_results": {
+    "cases": 72,
+    "transitions": 8928,
+    "errors": 96,
+    "initial_bisimulation": 40,
+    "identity_bisimulation": 33,
+    "retained_errors_compatible": 28,
+    "isolated_retained_errors_breaking_bisimulation": 68,
+    "failures_requiring_all_errors": 32,
+    "ctl_agree_without_bisimulation": 28
+  },
+  "readback": {
+    "complete_certificates_audited": 144,
+    "initial_dags_checked": 64,
+    "repair_subsets_checked": 794,
+    "compressed_original_bytes_match": true
+  },
+  "new_training": false,
+  "new_inference": false,
+  "new_repair_search": false,
+  "no_original_project_files_modified": true,
+  "sensitive_content_review": "Published derived formal records only; no original graph export, private input archive, weights, credentials, personal filesystem paths or temporary files."
+}

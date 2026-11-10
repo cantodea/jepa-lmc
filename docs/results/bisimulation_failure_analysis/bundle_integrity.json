@@ -1,0 +1,50 @@
+{
+  "archive_sha256": "f4e4831c45fdea74cba621b9e22bbd9f6fb69f3b4e780973f4c545f5e4d735c2",
+  "files": [
+    {
+      "path": "outputs/top1_quality/round2/behavioral/best/relations.jsonl",
+      "size": 29962156,
+      "sha256": "8d51e45e76bf1f5a0c70732fdcfa90f72b08780c0558e6d8bea39793b2eb5d98"
+    },
+    {
+      "path": "outputs/top1_quality/round2/behavioral/best/report.json",
+      "size": 18106,
+      "sha256": "485d73909f54ed1d6c6d266ee6c123d0504abf4e14941d2956bc27186fcb5277"
+    },
+    {
+      "path": "outputs/top1_quality/round2/behavioral/best/ctl_queries.csv",
+      "size": 1149864,
+      "sha256": "c80d84bbea227f9627c7c436946cddfd11363a4bde3bf68a33d83af36ffecb29"
+    },
+    {
+      "path": "outputs/top1_quality/round2/behavioral/best/maps.csv",
+      "size": 38571,
+      "sha256": "8872071566d293e9516af5f0389a3bf80911811b433a1bec59aa752d0a5df931"
+    },
+    {
+      "path": "outputs/top1_quality/round2/temporal/best_ltl/report.json",
+      "size": 337319,
+      "sha256": "8590d9d1db678c76f184f79bda061328ae98e361454fb48b8f21cf1d47b39347"
+    },
+    {
+      "path": "outputs/top1_quality/round2/temporal/best_ltl/queries.csv",
+      "size": 1531997,
+      "sha256": "f49e3bdc47cd8281ea1ba17a58a70f17fa4ca826d5946210e3ebcfc7e10501ec"
+    },
+    {
+      "path": "outputs/top1_quality/round2/ranking/seed_20260804/evaluation/transitions.csv",
+      "size": 3910578,
+      "sha256": "51dd11e7e202f2506c4b976b0826c565f606ce8dabf114bc61232768c84baf47"
+    },
+    {
+      "path": "outputs/top1_quality/round2/ranking/seed_20260805/evaluation/transitions.csv",
+      "size": 3908820,
+      "sha256": "6369ca12464cba9a327cfb58cf585dba20d87722f491873ee94e8f15519199ee"
+    },
+    {
+      "path": "outputs/top1_quality/round2/ranking/seed_20260806/evaluation/transitions.csv",
+      "size": 3907110,
+      "sha256": "6a761399226ce9f973c356d92c8b54f714b070cb8844638b903147b4fdb694b3"
+    }
+  ]
+}

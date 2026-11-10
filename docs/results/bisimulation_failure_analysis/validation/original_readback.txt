@@ -1,0 +1,1 @@
+PASS: 144 serialized full certificates, 64 rooted DAGs, all 794 distinct subsets, both semantics and structural cross-tabs.

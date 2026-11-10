@@ -1,0 +1,22 @@
+test_exported_certificate_rejects_missing_reply_and_root (test_analysis.AnalysisTests.test_exported_certificate_rejects_missing_reply_and_root) ... ok
+test_exported_certificate_rejects_non_decreasing_rank (test_analysis.AnalysisTests.test_exported_certificate_rejects_non_decreasing_rank) ... ok
+test_single_error_exact_repair_and_full_dag (test_analysis.AnalysisTests.test_single_error_exact_repair_and_full_dag) ... ok
+test_two_errors_all_subsets (test_analysis.AnalysisTests.test_two_errors_all_subsets) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+OK
+test_action_labels_are_optional_but_state_labels_are_required (test_behavioral_relations.BehavioralRelationTests.test_action_labels_are_optional_but_state_labels_are_required) ... ok
+test_different_edges_can_have_all_diagonal_pairs_bisimilar (test_behavioral_relations.BehavioralRelationTests.test_different_edges_can_have_all_diagonal_pairs_bisimilar) ... ok
+test_direction_and_initial_quantifiers (test_behavioral_relations.BehavioralRelationTests.test_direction_and_initial_quantifiers) ... ok
+test_exact_maxima_against_enumerating_all_candidate_relations (test_behavioral_relations.BehavioralRelationTests.test_exact_maxima_against_enumerating_all_candidate_relations) ... ok
+test_initial_equivalence_does_not_require_unreachable_diagonal_pairs (test_behavioral_relations.BehavioralRelationTests.test_initial_equivalence_does_not_require_unreachable_diagonal_pairs) ... ok
+test_mutual_simulation_is_not_bisimulation_on_branching_graphs (test_behavioral_relations.BehavioralRelationTests.test_mutual_simulation_is_not_bisimulation_on_branching_graphs) ... ok
+test_rejection_audit_detects_a_closed_but_nonmaximal_forgery (test_behavioral_relations.BehavioralRelationTests.test_rejection_audit_detects_a_closed_but_nonmaximal_forgery) ... ok
+test_total_action_determinism_makes_simulation_symmetric (test_behavioral_relations.BehavioralRelationTests.test_total_action_determinism_makes_simulation_symmetric) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.032s
+
+OK
