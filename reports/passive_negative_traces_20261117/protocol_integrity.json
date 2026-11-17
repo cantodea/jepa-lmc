@@ -1,0 +1,5 @@
+{
+  "pretraining_inputs_unchanged": true,
+  "mismatches": [],
+  "execution_note": "Input-integrity guard added to reproduction runner during ongoing run; original executed input hashes checked separately. Symbolic analysis_seconds metadata key corrected for future reruns; actual run timings remain authoritative in information.json. Neither change affects predictions or fitted weights."
+}

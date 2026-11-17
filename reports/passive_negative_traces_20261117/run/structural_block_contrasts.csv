@@ -1,0 +1,16 @@
+kind,arm,family,repeated_cases,delta_unseen,delta_moving
+symbolic,C,danger_gate,4,0.0,0.0
+symbolic,C,safe_detour,4,0.0,0.0
+symbolic,C,sealed_region,4,0.0,0.0
+mlp,B,danger_gate,4,0.0,0.0
+mlp,B,safe_detour,4,0.0,0.0
+mlp,B,sealed_region,4,0.0,0.0
+mlp,C,danger_gate,4,0.0,0.0
+mlp,C,safe_detour,4,-0.002136752136752137,-0.0028735632183908046
+mlp,C,sealed_region,4,0.0024752475247524753,0.0
+jepa,B,danger_gate,4,0.0,0.0
+jepa,B,safe_detour,4,0.0,0.0
+jepa,B,sealed_region,4,0.0,0.0
+jepa,C,danger_gate,4,0.0,0.0
+jepa,C,safe_detour,4,0.0023584905660377353,0.0
+jepa,C,sealed_region,4,0.007244073031156317,0.006714131218457101

@@ -1,0 +1,6925 @@
+{
+  "base_commit": "539410dec1d5c4e4433bd9a57b10a309cd9a850d",
+  "python": "3.13.9",
+  "scope": "Regenerate historical sampler, inspect exact conflicting positive edge; no neural retraining",
+  "unique_pools": 72,
+  "unique_goods": 1152,
+  "unique_negatives": 1152,
+  "same_label_negatives": 1133,
+  "cases": 360,
+  "all_checks_passed": true,
+  "records": [
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 25,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 33,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 44,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 28,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 31,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 35,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 15,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 23,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 28,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 35,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 11,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 18,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 29,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 36,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 41,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 32,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 39,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 42,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 6,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 11,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 23,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 31,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 40,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 14,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 21,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 29,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 38,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 13,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 15,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 21,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 26,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 17,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 27,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 30,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 42,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 23,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 31,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 41,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 12,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 22,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 26,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 38,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 11,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 17,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 18,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 29,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout0_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 37,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 16,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 23,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 39,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 55,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 20,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 45,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 56,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 11,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 23,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 37,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot0",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 52,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 27,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 40,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 48,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 54,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 24,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 38,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 57,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 15,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 26,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 43,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot90",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 8,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 12,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 19,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 39,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 11,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 35,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 42,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 19,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 34,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 42,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot180",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 45,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 24,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 31,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 47,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 59,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 23,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 34,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 44,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 54,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 120,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 120,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 34,
+      "state_action_pairs": 120,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 50,
+      "state_action_pairs": 120,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "sealed_region_layout1_rot270",
+      "family": "sealed_region",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 56,
+      "state_action_pairs": 120,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 26,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 40,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 49,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 13,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 19,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 32,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 39,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 18,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 25,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 34,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 60,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 18,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 28,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 37,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 19,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 29,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 43,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 15,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 19,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 27,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 34,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 48,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 16,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 23,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 30,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 23,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 28,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 36,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 41,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 28,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 32,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 25,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 35,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 51,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 69,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 13,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 24,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 37,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 47,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 16,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 29,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 38,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout0_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 47,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 23,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 32,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 49,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 55,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 16,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 29,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 39,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 57,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 27,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 34,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot0",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 45,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 22,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 40,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 47,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 15,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 22,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 28,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 46,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 53,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 11,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 16,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 32,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 39,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot90",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 49,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 33,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 41,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 49,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 19,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 32,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 40,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 50,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 20,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 32,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 46,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot180",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 49,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 48,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 55,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 27,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 45,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 53,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 67,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 124,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 15,
+      "state_action_pairs": 124,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 26,
+      "state_action_pairs": 124,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 46,
+      "state_action_pairs": 124,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "danger_gate_layout1_rot270",
+      "family": "danger_gate",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 54,
+      "state_action_pairs": 124,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 17,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 32,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 40,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 55,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 11,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 18,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 26,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 31,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 40,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 25,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 35,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 44,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 55,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 15,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 31,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 39,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 51,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 26,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 37,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 56,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 20,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 33,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 40,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 48,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 12,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 26,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 33,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 44,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 55,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 7,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 20,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 41,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 61,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 17,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 41,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 50,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 15,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 24,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 41,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 44,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 8,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 22,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 29,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 45,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 48,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 29,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 36,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout0_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 45,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 22,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 36,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 43,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 58,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 22,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 37,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 51,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 60,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 23,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 56,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot0",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 70,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 15,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 34,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 48,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 57,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 18,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 31,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 50,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 74,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 9,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 27,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 45,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot90",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 58,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 13,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 31,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 46,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 54,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 20,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 31,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 37,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 54,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 10,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 30,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 43,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot180",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 58,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 1,
+      "observed_pairs": 8,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 2,
+      "observed_pairs": 20,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 4,
+      "observed_pairs": 33,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 8,
+      "observed_pairs": 38,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260804,
+      "budget": 16,
+      "observed_pairs": 54,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 2,
+      "observed_pairs": 21,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 4,
+      "observed_pairs": 33,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 8,
+      "observed_pairs": 44,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260805,
+      "budget": 16,
+      "observed_pairs": 65,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 1,
+      "observed_pairs": 14,
+      "state_action_pairs": 128,
+      "paired_negatives": 1,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 2,
+      "observed_pairs": 25,
+      "state_action_pairs": 128,
+      "paired_negatives": 2,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 4,
+      "observed_pairs": 35,
+      "state_action_pairs": 128,
+      "paired_negatives": 4,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 8,
+      "observed_pairs": 48,
+      "state_action_pairs": 128,
+      "paired_negatives": 8,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    },
+    {
+      "case": "safe_detour_layout1_rot270",
+      "family": "safe_detour",
+      "seed": 20260806,
+      "budget": 16,
+      "observed_pairs": 64,
+      "state_action_pairs": 128,
+      "paired_negatives": 16,
+      "all_redundant_under_determinism": true,
+      "positive_conflict_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "self_loop_completion_rejects_paired_negatives": true
+    }
+  ]
+}

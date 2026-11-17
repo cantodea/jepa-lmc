@@ -1,0 +1,31 @@
+{
+  "experiment": "passive_negative_traces_20261117",
+  "base_commit": "539410dec1d5c4e4433bd9a57b10a309cd9a850d",
+  "families": [
+    "sealed_region",
+    "danger_gate",
+    "safe_detour"
+  ],
+  "layout": 0,
+  "rotation": 0,
+  "seeds": [
+    20260804,
+    20260805
+  ],
+  "budgets": [
+    1,
+    4
+  ],
+  "length": 16,
+  "candidates_per_good": 8,
+  "heldout_goods": 32,
+  "heldout_candidates": 128,
+  "candidate_rule": "Uniform random nonempty prefix of each natural trace; fair coin replaces one uniformly chosen action or noninitial state with a uniformly sampled catalogue value (including unchanged). No rejection resampling or informative-negative filtering.",
+  "positive_rule": "All arms receive natural goods plus every oracle-accepted candidate. A discards negative labels, B receives equally many legacy paired negatives, C receives all oracle-rejected candidates.",
+  "negative_weight": 1.0,
+  "baseline_config": "configs/finite_trace_mlp900_vs_jepa.json",
+  "symbolic": "lexicographically first total deterministic feasible model; both A and C",
+  "selection": "Fixed final epochs and historical hyperparameters; no tuning or model selection",
+  "scope": "Resource-bounded pilot: first layout and unrotated member of every existing family, selected by index before training, not outcomes",
+  "statistics": "Paired descriptive contrasts; family/layout is structural block. Seeds and nested budgets are repeated measurements. Three related fixed families do not support population-level significance claims."
+}

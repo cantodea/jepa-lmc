@@ -1,0 +1,11 @@
+{
+  "created_unix": 1794914639.4122384,
+  "neural_training_started": false,
+  "files_sha256": {
+    "datasets.json": "977375bbab93b78de92e87d2b8961a8016a9a065be0e915b8f16b0247d1969a2",
+    "information.json": "9d34141b7770fe4612668cefcb822b1ee16e645672f54060b49a873970b9bf97",
+    "protocol.lock.json": "6916027998b6739482d31ff251ff074b81afa11295a0d7681458bb3a96f9bbcd"
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "torch": "2.12.1+cpu"
+}

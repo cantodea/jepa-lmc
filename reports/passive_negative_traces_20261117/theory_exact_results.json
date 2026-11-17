@@ -1,0 +1,1 @@
+{"criterion_and_count_cases":540,"semantic_probability_cases":60,"paired_redundancy_cases":80,"failures":0,"scope":"exhaustive two-state one-action traces lengths 1..4; all nine partial good maps; four total transition functions","execution":"JavaScript V8 tools runtime on 2026-11-17; same algorithm as theory_exact_check.js"}

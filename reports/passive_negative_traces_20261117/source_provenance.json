@@ -1,0 +1,409 @@
+{
+  "base_commit": "539410dec1d5c4e4433bd9a57b10a309cd9a850d",
+  "base_tree": "d0fc12f589e2dcd10bcd21601fe1a0c452427073",
+  "method": "GitHub connector blobs at pinned main; direct git network unavailable; local mirror is partial and has synthetic git ancestry; remote research commit uses actual main parent and original base tree",
+  "checked_original_files": 100,
+  "original_blob_mismatches": [],
+  "originals": [
+    {
+      "path": ".gitattributes",
+      "sha": "3120c555f07f06b83949a7380eea7bd150945658"
+    },
+    {
+      "path": ".gitignore",
+      "sha": "e968d1733d144f8b0f69371ba9631739e944d435"
+    },
+    {
+      "path": "README.md",
+      "sha": "100d2a98caa76b3cd0009fdcd025badc266bec77"
+    },
+    {
+      "path": "configs/cegar_protocol.json",
+      "sha": "73aac8b8fd6c8d4ed28f7e0d098679f3cf6b588d"
+    },
+    {
+      "path": "configs/finite_trace_mlp900_vs_jepa.json",
+      "sha": "74b87a80b8f23e459299931a8cf047d19dc180e0"
+    },
+    {
+      "path": "configs/finite_trace_mlp_vs_jepa.json",
+      "sha": "b1c0b8e0327068fb7faad0e11b67b139e3576429"
+    },
+    {
+      "path": "configs/gridworld_6x6.yaml",
+      "sha": "59f07f74d54de5fd9adafccd659889079ed5f6c4"
+    },
+    {
+      "path": "configs/latent_radius_stress_protocol.json",
+      "sha": "ccda94de9a50ba458e5bb509a8880cdb5c86b261"
+    },
+    {
+      "path": "configs/local_abstraction_protocol.json",
+      "sha": "b1d016546d83ffe3e094ceb57c3a311ecfb85af5"
+    },
+    {
+      "path": "configs/top1_quality_protocol.json",
+      "sha": "88f82b0ea3411e7921896558b09341c843a77a31"
+    },
+    {
+      "path": "configs/top1_ranking_protocol.json",
+      "sha": "4b338bc1a406a656c3b80b77ddde2a2e258e8f37"
+    },
+    {
+      "path": "configs/top1_relations_protocol.json",
+      "sha": "abc2ffb1142077c5b2aa93c39218326076853044"
+    },
+    {
+      "path": "experiments/audit_cegar_refinement.py",
+      "sha": "4b45571ca3edffae01f97a97f06f0c1925aae6a0"
+    },
+    {
+      "path": "experiments/backend_sanity.py",
+      "sha": "9ffc755fde8358331a7e4c43af9cdec89add04e3"
+    },
+    {
+      "path": "experiments/benchmark_ctl.py",
+      "sha": "145e6777ad4e6a0172f863825b2e90ecc1ad244f"
+    },
+    {
+      "path": "experiments/cegar_refinement.py",
+      "sha": "605df615aeb5a2d2b0e561555857a4bde14cd151"
+    },
+    {
+      "path": "experiments/complete_finite_trace_run.py",
+      "sha": "9e1ca068d4ed272f1f020ceaabb969b0fb2140d3"
+    },
+    {
+      "path": "experiments/diagnose_finite_trace_predictions.py",
+      "sha": "c2abd615204952efa8c325e2814dd52eed6efb4b"
+    },
+    {
+      "path": "experiments/evaluate_jepa.py",
+      "sha": "6c4ed9440f093daf1e53ca78024ff06c5109e328"
+    },
+    {
+      "path": "experiments/evaluate_multibackend.py",
+      "sha": "dfd65233b7d092d95060b83b4e7228db3644a5af"
+    },
+    {
+      "path": "experiments/evaluate_structural.py",
+      "sha": "1c0f05f855bb4fb79fbd0cd4af870725b22d50a6"
+    },
+    {
+      "path": "experiments/evaluate_top1_ltl.py",
+      "sha": "e4528571911020b6148b5ed9e0e4be7b0081abe6"
+    },
+    {
+      "path": "experiments/exact_ctl.py",
+      "sha": "56e03e1438d3aeff2f4340dffdaa0b6a55eec43a"
+    },
+    {
+      "path": "experiments/finite_trace_mlp_vs_jepa.py",
+      "sha": "90925be15939459a491518e4610b0413df6bfff0"
+    },
+    {
+      "path": "experiments/good_bad_trace_sanity.py",
+      "sha": "5cbd2e4f29ea402341bd37431e31a3a8744f132c"
+    },
+    {
+      "path": "experiments/improve_top1.py",
+      "sha": "e872769cbeb698fe462df7d2a70d0f0fc7dc5bbb"
+    },
+    {
+      "path": "experiments/improve_top1_ranking.py",
+      "sha": "18fa5b3f221f45a3b826920a56d48bc654452d75"
+    },
+    {
+      "path": "experiments/mlp900_checkpoint.py",
+      "sha": "ceacce8729a26c0bb5eed137bcf462c861b5ee78"
+    },
+    {
+      "path": "experiments/oracle_latent_radius.py",
+      "sha": "44a38a1ce51680e9af0462c6a4bfe30e41e17bbd"
+    },
+    {
+      "path": "experiments/oracle_local_abstraction.py",
+      "sha": "2cec76ec5c4262b4ccdc1e2a52112bd8f3f6b482"
+    },
+    {
+      "path": "experiments/plot_top1_quality.py",
+      "sha": "db2be7e0c11b02ac78acc10726123fa7205a6cd6"
+    },
+    {
+      "path": "experiments/plot_top1_ranking.py",
+      "sha": "aa29eeb24640fbec91eba7260565f55d4e28679e"
+    },
+    {
+      "path": "experiments/quality_behavioral.py",
+      "sha": "5141bc99c3dd0a42e8b4e0383425437f820f25fd"
+    },
+    {
+      "path": "experiments/stress_latent_radius.py",
+      "sha": "ee3db69c37dbd09a908e799bf357eba7c91fa16c"
+    },
+    {
+      "path": "experiments/summarize_local_abstraction.py",
+      "sha": "8658b9e9d6d270733292bf3fdc692aa6d3df62a2"
+    },
+    {
+      "path": "experiments/summarize_top1_quality.py",
+      "sha": "80519edf7a080e05748ba5dccc6dfff3ab7c61b8"
+    },
+    {
+      "path": "experiments/summarize_top1_ranking.py",
+      "sha": "54d6cc5c5092677f21d080865db2fe71b15c2e77"
+    },
+    {
+      "path": "experiments/top1_behavioral_relations.py",
+      "sha": "227e3c3fdbde3a830ab24f26bcba3027ea96413d"
+    },
+    {
+      "path": "experiments/top1_quality_diagnosis.py",
+      "sha": "673dd214414e91becb9fa840f24fcd6a441cd36d"
+    },
+    {
+      "path": "experiments/validate_ctl_oracle.py",
+      "sha": "18e8ecc0591967748a71bca7e830b06f1c26ffd5"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha": "769b003e0664705853e2e980b52aef9bd2960e42"
+    },
+    {
+      "path": "src/jepa_lmc/__init__.py",
+      "sha": "c4310d30c0be8ff00898150b27dbaedd8b4fc0dd"
+    },
+    {
+      "path": "src/jepa_lmc/benchmarks/__init__.py",
+      "sha": "b818d0416a4d257441373b43ef2f30306e2d9ca9"
+    },
+    {
+      "path": "src/jepa_lmc/benchmarks/ctl_suite.py",
+      "sha": "4126f0b96c5bb1de2f6cdccbef785e290b7eed3f"
+    },
+    {
+      "path": "src/jepa_lmc/benchmarks/ltl_suite.py",
+      "sha": "37b1de707e5fb58a48874d815307aa689746917d"
+    },
+    {
+      "path": "src/jepa_lmc/benchmarks/perturbations.py",
+      "sha": "9026a3a5aef9f09e85dd6c5cdc1e80392a15f28f"
+    },
+    {
+      "path": "src/jepa_lmc/benchmarks/radius_stress.py",
+      "sha": "16a1edae00eeb480bcad8feb8afdd54dc267b65f"
+    },
+    {
+      "path": "src/jepa_lmc/benchmarks/random_gridworld.py",
+      "sha": "e4491c03fad705fd85d79e074383ea9702cecbf6"
+    },
+    {
+      "path": "src/jepa_lmc/envs/__init__.py",
+      "sha": "d883a875a75d20d0006eb4c45abf4c75fa8d936e"
+    },
+    {
+      "path": "src/jepa_lmc/envs/config.py",
+      "sha": "5042bd598598cb7b9e77ccc432e1f24751233fa4"
+    },
+    {
+      "path": "src/jepa_lmc/envs/gridworld.py",
+      "sha": "48b8fb532998f2adb474df572ee4f993af61933c"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/__init__.py",
+      "sha": "132e39279545ebaa040623db8b6c38385933547a"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/dynamics.py",
+      "sha": "7b73ada445303502a7f775b90a03b58f8af34862"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/finite_trace.py",
+      "sha": "88d0dc509f81c15a557fd0fb25a4a2a75e511061"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/latent_radius.py",
+      "sha": "3dcba0f247047c3fcd293981d3049548d190c289"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/local_abstraction.py",
+      "sha": "1ac05cc76226e897b24895501375248b7e984fc2"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/metrics.py",
+      "sha": "27e30f42132bdc1e64e0748062a33dfbcd90995e"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/radius_stress.py",
+      "sha": "ed3369746079797cdede2d74d93de4e586e70350"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/refinement_priority.py",
+      "sha": "13fd06aa5efa84c5d1e105b5baf0aeb60e646fe9"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/structural.py",
+      "sha": "6d81b45e0a0d4ffe326d36a83d1719a74251472e"
+    },
+    {
+      "path": "src/jepa_lmc/evaluation/trace_sanity.py",
+      "sha": "75d413588d379c02a6e2bcfcecf2418a8a0f4020"
+    },
+    {
+      "path": "src/jepa_lmc/learning/__init__.py",
+      "sha": "f47d211549101cc5018e2be4901ce5b3c0ecfd6c"
+    },
+    {
+      "path": "src/jepa_lmc/learning/data.py",
+      "sha": "a3dd1d1df8e6822cca21c3972f87681da25db923"
+    },
+    {
+      "path": "src/jepa_lmc/learning/finite_trace.py",
+      "sha": "79bf4bf0dc5140170f3e6973812574136462107d"
+    },
+    {
+      "path": "src/jepa_lmc/learning/model.py",
+      "sha": "8bc72a518876ab0c4e0857d898dcfee657fda0a0"
+    },
+    {
+      "path": "src/jepa_lmc/learning/ranking.py",
+      "sha": "9793a25547e6d3820cd1ad3fe4168a685c30a3ab"
+    },
+    {
+      "path": "src/jepa_lmc/learning/training.py",
+      "sha": "7665e4fe3f763bbbc4a58124df41e49330850d26"
+    },
+    {
+      "path": "src/jepa_lmc/verification/__init__.py",
+      "sha": "6d89bda218ce53b6e306752633ffc21774cdf8ee"
+    },
+    {
+      "path": "src/jepa_lmc/verification/behavioral_relations.py",
+      "sha": "ecd3dae7ee1ac50766bd96b5717076afe0bd2f02"
+    },
+    {
+      "path": "src/jepa_lmc/verification/ctl.py",
+      "sha": "d74e638e52da3c7174fcf2614757c6f1de0ed114"
+    },
+    {
+      "path": "src/jepa_lmc/verification/gridworld.py",
+      "sha": "8ed1c9cd4e83b12662825d6243cc4d1e8dd2fb5c"
+    },
+    {
+      "path": "src/jepa_lmc/verification/ltl.py",
+      "sha": "f921d58ad033e3f0174112f0a699505b0820139c"
+    },
+    {
+      "path": "src/jepa_lmc/verification/nuxmv.py",
+      "sha": "04b8f21b542fbaef389e7949951673445fdb1f27"
+    },
+    {
+      "path": "src/jepa_lmc/verification/successor_refinement.py",
+      "sha": "59f5c703e5ed0e83a022d3e5d14c60f354cc4f3b"
+    },
+    {
+      "path": "src/jepa_lmc/verification/transition_system.py",
+      "sha": "bd0edb8e0af0177ff024848cc6bb2493326a341f"
+    },
+    {
+      "path": "src/jepa_lmc/verification/witness.py",
+      "sha": "dd00ed9c437370f7bde079ba94e7c6d6deab3a6c"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha": "940f46bd9d5328361a2769f7f18f867627a6ca64"
+    },
+    {
+      "path": "tests/test_backend_sanity.py",
+      "sha": "5fc0fc589c49147f37aac9559b2a72a33679a21b"
+    },
+    {
+      "path": "tests/test_behavioral_relations.py",
+      "sha": "48a815370029a2dd5daf4a5f71b2e02c06193129"
+    },
+    {
+      "path": "tests/test_ctl.py",
+      "sha": "9adf7d33b5cfd368698c879c21bf2a73b117ca59"
+    },
+    {
+      "path": "tests/test_ctl_identities.py",
+      "sha": "9e83a706b6be3a02fba76a7eaa75ea9b649ef3bb"
+    },
+    {
+      "path": "tests/test_dynamics.py",
+      "sha": "f187cb7870ba0fc7b5791c2fc03c9e47aa92dbdd"
+    },
+    {
+      "path": "tests/test_finite_trace_mlp_vs_jepa.py",
+      "sha": "82886dae3b3891fdd3c102e1266aaf1424ca4280"
+    },
+    {
+      "path": "tests/test_good_bad_trace_sanity.py",
+      "sha": "1f0e8b2b2f1bda631ee87aa27d4d1d68bf0ee540"
+    },
+    {
+      "path": "tests/test_gridworld_verification.py",
+      "sha": "797190301adc1b31ff6851daad14886a41621a69"
+    },
+    {
+      "path": "tests/test_latent_radius.py",
+      "sha": "fa699da9b014113d017ca6c8d1e0e383eed70a7e"
+    },
+    {
+      "path": "tests/test_learning.py",
+      "sha": "68849a43bcd4ab64b7b4964ca7177e412e605e44"
+    },
+    {
+      "path": "tests/test_local_abstraction.py",
+      "sha": "b66ac31002589f796f864022f39d81638b08bf25"
+    },
+    {
+      "path": "tests/test_ltl_evaluation.py",
+      "sha": "e4a273d4ae4fe46783a3058bfba322d7b2cc4c21"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha": "1efff49bd24df0ac64258d3f2e043b0063a05287"
+    },
+    {
+      "path": "tests/test_nuxmv.py",
+      "sha": "0ad3544b2517dc18e477ff580eacbf9db341c6a6"
+    },
+    {
+      "path": "tests/test_radius_stress.py",
+      "sha": "a1540a351363f0891c7bed1096dbf3ef7939b6a9"
+    },
+    {
+      "path": "tests/test_random_gridworld_benchmark.py",
+      "sha": "005b14f2aa77fe6c71e700602fa0705fb4ae9b22"
+    },
+    {
+      "path": "tests/test_refinement_experiment.py",
+      "sha": "f3f648c94581005040335e7a2919fe3d0bcbedbe"
+    },
+    {
+      "path": "tests/test_structural_metrics.py",
+      "sha": "bf18b669c3d6862b887fd3dbcd8b6f848a5a0dbe"
+    },
+    {
+      "path": "tests/test_successor_refinement.py",
+      "sha": "0f83eeb06f34fbe588e07c251e205e8a834b5a96"
+    },
+    {
+      "path": "tests/test_top1_ltl_experiment.py",
+      "sha": "ca0940b7829638b02ccb209eed4d4d2a2f9309d9"
+    },
+    {
+      "path": "tests/test_top1_quality.py",
+      "sha": "6738b95a2583cd4ea27ac1e4e07d87ffec109932"
+    },
+    {
+      "path": "tests/test_top1_ranking.py",
+      "sha": "3e3f399906e733a601f033acf29427a3d227a2d5"
+    },
+    {
+      "path": "tests/test_witness.py",
+      "sha": "242bd14b09c9bee8a37f979c6c2ab490c923cfd6"
+    }
+  ]
+}
