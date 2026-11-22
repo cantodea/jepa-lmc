@@ -1,0 +1,17 @@
+test_oracle_unavailable_initialization_identical_and_loss_finite (test_passive_negative.NegativeTrainingTests.test_oracle_unavailable_initialization_identical_and_loss_finite) ... ok
+test_zero_negative_weight_exactly_reproduces_historical_training (test_passive_negative.NegativeTrainingTests.test_zero_negative_weight_exactly_reproduces_historical_training) ... ok
+test_impossible_samples_contribute_zero_and_keep_denominator (test_passive_negative.TraceLossTests.test_impossible_samples_contribute_zero_and_keep_denominator) ... ok
+test_loss_matches_whole_trace_rejection_probability (test_passive_negative.TraceLossTests.test_loss_matches_whole_trace_rejection_probability) ... ok
+test_repeated_equal_pairs_are_not_independent_draws (test_passive_negative.TraceLossTests.test_repeated_equal_pairs_are_not_independent_draws) ... ok
+test_saturated_acceptance_remains_finite (test_passive_negative.TraceLossTests.test_saturated_acceptance_remains_finite) ... ok
+test_duplicate_negatives_are_sequentially_and_globally_redundant (test_passive_negative.VersionSpaceTests.test_duplicate_negatives_are_sequentially_and_globally_redundant) ... ok
+test_general_negative_reduces_space_without_reducing_marginals (test_passive_negative.VersionSpaceTests.test_general_negative_reduces_space_without_reducing_marginals) ... ok
+test_limit_is_unknown_and_not_approximation (test_passive_negative.VersionSpaceTests.test_limit_is_unknown_and_not_approximation) ... ok
+test_paired_negative_is_redundant (test_passive_negative.VersionSpaceTests.test_paired_negative_is_redundant) ... ok
+test_repeated_conflicting_pair_is_class_wide_impossibility (test_passive_negative.VersionSpaceTests.test_repeated_conflicting_pair_is_class_wide_impossibility) ... ok
+test_unsatisfiable_labels_are_explicit (test_passive_negative.VersionSpaceTests.test_unsatisfiable_labels_are_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 2.767s
+
+OK

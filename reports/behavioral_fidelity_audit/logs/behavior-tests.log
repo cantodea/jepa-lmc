@@ -1,0 +1,13 @@
+test_action_labels_are_optional_but_state_labels_are_required (test_behavioral_relations.BehavioralRelationTests.test_action_labels_are_optional_but_state_labels_are_required) ... ok
+test_different_edges_can_have_all_diagonal_pairs_bisimilar (test_behavioral_relations.BehavioralRelationTests.test_different_edges_can_have_all_diagonal_pairs_bisimilar) ... ok
+test_direction_and_initial_quantifiers (test_behavioral_relations.BehavioralRelationTests.test_direction_and_initial_quantifiers) ... ok
+test_exact_maxima_against_enumerating_all_candidate_relations (test_behavioral_relations.BehavioralRelationTests.test_exact_maxima_against_enumerating_all_candidate_relations) ... ok
+test_initial_equivalence_does_not_require_unreachable_diagonal_pairs (test_behavioral_relations.BehavioralRelationTests.test_initial_equivalence_does_not_require_unreachable_diagonal_pairs) ... ok
+test_mutual_simulation_is_not_bisimulation_on_branching_graphs (test_behavioral_relations.BehavioralRelationTests.test_mutual_simulation_is_not_bisimulation_on_branching_graphs) ... ok
+test_rejection_audit_detects_a_closed_but_nonmaximal_forgery (test_behavioral_relations.BehavioralRelationTests.test_rejection_audit_detects_a_closed_but_nonmaximal_forgery) ... ok
+test_total_action_determinism_makes_simulation_symmetric (test_behavioral_relations.BehavioralRelationTests.test_total_action_determinism_makes_simulation_symmetric) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.043s
+
+OK

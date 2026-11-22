@@ -1,0 +1,10 @@
+test_auc_tie_and_direction (test_audit.AuditTests.test_auc_tie_and_direction) ... ok
+test_catalogue_key_required (test_audit.AuditTests.test_catalogue_key_required) ... ok
+test_conflict_rejected (test_audit.AuditTests.test_conflict_rejected) ... ok
+test_feasible_rejects_whole_negative_only (test_audit.AuditTests.test_feasible_rejects_whole_negative_only) ... ok
+test_only_positive_keys_change (test_audit.AuditTests.test_only_positive_keys_change) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

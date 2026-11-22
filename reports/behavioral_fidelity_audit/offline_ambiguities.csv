@@ -1,0 +1,157 @@
+id,arm,logic,property,feasible_candidate,real_verdict,candidate_verdict
+danger_gate_layout0_rot0_s20260804_b1,A,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b1,A,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b1,A,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,A,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,A,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,A,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,B,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b1,B,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b1,B,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,B,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,B,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,B,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,C,CTL,EF danger,jepa/C/E1,1,0
+danger_gate_layout0_rot0_s20260804_b1,C,CTL,EF goal,jepa/C/E1,1,0
+danger_gate_layout0_rot0_s20260804_b1,C,CTL,AG !danger,jepa/C/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,C,LTL,G !danger,jepa/C/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,C,LTL,G F safe,jepa/C/E1,0,1
+danger_gate_layout0_rot0_s20260804_b1,C,LTL,F G !danger,jepa/C/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,A,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b4,A,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b4,A,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,A,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,A,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,A,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,B,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b4,B,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b4,B,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,B,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,B,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,B,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,C,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b4,C,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260804_b4,C,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,C,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,C,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260804_b4,C,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,A,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b1,A,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b1,A,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,A,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,A,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,A,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,B,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b1,B,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b1,B,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,B,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,B,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,B,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,C,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b1,C,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b1,C,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,C,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,C,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b1,C,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,A,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b4,A,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b4,A,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,A,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,A,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,A,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,B,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b4,B,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b4,B,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,B,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,B,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,B,LTL,F G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,C,CTL,EF danger,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b4,C,CTL,EF goal,jepa/A/E1,1,0
+danger_gate_layout0_rot0_s20260805_b4,C,CTL,AG !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,C,LTL,G !danger,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,C,LTL,G F safe,jepa/A/E1,0,1
+danger_gate_layout0_rot0_s20260805_b4,C,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,A,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,A,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,A,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,A,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,A,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,A,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,A,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,B,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,B,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,B,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,B,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,B,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,B,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,B,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,C,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,C,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,C,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b1,C,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,C,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,C,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b1,C,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,A,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,A,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,A,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,A,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,A,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,A,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,A,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,B,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,B,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,B,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,B,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,B,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,B,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,B,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,C,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,C,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,C,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260804_b4,C,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,C,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,C,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260804_b4,C,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,A,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,A,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,A,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,A,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,A,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,A,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,A,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,B,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,B,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,B,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,B,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,B,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,B,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,B,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,C,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,C,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,C,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b1,C,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,C,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,C,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b1,C,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,A,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,A,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,A,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,A,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,A,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,A,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,A,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,B,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,B,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,B,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,B,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,B,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,B,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,B,LTL,F G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,C,CTL,EF danger,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,C,CTL,EF goal,jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,C,CTL,E[!danger U goal],jepa/A/E1,1,0
+safe_detour_layout0_rot0_s20260805_b4,C,CTL,AG !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,C,LTL,G !danger,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,C,LTL,G F safe,jepa/A/E1,0,1
+safe_detour_layout0_rot0_s20260805_b4,C,LTL,F G !danger,jepa/A/E1,0,1

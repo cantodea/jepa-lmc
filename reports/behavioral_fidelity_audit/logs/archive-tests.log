@@ -1,0 +1,13 @@
+test_01_original_artifact_bytes_and_manifest (test_archive.ArchiveIntegrityTests.test_01_original_artifact_bytes_and_manifest) ... ok
+test_02_required_totals_and_case_identity (test_archive.ArchiveIntegrityTests.test_02_required_totals_and_case_identity) ... ok
+test_03_edge_partition_and_case_counts (test_archive.ArchiveIntegrityTests.test_03_edge_partition_and_case_counts) ... ok
+test_04_exhaustive_subsets_and_exact_minima (test_archive.ArchiveIntegrityTests.test_04_exhaustive_subsets_and_exact_minima) ... ok
+test_05_certificate_partition_and_internal_dags (test_archive.ArchiveIntegrityTests.test_05_certificate_partition_and_internal_dags) ... ok
+test_06_property_comparisons (test_archive.ArchiveIntegrityTests.test_06_property_comparisons) ... ok
+test_07_input_provenance (test_archive.ArchiveIntegrityTests.test_07_input_provenance) ... ok
+test_08_no_private_or_large_payload (test_archive.ArchiveIntegrityTests.test_08_no_private_or_large_payload) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.570s
+
+OK

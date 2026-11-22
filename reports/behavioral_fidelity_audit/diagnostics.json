@@ -1,0 +1,226 @@
+{
+  "info": {
+    "bits_range": [
+      0.0,
+      0.0978192009619078
+    ],
+    "bits_mean": 0.05574160589848509,
+    "positive_settings": 10,
+    "unknown_range": [
+      98,
+      117
+    ],
+    "unseen_singletons": 0,
+    "reduced": 14,
+    "legacy_positive": 0
+  },
+  "rank": {
+    "true_ranks_wrong": {
+      "2.0": 92,
+      "3.0": 4
+    },
+    "position_only": 8798,
+    "learned_only": 4284,
+    "direct64_disagree": 0,
+    "wrong_position_only_right": 41,
+    "wrong_learned_only_right": 23,
+    "gap_by_ai_init": {
+      "False": {
+        "cases": 32,
+        "median_of_case_medians": 1.5379621982574463,
+        "min": 1.2697836756706238,
+        "max": 1.7050835490226746
+      },
+      "True": {
+        "cases": 40,
+        "median_of_case_medians": 1.491656482219696,
+        "min": 1.281225502490997,
+        "max": 1.8604444861412048
+      }
+    },
+    "ties": 0,
+    "top2_unseen_moving": 6480,
+    "top2_unseen": 8924,
+    "mismatch": [
+      {
+        "logic": "CTL",
+        "property": "AG !danger",
+        "real": 1,
+        "learned": 0,
+        "n": 2
+      },
+      {
+        "logic": "CTL",
+        "property": "EF danger",
+        "real": 0,
+        "learned": 1,
+        "n": 2
+      },
+      {
+        "logic": "CTL",
+        "property": "EF goal",
+        "real": 0,
+        "learned": 1,
+        "n": 2
+      },
+      {
+        "logic": "CTL",
+        "property": "E[!danger U goal]",
+        "real": 0,
+        "learned": 1,
+        "n": 3
+      },
+      {
+        "logic": "CTL",
+        "property": "E[!danger U goal]",
+        "real": 1,
+        "learned": 0,
+        "n": 1
+      },
+      {
+        "logic": "LTL",
+        "property": "F G !danger",
+        "real": 1,
+        "learned": 0,
+        "n": 2
+      },
+      {
+        "logic": "LTL",
+        "property": "G !danger",
+        "real": 1,
+        "learned": 0,
+        "n": 2
+      },
+      {
+        "logic": "LTL",
+        "property": "G F safe",
+        "real": 1,
+        "learned": 0,
+        "n": 2
+      }
+    ]
+  },
+  "finite": {
+    "gap_by_ai_init": {
+      "False": {
+        "cases": 8,
+        "median_of_case_medians": 1.3393388390541077,
+        "min": 1.0446248054504397,
+        "max": 1.465888738632202
+      },
+      "True": {
+        "cases": 4,
+        "median_of_case_medians": 1.3247058391571045,
+        "min": 1.0449998378753662,
+        "max": 1.4620625972747805
+      }
+    },
+    "ties": 0,
+    "top2_unseen_moving": 321,
+    "top2_unseen": 671,
+    "changed_C": 11,
+    "corrections": 4,
+    "regressions": 0,
+    "infeasible_C": 0,
+    "mismatch": [
+      {
+        "logic": "CTL",
+        "property": "AG !danger",
+        "real": 0,
+        "learned": 1,
+        "n": 8
+      },
+      {
+        "logic": "CTL",
+        "property": "EF danger",
+        "real": 1,
+        "learned": 0,
+        "n": 8
+      },
+      {
+        "logic": "CTL",
+        "property": "EF goal",
+        "real": 1,
+        "learned": 0,
+        "n": 8
+      },
+      {
+        "logic": "CTL",
+        "property": "E[!danger U goal]",
+        "real": 1,
+        "learned": 0,
+        "n": 4
+      },
+      {
+        "logic": "LTL",
+        "property": "F G !danger",
+        "real": 0,
+        "learned": 1,
+        "n": 8
+      },
+      {
+        "logic": "LTL",
+        "property": "G !danger",
+        "real": 0,
+        "learned": 1,
+        "n": 8
+      },
+      {
+        "logic": "LTL",
+        "property": "G F safe",
+        "real": 0,
+        "learned": 1,
+        "n": 8
+      }
+    ]
+  },
+  "witness": {
+    "candidate_pairs": 0,
+    "offline_by_arm": {
+      "A": 52,
+      "B": 52,
+      "C": 52
+    },
+    "offline_C_by_property": [
+      {
+        "logic": "CTL",
+        "property": "AG !danger",
+        "n": 8
+      },
+      {
+        "logic": "CTL",
+        "property": "EF danger",
+        "n": 8
+      },
+      {
+        "logic": "CTL",
+        "property": "EF goal",
+        "n": 8
+      },
+      {
+        "logic": "CTL",
+        "property": "E[!danger U goal]",
+        "n": 4
+      },
+      {
+        "logic": "LTL",
+        "property": "F G !danger",
+        "n": 8
+      },
+      {
+        "logic": "LTL",
+        "property": "G !danger",
+        "n": 8
+      },
+      {
+        "logic": "LTL",
+        "property": "G F safe",
+        "n": 8
+      }
+    ],
+    "feasible_graphs_range": [
+      4,
+      8
+    ]
+  }
+}

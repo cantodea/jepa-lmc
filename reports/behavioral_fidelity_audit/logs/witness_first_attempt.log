@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>\reports\behavioral_fidelity_audit\witnesses.py", line 96, in <module>
+    main(args.run,args.out)
+  File "<WORKSPACE>\reports\behavioral_fidelity_audit\witnesses.py", line 70, in main
+    assert f[field]==old[field],(d["id"],arm,field)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('sealed_region_layout0_rot0_s20260804_b1', 'A', 'candidate_successors')
