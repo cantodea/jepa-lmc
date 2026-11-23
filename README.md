@@ -68,13 +68,13 @@ The main experiment scripts are under `experiments/`.
 
 `evaluate_multibackend.py` evaluates the same learned transition system with both CTL and LTL backends.
 
-## Current results
+## Early pilot results (historical)
 
-In the current deterministic GridWorld pilot, the action-conditioned model reached approximately 94% Top-1 next-state accuracy and 95% CTL agreement on held-out maps.
+In an early deterministic GridWorld pilot, the action-conditioned model reached approximately 94% Top-1 next-state accuracy and 95% CTL agreement on held-out maps.
 
 These experiments are still preliminary. The current GridWorld transition dynamics are relatively simple, and the learned model does not provide a formal equivalence or bisimulation guarantee.
 
-The next stage of the project is to test learned dynamics across more varied system instances and compare JEPA with simpler neural transition models.
+Later work investigates behavioral equivalence, learning from finite traces, and what verification results can be justified from limited observations. See the research branches below.
 
 ## Updates (September 2026)
 
@@ -103,3 +103,13 @@ good acceptance and bad rejection while recovering only 9.37%-41.06% of real
 transitions at budgets of 1-16 trajectories. Sample consistency is evaluated on
 the partial relation; simulation/bisimulation and CTL are evaluated separately
 under explicit self-loop completion.
+
+## Research branches (November 2026)
+
+The `main` branch contains the core implementation and established experiments. The following research and historical branches are kept separate to preserve their original results.
+
+- **[Behavioral fidelity audit](https://github.com/cantodea/jepa-lmc/tree/research/behavioral-fidelity-audit)** — Examines prediction errors, behavioral equivalence, and which CTL/LTL conclusions are justified by finite observations. A property-directed verification procedure is proposed as future work, not yet implemented.
+- **[Positive and negative traces](https://github.com/cantodea/jepa-lmc/tree/research/passive-negative-traces-20261117)** — A pilot study of whether negative traces add information about unobserved transitions and improve reconstruction.
+- **[Bisimulation failure analysis (archive)](https://github.com/cantodea/jepa-lmc/tree/docs/archive-bisimulation-failure-analysis-20261109)** — Historical analysis of transition errors and counterfactual repairs.
+- **[Finite-trace MLP vs JEPA (historical)](https://github.com/cantodea/jepa-lmc/tree/experiment/finite-trace-mlp-vs-jepa)** — Earlier learning comparison; the updated MLP-900 baseline is documented on `main`.
+- **[Good/bad trace sanity check (historical)](https://github.com/cantodea/jepa-lmc/tree/experiment/good-bad-trace-sanity-20261005)** — Initial trace-consistency study, later merged into `main`.
