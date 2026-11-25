@@ -1,0 +1,865 @@
+﻿seed,case,logic,property,real,pred,agreement
+20260804,sealed_region_layout0_rot0,CTL,EF danger,False,False,True
+20260804,sealed_region_layout0_rot0,CTL,EF goal,False,False,True
+20260804,sealed_region_layout0_rot0,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout0_rot0,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout0_rot0,CTL,AF goal,False,False,True
+20260804,sealed_region_layout0_rot0,CTL,EG safe,True,True,True
+20260804,sealed_region_layout0_rot90,CTL,EF danger,False,False,True
+20260804,sealed_region_layout0_rot90,CTL,EF goal,False,False,True
+20260804,sealed_region_layout0_rot90,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout0_rot90,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout0_rot90,CTL,AF goal,False,False,True
+20260804,sealed_region_layout0_rot90,CTL,EG safe,True,True,True
+20260804,sealed_region_layout0_rot180,CTL,EF danger,False,False,True
+20260804,sealed_region_layout0_rot180,CTL,EF goal,False,False,True
+20260804,sealed_region_layout0_rot180,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout0_rot180,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout0_rot180,CTL,AF goal,False,False,True
+20260804,sealed_region_layout0_rot180,CTL,EG safe,True,True,True
+20260804,sealed_region_layout0_rot270,CTL,EF danger,False,False,True
+20260804,sealed_region_layout0_rot270,CTL,EF goal,False,False,True
+20260804,sealed_region_layout0_rot270,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout0_rot270,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout0_rot270,CTL,AF goal,False,False,True
+20260804,sealed_region_layout0_rot270,CTL,EG safe,True,True,True
+20260804,sealed_region_layout1_rot0,CTL,EF danger,False,False,True
+20260804,sealed_region_layout1_rot0,CTL,EF goal,False,False,True
+20260804,sealed_region_layout1_rot0,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout1_rot0,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout1_rot0,CTL,AF goal,False,False,True
+20260804,sealed_region_layout1_rot0,CTL,EG safe,True,True,True
+20260804,sealed_region_layout1_rot90,CTL,EF danger,False,True,False
+20260804,sealed_region_layout1_rot90,CTL,EF goal,False,True,False
+20260804,sealed_region_layout1_rot90,CTL,E[!danger U goal],False,True,False
+20260804,sealed_region_layout1_rot90,CTL,AG !danger,True,False,False
+20260804,sealed_region_layout1_rot90,CTL,AF goal,False,False,True
+20260804,sealed_region_layout1_rot90,CTL,EG safe,True,True,True
+20260804,sealed_region_layout1_rot180,CTL,EF danger,False,False,True
+20260804,sealed_region_layout1_rot180,CTL,EF goal,False,False,True
+20260804,sealed_region_layout1_rot180,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout1_rot180,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout1_rot180,CTL,AF goal,False,False,True
+20260804,sealed_region_layout1_rot180,CTL,EG safe,True,True,True
+20260804,sealed_region_layout1_rot270,CTL,EF danger,False,False,True
+20260804,sealed_region_layout1_rot270,CTL,EF goal,False,False,True
+20260804,sealed_region_layout1_rot270,CTL,E[!danger U goal],False,False,True
+20260804,sealed_region_layout1_rot270,CTL,AG !danger,True,True,True
+20260804,sealed_region_layout1_rot270,CTL,AF goal,False,False,True
+20260804,sealed_region_layout1_rot270,CTL,EG safe,True,True,True
+20260804,danger_gate_layout0_rot0,CTL,EF danger,True,True,True
+20260804,danger_gate_layout0_rot0,CTL,EF goal,True,True,True
+20260804,danger_gate_layout0_rot0,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout0_rot0,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout0_rot0,CTL,AF goal,False,False,True
+20260804,danger_gate_layout0_rot0,CTL,EG safe,True,True,True
+20260804,danger_gate_layout0_rot90,CTL,EF danger,True,True,True
+20260804,danger_gate_layout0_rot90,CTL,EF goal,True,True,True
+20260804,danger_gate_layout0_rot90,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout0_rot90,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout0_rot90,CTL,AF goal,False,False,True
+20260804,danger_gate_layout0_rot90,CTL,EG safe,True,True,True
+20260804,danger_gate_layout0_rot180,CTL,EF danger,True,True,True
+20260804,danger_gate_layout0_rot180,CTL,EF goal,True,True,True
+20260804,danger_gate_layout0_rot180,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout0_rot180,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout0_rot180,CTL,AF goal,False,False,True
+20260804,danger_gate_layout0_rot180,CTL,EG safe,True,True,True
+20260804,danger_gate_layout0_rot270,CTL,EF danger,True,True,True
+20260804,danger_gate_layout0_rot270,CTL,EF goal,True,True,True
+20260804,danger_gate_layout0_rot270,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout0_rot270,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout0_rot270,CTL,AF goal,False,False,True
+20260804,danger_gate_layout0_rot270,CTL,EG safe,True,True,True
+20260804,danger_gate_layout1_rot0,CTL,EF danger,True,True,True
+20260804,danger_gate_layout1_rot0,CTL,EF goal,True,True,True
+20260804,danger_gate_layout1_rot0,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout1_rot0,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout1_rot0,CTL,AF goal,False,False,True
+20260804,danger_gate_layout1_rot0,CTL,EG safe,True,True,True
+20260804,danger_gate_layout1_rot90,CTL,EF danger,True,True,True
+20260804,danger_gate_layout1_rot90,CTL,EF goal,True,True,True
+20260804,danger_gate_layout1_rot90,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout1_rot90,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout1_rot90,CTL,AF goal,False,False,True
+20260804,danger_gate_layout1_rot90,CTL,EG safe,True,True,True
+20260804,danger_gate_layout1_rot180,CTL,EF danger,True,True,True
+20260804,danger_gate_layout1_rot180,CTL,EF goal,True,True,True
+20260804,danger_gate_layout1_rot180,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout1_rot180,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout1_rot180,CTL,AF goal,False,False,True
+20260804,danger_gate_layout1_rot180,CTL,EG safe,True,True,True
+20260804,danger_gate_layout1_rot270,CTL,EF danger,True,True,True
+20260804,danger_gate_layout1_rot270,CTL,EF goal,True,True,True
+20260804,danger_gate_layout1_rot270,CTL,E[!danger U goal],False,False,True
+20260804,danger_gate_layout1_rot270,CTL,AG !danger,False,False,True
+20260804,danger_gate_layout1_rot270,CTL,AF goal,False,False,True
+20260804,danger_gate_layout1_rot270,CTL,EG safe,True,True,True
+20260804,safe_detour_layout0_rot0,CTL,EF danger,True,True,True
+20260804,safe_detour_layout0_rot0,CTL,EF goal,True,True,True
+20260804,safe_detour_layout0_rot0,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout0_rot0,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout0_rot0,CTL,AF goal,False,False,True
+20260804,safe_detour_layout0_rot0,CTL,EG safe,True,True,True
+20260804,safe_detour_layout0_rot90,CTL,EF danger,True,True,True
+20260804,safe_detour_layout0_rot90,CTL,EF goal,True,True,True
+20260804,safe_detour_layout0_rot90,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout0_rot90,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout0_rot90,CTL,AF goal,False,False,True
+20260804,safe_detour_layout0_rot90,CTL,EG safe,True,True,True
+20260804,safe_detour_layout0_rot180,CTL,EF danger,True,True,True
+20260804,safe_detour_layout0_rot180,CTL,EF goal,True,True,True
+20260804,safe_detour_layout0_rot180,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout0_rot180,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout0_rot180,CTL,AF goal,False,False,True
+20260804,safe_detour_layout0_rot180,CTL,EG safe,True,True,True
+20260804,safe_detour_layout0_rot270,CTL,EF danger,True,True,True
+20260804,safe_detour_layout0_rot270,CTL,EF goal,True,True,True
+20260804,safe_detour_layout0_rot270,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout0_rot270,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout0_rot270,CTL,AF goal,False,False,True
+20260804,safe_detour_layout0_rot270,CTL,EG safe,True,True,True
+20260804,safe_detour_layout1_rot0,CTL,EF danger,True,True,True
+20260804,safe_detour_layout1_rot0,CTL,EF goal,True,True,True
+20260804,safe_detour_layout1_rot0,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout1_rot0,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout1_rot0,CTL,AF goal,False,False,True
+20260804,safe_detour_layout1_rot0,CTL,EG safe,True,True,True
+20260804,safe_detour_layout1_rot90,CTL,EF danger,True,True,True
+20260804,safe_detour_layout1_rot90,CTL,EF goal,True,True,True
+20260804,safe_detour_layout1_rot90,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout1_rot90,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout1_rot90,CTL,AF goal,False,False,True
+20260804,safe_detour_layout1_rot90,CTL,EG safe,True,True,True
+20260804,safe_detour_layout1_rot180,CTL,EF danger,True,True,True
+20260804,safe_detour_layout1_rot180,CTL,EF goal,True,True,True
+20260804,safe_detour_layout1_rot180,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout1_rot180,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout1_rot180,CTL,AF goal,False,False,True
+20260804,safe_detour_layout1_rot180,CTL,EG safe,True,True,True
+20260804,safe_detour_layout1_rot270,CTL,EF danger,True,True,True
+20260804,safe_detour_layout1_rot270,CTL,EF goal,True,True,True
+20260804,safe_detour_layout1_rot270,CTL,E[!danger U goal],True,True,True
+20260804,safe_detour_layout1_rot270,CTL,AG !danger,False,False,True
+20260804,safe_detour_layout1_rot270,CTL,AF goal,False,False,True
+20260804,safe_detour_layout1_rot270,CTL,EG safe,True,True,True
+20260805,sealed_region_layout0_rot0,CTL,EF danger,False,False,True
+20260805,sealed_region_layout0_rot0,CTL,EF goal,False,False,True
+20260805,sealed_region_layout0_rot0,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout0_rot0,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout0_rot0,CTL,AF goal,False,False,True
+20260805,sealed_region_layout0_rot0,CTL,EG safe,True,True,True
+20260805,sealed_region_layout0_rot90,CTL,EF danger,False,False,True
+20260805,sealed_region_layout0_rot90,CTL,EF goal,False,False,True
+20260805,sealed_region_layout0_rot90,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout0_rot90,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout0_rot90,CTL,AF goal,False,False,True
+20260805,sealed_region_layout0_rot90,CTL,EG safe,True,True,True
+20260805,sealed_region_layout0_rot180,CTL,EF danger,False,False,True
+20260805,sealed_region_layout0_rot180,CTL,EF goal,False,False,True
+20260805,sealed_region_layout0_rot180,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout0_rot180,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout0_rot180,CTL,AF goal,False,False,True
+20260805,sealed_region_layout0_rot180,CTL,EG safe,True,True,True
+20260805,sealed_region_layout0_rot270,CTL,EF danger,False,False,True
+20260805,sealed_region_layout0_rot270,CTL,EF goal,False,False,True
+20260805,sealed_region_layout0_rot270,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout0_rot270,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout0_rot270,CTL,AF goal,False,False,True
+20260805,sealed_region_layout0_rot270,CTL,EG safe,True,True,True
+20260805,sealed_region_layout1_rot0,CTL,EF danger,False,False,True
+20260805,sealed_region_layout1_rot0,CTL,EF goal,False,False,True
+20260805,sealed_region_layout1_rot0,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout1_rot0,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout1_rot0,CTL,AF goal,False,False,True
+20260805,sealed_region_layout1_rot0,CTL,EG safe,True,True,True
+20260805,sealed_region_layout1_rot90,CTL,EF danger,False,True,False
+20260805,sealed_region_layout1_rot90,CTL,EF goal,False,True,False
+20260805,sealed_region_layout1_rot90,CTL,E[!danger U goal],False,True,False
+20260805,sealed_region_layout1_rot90,CTL,AG !danger,True,False,False
+20260805,sealed_region_layout1_rot90,CTL,AF goal,False,False,True
+20260805,sealed_region_layout1_rot90,CTL,EG safe,True,True,True
+20260805,sealed_region_layout1_rot180,CTL,EF danger,False,False,True
+20260805,sealed_region_layout1_rot180,CTL,EF goal,False,False,True
+20260805,sealed_region_layout1_rot180,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout1_rot180,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout1_rot180,CTL,AF goal,False,False,True
+20260805,sealed_region_layout1_rot180,CTL,EG safe,True,True,True
+20260805,sealed_region_layout1_rot270,CTL,EF danger,False,False,True
+20260805,sealed_region_layout1_rot270,CTL,EF goal,False,False,True
+20260805,sealed_region_layout1_rot270,CTL,E[!danger U goal],False,False,True
+20260805,sealed_region_layout1_rot270,CTL,AG !danger,True,True,True
+20260805,sealed_region_layout1_rot270,CTL,AF goal,False,False,True
+20260805,sealed_region_layout1_rot270,CTL,EG safe,True,True,True
+20260805,danger_gate_layout0_rot0,CTL,EF danger,True,True,True
+20260805,danger_gate_layout0_rot0,CTL,EF goal,True,True,True
+20260805,danger_gate_layout0_rot0,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout0_rot0,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout0_rot0,CTL,AF goal,False,False,True
+20260805,danger_gate_layout0_rot0,CTL,EG safe,True,True,True
+20260805,danger_gate_layout0_rot90,CTL,EF danger,True,True,True
+20260805,danger_gate_layout0_rot90,CTL,EF goal,True,True,True
+20260805,danger_gate_layout0_rot90,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout0_rot90,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout0_rot90,CTL,AF goal,False,False,True
+20260805,danger_gate_layout0_rot90,CTL,EG safe,True,True,True
+20260805,danger_gate_layout0_rot180,CTL,EF danger,True,True,True
+20260805,danger_gate_layout0_rot180,CTL,EF goal,True,True,True
+20260805,danger_gate_layout0_rot180,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout0_rot180,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout0_rot180,CTL,AF goal,False,False,True
+20260805,danger_gate_layout0_rot180,CTL,EG safe,True,True,True
+20260805,danger_gate_layout0_rot270,CTL,EF danger,True,True,True
+20260805,danger_gate_layout0_rot270,CTL,EF goal,True,True,True
+20260805,danger_gate_layout0_rot270,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout0_rot270,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout0_rot270,CTL,AF goal,False,False,True
+20260805,danger_gate_layout0_rot270,CTL,EG safe,True,True,True
+20260805,danger_gate_layout1_rot0,CTL,EF danger,True,True,True
+20260805,danger_gate_layout1_rot0,CTL,EF goal,True,True,True
+20260805,danger_gate_layout1_rot0,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout1_rot0,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout1_rot0,CTL,AF goal,False,False,True
+20260805,danger_gate_layout1_rot0,CTL,EG safe,True,True,True
+20260805,danger_gate_layout1_rot90,CTL,EF danger,True,True,True
+20260805,danger_gate_layout1_rot90,CTL,EF goal,True,True,True
+20260805,danger_gate_layout1_rot90,CTL,E[!danger U goal],False,True,False
+20260805,danger_gate_layout1_rot90,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout1_rot90,CTL,AF goal,False,False,True
+20260805,danger_gate_layout1_rot90,CTL,EG safe,True,True,True
+20260805,danger_gate_layout1_rot180,CTL,EF danger,True,True,True
+20260805,danger_gate_layout1_rot180,CTL,EF goal,True,True,True
+20260805,danger_gate_layout1_rot180,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout1_rot180,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout1_rot180,CTL,AF goal,False,False,True
+20260805,danger_gate_layout1_rot180,CTL,EG safe,True,True,True
+20260805,danger_gate_layout1_rot270,CTL,EF danger,True,True,True
+20260805,danger_gate_layout1_rot270,CTL,EF goal,True,True,True
+20260805,danger_gate_layout1_rot270,CTL,E[!danger U goal],False,False,True
+20260805,danger_gate_layout1_rot270,CTL,AG !danger,False,False,True
+20260805,danger_gate_layout1_rot270,CTL,AF goal,False,False,True
+20260805,danger_gate_layout1_rot270,CTL,EG safe,True,True,True
+20260805,safe_detour_layout0_rot0,CTL,EF danger,True,True,True
+20260805,safe_detour_layout0_rot0,CTL,EF goal,True,True,True
+20260805,safe_detour_layout0_rot0,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout0_rot0,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout0_rot0,CTL,AF goal,False,False,True
+20260805,safe_detour_layout0_rot0,CTL,EG safe,True,True,True
+20260805,safe_detour_layout0_rot90,CTL,EF danger,True,True,True
+20260805,safe_detour_layout0_rot90,CTL,EF goal,True,True,True
+20260805,safe_detour_layout0_rot90,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout0_rot90,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout0_rot90,CTL,AF goal,False,False,True
+20260805,safe_detour_layout0_rot90,CTL,EG safe,True,True,True
+20260805,safe_detour_layout0_rot180,CTL,EF danger,True,True,True
+20260805,safe_detour_layout0_rot180,CTL,EF goal,True,True,True
+20260805,safe_detour_layout0_rot180,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout0_rot180,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout0_rot180,CTL,AF goal,False,False,True
+20260805,safe_detour_layout0_rot180,CTL,EG safe,True,True,True
+20260805,safe_detour_layout0_rot270,CTL,EF danger,True,True,True
+20260805,safe_detour_layout0_rot270,CTL,EF goal,True,True,True
+20260805,safe_detour_layout0_rot270,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout0_rot270,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout0_rot270,CTL,AF goal,False,False,True
+20260805,safe_detour_layout0_rot270,CTL,EG safe,True,True,True
+20260805,safe_detour_layout1_rot0,CTL,EF danger,True,True,True
+20260805,safe_detour_layout1_rot0,CTL,EF goal,True,True,True
+20260805,safe_detour_layout1_rot0,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout1_rot0,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout1_rot0,CTL,AF goal,False,False,True
+20260805,safe_detour_layout1_rot0,CTL,EG safe,True,True,True
+20260805,safe_detour_layout1_rot90,CTL,EF danger,True,True,True
+20260805,safe_detour_layout1_rot90,CTL,EF goal,True,True,True
+20260805,safe_detour_layout1_rot90,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout1_rot90,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout1_rot90,CTL,AF goal,False,False,True
+20260805,safe_detour_layout1_rot90,CTL,EG safe,True,True,True
+20260805,safe_detour_layout1_rot180,CTL,EF danger,True,True,True
+20260805,safe_detour_layout1_rot180,CTL,EF goal,True,True,True
+20260805,safe_detour_layout1_rot180,CTL,E[!danger U goal],True,True,True
+20260805,safe_detour_layout1_rot180,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout1_rot180,CTL,AF goal,False,False,True
+20260805,safe_detour_layout1_rot180,CTL,EG safe,True,True,True
+20260805,safe_detour_layout1_rot270,CTL,EF danger,True,True,True
+20260805,safe_detour_layout1_rot270,CTL,EF goal,True,True,True
+20260805,safe_detour_layout1_rot270,CTL,E[!danger U goal],True,False,False
+20260805,safe_detour_layout1_rot270,CTL,AG !danger,False,False,True
+20260805,safe_detour_layout1_rot270,CTL,AF goal,False,False,True
+20260805,safe_detour_layout1_rot270,CTL,EG safe,True,True,True
+20260806,sealed_region_layout0_rot0,CTL,EF danger,False,False,True
+20260806,sealed_region_layout0_rot0,CTL,EF goal,False,False,True
+20260806,sealed_region_layout0_rot0,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout0_rot0,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout0_rot0,CTL,AF goal,False,False,True
+20260806,sealed_region_layout0_rot0,CTL,EG safe,True,True,True
+20260806,sealed_region_layout0_rot90,CTL,EF danger,False,False,True
+20260806,sealed_region_layout0_rot90,CTL,EF goal,False,False,True
+20260806,sealed_region_layout0_rot90,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout0_rot90,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout0_rot90,CTL,AF goal,False,False,True
+20260806,sealed_region_layout0_rot90,CTL,EG safe,True,True,True
+20260806,sealed_region_layout0_rot180,CTL,EF danger,False,False,True
+20260806,sealed_region_layout0_rot180,CTL,EF goal,False,False,True
+20260806,sealed_region_layout0_rot180,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout0_rot180,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout0_rot180,CTL,AF goal,False,False,True
+20260806,sealed_region_layout0_rot180,CTL,EG safe,True,True,True
+20260806,sealed_region_layout0_rot270,CTL,EF danger,False,False,True
+20260806,sealed_region_layout0_rot270,CTL,EF goal,False,False,True
+20260806,sealed_region_layout0_rot270,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout0_rot270,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout0_rot270,CTL,AF goal,False,False,True
+20260806,sealed_region_layout0_rot270,CTL,EG safe,True,True,True
+20260806,sealed_region_layout1_rot0,CTL,EF danger,False,False,True
+20260806,sealed_region_layout1_rot0,CTL,EF goal,False,False,True
+20260806,sealed_region_layout1_rot0,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout1_rot0,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout1_rot0,CTL,AF goal,False,False,True
+20260806,sealed_region_layout1_rot0,CTL,EG safe,True,True,True
+20260806,sealed_region_layout1_rot90,CTL,EF danger,False,False,True
+20260806,sealed_region_layout1_rot90,CTL,EF goal,False,False,True
+20260806,sealed_region_layout1_rot90,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout1_rot90,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout1_rot90,CTL,AF goal,False,False,True
+20260806,sealed_region_layout1_rot90,CTL,EG safe,True,True,True
+20260806,sealed_region_layout1_rot180,CTL,EF danger,False,False,True
+20260806,sealed_region_layout1_rot180,CTL,EF goal,False,False,True
+20260806,sealed_region_layout1_rot180,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout1_rot180,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout1_rot180,CTL,AF goal,False,False,True
+20260806,sealed_region_layout1_rot180,CTL,EG safe,True,True,True
+20260806,sealed_region_layout1_rot270,CTL,EF danger,False,False,True
+20260806,sealed_region_layout1_rot270,CTL,EF goal,False,False,True
+20260806,sealed_region_layout1_rot270,CTL,E[!danger U goal],False,False,True
+20260806,sealed_region_layout1_rot270,CTL,AG !danger,True,True,True
+20260806,sealed_region_layout1_rot270,CTL,AF goal,False,False,True
+20260806,sealed_region_layout1_rot270,CTL,EG safe,True,True,True
+20260806,danger_gate_layout0_rot0,CTL,EF danger,True,True,True
+20260806,danger_gate_layout0_rot0,CTL,EF goal,True,True,True
+20260806,danger_gate_layout0_rot0,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout0_rot0,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout0_rot0,CTL,AF goal,False,False,True
+20260806,danger_gate_layout0_rot0,CTL,EG safe,True,True,True
+20260806,danger_gate_layout0_rot90,CTL,EF danger,True,True,True
+20260806,danger_gate_layout0_rot90,CTL,EF goal,True,True,True
+20260806,danger_gate_layout0_rot90,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout0_rot90,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout0_rot90,CTL,AF goal,False,False,True
+20260806,danger_gate_layout0_rot90,CTL,EG safe,True,True,True
+20260806,danger_gate_layout0_rot180,CTL,EF danger,True,True,True
+20260806,danger_gate_layout0_rot180,CTL,EF goal,True,True,True
+20260806,danger_gate_layout0_rot180,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout0_rot180,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout0_rot180,CTL,AF goal,False,False,True
+20260806,danger_gate_layout0_rot180,CTL,EG safe,True,True,True
+20260806,danger_gate_layout0_rot270,CTL,EF danger,True,True,True
+20260806,danger_gate_layout0_rot270,CTL,EF goal,True,True,True
+20260806,danger_gate_layout0_rot270,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout0_rot270,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout0_rot270,CTL,AF goal,False,False,True
+20260806,danger_gate_layout0_rot270,CTL,EG safe,True,True,True
+20260806,danger_gate_layout1_rot0,CTL,EF danger,True,True,True
+20260806,danger_gate_layout1_rot0,CTL,EF goal,True,True,True
+20260806,danger_gate_layout1_rot0,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout1_rot0,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout1_rot0,CTL,AF goal,False,False,True
+20260806,danger_gate_layout1_rot0,CTL,EG safe,True,True,True
+20260806,danger_gate_layout1_rot90,CTL,EF danger,True,True,True
+20260806,danger_gate_layout1_rot90,CTL,EF goal,True,True,True
+20260806,danger_gate_layout1_rot90,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout1_rot90,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout1_rot90,CTL,AF goal,False,False,True
+20260806,danger_gate_layout1_rot90,CTL,EG safe,True,True,True
+20260806,danger_gate_layout1_rot180,CTL,EF danger,True,True,True
+20260806,danger_gate_layout1_rot180,CTL,EF goal,True,True,True
+20260806,danger_gate_layout1_rot180,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout1_rot180,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout1_rot180,CTL,AF goal,False,False,True
+20260806,danger_gate_layout1_rot180,CTL,EG safe,True,True,True
+20260806,danger_gate_layout1_rot270,CTL,EF danger,True,True,True
+20260806,danger_gate_layout1_rot270,CTL,EF goal,True,True,True
+20260806,danger_gate_layout1_rot270,CTL,E[!danger U goal],False,False,True
+20260806,danger_gate_layout1_rot270,CTL,AG !danger,False,False,True
+20260806,danger_gate_layout1_rot270,CTL,AF goal,False,False,True
+20260806,danger_gate_layout1_rot270,CTL,EG safe,True,True,True
+20260806,safe_detour_layout0_rot0,CTL,EF danger,True,True,True
+20260806,safe_detour_layout0_rot0,CTL,EF goal,True,True,True
+20260806,safe_detour_layout0_rot0,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout0_rot0,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout0_rot0,CTL,AF goal,False,False,True
+20260806,safe_detour_layout0_rot0,CTL,EG safe,True,True,True
+20260806,safe_detour_layout0_rot90,CTL,EF danger,True,True,True
+20260806,safe_detour_layout0_rot90,CTL,EF goal,True,True,True
+20260806,safe_detour_layout0_rot90,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout0_rot90,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout0_rot90,CTL,AF goal,False,False,True
+20260806,safe_detour_layout0_rot90,CTL,EG safe,True,True,True
+20260806,safe_detour_layout0_rot180,CTL,EF danger,True,True,True
+20260806,safe_detour_layout0_rot180,CTL,EF goal,True,True,True
+20260806,safe_detour_layout0_rot180,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout0_rot180,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout0_rot180,CTL,AF goal,False,False,True
+20260806,safe_detour_layout0_rot180,CTL,EG safe,True,True,True
+20260806,safe_detour_layout0_rot270,CTL,EF danger,True,True,True
+20260806,safe_detour_layout0_rot270,CTL,EF goal,True,True,True
+20260806,safe_detour_layout0_rot270,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout0_rot270,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout0_rot270,CTL,AF goal,False,False,True
+20260806,safe_detour_layout0_rot270,CTL,EG safe,True,True,True
+20260806,safe_detour_layout1_rot0,CTL,EF danger,True,True,True
+20260806,safe_detour_layout1_rot0,CTL,EF goal,True,True,True
+20260806,safe_detour_layout1_rot0,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout1_rot0,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout1_rot0,CTL,AF goal,False,False,True
+20260806,safe_detour_layout1_rot0,CTL,EG safe,True,True,True
+20260806,safe_detour_layout1_rot90,CTL,EF danger,True,True,True
+20260806,safe_detour_layout1_rot90,CTL,EF goal,True,True,True
+20260806,safe_detour_layout1_rot90,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout1_rot90,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout1_rot90,CTL,AF goal,False,False,True
+20260806,safe_detour_layout1_rot90,CTL,EG safe,True,True,True
+20260806,safe_detour_layout1_rot180,CTL,EF danger,True,True,True
+20260806,safe_detour_layout1_rot180,CTL,EF goal,True,True,True
+20260806,safe_detour_layout1_rot180,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout1_rot180,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout1_rot180,CTL,AF goal,False,False,True
+20260806,safe_detour_layout1_rot180,CTL,EG safe,True,True,True
+20260806,safe_detour_layout1_rot270,CTL,EF danger,True,True,True
+20260806,safe_detour_layout1_rot270,CTL,EF goal,True,True,True
+20260806,safe_detour_layout1_rot270,CTL,E[!danger U goal],True,True,True
+20260806,safe_detour_layout1_rot270,CTL,AG !danger,False,False,True
+20260806,safe_detour_layout1_rot270,CTL,AF goal,False,False,True
+20260806,safe_detour_layout1_rot270,CTL,EG safe,True,True,True
+20260804,sealed_region_layout0_rot0,LTL,X !danger,True,True,True
+20260804,sealed_region_layout0_rot0,LTL,F goal,False,False,True
+20260804,sealed_region_layout0_rot0,LTL,G !danger,True,True,True
+20260804,sealed_region_layout0_rot0,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout0_rot0,LTL,G F safe,True,True,True
+20260804,sealed_region_layout0_rot0,LTL,F G !danger,True,True,True
+20260804,sealed_region_layout0_rot90,LTL,X !danger,True,True,True
+20260804,sealed_region_layout0_rot90,LTL,F goal,False,False,True
+20260804,sealed_region_layout0_rot90,LTL,G !danger,True,True,True
+20260804,sealed_region_layout0_rot90,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout0_rot90,LTL,G F safe,True,True,True
+20260804,sealed_region_layout0_rot90,LTL,F G !danger,True,True,True
+20260804,sealed_region_layout0_rot180,LTL,X !danger,True,True,True
+20260804,sealed_region_layout0_rot180,LTL,F goal,False,False,True
+20260804,sealed_region_layout0_rot180,LTL,G !danger,True,True,True
+20260804,sealed_region_layout0_rot180,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout0_rot180,LTL,G F safe,True,True,True
+20260804,sealed_region_layout0_rot180,LTL,F G !danger,True,True,True
+20260804,sealed_region_layout0_rot270,LTL,X !danger,True,True,True
+20260804,sealed_region_layout0_rot270,LTL,F goal,False,False,True
+20260804,sealed_region_layout0_rot270,LTL,G !danger,True,True,True
+20260804,sealed_region_layout0_rot270,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout0_rot270,LTL,G F safe,True,True,True
+20260804,sealed_region_layout0_rot270,LTL,F G !danger,True,True,True
+20260804,sealed_region_layout1_rot0,LTL,X !danger,True,True,True
+20260804,sealed_region_layout1_rot0,LTL,F goal,False,False,True
+20260804,sealed_region_layout1_rot0,LTL,G !danger,True,True,True
+20260804,sealed_region_layout1_rot0,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout1_rot0,LTL,G F safe,True,True,True
+20260804,sealed_region_layout1_rot0,LTL,F G !danger,True,True,True
+20260804,sealed_region_layout1_rot90,LTL,X !danger,True,True,True
+20260804,sealed_region_layout1_rot90,LTL,F goal,False,False,True
+20260804,sealed_region_layout1_rot90,LTL,G !danger,True,False,False
+20260804,sealed_region_layout1_rot90,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout1_rot90,LTL,G F safe,True,False,False
+20260804,sealed_region_layout1_rot90,LTL,F G !danger,True,False,False
+20260804,sealed_region_layout1_rot180,LTL,X !danger,True,True,True
+20260804,sealed_region_layout1_rot180,LTL,F goal,False,False,True
+20260804,sealed_region_layout1_rot180,LTL,G !danger,True,True,True
+20260804,sealed_region_layout1_rot180,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout1_rot180,LTL,G F safe,True,True,True
+20260804,sealed_region_layout1_rot180,LTL,F G !danger,True,True,True
+20260804,sealed_region_layout1_rot270,LTL,X !danger,True,True,True
+20260804,sealed_region_layout1_rot270,LTL,F goal,False,False,True
+20260804,sealed_region_layout1_rot270,LTL,G !danger,True,True,True
+20260804,sealed_region_layout1_rot270,LTL,safe U goal,False,False,True
+20260804,sealed_region_layout1_rot270,LTL,G F safe,True,True,True
+20260804,sealed_region_layout1_rot270,LTL,F G !danger,True,True,True
+20260804,danger_gate_layout0_rot0,LTL,X !danger,True,True,True
+20260804,danger_gate_layout0_rot0,LTL,F goal,False,False,True
+20260804,danger_gate_layout0_rot0,LTL,G !danger,False,False,True
+20260804,danger_gate_layout0_rot0,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout0_rot0,LTL,G F safe,False,False,True
+20260804,danger_gate_layout0_rot0,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout0_rot90,LTL,X !danger,True,True,True
+20260804,danger_gate_layout0_rot90,LTL,F goal,False,False,True
+20260804,danger_gate_layout0_rot90,LTL,G !danger,False,False,True
+20260804,danger_gate_layout0_rot90,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout0_rot90,LTL,G F safe,False,False,True
+20260804,danger_gate_layout0_rot90,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout0_rot180,LTL,X !danger,True,True,True
+20260804,danger_gate_layout0_rot180,LTL,F goal,False,False,True
+20260804,danger_gate_layout0_rot180,LTL,G !danger,False,False,True
+20260804,danger_gate_layout0_rot180,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout0_rot180,LTL,G F safe,False,False,True
+20260804,danger_gate_layout0_rot180,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout0_rot270,LTL,X !danger,True,True,True
+20260804,danger_gate_layout0_rot270,LTL,F goal,False,False,True
+20260804,danger_gate_layout0_rot270,LTL,G !danger,False,False,True
+20260804,danger_gate_layout0_rot270,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout0_rot270,LTL,G F safe,False,False,True
+20260804,danger_gate_layout0_rot270,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout1_rot0,LTL,X !danger,True,True,True
+20260804,danger_gate_layout1_rot0,LTL,F goal,False,False,True
+20260804,danger_gate_layout1_rot0,LTL,G !danger,False,False,True
+20260804,danger_gate_layout1_rot0,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout1_rot0,LTL,G F safe,False,False,True
+20260804,danger_gate_layout1_rot0,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout1_rot90,LTL,X !danger,True,True,True
+20260804,danger_gate_layout1_rot90,LTL,F goal,False,False,True
+20260804,danger_gate_layout1_rot90,LTL,G !danger,False,False,True
+20260804,danger_gate_layout1_rot90,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout1_rot90,LTL,G F safe,False,False,True
+20260804,danger_gate_layout1_rot90,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout1_rot180,LTL,X !danger,True,True,True
+20260804,danger_gate_layout1_rot180,LTL,F goal,False,False,True
+20260804,danger_gate_layout1_rot180,LTL,G !danger,False,False,True
+20260804,danger_gate_layout1_rot180,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout1_rot180,LTL,G F safe,False,False,True
+20260804,danger_gate_layout1_rot180,LTL,F G !danger,False,False,True
+20260804,danger_gate_layout1_rot270,LTL,X !danger,True,True,True
+20260804,danger_gate_layout1_rot270,LTL,F goal,False,False,True
+20260804,danger_gate_layout1_rot270,LTL,G !danger,False,False,True
+20260804,danger_gate_layout1_rot270,LTL,safe U goal,False,False,True
+20260804,danger_gate_layout1_rot270,LTL,G F safe,False,False,True
+20260804,danger_gate_layout1_rot270,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout0_rot0,LTL,X !danger,True,True,True
+20260804,safe_detour_layout0_rot0,LTL,F goal,False,False,True
+20260804,safe_detour_layout0_rot0,LTL,G !danger,False,False,True
+20260804,safe_detour_layout0_rot0,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout0_rot0,LTL,G F safe,False,False,True
+20260804,safe_detour_layout0_rot0,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout0_rot90,LTL,X !danger,True,True,True
+20260804,safe_detour_layout0_rot90,LTL,F goal,False,False,True
+20260804,safe_detour_layout0_rot90,LTL,G !danger,False,False,True
+20260804,safe_detour_layout0_rot90,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout0_rot90,LTL,G F safe,False,False,True
+20260804,safe_detour_layout0_rot90,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout0_rot180,LTL,X !danger,True,True,True
+20260804,safe_detour_layout0_rot180,LTL,F goal,False,False,True
+20260804,safe_detour_layout0_rot180,LTL,G !danger,False,False,True
+20260804,safe_detour_layout0_rot180,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout0_rot180,LTL,G F safe,False,False,True
+20260804,safe_detour_layout0_rot180,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout0_rot270,LTL,X !danger,True,True,True
+20260804,safe_detour_layout0_rot270,LTL,F goal,False,False,True
+20260804,safe_detour_layout0_rot270,LTL,G !danger,False,False,True
+20260804,safe_detour_layout0_rot270,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout0_rot270,LTL,G F safe,False,False,True
+20260804,safe_detour_layout0_rot270,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout1_rot0,LTL,X !danger,True,True,True
+20260804,safe_detour_layout1_rot0,LTL,F goal,False,False,True
+20260804,safe_detour_layout1_rot0,LTL,G !danger,False,False,True
+20260804,safe_detour_layout1_rot0,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout1_rot0,LTL,G F safe,False,False,True
+20260804,safe_detour_layout1_rot0,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout1_rot90,LTL,X !danger,True,True,True
+20260804,safe_detour_layout1_rot90,LTL,F goal,False,False,True
+20260804,safe_detour_layout1_rot90,LTL,G !danger,False,False,True
+20260804,safe_detour_layout1_rot90,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout1_rot90,LTL,G F safe,False,False,True
+20260804,safe_detour_layout1_rot90,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout1_rot180,LTL,X !danger,True,True,True
+20260804,safe_detour_layout1_rot180,LTL,F goal,False,False,True
+20260804,safe_detour_layout1_rot180,LTL,G !danger,False,False,True
+20260804,safe_detour_layout1_rot180,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout1_rot180,LTL,G F safe,False,False,True
+20260804,safe_detour_layout1_rot180,LTL,F G !danger,False,False,True
+20260804,safe_detour_layout1_rot270,LTL,X !danger,True,True,True
+20260804,safe_detour_layout1_rot270,LTL,F goal,False,False,True
+20260804,safe_detour_layout1_rot270,LTL,G !danger,False,False,True
+20260804,safe_detour_layout1_rot270,LTL,safe U goal,False,False,True
+20260804,safe_detour_layout1_rot270,LTL,G F safe,False,False,True
+20260804,safe_detour_layout1_rot270,LTL,F G !danger,False,False,True
+20260805,sealed_region_layout0_rot0,LTL,X !danger,True,True,True
+20260805,sealed_region_layout0_rot0,LTL,F goal,False,False,True
+20260805,sealed_region_layout0_rot0,LTL,G !danger,True,True,True
+20260805,sealed_region_layout0_rot0,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout0_rot0,LTL,G F safe,True,True,True
+20260805,sealed_region_layout0_rot0,LTL,F G !danger,True,True,True
+20260805,sealed_region_layout0_rot90,LTL,X !danger,True,True,True
+20260805,sealed_region_layout0_rot90,LTL,F goal,False,False,True
+20260805,sealed_region_layout0_rot90,LTL,G !danger,True,True,True
+20260805,sealed_region_layout0_rot90,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout0_rot90,LTL,G F safe,True,True,True
+20260805,sealed_region_layout0_rot90,LTL,F G !danger,True,True,True
+20260805,sealed_region_layout0_rot180,LTL,X !danger,True,True,True
+20260805,sealed_region_layout0_rot180,LTL,F goal,False,False,True
+20260805,sealed_region_layout0_rot180,LTL,G !danger,True,True,True
+20260805,sealed_region_layout0_rot180,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout0_rot180,LTL,G F safe,True,True,True
+20260805,sealed_region_layout0_rot180,LTL,F G !danger,True,True,True
+20260805,sealed_region_layout0_rot270,LTL,X !danger,True,True,True
+20260805,sealed_region_layout0_rot270,LTL,F goal,False,False,True
+20260805,sealed_region_layout0_rot270,LTL,G !danger,True,True,True
+20260805,sealed_region_layout0_rot270,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout0_rot270,LTL,G F safe,True,True,True
+20260805,sealed_region_layout0_rot270,LTL,F G !danger,True,True,True
+20260805,sealed_region_layout1_rot0,LTL,X !danger,True,True,True
+20260805,sealed_region_layout1_rot0,LTL,F goal,False,False,True
+20260805,sealed_region_layout1_rot0,LTL,G !danger,True,True,True
+20260805,sealed_region_layout1_rot0,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout1_rot0,LTL,G F safe,True,True,True
+20260805,sealed_region_layout1_rot0,LTL,F G !danger,True,True,True
+20260805,sealed_region_layout1_rot90,LTL,X !danger,True,True,True
+20260805,sealed_region_layout1_rot90,LTL,F goal,False,False,True
+20260805,sealed_region_layout1_rot90,LTL,G !danger,True,False,False
+20260805,sealed_region_layout1_rot90,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout1_rot90,LTL,G F safe,True,False,False
+20260805,sealed_region_layout1_rot90,LTL,F G !danger,True,False,False
+20260805,sealed_region_layout1_rot180,LTL,X !danger,True,True,True
+20260805,sealed_region_layout1_rot180,LTL,F goal,False,False,True
+20260805,sealed_region_layout1_rot180,LTL,G !danger,True,True,True
+20260805,sealed_region_layout1_rot180,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout1_rot180,LTL,G F safe,True,True,True
+20260805,sealed_region_layout1_rot180,LTL,F G !danger,True,True,True
+20260805,sealed_region_layout1_rot270,LTL,X !danger,True,True,True
+20260805,sealed_region_layout1_rot270,LTL,F goal,False,False,True
+20260805,sealed_region_layout1_rot270,LTL,G !danger,True,True,True
+20260805,sealed_region_layout1_rot270,LTL,safe U goal,False,False,True
+20260805,sealed_region_layout1_rot270,LTL,G F safe,True,True,True
+20260805,sealed_region_layout1_rot270,LTL,F G !danger,True,True,True
+20260805,danger_gate_layout0_rot0,LTL,X !danger,True,True,True
+20260805,danger_gate_layout0_rot0,LTL,F goal,False,False,True
+20260805,danger_gate_layout0_rot0,LTL,G !danger,False,False,True
+20260805,danger_gate_layout0_rot0,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout0_rot0,LTL,G F safe,False,False,True
+20260805,danger_gate_layout0_rot0,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout0_rot90,LTL,X !danger,True,True,True
+20260805,danger_gate_layout0_rot90,LTL,F goal,False,False,True
+20260805,danger_gate_layout0_rot90,LTL,G !danger,False,False,True
+20260805,danger_gate_layout0_rot90,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout0_rot90,LTL,G F safe,False,False,True
+20260805,danger_gate_layout0_rot90,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout0_rot180,LTL,X !danger,True,True,True
+20260805,danger_gate_layout0_rot180,LTL,F goal,False,False,True
+20260805,danger_gate_layout0_rot180,LTL,G !danger,False,False,True
+20260805,danger_gate_layout0_rot180,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout0_rot180,LTL,G F safe,False,False,True
+20260805,danger_gate_layout0_rot180,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout0_rot270,LTL,X !danger,True,True,True
+20260805,danger_gate_layout0_rot270,LTL,F goal,False,False,True
+20260805,danger_gate_layout0_rot270,LTL,G !danger,False,False,True
+20260805,danger_gate_layout0_rot270,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout0_rot270,LTL,G F safe,False,False,True
+20260805,danger_gate_layout0_rot270,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout1_rot0,LTL,X !danger,True,True,True
+20260805,danger_gate_layout1_rot0,LTL,F goal,False,False,True
+20260805,danger_gate_layout1_rot0,LTL,G !danger,False,False,True
+20260805,danger_gate_layout1_rot0,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout1_rot0,LTL,G F safe,False,False,True
+20260805,danger_gate_layout1_rot0,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout1_rot90,LTL,X !danger,True,True,True
+20260805,danger_gate_layout1_rot90,LTL,F goal,False,False,True
+20260805,danger_gate_layout1_rot90,LTL,G !danger,False,False,True
+20260805,danger_gate_layout1_rot90,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout1_rot90,LTL,G F safe,False,False,True
+20260805,danger_gate_layout1_rot90,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout1_rot180,LTL,X !danger,True,True,True
+20260805,danger_gate_layout1_rot180,LTL,F goal,False,False,True
+20260805,danger_gate_layout1_rot180,LTL,G !danger,False,False,True
+20260805,danger_gate_layout1_rot180,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout1_rot180,LTL,G F safe,False,False,True
+20260805,danger_gate_layout1_rot180,LTL,F G !danger,False,False,True
+20260805,danger_gate_layout1_rot270,LTL,X !danger,True,True,True
+20260805,danger_gate_layout1_rot270,LTL,F goal,False,False,True
+20260805,danger_gate_layout1_rot270,LTL,G !danger,False,False,True
+20260805,danger_gate_layout1_rot270,LTL,safe U goal,False,False,True
+20260805,danger_gate_layout1_rot270,LTL,G F safe,False,False,True
+20260805,danger_gate_layout1_rot270,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout0_rot0,LTL,X !danger,True,True,True
+20260805,safe_detour_layout0_rot0,LTL,F goal,False,False,True
+20260805,safe_detour_layout0_rot0,LTL,G !danger,False,False,True
+20260805,safe_detour_layout0_rot0,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout0_rot0,LTL,G F safe,False,False,True
+20260805,safe_detour_layout0_rot0,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout0_rot90,LTL,X !danger,True,True,True
+20260805,safe_detour_layout0_rot90,LTL,F goal,False,False,True
+20260805,safe_detour_layout0_rot90,LTL,G !danger,False,False,True
+20260805,safe_detour_layout0_rot90,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout0_rot90,LTL,G F safe,False,False,True
+20260805,safe_detour_layout0_rot90,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout0_rot180,LTL,X !danger,True,True,True
+20260805,safe_detour_layout0_rot180,LTL,F goal,False,False,True
+20260805,safe_detour_layout0_rot180,LTL,G !danger,False,False,True
+20260805,safe_detour_layout0_rot180,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout0_rot180,LTL,G F safe,False,False,True
+20260805,safe_detour_layout0_rot180,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout0_rot270,LTL,X !danger,True,True,True
+20260805,safe_detour_layout0_rot270,LTL,F goal,False,False,True
+20260805,safe_detour_layout0_rot270,LTL,G !danger,False,False,True
+20260805,safe_detour_layout0_rot270,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout0_rot270,LTL,G F safe,False,False,True
+20260805,safe_detour_layout0_rot270,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout1_rot0,LTL,X !danger,True,True,True
+20260805,safe_detour_layout1_rot0,LTL,F goal,False,False,True
+20260805,safe_detour_layout1_rot0,LTL,G !danger,False,False,True
+20260805,safe_detour_layout1_rot0,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout1_rot0,LTL,G F safe,False,False,True
+20260805,safe_detour_layout1_rot0,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout1_rot90,LTL,X !danger,True,True,True
+20260805,safe_detour_layout1_rot90,LTL,F goal,False,False,True
+20260805,safe_detour_layout1_rot90,LTL,G !danger,False,False,True
+20260805,safe_detour_layout1_rot90,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout1_rot90,LTL,G F safe,False,False,True
+20260805,safe_detour_layout1_rot90,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout1_rot180,LTL,X !danger,True,True,True
+20260805,safe_detour_layout1_rot180,LTL,F goal,False,False,True
+20260805,safe_detour_layout1_rot180,LTL,G !danger,False,False,True
+20260805,safe_detour_layout1_rot180,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout1_rot180,LTL,G F safe,False,False,True
+20260805,safe_detour_layout1_rot180,LTL,F G !danger,False,False,True
+20260805,safe_detour_layout1_rot270,LTL,X !danger,True,True,True
+20260805,safe_detour_layout1_rot270,LTL,F goal,False,False,True
+20260805,safe_detour_layout1_rot270,LTL,G !danger,False,False,True
+20260805,safe_detour_layout1_rot270,LTL,safe U goal,False,False,True
+20260805,safe_detour_layout1_rot270,LTL,G F safe,False,False,True
+20260805,safe_detour_layout1_rot270,LTL,F G !danger,False,False,True
+20260806,sealed_region_layout0_rot0,LTL,X !danger,True,True,True
+20260806,sealed_region_layout0_rot0,LTL,F goal,False,False,True
+20260806,sealed_region_layout0_rot0,LTL,G !danger,True,True,True
+20260806,sealed_region_layout0_rot0,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout0_rot0,LTL,G F safe,True,True,True
+20260806,sealed_region_layout0_rot0,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout0_rot90,LTL,X !danger,True,True,True
+20260806,sealed_region_layout0_rot90,LTL,F goal,False,False,True
+20260806,sealed_region_layout0_rot90,LTL,G !danger,True,True,True
+20260806,sealed_region_layout0_rot90,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout0_rot90,LTL,G F safe,True,True,True
+20260806,sealed_region_layout0_rot90,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout0_rot180,LTL,X !danger,True,True,True
+20260806,sealed_region_layout0_rot180,LTL,F goal,False,False,True
+20260806,sealed_region_layout0_rot180,LTL,G !danger,True,True,True
+20260806,sealed_region_layout0_rot180,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout0_rot180,LTL,G F safe,True,True,True
+20260806,sealed_region_layout0_rot180,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout0_rot270,LTL,X !danger,True,True,True
+20260806,sealed_region_layout0_rot270,LTL,F goal,False,False,True
+20260806,sealed_region_layout0_rot270,LTL,G !danger,True,True,True
+20260806,sealed_region_layout0_rot270,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout0_rot270,LTL,G F safe,True,True,True
+20260806,sealed_region_layout0_rot270,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout1_rot0,LTL,X !danger,True,True,True
+20260806,sealed_region_layout1_rot0,LTL,F goal,False,False,True
+20260806,sealed_region_layout1_rot0,LTL,G !danger,True,True,True
+20260806,sealed_region_layout1_rot0,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout1_rot0,LTL,G F safe,True,True,True
+20260806,sealed_region_layout1_rot0,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout1_rot90,LTL,X !danger,True,True,True
+20260806,sealed_region_layout1_rot90,LTL,F goal,False,False,True
+20260806,sealed_region_layout1_rot90,LTL,G !danger,True,True,True
+20260806,sealed_region_layout1_rot90,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout1_rot90,LTL,G F safe,True,True,True
+20260806,sealed_region_layout1_rot90,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout1_rot180,LTL,X !danger,True,True,True
+20260806,sealed_region_layout1_rot180,LTL,F goal,False,False,True
+20260806,sealed_region_layout1_rot180,LTL,G !danger,True,True,True
+20260806,sealed_region_layout1_rot180,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout1_rot180,LTL,G F safe,True,True,True
+20260806,sealed_region_layout1_rot180,LTL,F G !danger,True,True,True
+20260806,sealed_region_layout1_rot270,LTL,X !danger,True,True,True
+20260806,sealed_region_layout1_rot270,LTL,F goal,False,False,True
+20260806,sealed_region_layout1_rot270,LTL,G !danger,True,True,True
+20260806,sealed_region_layout1_rot270,LTL,safe U goal,False,False,True
+20260806,sealed_region_layout1_rot270,LTL,G F safe,True,True,True
+20260806,sealed_region_layout1_rot270,LTL,F G !danger,True,True,True
+20260806,danger_gate_layout0_rot0,LTL,X !danger,True,True,True
+20260806,danger_gate_layout0_rot0,LTL,F goal,False,False,True
+20260806,danger_gate_layout0_rot0,LTL,G !danger,False,False,True
+20260806,danger_gate_layout0_rot0,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout0_rot0,LTL,G F safe,False,False,True
+20260806,danger_gate_layout0_rot0,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout0_rot90,LTL,X !danger,True,True,True
+20260806,danger_gate_layout0_rot90,LTL,F goal,False,False,True
+20260806,danger_gate_layout0_rot90,LTL,G !danger,False,False,True
+20260806,danger_gate_layout0_rot90,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout0_rot90,LTL,G F safe,False,False,True
+20260806,danger_gate_layout0_rot90,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout0_rot180,LTL,X !danger,True,True,True
+20260806,danger_gate_layout0_rot180,LTL,F goal,False,False,True
+20260806,danger_gate_layout0_rot180,LTL,G !danger,False,False,True
+20260806,danger_gate_layout0_rot180,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout0_rot180,LTL,G F safe,False,False,True
+20260806,danger_gate_layout0_rot180,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout0_rot270,LTL,X !danger,True,True,True
+20260806,danger_gate_layout0_rot270,LTL,F goal,False,False,True
+20260806,danger_gate_layout0_rot270,LTL,G !danger,False,False,True
+20260806,danger_gate_layout0_rot270,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout0_rot270,LTL,G F safe,False,False,True
+20260806,danger_gate_layout0_rot270,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout1_rot0,LTL,X !danger,True,True,True
+20260806,danger_gate_layout1_rot0,LTL,F goal,False,False,True
+20260806,danger_gate_layout1_rot0,LTL,G !danger,False,False,True
+20260806,danger_gate_layout1_rot0,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout1_rot0,LTL,G F safe,False,False,True
+20260806,danger_gate_layout1_rot0,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout1_rot90,LTL,X !danger,True,True,True
+20260806,danger_gate_layout1_rot90,LTL,F goal,False,False,True
+20260806,danger_gate_layout1_rot90,LTL,G !danger,False,False,True
+20260806,danger_gate_layout1_rot90,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout1_rot90,LTL,G F safe,False,False,True
+20260806,danger_gate_layout1_rot90,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout1_rot180,LTL,X !danger,True,True,True
+20260806,danger_gate_layout1_rot180,LTL,F goal,False,False,True
+20260806,danger_gate_layout1_rot180,LTL,G !danger,False,False,True
+20260806,danger_gate_layout1_rot180,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout1_rot180,LTL,G F safe,False,False,True
+20260806,danger_gate_layout1_rot180,LTL,F G !danger,False,False,True
+20260806,danger_gate_layout1_rot270,LTL,X !danger,True,True,True
+20260806,danger_gate_layout1_rot270,LTL,F goal,False,False,True
+20260806,danger_gate_layout1_rot270,LTL,G !danger,False,False,True
+20260806,danger_gate_layout1_rot270,LTL,safe U goal,False,False,True
+20260806,danger_gate_layout1_rot270,LTL,G F safe,False,False,True
+20260806,danger_gate_layout1_rot270,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout0_rot0,LTL,X !danger,True,True,True
+20260806,safe_detour_layout0_rot0,LTL,F goal,False,False,True
+20260806,safe_detour_layout0_rot0,LTL,G !danger,False,False,True
+20260806,safe_detour_layout0_rot0,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout0_rot0,LTL,G F safe,False,False,True
+20260806,safe_detour_layout0_rot0,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout0_rot90,LTL,X !danger,True,True,True
+20260806,safe_detour_layout0_rot90,LTL,F goal,False,False,True
+20260806,safe_detour_layout0_rot90,LTL,G !danger,False,False,True
+20260806,safe_detour_layout0_rot90,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout0_rot90,LTL,G F safe,False,False,True
+20260806,safe_detour_layout0_rot90,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout0_rot180,LTL,X !danger,True,True,True
+20260806,safe_detour_layout0_rot180,LTL,F goal,False,False,True
+20260806,safe_detour_layout0_rot180,LTL,G !danger,False,False,True
+20260806,safe_detour_layout0_rot180,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout0_rot180,LTL,G F safe,False,False,True
+20260806,safe_detour_layout0_rot180,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout0_rot270,LTL,X !danger,True,True,True
+20260806,safe_detour_layout0_rot270,LTL,F goal,False,False,True
+20260806,safe_detour_layout0_rot270,LTL,G !danger,False,False,True
+20260806,safe_detour_layout0_rot270,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout0_rot270,LTL,G F safe,False,False,True
+20260806,safe_detour_layout0_rot270,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout1_rot0,LTL,X !danger,True,True,True
+20260806,safe_detour_layout1_rot0,LTL,F goal,False,False,True
+20260806,safe_detour_layout1_rot0,LTL,G !danger,False,False,True
+20260806,safe_detour_layout1_rot0,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout1_rot0,LTL,G F safe,False,False,True
+20260806,safe_detour_layout1_rot0,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout1_rot90,LTL,X !danger,True,True,True
+20260806,safe_detour_layout1_rot90,LTL,F goal,False,False,True
+20260806,safe_detour_layout1_rot90,LTL,G !danger,False,False,True
+20260806,safe_detour_layout1_rot90,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout1_rot90,LTL,G F safe,False,False,True
+20260806,safe_detour_layout1_rot90,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout1_rot180,LTL,X !danger,True,True,True
+20260806,safe_detour_layout1_rot180,LTL,F goal,False,False,True
+20260806,safe_detour_layout1_rot180,LTL,G !danger,False,False,True
+20260806,safe_detour_layout1_rot180,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout1_rot180,LTL,G F safe,False,False,True
+20260806,safe_detour_layout1_rot180,LTL,F G !danger,False,False,True
+20260806,safe_detour_layout1_rot270,LTL,X !danger,True,True,True
+20260806,safe_detour_layout1_rot270,LTL,F goal,False,False,True
+20260806,safe_detour_layout1_rot270,LTL,G !danger,False,False,True
+20260806,safe_detour_layout1_rot270,LTL,safe U goal,False,False,True
+20260806,safe_detour_layout1_rot270,LTL,G F safe,False,False,True
+20260806,safe_detour_layout1_rot270,LTL,F G !danger,False,False,True

@@ -1,0 +1,160 @@
+{
+  "overall": {
+    "cases": 72,
+    "transitions": 8928,
+    "errors": 96,
+    "initial_pass": 40,
+    "identity_pass": 33,
+    "reachable_errors": 78,
+    "unreachable_errors": 18,
+    "motion": {
+      "move_to_self_loop": 74,
+      "self_loop_to_move": 22
+    },
+    "successor_label_mismatches": 10,
+    "successor_pairs_bisimilar_in_real": 10,
+    "involves_goal": 2,
+    "involves_danger": 8,
+    "ctl_all_six": 68,
+    "ltl_all_six": 70,
+    "both_all_state": 66
+  },
+  "by_initial": {
+    "True": {
+      "cases": 40,
+      "transitions": 4904,
+      "errors": 28,
+      "initial_pass": 40,
+      "identity_pass": 33,
+      "reachable_errors": 10,
+      "unreachable_errors": 18,
+      "motion": {
+        "move_to_self_loop": 27,
+        "self_loop_to_move": 1
+      },
+      "successor_label_mismatches": 3,
+      "successor_pairs_bisimilar_in_real": 10,
+      "involves_goal": 1,
+      "involves_danger": 2,
+      "ctl_all_six": 40,
+      "ltl_all_six": 40,
+      "both_all_state": 39
+    },
+    "False": {
+      "cases": 32,
+      "transitions": 4024,
+      "errors": 68,
+      "initial_pass": 0,
+      "identity_pass": 0,
+      "reachable_errors": 68,
+      "unreachable_errors": 0,
+      "motion": {
+        "self_loop_to_move": 21,
+        "move_to_self_loop": 47
+      },
+      "successor_label_mismatches": 7,
+      "successor_pairs_bisimilar_in_real": 0,
+      "involves_goal": 1,
+      "involves_danger": 6,
+      "ctl_all_six": 28,
+      "ltl_all_six": 30,
+      "both_all_state": 27
+    }
+  },
+  "by_family": {
+    "danger_gate": {
+      "cases": 24,
+      "transitions": 2976,
+      "errors": 29,
+      "initial_pass": 10,
+      "identity_pass": 10,
+      "reachable_errors": 29,
+      "unreachable_errors": 0,
+      "motion": {
+        "self_loop_to_move": 6,
+        "move_to_self_loop": 23
+      },
+      "successor_label_mismatches": 3,
+      "successor_pairs_bisimilar_in_real": 0,
+      "involves_goal": 0,
+      "involves_danger": 3,
+      "ctl_all_six": 23,
+      "ltl_all_six": 24,
+      "both_all_state": 23
+    },
+    "safe_detour": {
+      "cases": 24,
+      "transitions": 3072,
+      "errors": 36,
+      "initial_pass": 8,
+      "identity_pass": 8,
+      "reachable_errors": 36,
+      "unreachable_errors": 0,
+      "motion": {
+        "self_loop_to_move": 12,
+        "move_to_self_loop": 24
+      },
+      "successor_label_mismatches": 4,
+      "successor_pairs_bisimilar_in_real": 0,
+      "involves_goal": 1,
+      "involves_danger": 3,
+      "ctl_all_six": 23,
+      "ltl_all_six": 24,
+      "both_all_state": 22
+    },
+    "sealed_region": {
+      "cases": 24,
+      "transitions": 2880,
+      "errors": 31,
+      "initial_pass": 22,
+      "identity_pass": 15,
+      "reachable_errors": 13,
+      "unreachable_errors": 18,
+      "motion": {
+        "move_to_self_loop": 27,
+        "self_loop_to_move": 4
+      },
+      "successor_label_mismatches": 3,
+      "successor_pairs_bisimilar_in_real": 10,
+      "involves_goal": 1,
+      "involves_danger": 2,
+      "ctl_all_six": 22,
+      "ltl_all_six": 22,
+      "both_all_state": 21
+    }
+  },
+  "minimum_repairs_histogram": {
+    "1": 13,
+    "3": 6,
+    "2": 9,
+    "5": 3,
+    "4": 1
+  },
+  "failed_subsets": 222,
+  "passing_subsets": 572,
+  "fail_single_repair_trials": 13,
+  "counts": {
+    "prediction_rows_checked": 8928,
+    "certificates": 2524,
+    "alternative_valid_challenge_choices": 8868,
+    "historical_certificates_checked": 432,
+    "saved_relations_reproduced": 432,
+    "partition_checks": 1804,
+    "native_ctl_verdicts_reproduced": 26784,
+    "rooted_dags_checked": 64
+  },
+  "same_reachability_for_error_sources": true,
+  "cases_same_reachable_sets": 70,
+  "full_bisimulation_relations_equal": 72,
+  "all_failed_require_all_errors": true,
+  "all_passing_subsets_pass": true,
+  "initial_round_histogram": {
+    "9": 5,
+    "5": 5,
+    "11": 4,
+    "6": 3,
+    "10": 6,
+    "8": 8,
+    "7": 1
+  }
+}

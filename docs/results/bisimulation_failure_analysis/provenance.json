@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "study": "JEPA-LMC Cross-Map Ranking Round 2: post-hoc bisimulation failure analysis",
+  "source_revision": "539410dec1d5c4e4433bd9a57b10a309cd9a850d",
+  "repository": "https://github.com/cantodea/jepa-lmc",
+  "input_sha256": {
+    "outputs/top1_quality/round2/behavioral/best/report.json": "485d73909f54ed1d6c6d266ee6c123d0504abf4e14941d2956bc27186fcb5277",
+    "outputs/top1_quality/round2/behavioral/best/relations.jsonl": "8d51e45e76bf1f5a0c70732fdcfa90f72b08780c0558e6d8bea39793b2eb5d98",
+    "outputs/top1_quality/round2/behavioral/best/ctl_queries.csv": "c80d84bbea227f9627c7c436946cddfd11363a4bde3bf68a33d83af36ffecb29",
+    "outputs/top1_quality/round2/temporal/best_ltl/report.json": "8590d9d1db678c76f184f79bda061328ae98e361454fb48b8f21cf1d47b39347",
+    "outputs/top1_quality/round2/temporal/best_ltl/queries.csv": "f49e3bdc47cd8281ea1ba17a58a70f17fa4ca826d5946210e3ebcfc7e10501ec",
+    "outputs/top1_quality/round2/ranking/seed_20260804/evaluation/transitions.csv": "51dd11e7e202f2506c4b976b0826c565f606ce8dabf114bc61232768c84baf47",
+    "outputs/top1_quality/round2/ranking/seed_20260805/evaluation/transitions.csv": "6369ca12464cba9a327cfb58cf585dba20d87722f491873ee94e8f15519199ee",
+    "outputs/top1_quality/round2/ranking/seed_20260806/evaluation/transitions.csv": "6a761399226ce9f973c356d92c8b54f714b070cb8844638b903147b4fdb694b3"
+  },
+  "original_run": "original_provenance.json",
+  "verified_results": "summary.json",
+  "data_availability": {
+    "original_graph_committed": false,
+    "method": "Request the matching Ranking Round 2 failure-analysis bundle from repository maintainer cantodea. No public download URL is currently provided.",
+    "required_inputs": [
+      "outputs/top1_quality/round2/behavioral/best/report.json",
+      "outputs/top1_quality/round2/behavioral/best/relations.jsonl",
+      "outputs/top1_quality/round2/behavioral/best/ctl_queries.csv",
+      "outputs/top1_quality/round2/temporal/best_ltl/report.json",
+      "outputs/top1_quality/round2/temporal/best_ltl/queries.csv",
+      "outputs/top1_quality/round2/ranking/seed_20260804/evaluation/transitions.csv",
+      "outputs/top1_quality/round2/ranking/seed_20260805/evaluation/transitions.csv",
+      "outputs/top1_quality/round2/ranking/seed_20260806/evaluation/transitions.csv"
+    ]
+  },
+  "archive_policy": {
+    "new_experiments": false,
+    "training": false,
+    "inference": false,
+    "original_data_modified": false,
+    "repair_scope": "Replace confirmed erroneous predicted successors by their true successors, post hoc only.",
+    "certificates": "Lossless gzip, original bytes verified by source_files.json.",
+    "numeric_values": "Copied byte-for-byte; no rounding or manual edits."
+  },
+  "validation": {
+    "original_relation_audits": 2524,
+    "original_partition_checks": 1804,
+    "original_initial_dags": 64,
+    "original_native_ctl_verdicts": 26784,
+    "ltl": "Original nuXmv verdicts with graph/query hash and coverage checks; backend not rerun.",
+    "archive_checks": "validation/archive_validation.json"
+  },
+  "manifests": {
+    "original_artifact_identity": "source_files.json",
+    "published_file_identity": "SHA256SUMS.json"
+  }
+}
